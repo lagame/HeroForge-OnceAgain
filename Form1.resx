@@ -1,0 +1,1476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ckNonSettingSources.Items8" xml:space="preserve">
+    <value>Races of Destiny</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ckDragonLanceSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 79</value>
+  </data>
+  <data name="checkedListBox1.Items5" xml:space="preserve">
+    <value>Secrets of Xen'drik</value>
+  </data>
+  <data name="&gt;&gt;lblCampaignSelect.Name" xml:space="preserve">
+    <value>lblCampaignSelect</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 117</value>
+  </data>
+  <data name="ckNonSettingSources.Items" xml:space="preserve">
+    <value>Complete Adventurer</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblForgottenRealmsSources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cBLanguage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ckNonSettingSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 79</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ckNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="tabPage9.Text" xml:space="preserve">
+    <value>Attacks</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblForgottenRealmsSources.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblNonSettingSources.Name" xml:space="preserve">
+    <value>lblNonSettingSources</value>
+  </data>
+  <data name="cBLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 21</value>
+  </data>
+  <data name="&gt;&gt;tabPage14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckNonSettingSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;ckDeityOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ckUneathedArcana.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox5.Items" xml:space="preserve">
+    <value>Monster Manual</value>
+  </data>
+  <data name="ckNonSettingSources.Items4" xml:space="preserve">
+    <value>Complete Champion</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="checkedListBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblLivingGreyhawkSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Feats</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 16</value>
+  </data>
+  <data name="ckUneathedArcana.Items" xml:space="preserve">
+    <value>Gestalt</value>
+  </data>
+  <data name="&gt;&gt;lblNonSettingSources.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 79</value>
+  </data>
+  <data name="gBUneathedArcana.Text" xml:space="preserve">
+    <value>Unearthed Arcana</value>
+  </data>
+  <data name="checkedListBox5.Items9" xml:space="preserve">
+    <value>Lords of Madness</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Name" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblNonSettingSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.Name" xml:space="preserve">
+    <value>tabPage8</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 9</value>
+  </data>
+  <data name="&gt;&gt;gBUneathedArcana.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblDragonLanceSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 333</value>
+  </data>
+  <data name="&gt;&gt;lblLivingGreyhawkSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblForgottenRealmsSources.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Name" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="checkedListBox5.Items5" xml:space="preserve">
+    <value>Fiend Folio</value>
+  </data>
+  <data name="tabPage11.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="cBCampaignSelect.Items4" xml:space="preserve">
+    <value>Living Greyhawk</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="lblCampaignSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ckListCharacterSheetDisplayHitPointOptions.Parent" xml:space="preserve">
+    <value>gBCharacterSheetDisplayHitPoints</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckNonSettingSources.Name" xml:space="preserve">
+    <value>ckNonSettingSources</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 16</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items" xml:space="preserve">
+    <value>Champions of Ruin</value>
+  </data>
+  <data name="lblEberron.Text" xml:space="preserve">
+    <value>Eberron Sources</value>
+  </data>
+  <data name="&gt;&gt;lblEberron.Name" xml:space="preserve">
+    <value>lblEberron</value>
+  </data>
+  <data name="&gt;&gt;ckListCharacterSheetDisplayHitPointOptions.Name" xml:space="preserve">
+    <value>ckListCharacterSheetDisplayHitPointOptions</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="ckUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 79</value>
+  </data>
+  <data name="ckUneathedArcana.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="lblEberron.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 138</value>
+  </data>
+  <data name="ckNonSettingSources.Items26" xml:space="preserve">
+    <value>Expanded Psionics Handbook</value>
+  </data>
+  <data name="&gt;&gt;gBSelectSources.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="checkedListBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 160</value>
+  </data>
+  <data name="checkedListBox1.Items1" xml:space="preserve">
+    <value>Five Nations</value>
+  </data>
+  <data name="gBDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 9</value>
+  </data>
+  <data name="ckNonSettingSources.Items3" xml:space="preserve">
+    <value>Complete Warrior</value>
+  </data>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ckDragonLanceSources.Items2" xml:space="preserve">
+    <value>Bestiary of Krynn</value>
+  </data>
+  <data name="ckDragonLanceSources.Items1" xml:space="preserve">
+    <value>Age of Mortals</value>
+  </data>
+  <data name="&gt;&gt;ckNonSettingSources.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="checkedListBox3.Items1" xml:space="preserve">
+    <value>Draconomicon, The Book of Dragons</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox5.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;gBUneathedArcana.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="lblEberron.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fileToolStripMenuItem</value>
+  </data>
+  <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>884, 605</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="lblForgottenRealmsSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 16</value>
+  </data>
+  <data name="&gt;&gt;ckNonSettingSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;ckListCharacterSheetDisplayHitPointOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cBLanguage.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblEberron.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ckForgottenRealmsSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ckUneathedArcana.Name" xml:space="preserve">
+    <value>ckUneathedArcana</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="lblOtherSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 16</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.Text" xml:space="preserve">
+    <value>Monstrous Non-setting Sources</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="lblNonSettingSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lblForgottenRealmsSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDragonLanceSources.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ckNonSettingSources.Items9" xml:space="preserve">
+    <value>Races of the Dragon</value>
+  </data>
+  <data name="ckDragonLanceSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 160</value>
+  </data>
+  <data name="&gt;&gt;lblForgottenRealmsSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 79</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage14.Name" xml:space="preserve">
+    <value>tabPage14</value>
+  </data>
+  <data name="lblForgottenRealmsSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 26</value>
+  </data>
+  <data name="&gt;&gt;gBDeityOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Name" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblDragonLanceSources.Name" xml:space="preserve">
+    <value>lblDragonLanceSources</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 274</value>
+  </data>
+  <data name="tabPage11.Text" xml:space="preserve">
+    <value>Magic Equipment</value>
+  </data>
+  <data name="tabPage12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkedListBox5.Items1" xml:space="preserve">
+    <value>Monster Manual II</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Items3" xml:space="preserve">
+    <value>Use 3/4 round down rule for HP (level 2-60)</value>
+  </data>
+  <data name="&gt;&gt;cBCampaignSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ckDeityOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 79</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox5.Name" xml:space="preserve">
+    <value>checkedListBox5</value>
+  </data>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="lblCampaignSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ckUneathedArcana.Items3" xml:space="preserve">
+    <value>Traits</value>
+  </data>
+  <data name="ckUneathedArcana.Items2" xml:space="preserve">
+    <value>Fractional Save</value>
+  </data>
+  <data name="ckUneathedArcana.Items1" xml:space="preserve">
+    <value>Fractional BAB</value>
+  </data>
+  <data name="lblNonSettingSources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkedListBox5.Items10" xml:space="preserve">
+    <value>Fiendish Codex II</value>
+  </data>
+  <data name="ckUneathedArcana.Items4" xml:space="preserve">
+    <value>Flaws</value>
+  </data>
+  <data name="&gt;&gt;gBSelectSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tabPage12.Text" xml:space="preserve">
+    <value>Character Sheet 1</value>
+  </data>
+  <data name="lblForgottenRealmsSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;cBLanguage.Name" xml:space="preserve">
+    <value>cBLanguage</value>
+  </data>
+  <data name="cBLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblEberron.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 19</value>
+  </data>
+  <data name="&gt;&gt;ckDeityOptions.Name" xml:space="preserve">
+    <value>ckDeityOptions</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 68</value>
+  </data>
+  <data name="ckDragonLanceSources.Items" xml:space="preserve">
+    <value>DragonLance Campaign Setting</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 255</value>
+  </data>
+  <data name="gBUneathedArcana.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 9</value>
+  </data>
+  <data name="checkedListBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 274</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="checkedListBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="ckNonSettingSources.Items7" xml:space="preserve">
+    <value>Complete Scoundrel</value>
+  </data>
+  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage10.Text" xml:space="preserve">
+    <value>Enhancements</value>
+  </data>
+  <data name="gBDeityOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 117</value>
+  </data>
+  <data name="checkedListBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 79</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckDragonLanceSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="checkedListBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 352</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCampaignSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ckDeityOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gBUneathedArcana.Name" xml:space="preserve">
+    <value>gBUneathedArcana</value>
+  </data>
+  <data name="&gt;&gt;gBDeityOptions.Name" xml:space="preserve">
+    <value>gBDeityOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="cBCampaignSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="checkedListBox1.Items2" xml:space="preserve">
+    <value>Races of Eberron</value>
+  </data>
+  <data name="lblOtherSources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gBDeityOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cBLanguage.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="lblCampaignSelect.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gBDeityOptions.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;lblLivingGreyhawkSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkedListBox3.Items2" xml:space="preserve">
+    <value>Dragon Magazine Compendium</value>
+  </data>
+  <data name="ckNonSettingSources.Items5" xml:space="preserve">
+    <value>Complete Mage</value>
+  </data>
+  <data name="&gt;&gt;ckUneathedArcana.Parent" xml:space="preserve">
+    <value>gBUneathedArcana</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNonSettingSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox1.Items8" xml:space="preserve">
+    <value>Secrets of Sarlona</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;tabPage11.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;lblDragonLanceSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="checkedListBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
+    <value>editToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lblMonstrousNonSettingSources.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage14.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="ckDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="&gt;&gt;cBCampaignSelect.Name" xml:space="preserve">
+    <value>cBCampaignSelect</value>
+  </data>
+  <data name="tabPage14.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblForgottenRealmsSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;tabPage11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="gBSelectSources.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblOtherSources.Name" xml:space="preserve">
+    <value>lblOtherSources</value>
+  </data>
+  <data name="ckNonSettingSources.Items19" xml:space="preserve">
+    <value>Tome of Battle</value>
+  </data>
+  <data name="lblDragonLanceSources.Text" xml:space="preserve">
+    <value>DragonLance Sources</value>
+  </data>
+  <data name="&gt;&gt;lblOtherSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.Text" xml:space="preserve">
+    <value>Living Greyhawk Sources</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Stats &amp; Character Details</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.Text" xml:space="preserve">
+    <value>Character Sheet Display &amp;&amp; Hit Point Options</value>
+  </data>
+  <data name="cBCampaignSelect.Items2" xml:space="preserve">
+    <value>Eberron</value>
+  </data>
+  <data name="cBCampaignSelect.Items3" xml:space="preserve">
+    <value>Forgotten Realms</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items4" xml:space="preserve">
+    <value>Players Guide to Faerun</value>
+  </data>
+  <data name="cBCampaignSelect.Items1" xml:space="preserve">
+    <value>Dragonlance</value>
+  </data>
+  <data name="&gt;&gt;lblEberron.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="lblDragonLanceSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 19</value>
+  </data>
+  <data name="cBCampaignSelect.Items5" xml:space="preserve">
+    <value>Ravenloft</value>
+  </data>
+  <data name="&gt;&gt;ckDragonLanceSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDragonLanceSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMonstrousNonSettingSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox1.Items6" xml:space="preserve">
+    <value>Player's Guide To Eberron</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkedListBox5.Items2" xml:space="preserve">
+    <value>Monster Manual III</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cBCampaignSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gBDeityOptions.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkedListBox1.Items3" xml:space="preserve">
+    <value>Sharn: City of Towers</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="ckNonSettingSources.Items18" xml:space="preserve">
+    <value>Heroes of Horror</value>
+  </data>
+  <data name="ckNonSettingSources.Items17" xml:space="preserve">
+    <value>Heroes of Battle</value>
+  </data>
+  <data name="ckNonSettingSources.Items1" xml:space="preserve">
+    <value>Complete Arcane</value>
+  </data>
+  <data name="ckNonSettingSources.Items15" xml:space="preserve">
+    <value>Dungeonscape</value>
+  </data>
+  <data name="ckNonSettingSources.Items14" xml:space="preserve">
+    <value>Stormwrack</value>
+  </data>
+  <data name="ckNonSettingSources.Items13" xml:space="preserve">
+    <value>Sandstorm</value>
+  </data>
+  <data name="ckNonSettingSources.Items12" xml:space="preserve">
+    <value>Frostburn</value>
+  </data>
+  <data name="ckNonSettingSources.Items11" xml:space="preserve">
+    <value>Races of the Wild</value>
+  </data>
+  <data name="ckNonSettingSources.Items10" xml:space="preserve">
+    <value>Races of Stone</value>
+  </data>
+  <data name="ckNonSettingSources.Items6" xml:space="preserve">
+    <value>Complete Psionic</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox3.Items3" xml:space="preserve">
+    <value>Sword and Fist</value>
+  </data>
+  <data name="checkedListBox5.Items8" xml:space="preserve">
+    <value>Libris Mortis</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;tabPage11.Name" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ckDeityOptions.Items" xml:space="preserve">
+    <value>LG Deities</value>
+  </data>
+  <data name="cBCampaignSelect.Items" xml:space="preserve">
+    <value>Generic 3.5 D&amp;D</value>
+  </data>
+  <data name="lblCampaignSelect.Text" xml:space="preserve">
+    <value>Campaign Select:</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="&gt;&gt;gBUneathedArcana.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabControl1.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="lblNonSettingSources.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ckDragonLanceSources.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cBCampaignSelect.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;ckForgottenRealmsSources.Name" xml:space="preserve">
+    <value>ckForgottenRealmsSources</value>
+  </data>
+  <data name="lblEberron.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox4.Name" xml:space="preserve">
+    <value>checkedListBox4</value>
+  </data>
+  <data name="&gt;&gt;ckDeityOptions.Parent" xml:space="preserve">
+    <value>gBDeityOptions</value>
+  </data>
+  <data name="lblNonSettingSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 16</value>
+  </data>
+  <data name="&gt;&gt;lblForgottenRealmsSources.Name" xml:space="preserve">
+    <value>lblForgottenRealmsSources</value>
+  </data>
+  <data name="ckForgottenRealmsSources.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblLivingGreyhawkSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Items2" xml:space="preserve">
+    <value>Use 2/3 round down rule for HP (level 2-60)</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gBSelectSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 132</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Items" xml:space="preserve">
+    <value>Hide Trained Only skills with no ranks</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items5" xml:space="preserve">
+    <value>Races of Faerun</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 24</value>
+  </data>
+  <data name="cBLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 30</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items1" xml:space="preserve">
+    <value>Champions of Valor</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items3" xml:space="preserve">
+    <value>Magic of Faerun</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items2" xml:space="preserve">
+    <value>City of Splendors: Waterdeep</value>
+  </data>
+  <data name="&gt;&gt;lblLivingGreyhawkSources.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="checkedListBox5.Items6" xml:space="preserve">
+    <value>Draconomicon</value>
+  </data>
+  <data name="cBCampaignSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="tabPage13.Text" xml:space="preserve">
+    <value>Character Sheet 2</value>
+  </data>
+  <data name="&gt;&gt;gBSelectSources.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lblEberron.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="checkedListBox1.Items7" xml:space="preserve">
+    <value>Magic of Eberron</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 565</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="checkedListBox5.Items3" xml:space="preserve">
+    <value>Monster Manual IV</value>
+  </data>
+  <data name="lblOtherSources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="tabPage14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="lblMonstrousNonSettingSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ckDeityOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckForgottenRealmsSources.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ckNonSettingSources.Items28" xml:space="preserve">
+    <value>Magic of Incarnum</value>
+  </data>
+  <data name="ckNonSettingSources.Items27" xml:space="preserve">
+    <value>Planar Handbook</value>
+  </data>
+  <data name="ckNonSettingSources.Items2" xml:space="preserve">
+    <value>Complete Divine</value>
+  </data>
+  <data name="ckNonSettingSources.Items25" xml:space="preserve">
+    <value>Player's Handbook II</value>
+  </data>
+  <data name="ckNonSettingSources.Items24" xml:space="preserve">
+    <value>Miniatures Handbook</value>
+  </data>
+  <data name="ckNonSettingSources.Items23" xml:space="preserve">
+    <value>Spell Compendium</value>
+  </data>
+  <data name="ckNonSettingSources.Items22" xml:space="preserve">
+    <value>Book of Vile Darkness</value>
+  </data>
+  <data name="ckNonSettingSources.Items21" xml:space="preserve">
+    <value>Book of Exalted Deeds</value>
+  </data>
+  <data name="ckNonSettingSources.Items20" xml:space="preserve">
+    <value>Tome of Magic</value>
+  </data>
+  <data name="checkedListBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 49</value>
+  </data>
+  <data name="&gt;&gt;ckDragonLanceSources.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkedListBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tabPage13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Name" xml:space="preserve">
+    <value>gBCharacterSheetDisplayHitPoints</value>
+  </data>
+  <data name="gBUneathedArcana.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 49</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblOtherSources.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkedListBox4.Items" xml:space="preserve">
+    <value>Dragon Magazine (315 &amp; 319)</value>
+  </data>
+  <data name="cBLanguage.Items1" xml:space="preserve">
+    <value>Brazilian portuguese</value>
+  </data>
+  <data name="&gt;&gt;lblCampaignSelect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ckForgottenRealmsSources.Items6" xml:space="preserve">
+    <value>Underdark</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblNonSettingSources.Text" xml:space="preserve">
+    <value>Non-setting Sources</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox4.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="ckDeityOptions.Items4" xml:space="preserve">
+    <value>DragonLance Deities</value>
+  </data>
+  <data name="lblCampaignSelect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ckDeityOptions.Items1" xml:space="preserve">
+    <value>FR Deities</value>
+  </data>
+  <data name="ckDeityOptions.Items3" xml:space="preserve">
+    <value>Ravenloft Beliefs</value>
+  </data>
+  <data name="ckDeityOptions.Items2" xml:space="preserve">
+    <value>Eberron Deities</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
+    <value>checkedListBox1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="lblLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 9</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="ckUneathedArcana.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gBSelectSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>625, 452</value>
+  </data>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckForgottenRealmsSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="tabPage8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 481</value>
+  </data>
+  <data name="&gt;&gt;cBLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage14.Text" xml:space="preserve">
+    <value>Character Sheet 3</value>
+  </data>
+  <data name="checkedListBox5.Items7" xml:space="preserve">
+    <value>Dragon Magic</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkedListBox1.Items4" xml:space="preserve">
+    <value>Explorer's Handbook</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Name" xml:space="preserve">
+    <value>lblLanguage</value>
+  </data>
+  <data name="lblLanguage.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="lblDragonLanceSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 138</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="lblLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Items1" xml:space="preserve">
+    <value>Use 1/2 + 1 rule for HP (level 2-60)</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMonstrousNonSettingSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Race &amp; Templates</value>
+  </data>
+  <data name="lblDragonLanceSources.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 26</value>
+  </data>
+  <data name="ckNonSettingSources.Items16" xml:space="preserve">
+    <value>Cityscape</value>
+  </data>
+  <data name="lblOtherSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 255</value>
+  </data>
+  <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="lblNonSettingSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblOtherSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cBCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 88</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cBCampaignSelect.Items6" xml:space="preserve">
+    <value>Rokugan</value>
+  </data>
+  <data name="ckNonSettingSources.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblCampaignSelect.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lblLivingGreyhawkSources.Name" xml:space="preserve">
+    <value>lblLivingGreyhawkSources</value>
+  </data>
+  <data name="&gt;&gt;ckUneathedArcana.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblOtherSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkedListBox1.Items" xml:space="preserve">
+    <value>Eberron Campaign Setting</value>
+  </data>
+  <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 79</value>
+  </data>
+  <data name="lblOtherSources.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>helpToolStripMenuItem</value>
+  </data>
+  <data name="gBDeityOptions.Text" xml:space="preserve">
+    <value>Deity Options</value>
+  </data>
+  <data name="gBUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 117</value>
+  </data>
+  <data name="tabPage1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkedListBox3.Items" xml:space="preserve">
+    <value>Oriental Adventures</value>
+  </data>
+  <data name="&gt;&gt;lblEberron.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblForgottenRealmsSources.Text" xml:space="preserve">
+    <value>Forgotten Realms Sources</value>
+  </data>
+  <data name="&gt;&gt;tabPage14.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblMonstrousNonSettingSources.Name" xml:space="preserve">
+    <value>lblMonstrousNonSettingSources</value>
+  </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>HeroForge-OnceAgain 0.1</value>
+  </data>
+  <data name="&gt;&gt;ckDragonLanceSources.Name" xml:space="preserve">
+    <value>ckDragonLanceSources</value>
+  </data>
+  <data name="lblDragonLanceSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ckListCharacterSheetDisplayHitPointOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;gBSelectSources.Name" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Name" xml:space="preserve">
+    <value>checkedListBox3</value>
+  </data>
+  <data name="tabPage8.Text" xml:space="preserve">
+    <value>Armor</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="gBSelectSources.Text" xml:space="preserve">
+    <value>Select sources below to allow access to Non-Open/Non-Closed (Living Greyhawk) or to allow at all (other campaigns)</value>
+  </data>
+  <data name="lblOtherSources.Text" xml:space="preserve">
+    <value>Other Sources</value>
+  </data>
+  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1113, 539</value>
+  </data>
+  <data name="lblLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkedListBox5.Items4" xml:space="preserve">
+    <value>Savage Species</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
