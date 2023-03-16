@@ -84,27 +84,27 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
             // editToolStripMenuItem
             // 
-            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             // 
             // helpToolStripMenuItem
             // 
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // tabPage2
             // 
@@ -128,7 +128,6 @@
             // 
             // cBCampaignSelect
             // 
-            resources.ApplyResources(this.cBCampaignSelect, "cBCampaignSelect");
             this.cBCampaignSelect.FormattingEnabled = true;
             this.cBCampaignSelect.Items.AddRange(new object[] {
             resources.GetString("cBCampaignSelect.Items"),
@@ -138,6 +137,7 @@
             resources.GetString("cBCampaignSelect.Items4"),
             resources.GetString("cBCampaignSelect.Items5"),
             resources.GetString("cBCampaignSelect.Items6")});
+            resources.ApplyResources(this.cBCampaignSelect, "cBCampaignSelect");
             this.cBCampaignSelect.Name = "cBCampaignSelect";
             // 
             // lblCampaignSelect
@@ -147,7 +147,6 @@
             // 
             // gBSelectSources
             // 
-            resources.ApplyResources(this.gBSelectSources, "gBSelectSources");
             this.gBSelectSources.Controls.Add(this.lblMonstrousNonSettingSources);
             this.gBSelectSources.Controls.Add(this.lblOtherSources);
             this.gBSelectSources.Controls.Add(this.checkedListBox5);
@@ -162,6 +161,7 @@
             this.gBSelectSources.Controls.Add(this.ckForgottenRealmsSources);
             this.gBSelectSources.Controls.Add(this.lblNonSettingSources);
             this.gBSelectSources.Controls.Add(this.ckNonSettingSources);
+            resources.ApplyResources(this.gBSelectSources, "gBSelectSources");
             this.gBSelectSources.Name = "gBSelectSources";
             this.gBSelectSources.TabStop = false;
             // 
@@ -177,7 +177,6 @@
             // 
             // checkedListBox5
             // 
-            resources.ApplyResources(this.checkedListBox5, "checkedListBox5");
             this.checkedListBox5.FormattingEnabled = true;
             this.checkedListBox5.Items.AddRange(new object[] {
             resources.GetString("checkedListBox5.Items"),
@@ -191,17 +190,18 @@
             resources.GetString("checkedListBox5.Items8"),
             resources.GetString("checkedListBox5.Items9"),
             resources.GetString("checkedListBox5.Items10")});
+            resources.ApplyResources(this.checkedListBox5, "checkedListBox5");
             this.checkedListBox5.Name = "checkedListBox5";
             // 
             // checkedListBox3
             // 
-            resources.ApplyResources(this.checkedListBox3, "checkedListBox3");
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
             resources.GetString("checkedListBox3.Items"),
             resources.GetString("checkedListBox3.Items1"),
             resources.GetString("checkedListBox3.Items2"),
             resources.GetString("checkedListBox3.Items3")});
+            resources.ApplyResources(this.checkedListBox3, "checkedListBox3");
             this.checkedListBox3.Name = "checkedListBox3";
             // 
             // lblLivingGreyhawkSources
@@ -211,10 +211,10 @@
             // 
             // checkedListBox4
             // 
-            resources.ApplyResources(this.checkedListBox4, "checkedListBox4");
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Items.AddRange(new object[] {
             resources.GetString("checkedListBox4.Items")});
+            resources.ApplyResources(this.checkedListBox4, "checkedListBox4");
             this.checkedListBox4.Name = "checkedListBox4";
             // 
             // lblDragonLanceSources
@@ -224,12 +224,12 @@
             // 
             // ckDragonLanceSources
             // 
-            resources.ApplyResources(this.ckDragonLanceSources, "ckDragonLanceSources");
             this.ckDragonLanceSources.FormattingEnabled = true;
             this.ckDragonLanceSources.Items.AddRange(new object[] {
             resources.GetString("ckDragonLanceSources.Items"),
             resources.GetString("ckDragonLanceSources.Items1"),
             resources.GetString("ckDragonLanceSources.Items2")});
+            resources.ApplyResources(this.ckDragonLanceSources, "ckDragonLanceSources");
             this.ckDragonLanceSources.Name = "ckDragonLanceSources";
             // 
             // lblEberron
@@ -239,7 +239,6 @@
             // 
             // checkedListBox1
             // 
-            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             resources.GetString("checkedListBox1.Items"),
@@ -251,6 +250,7 @@
             resources.GetString("checkedListBox1.Items6"),
             resources.GetString("checkedListBox1.Items7"),
             resources.GetString("checkedListBox1.Items8")});
+            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.Name = "checkedListBox1";
             // 
             // lblForgottenRealmsSources
@@ -260,7 +260,6 @@
             // 
             // ckForgottenRealmsSources
             // 
-            resources.ApplyResources(this.ckForgottenRealmsSources, "ckForgottenRealmsSources");
             this.ckForgottenRealmsSources.FormattingEnabled = true;
             this.ckForgottenRealmsSources.Items.AddRange(new object[] {
             resources.GetString("ckForgottenRealmsSources.Items"),
@@ -270,6 +269,7 @@
             resources.GetString("ckForgottenRealmsSources.Items4"),
             resources.GetString("ckForgottenRealmsSources.Items5"),
             resources.GetString("ckForgottenRealmsSources.Items6")});
+            resources.ApplyResources(this.ckForgottenRealmsSources, "ckForgottenRealmsSources");
             this.ckForgottenRealmsSources.Name = "ckForgottenRealmsSources";
             // 
             // lblNonSettingSources
@@ -279,7 +279,6 @@
             // 
             // ckNonSettingSources
             // 
-            resources.ApplyResources(this.ckNonSettingSources, "ckNonSettingSources");
             this.ckNonSettingSources.FormattingEnabled = true;
             this.ckNonSettingSources.Items.AddRange(new object[] {
             resources.GetString("ckNonSettingSources.Items"),
@@ -311,18 +310,18 @@
             resources.GetString("ckNonSettingSources.Items26"),
             resources.GetString("ckNonSettingSources.Items27"),
             resources.GetString("ckNonSettingSources.Items28")});
+            resources.ApplyResources(this.ckNonSettingSources, "ckNonSettingSources");
             this.ckNonSettingSources.Name = "ckNonSettingSources";
             // 
             // gBDeityOptions
             // 
-            resources.ApplyResources(this.gBDeityOptions, "gBDeityOptions");
             this.gBDeityOptions.Controls.Add(this.ckDeityOptions);
+            resources.ApplyResources(this.gBDeityOptions, "gBDeityOptions");
             this.gBDeityOptions.Name = "gBDeityOptions";
             this.gBDeityOptions.TabStop = false;
             // 
             // ckDeityOptions
             // 
-            resources.ApplyResources(this.ckDeityOptions, "ckDeityOptions");
             this.ckDeityOptions.FormattingEnabled = true;
             this.ckDeityOptions.Items.AddRange(new object[] {
             resources.GetString("ckDeityOptions.Items"),
@@ -330,18 +329,18 @@
             resources.GetString("ckDeityOptions.Items2"),
             resources.GetString("ckDeityOptions.Items3"),
             resources.GetString("ckDeityOptions.Items4")});
+            resources.ApplyResources(this.ckDeityOptions, "ckDeityOptions");
             this.ckDeityOptions.Name = "ckDeityOptions";
             // 
             // gBUneathedArcana
             // 
-            resources.ApplyResources(this.gBUneathedArcana, "gBUneathedArcana");
             this.gBUneathedArcana.Controls.Add(this.ckUneathedArcana);
+            resources.ApplyResources(this.gBUneathedArcana, "gBUneathedArcana");
             this.gBUneathedArcana.Name = "gBUneathedArcana";
             this.gBUneathedArcana.TabStop = false;
             // 
             // ckUneathedArcana
             // 
-            resources.ApplyResources(this.ckUneathedArcana, "ckUneathedArcana");
             this.ckUneathedArcana.FormattingEnabled = true;
             this.ckUneathedArcana.Items.AddRange(new object[] {
             resources.GetString("ckUneathedArcana.Items"),
@@ -349,17 +348,18 @@
             resources.GetString("ckUneathedArcana.Items2"),
             resources.GetString("ckUneathedArcana.Items3"),
             resources.GetString("ckUneathedArcana.Items4")});
+            resources.ApplyResources(this.ckUneathedArcana, "ckUneathedArcana");
             this.ckUneathedArcana.Name = "ckUneathedArcana";
             // 
             // cBLanguage
             // 
-            resources.ApplyResources(this.cBLanguage, "cBLanguage");
             this.cBLanguage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cBLanguage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cBLanguage.FormattingEnabled = true;
             this.cBLanguage.Items.AddRange(new object[] {
             resources.GetString("cBLanguage.Items"),
             resources.GetString("cBLanguage.Items1")});
+            resources.ApplyResources(this.cBLanguage, "cBLanguage");
             this.cBLanguage.Name = "cBLanguage";
             this.cBLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -370,25 +370,24 @@
             // 
             // gBCharacterSheetDisplayHitPoints
             // 
-            resources.ApplyResources(this.gBCharacterSheetDisplayHitPoints, "gBCharacterSheetDisplayHitPoints");
             this.gBCharacterSheetDisplayHitPoints.Controls.Add(this.ckListCharacterSheetDisplayHitPointOptions);
+            resources.ApplyResources(this.gBCharacterSheetDisplayHitPoints, "gBCharacterSheetDisplayHitPoints");
             this.gBCharacterSheetDisplayHitPoints.Name = "gBCharacterSheetDisplayHitPoints";
             this.gBCharacterSheetDisplayHitPoints.TabStop = false;
             // 
             // ckListCharacterSheetDisplayHitPointOptions
             // 
-            resources.ApplyResources(this.ckListCharacterSheetDisplayHitPointOptions, "ckListCharacterSheetDisplayHitPointOptions");
             this.ckListCharacterSheetDisplayHitPointOptions.FormattingEnabled = true;
             this.ckListCharacterSheetDisplayHitPointOptions.Items.AddRange(new object[] {
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items1"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items2"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items3")});
+            resources.ApplyResources(this.ckListCharacterSheetDisplayHitPointOptions, "ckListCharacterSheetDisplayHitPointOptions");
             this.ckListCharacterSheetDisplayHitPointOptions.Name = "ckListCharacterSheetDisplayHitPointOptions";
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -403,6 +402,7 @@
             this.tabControl1.Controls.Add(this.tabPage12);
             this.tabControl1.Controls.Add(this.tabPage13);
             this.tabControl1.Controls.Add(this.tabPage14);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
