@@ -263,8 +263,6 @@ namespace HeroForge_OnceAgain
             string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
             string conteudo = "";
             var indexLinha = 0;
-
-            //string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
             var workbook = new XLWorkbook(path);
             var sheet = workbook.Worksheets.First();
             //var worksheet = workbook.Worksheet(1);
