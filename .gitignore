@@ -371,3 +371,6 @@
 /CreatureInfo (3).xlsx
 /CreatureInfo.csv
 /~$CreatureInfo.xlsx
+.vs
+obj
+bin

@@ -2,10 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HeroForge_OnceAgain.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Linguagem" Type="System.String" Scope="User">
+    <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)">English</Value>
     </Setting>
-    <Setting Name="LinguagemIndice" Type="System.Int32" Scope="User">
+    <Setting Name="LanguageIndex" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>

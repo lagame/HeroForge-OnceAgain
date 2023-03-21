@@ -37,6 +37,8 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblClasses = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
@@ -101,7 +103,7 @@
             this.btAssignRandomHair = new System.Windows.Forms.Button();
             this.btAssignRandomEyes = new System.Windows.Forms.Button();
             this.label54 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.lblRace = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.llblDeity = new System.Windows.Forms.Label();
@@ -311,6 +313,8 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lblGender = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -371,11 +375,15 @@
             // tabPage2
             // 
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.lblGender);
+            this.tabPage2.Controls.Add(this.label70);
+            this.tabPage2.Controls.Add(this.lblClasses);
+            this.tabPage2.Controls.Add(this.label69);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.label54);
-            this.tabPage2.Controls.Add(this.label52);
+            this.tabPage2.Controls.Add(this.lblRace);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.label45);
             this.tabPage2.Controls.Add(this.label46);
@@ -539,6 +547,16 @@
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblClasses
+            // 
+            resources.ApplyResources(this.lblClasses, "lblClasses");
+            this.lblClasses.Name = "lblClasses";
+            // 
+            // label69
+            // 
+            resources.ApplyResources(this.label69, "label69");
+            this.label69.Name = "label69";
             // 
             // groupBox3
             // 
@@ -1024,6 +1042,7 @@
             resources.ApplyResources(this.btRandomHeight, "btRandomHeight");
             this.btRandomHeight.Name = "btRandomHeight";
             this.btRandomHeight.UseVisualStyleBackColor = true;
+            this.btRandomHeight.Click += new System.EventHandler(this.btRandomHeight_Click);
             // 
             // btRandomWeight
             // 
@@ -1062,10 +1081,10 @@
             resources.ApplyResources(this.label54, "label54");
             this.label54.Name = "label54";
             // 
-            // label52
+            // lblRace
             // 
-            resources.ApplyResources(this.label52, "label52");
-            this.label52.Name = "label52";
+            resources.ApplyResources(this.lblRace, "lblRace");
+            this.lblRace.Name = "lblRace";
             // 
             // groupBox1
             // 
@@ -2337,6 +2356,16 @@
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
+            // lblGender
+            // 
+            resources.ApplyResources(this.lblGender, "lblGender");
+            this.lblGender.Name = "lblGender";
+            // 
+            // label70
+            // 
+            resources.ApplyResources(this.label70, "label70");
+            this.label70.Name = "label70";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -2346,6 +2375,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.menuStrip1.ResumeLayout(false);
@@ -2586,7 +2616,7 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label lblRace;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label llblDeity;
@@ -2661,6 +2691,10 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblClasses;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label label70;
     }
 }
 

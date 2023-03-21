@@ -26,24 +26,24 @@ namespace HeroForge_OnceAgain.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("English")]
-        public string Linguagem {
+        public string Language {
             get {
-                return ((string)(this["Linguagem"]));
+                return ((string)(this["Language"]));
             }
             set {
-                this["Linguagem"] = value;
+                this["Language"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int LinguagemIndice {
+        public int LanguageIndex {
             get {
-                return ((int)(this["LinguagemIndice"]));
+                return ((int)(this["LanguageIndex"]));
             }
             set {
-                this["LinguagemIndice"] = value;
+                this["LanguageIndex"] = value;
             }
         }
     }

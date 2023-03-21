@@ -18,6 +18,13 @@ using CsvHelper;
 using System.Globalization;
 using CsvHelper.Configuration;
 using DocumentFormat.OpenXml.Spreadsheet;
+using System.Collections;
+using System.Reflection;
+using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using DocumentFormat.OpenXml.Vml.Office;
+using HeroForge_OnceAgain.Properties;
+using DocumentFormat.OpenXml.InkML;
 
 namespace HeroForge_OnceAgain
 {
@@ -40,66 +47,49 @@ namespace HeroForge_OnceAgain
                     break;
             }
 
-            SalvaEscolhaLinguagem(cBLanguage.Text, cBLanguage.SelectedIndex);
-            
+            SaveChooseLanguage(cBLanguage.Text, cBLanguage.SelectedIndex);
+
             this.Controls.Clear();
             InitializeComponent();
 
         }
-        private void SalvaEscolhaLinguagem(string linguagem, Int32 inteiro)
-        {   
-            Properties.Settings.Default.Linguagem = linguagem;            
-            Properties.Settings.Default.LinguagemIndice = inteiro;
+        private void SaveChooseLanguage(string language, Int32 integer)
+        {
+            Properties.Settings.Default.Language = language;
+            Properties.Settings.Default.LanguageIndex = integer;
             Properties.Settings.Default.Save();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-            cBLanguage.SelectedIndex = Properties.Settings.Default.LinguagemIndice;
-            
-            
-            
+            cBLanguage.SelectedIndex = Properties.Settings.Default.LanguageIndex;
+
+            workSheet = LoadFile();
+
             this.Controls.Clear();
             InitializeComponent();
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            
-            
+
+
             tabControl1.Size = new Size(this.Size.Width - 40, this.Size.Height - 80);
-            
+
 
             //tabControl1.ItemSize = this.Width - 10;
             //tabControl1.Size.Height = this.Height - 10;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {            
+        {
             try
             {
                 VisitLink();
             }
             catch (Exception ex)
             {
-                if (Properties.Settings.Default.LinguagemIndice != null && Properties.Settings.Default.LinguagemIndice != -1)
-                {
-                    switch (Properties.Settings.Default.LinguagemIndice)
-                    {
-                        case 0:
-                            MessageBox.Show("Unable to open link that was clicked.");
-                            break;
-                        case 1:
-                            MessageBox.Show("Não é possível abrir o link que foi clicado.");
-                            break;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Unable to open link that was clicked.");
-                }
-                
+                MessageBox.Show(Resources.UnableOpenLink);
             }
         }
 
@@ -110,9 +100,9 @@ namespace HeroForge_OnceAgain
             linkLabel1.LinkVisited = true;
             //Call the Process.Start method to open the default browser
             //with a URL:
-            if (Properties.Settings.Default.LinguagemIndice != null && Properties.Settings.Default.LinguagemIndice != -1)
+            if (Properties.Settings.Default.LanguageIndex != null && Properties.Settings.Default.LanguageIndex != -1)
             {
-                switch (Properties.Settings.Default.LinguagemIndice)
+                switch (Properties.Settings.Default.LanguageIndex)
                 {
                     case 0:
                         System.Diagnostics.Process.Start("https://creativecommons.org/licenses/by-nc-sa/4.0/");
@@ -178,65 +168,115 @@ namespace HeroForge_OnceAgain
         {
             int ageMod = 0, hgtMod = 0, wgtMod = 0;
 
-            //if (HasAgeInfo.Value)
-            //{
-            ageMod = RollDice(ageNumDice, ageDieType);
-            //string raca = LookupRace("Human");
-            string BaseAgeRace = await LookupRaceAsync("Base Age", "Human");
+            string race = lblRace.Text;
+            var BaseAgeRace = await LookupRaceAsync("AR", race); //await LookupRaceAsync("Base Age", raca);
+            if (BaseAgeRace != null && !string.IsNullOrEmpty(BaseAgeRace))
+            {
+                var AgeRace = BaseAgeRace.Split('/').ToList();
 
-            lblRandomAge.Text = BaseAgeRace + ageMod;
+                if (!string.IsNullOrEmpty(BaseAgeRace.Trim()))
+                {
 
-            //}
-            //else
-            //{
-            //    lblRandomAge.Text = 0;
-            //}
+                    var classe = lblClasses.Text;
 
-            //if (HasHeightWeightInfo.Value)
-            //{
-            //    hgtMod = RollDice(hgtNumDice.Value, hgtDieType.Value);
-            //    RandomHeight.Value = baseHgt.Value + hgtMod;
-            //    wgtMod = hgtMod * RollDice(wgtNumDice.Value, wgtDieType.Value);
-            //    RandomWeight.Value = baseWgt.Value + wgtMod;
-            //}
-            //else
-            //{
-            //    RandomHeight.Value = 0;
-            //    RandomWeight.Value = 0;
-            //}
+                    if (!string.IsNullOrEmpty(classe))
+                    {
+                        var vetorClasse = classe.Split('/');
+                        foreach (var item in vetorClasse)
+                        {
+                            var item2 = item.ToUpper();
+                            if (item2.Contains("BARBARIAN") || item2.Contains("ROGUE") || item2.Contains("SORCERER"))
+                            {
+                                if (!string.IsNullOrEmpty(AgeRace[0]))
+                                {
+                                    string AgeString = AgeRace[0];
+                                    var Age = AgeString.Split('+').ToList();
+                                    int agebasic = Convert.ToInt32(Age[0]);
+                                    string Dice = Age[1];
+                                    ageMod = RollDice(Dice);
+                                    lblRandomAge.Text = (agebasic + ageMod).ToString();
+                                }
+
+                            }
+                            else if (item2.Contains("BARD") || item2.Contains("FIGHTER") || item2.Contains("PALADIN") || item2.Contains("RANGER"))
+                            {
+                                string AgeString = AgeRace[0];
+                                var Age = AgeString.Split('+').ToList();
+                                int agebasic = Convert.ToInt32(Age[0]);
+
+                                string AgeString2 = AgeRace[1];
+                                ageMod = RollDice(AgeString2);
+                                lblRandomAge.Text = (agebasic + ageMod).ToString();
+                            }
+                            else if (item2.Contains("CLERIC") || item2.Contains("DRUID") || item2.Contains("MONK") || item2.Contains("WIZARD"))
+                            {
+                                string AgeString = AgeRace[0];
+                                var Age = AgeString.Split('+').ToList();
+                                int agebasic = Convert.ToInt32(Age[0]);
+
+                                string AgeString2 = AgeRace[2];
+                                ageMod = RollDice(AgeString2);
+                                lblRandomAge.Text = (agebasic + ageMod).ToString();
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        lblRandomAge.Text = "0";
+                    }
+
+
+
+                } else
+                {
+                    lblRandomAge.Text = "0";
+                }
+            }
         }
 
-        private int RollDice(int numDice, int dieType)
+        //private int RollDice(int numDice, int dieType)
+        //{
+        //    Random random = new Random();
+        //    int total = 0;
+        //    for (int i = 0; i < numDice; i++)
+        //    {
+        //        total += random.Next(1, dieType + 1);
+        //    }
+        //    return total;
+        //}
+
+        private int RollDice(string diceString)
         {
-            Random random = new Random();
-            int total = 0;
-            for (int i = 0; i < numDice; i++)
+            if (!string.IsNullOrEmpty(diceString))
             {
-                total += random.Next(1, dieType + 1);
+                Random random = new Random();
+                if (diceString.Contains("d"))
+                {
+                    var dice = diceString.Split('d').ToList();
+
+                    int numDice = Convert.ToInt32(dice[0]);
+                    int dieType = Convert.ToInt32(dice[1]);
+
+                    int total = 0;
+                    for (int i = 0; i < numDice; i++)
+                    {
+                        total += random.Next(1, dieType + 1);
+                    }
+                    return total;
+                }
+
             }
-            return total;
+            else
+            {
+                return 0;
+            }
+            return 0;
         }
 
         private const int ageNumDice = 2;
         private const int ageDieType = 4;
-
-        //string LookupRace(string key)
-        //{
-        //    Dictionary<string, string> TblCreatureInfoExt = new Dictionary<string, string>();
-        //    TblCreatureInfoExt.Add("key1", "value1");
-        //    TblCreatureInfoExt.Add("key2", "value2");
-        //    // Adicione mais pares de valores chave-valor conforme necessário
-
-        //    string value;
-        //    if (TblCreatureInfoExt.TryGetValue(key, out value))
-        //    {
-        //        return value;
-        //    }
-        //    else
-        //    {
-        //        return "";
-        //    }
-        //}
+        private const string baseInfoCreatures = "baseInfo.xlsm";
 
         static async Task<string> ReadAllTextAsync(string path)
         {
@@ -258,101 +298,81 @@ namespace HeroForge_OnceAgain
             return await streamReader.ReadToEndAsync();
         }
 
-        async Task<string> LookupRaceAsync(string key, string race)
+        private XLWorkbook LoadFile()
         {
-            string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
-            string conteudo = "";
-            var indexLinha = 0;
-            var workbook = new XLWorkbook(path);
-            var sheet = workbook.Worksheets.First();
-            //var worksheet = workbook.Worksheet(1);
+            string path = System.IO.Path.GetTempFileName();
 
-            if (!validaCabecalho(sheet))
-                throw new Exception("Cabeçalho incorreto");
+            System.IO.File.WriteAllBytes(path, Properties.Resources.baseInfo);
+
+            var fileName = Path.ChangeExtension(path, "xlsm");
+            File.Copy(path, fileName, true);
+
+            pathfile = path;
+            tmpfile = Path.ChangeExtension(path, "xlsm");
+            var workbook = new XLWorkbook(tmpfile);
+            return workbook;
+        }
+
+        private IXLWorksheet getTable(string tabela, string campo) {
+            try
+            {
+
+                var workbook = workSheet;
+                IXLWorksheet sheet;
+                try
+                {
+                    sheet = workbook.Worksheets.First(w => w.Name == tabela);
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Planilha não encontrada");
+                }
+
+                if (!validaCabecalho(sheet, campo))
+                    throw new Exception("Cabeçalho incorreto");
+
+                return sheet;
+
+            }
+            catch (Exception)
+            {
+                throw new Exception("Planilha não encontrada");
+            }
+
+        }
+
+        private async Task<string> LookupRaceAsync(string colunm, string race)
+        {
+            IXLWorksheet sheet;
+            sheet = getTable("Race Info", "RACE*");
 
             var totalLines = sheet.Rows().Count();
 
 
-            //var lookupRange = planilha.Range("$A$1:$BQ$523");
-            for (int l = 2; l <= totalLines; l++)
+            //var lookupRange = sheet.Range("$A$1:$BQ$523");
+            for (int l = 6; l <= totalLines; l++)
             {
-                indexLinha = l;
-                var _lineSheet = sheet.Row(indexLinha);
+                var _lineSheet = sheet.Row(l);
+                var _colunmSheet = sheet.Column(colunm);
+
                 var strNameRace = _lineSheet.Cell($"A").Value.ToString();
-                var strBaseAge = "";
+                var strBase = "";
                 if (strNameRace == race)
                 {
-                    strBaseAge = _lineSheet.Cell($"BB").Value.ToString();
-                    workbook.Dispose();
-                    return strBaseAge;
+                    strBase = _lineSheet.Cell(colunm).Value.ToString();
+                    //4'10"/4'5"+2d10
+                    //workbook.Dispose();
+                    return strBase;
                 }
             }
-
-            //foreach (var cell in lookupRange.CellsUsed())
-            //{
-            //    if (cell.GetString() == key)
-            //    {
-            //        string value = cell.CellRight().GetString();
-            //        workbook.Dispose();
-            //        return value;
-            //    }
-            //}
-            workbook.Dispose();
+            workSheet.Dispose();
             return "";
 
-
-            //var arquivo = ReadAllTextAsync(path);
-
-            //using (var excelWorkbook = new XLWorkbook(path))
-            //{
-            //    var nonEmptyDataRows = excelWorkbook.Worksheet(1).RowsUsed();
-
-            //    foreach (var dataRow in nonEmptyDataRows)
-            //    {
-            //        //for row number check
-            //        if (dataRow.RowNumber() >= 3 && dataRow.RowNumber() <= 20)
-            //        {
-            //            //to get column # 3's data
-            //            var cell = dataRow.Cell(3).Value;
-            //            conteudo = cell.ToString();
-            //        }
-            //    }
-            //}
-            //return conteudo;
-
-            //    using (var workbook = new XLWorkbook(arquivo))
-            //    {
-
-            //    }
-
-
-
-
-
-
-
-            //    Workbook workbook = app.Workbooks.Open(path);
-            //    Worksheet worksheet = workbook.Worksheets[1];
-            //    Range lookupRange = worksheet.Range["$A$1:$BQ$523"];
-            //    Range lookupCell = lookupRange.Find(key, Type.Missing, XlFindLookIn.xlValues, XlLookAt.xlWhole, XlSearchOrder.xlByRows, XlSearchDirection.xlNext, false, false, Type.Missing);
-            //    if (lookupCell != null)
-            //    {
-            //        string value = lookupCell.Offset[0, 1].Value.ToString();
-            //        workbook.Close(false, Type.Missing, Type.Missing);
-            //        app.Quit();
-            //        return value;
-            //    }
-            //    else
-            //    {
-            //        workbook.Close(false, Type.Missing, Type.Missing);
-            //        app.Quit();
-            //        return "";
-            //    }
         }
 
-        private bool validaCabecalho(IXLWorksheet plan)
+        private bool validaCabecalho(IXLWorksheet plan, string campo)
         {
-            if (plan.Cell($"A{1}").Value.ToString().Trim().ToUpper() != "RACE"
+            if (plan.Cell($"A{3}").Value.ToString().Trim().ToUpper() != campo
                 )
                 return false;
             else
@@ -360,26 +380,28 @@ namespace HeroForge_OnceAgain
 
         }
 
-        public static string LookupRace(string key)
-        {
-            string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
-            using (var reader = new StreamReader(path))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-            {
-                var records = csv.GetRecords<CsvRecord>();
-                foreach (var record in records)
-                {
-                    if (record.Race == key)
-                    {
-                        return record.BaseAge;
-                    }
-                }
-            }
-            return "";
-        }
+        //public static string LookupRace(string key)
+        //{
+        //    //string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
+        //    string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\"+ baseInfoCreatures;
+
+        //    using (var reader = new StreamReader(path))
+        //    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+        //    {
+        //        var records = csv.GetRecords<CsvRecord>();
+        //        foreach (var record in records)
+        //        {
+        //            if (record.Race == key)
+        //            {
+        //                return record.BaseAge;
+        //            }
+        //        }
+        //    }
+        //    return "";
+        //}
 
         public class CsvRecord
-        {        
+        {
             public string Race { get; set; }
             public string Category { get; set; }
             public string ShortDescription { get; set; }
@@ -527,6 +549,130 @@ namespace HeroForge_OnceAgain
             }
         }
 
+        static string tmpfile = "";
+        static XLWorkbook workSheet = null;
+        static string pathfile = "";
+        static string pathphisicalfile = "";
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            string path = System.IO.Path.GetTempFileName();
+            //File.Delete(path);
+
+            var dir = System.IO.Path.GetDirectoryName(path);
+            var d = new DirectoryInfo(dir);
+            foreach (var file in Directory.GetFiles(d.ToString()))
+            {
+                //File.Delete(file);
+                FileInfo archive = new FileInfo(file);
+                //for (int tries = 0; IsFileLocked(archive) && tries < 5; tries++)
+                //    Thread.Sleep(100);
+
+                try
+                {
+                    if (path.Equals(archive.FullName))
+                        archive.Delete();
+
+                    var fileName = Path.ChangeExtension(path, "xlsm");
+                    if (fileName.Equals(archive.FullName))
+                        archive.Delete();
+
+                    if (tmpfile.Equals(archive.FullName) || pathfile.Equals(archive.FullName))
+                        archive.Delete();
+
+                }
+                catch (IOException)
+                {
+
+                }
+            }
+            workSheet.Dispose();
+        }
+
+        private void btRandomHeight_Click(object sender, EventArgs e)
+        {
+            RandomHeight();
+
+        }
+
+        private async void RandomHeight()
+        {
+            int ageMod = 0, hgtMod = 0, wgtMod = 0;
+
+            string race = lblRace.Text;
+            var BaseHeightRace = await LookupRaceAsync("AS", race); //LookupRaceAsync("Height", race);
+            if (BaseHeightRace != null && !string.IsNullOrEmpty(BaseHeightRace))
+            {
+                var HeightRace = BaseHeightRace.Split('/').ToList();
+                var gender = lblGender.Text;
+                var classe = lblClasses.Text;
+
+                if (!string.IsNullOrEmpty(BaseHeightRace.Trim()))
+                {
+                    if (!string.IsNullOrEmpty(classe))
+                    {
+                        if (!string.IsNullOrEmpty(gender))
+                        {
+                            var vetorGender = HeightRace[1].Split('+');
+                            string Height = "";
+                            if (gender.Equals("Male"))
+                            {
+                                Height = HeightRace[0];
+                            }
+                            else
+                            {
+                                Height = vetorGender[0];
+                            }
+
+                            if (!string.IsNullOrEmpty(Height))
+                            {
+                                Height = Height.Replace("\\", "");
+                                string Dice = vetorGender[1];
+                                var Mod = RollDice(Dice);
+                                CalcHeight(Dice, Height);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        lblRandomAge.Text = "0";
+                    }
+
+                }
+                else
+                {
+                    lblRandomAge.Text = "0";
+                }
+            }
+        }
+
+
+        private void CalcHeight(string Dice, string heightDice)
+        {
+            int hgtMod = RollDice(Dice);
+            // int hgtBase = var BaseHeightRace = await LookupRaceAsync("AS", race); 
+            //int hgtBase = 0;// BuscaAltura();
+            int hgtBase = BuscaAltura(heightDice);
+            int hgtFinal = 0;
+            hgtFinal = hgtBase + hgtMod;
+
+            string height = (hgtFinal / 12).ToString() + "'" + (hgtFinal % 12).ToString()+"\"";
+            lblRandomHeight.Text = height.ToString();
+        }
+        private int BuscaAltura(string heightString)
+        {
+            //string heightString = excelWorksheet.Range["CK18"].Value;            
+            int feetPosition = heightString.IndexOf("'");
+            int inchesPosition = heightString.IndexOf("\"");
+            int feet = int.Parse(heightString.Substring(0, feetPosition));
+            int inches = int.Parse(heightString.Substring(feetPosition + 1, inchesPosition - feetPosition - 1));
+            int totalInches = feet * 12 + inches;
+            //excelWorksheet.Range["CK19"].Value = totalInches;
+            return totalInches;
+        }
+        
+        
 
     }
 }
