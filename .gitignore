@@ -14,3 +14,8 @@ packages
 .vs
 obj
 bin
+/first-names.json
+/characters.json
+/baseInfo.xls
+/middle-names.json
+/names.ts

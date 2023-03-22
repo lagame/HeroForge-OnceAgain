@@ -28,6 +28,7 @@ using DocumentFormat.OpenXml.InkML;
 using Newtonsoft.Json;
 using DocumentFormat.OpenXml.Office2010.ExcelAc;
 
+
 namespace HeroForge_OnceAgain
 {
     public partial class Form1 : Form
@@ -166,12 +167,12 @@ namespace HeroForge_OnceAgain
         }
 
 
-        private async void RandomAge()
+        private void RandomAge()
         {
             int ageMod = 0, hgtMod = 0, wgtMod = 0;
 
             string race = lblRace.Text;
-            var BaseAgeRace = await LookupRaceAsync("AR", race); //await LookupRaceAsync("Base Age", raca);
+            var BaseAgeRace = LookupRace("AR", race); //await LookupRaceAsync("Base Age", raca);
             if (BaseAgeRace != null && !string.IsNullOrEmpty(BaseAgeRace))
             {
                 var AgeRace = BaseAgeRace.Split('/').ToList();
@@ -276,29 +277,29 @@ namespace HeroForge_OnceAgain
             return 0;
         }
 
-        private const int ageNumDice = 2;
-        private const int ageDieType = 4;
-        private const string baseInfoCreatures = "baseInfo.xlsm";
+        //private const int ageNumDice = 2;
+        //private const int ageDieType = 4;
+        //private const string baseInfoCreatures = "baseInfo.xlsm";
 
-        static async Task<string> ReadAllTextAsync(string path)
-        {
-            switch (path)
-            {
-                case "": throw new ArgumentException("Empty path name is not legal.", nameof(path));
-                case null: throw new ArgumentNullException(nameof(path));
-            }
+        //static async Task<string> ReadAllTextAsync(string path)
+        //{
+        //    switch (path)
+        //    {
+        //        case "": throw new ArgumentException("Empty path name is not legal.", nameof(path));
+        //        case null: throw new ArgumentNullException(nameof(path));
+        //    }
 
-            var sourceStream = new FileStream(path, FileMode.Open,
-                FileAccess.Read, FileShare.Read,
-                bufferSize: 4096,
-                useAsync: true);
-            var streamReader = new StreamReader(sourceStream, Encoding.UTF8,
-                detectEncodingFromByteOrderMarks: true);
-            // detectEncodingFromByteOrderMarks allows you to handle files with BOM correctly. 
-            // Otherwise you may get chinese characters even when your text does not contain any
+        //    var sourceStream = new FileStream(path, FileMode.Open,
+        //        FileAccess.Read, FileShare.Read,
+        //        bufferSize: 4096,
+        //        useAsync: true);
+        //    var streamReader = new StreamReader(sourceStream, Encoding.UTF8,
+        //        detectEncodingFromByteOrderMarks: true);
+        //    // detectEncodingFromByteOrderMarks allows you to handle files with BOM correctly. 
+        //    // Otherwise you may get chinese characters even when your text does not contain any
 
-            return await streamReader.ReadToEndAsync();
-        }
+        //    return await streamReader.ReadToEndAsync();
+        //}
 
         private XLWorkbook LoadFile()
         {
@@ -343,7 +344,7 @@ namespace HeroForge_OnceAgain
 
         }
 
-        private async Task<string> LookupRaceAsync(string colunm, string race)
+        private string LookupRace(string colunm, string race)
         {
             IXLWorksheet sheet;
             sheet = getTable("Race Info", "RACE*");
@@ -594,63 +595,58 @@ namespace HeroForge_OnceAgain
 
         private void btRandomHeight_Click(object sender, EventArgs e)
         {
-            RandomHeight();
-
+            int height = RandomHeight();
+            RandomWeight(height);
         }
 
-        private async void RandomHeight()
+        private int RandomHeight()
         {
             int ageMod = 0, hgtMod = 0, wgtMod = 0;
 
             string race = lblRace.Text;
-            var BaseHeightRace = await LookupRaceAsync("AS", race); //LookupRaceAsync("Height", race);
+            var BaseHeightRace = LookupRace("AS", race); //LookupRaceAsync("Height", race);
             if (BaseHeightRace != null && !string.IsNullOrEmpty(BaseHeightRace))
             {
                 var HeightRace = BaseHeightRace.Split('/').ToList();
                 var gender = lblGender.Text;
-                var classe = lblClasses.Text;
 
                 if (!string.IsNullOrEmpty(BaseHeightRace.Trim()))
                 {
-                    if (!string.IsNullOrEmpty(classe))
+                    
+                    if (!string.IsNullOrEmpty(gender))
                     {
-                        if (!string.IsNullOrEmpty(gender))
+                        var vetorGender = HeightRace[1].Split('+');
+                        string Height = "";
+                        if (gender.Equals("Male"))
                         {
-                            var vetorGender = HeightRace[1].Split('+');
-                            string Height = "";
-                            if (gender.Equals("Male"))
-                            {
-                                Height = HeightRace[0];
-                            }
-                            else
-                            {
-                                Height = vetorGender[0];
-                            }
+                            Height = HeightRace[0];
+                        }
+                        else
+                        {
+                            Height = vetorGender[0];
+                        }
 
-                            if (!string.IsNullOrEmpty(Height))
-                            {
-                                Height = Height.Replace("\\", "");
-                                string Dice = vetorGender[1];
-                                var Mod = RollDice(Dice);
-                                CalcHeight(Dice, Height);
-                            }
+                        if (!string.IsNullOrEmpty(Height))
+                        {
+                            Height = Height.Replace("\\", "");
+                            string Dice = vetorGender[1];
+                            var Mod = RollDice(Dice);
+                            hgtMod = CalcHeight(Dice, Height);
                         }
                     }
-                    else
-                    {
-                        lblRandomAge.Text = "0";
-                    }
+                    
 
                 }
                 else
                 {
-                    lblRandomAge.Text = "0";
+                    lblRandomHeight.Text = "0";
                 }
             }
+            return hgtMod;
         }
 
 
-        private void CalcHeight(string Dice, string heightDice)
+        private int CalcHeight(string Dice, string heightDice)
         {
             int hgtMod = RollDice(Dice);
             // int hgtBase = var BaseHeightRace = await LookupRaceAsync("AS", race); 
@@ -660,8 +656,30 @@ namespace HeroForge_OnceAgain
             hgtFinal = hgtBase + hgtMod;
 
             string height = (hgtFinal / 12).ToString() + "'" + (hgtFinal % 12).ToString()+"\"";
+            if (Properties.Settings.Default.SystemofUnit == 1) 
+            { 
+                height = ConvertHeightToMetersCm(height);
+            }
             lblRandomHeight.Text = height.ToString();
+            return hgtMod;
         }
+
+        public static string ConvertHeightToMetersCm(string heightString)
+        {
+            // Extrai os valores de pés e polegadas da string
+            string[] parts = heightString.Split('\'');
+            int feet = int.Parse(parts[0]);
+            int inches = int.Parse(parts[1].TrimEnd('"'));
+
+            // Faz a conversão para centímetros e depois para metros e centímetros
+            double heightCm = (feet * 30.48) + (inches * 2.54);
+            int heightMeters = (int)(heightCm / 100);
+            int heightCmRemaining = (int)(heightCm % 100);
+
+            return heightMeters.ToString() + "," + heightCmRemaining.ToString() + "m";
+        }
+
+
         private int GetHeight(string heightString)
         {
             //string heightString = excelWorksheet.Range["CK18"].Value;            
@@ -706,6 +724,95 @@ namespace HeroForge_OnceAgain
         }
 
         private void btRandomWeight_Click(object sender, EventArgs e)
+        {
+            int height = RandomHeight();
+            RandomWeight(height);
+
+        }
+
+        private void RandomWeight(int hgtBase)
+        {
+            int ageMod = 0, wgtMod = 0;
+
+            string race = lblRace.Text;
+            var BaseWeightRace = LookupRace("AT", race); //LookupRaceAsync("Weight", race);
+            if (BaseWeightRace != null && !string.IsNullOrEmpty(BaseWeightRace))
+            {
+                var WeightRace = BaseWeightRace.Split('/').ToList();
+                var gender = lblGender.Text;
+
+                if (!string.IsNullOrEmpty(BaseWeightRace.Trim()))
+                {                    
+                    if (!string.IsNullOrEmpty(gender))
+                    {
+                        var vetorGender = WeightRace[1].Split('+');
+                        string Weight = "";
+                        if (gender.Equals("Male"))
+                        {
+                            Weight = WeightRace[0];
+                        }
+                        else
+                        {
+                            Weight = vetorGender[0];
+                        }
+
+                        if (!string.IsNullOrEmpty(Weight))
+                        {
+                            Weight = Weight.Replace("\\", "");
+                            string Dice = vetorGender[1];
+                            var Mod = RollDice(Dice);
+                            CalcWeight(Dice, Weight, hgtBase);
+                        }
+                    }
+                    
+
+                }
+                else
+                {
+                    lblRandomAge.Text = "0";
+                }
+            }
+        }
+
+
+        private void CalcWeight(string Dice, string weightDice, int hgtBase)
+        {
+            int wgtMod = RollDice(Dice);
+            // int wgtBase = var BaseWeightRace = await LookupRaceAsync("AS", race); 
+            //int wgtBase = 0;// GetWeight();
+            //int wgtBase = GetWeight(weightDice);
+            int wgtFinal = 0;
+            wgtFinal = int.Parse(weightDice) + (hgtBase * wgtMod);
+
+            //string weight = (wgtFinal / 12).ToString() + "'" + (wgtFinal % 12).ToString() + "\"";
+            if (Properties.Settings.Default.SystemofUnit == 1)
+            {
+                lblRandomWeight.Text = Math.Round(ConvertPoundsToKilos(wgtFinal), 2).ToString() + " kg";
+            }
+            else
+            {
+                lblRandomWeight.Text = wgtFinal.ToString() + " lbs";
+            }
+            
+        }
+
+        public static double ConvertPoundsToKilos(int pounds)
+        {
+            double kilos = pounds * 0.45359237;
+            return kilos;
+        }
+
+
+
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Preferences nForm = new Preferences();
+            nForm.TopLevel = true;
+            nForm.Show();
+        }
+
+        private void lblLanguage_Click(object sender, EventArgs e)
         {
 
         }

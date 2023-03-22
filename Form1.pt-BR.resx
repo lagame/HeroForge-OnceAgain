@@ -142,6 +142,18 @@
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Editar</value>
   </data>
+  <data name="preferencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="preferencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Preferências</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Configurações</value>
+  </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 20</value>
   </data>
@@ -149,6 +161,18 @@
     <value>Aj&amp;uda</value>
   </data>
   <data name="menuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGender.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label70.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClasses.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label69.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="comboBox15.ToolTip" xml:space="preserve">
@@ -288,6 +312,9 @@ e Seleções</value>
   <data name="lblRandomWeight.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblRandomHeight.Text" xml:space="preserve">
+    <value>0 m</value>
+  </data>
   <data name="lblRandomHeight.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -417,13 +444,7 @@ e Seleções</value>
   <data name="label54.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 16</value>
-  </data>
-  <data name="label52.Text" xml:space="preserve">
-    <value>Humano</value>
-  </data>
-  <data name="label52.ToolTip" xml:space="preserve">
+  <data name="lblRace.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
@@ -1151,7 +1172,7 @@ visite:</value>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAIAAADsqp23AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABxVJREFUaEPtmG1rVEcUx/cDNMG3koKB2poEUozFltKigv0A6auWgq2ltPSFtKJV
+        vAAADrwBlbxySQAABxVJREFUaEPtmG1rVEcUx/cDNMG3koKB2poEUozFltKigv0A6auWgq2ltPSFtKJV
         apsYlahYpRK0qQqa2oAUo24ezXM2ZhOz2YdsHoxvI/jCvhM/Qfqb+5+M17t3N0uLIaH+GZY5Z86Znfnf
         c87MvZGlpaXI/x7PSegZ6O4duts/0jd0b3AkPnJvYjSeiN9PTiTSk1OZqdR0Mp1NpWfSpmVTqWwymZli
         CIPxRBzjWHwEx/6RfiZhqq6+zo7e9vae6J3u27e7btFudba1ddxcm81SAMTCQKx/eGxodDwWnxxjh1OZ
