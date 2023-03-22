@@ -37,6 +37,8 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
             this.lblClasses = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -313,8 +315,6 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lblGender = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -547,6 +547,16 @@
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblGender
+            // 
+            resources.ApplyResources(this.lblGender, "lblGender");
+            this.lblGender.Name = "lblGender";
+            // 
+            // label70
+            // 
+            resources.ApplyResources(this.label70, "label70");
+            this.label70.Name = "label70";
             // 
             // lblClasses
             // 
@@ -933,6 +943,7 @@
             resources.ApplyResources(this.btRandomName, "btRandomName");
             this.btRandomName.Name = "btRandomName";
             this.btRandomName.UseVisualStyleBackColor = true;
+            this.btRandomName.Click += new System.EventHandler(this.btRandomName_Click);
             // 
             // btAssignRandomAge
             // 
@@ -1049,6 +1060,7 @@
             resources.ApplyResources(this.btRandomWeight, "btRandomWeight");
             this.btRandomWeight.Name = "btRandomWeight";
             this.btRandomWeight.UseVisualStyleBackColor = true;
+            this.btRandomWeight.Click += new System.EventHandler(this.btRandomWeight_Click);
             // 
             // btRandomHair
             // 
@@ -2355,16 +2367,6 @@
             resources.ApplyResources(this.tabPage14, "tabPage14");
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.UseVisualStyleBackColor = true;
-            // 
-            // lblGender
-            // 
-            resources.ApplyResources(this.lblGender, "lblGender");
-            this.lblGender.Name = "lblGender";
-            // 
-            // label70
-            // 
-            resources.ApplyResources(this.label70, "label70");
-            this.label70.Name = "label70";
             // 
             // Form1
             // 

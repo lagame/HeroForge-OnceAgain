@@ -25,6 +25,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using DocumentFormat.OpenXml.Vml.Office;
 using HeroForge_OnceAgain.Properties;
 using DocumentFormat.OpenXml.InkML;
+using Newtonsoft.Json;
+using DocumentFormat.OpenXml.Office2010.ExcelAc;
 
 namespace HeroForge_OnceAgain
 {
@@ -652,15 +654,15 @@ namespace HeroForge_OnceAgain
         {
             int hgtMod = RollDice(Dice);
             // int hgtBase = var BaseHeightRace = await LookupRaceAsync("AS", race); 
-            //int hgtBase = 0;// BuscaAltura();
-            int hgtBase = BuscaAltura(heightDice);
+            //int hgtBase = 0;// GetHeight();
+            int hgtBase = GetHeight(heightDice);
             int hgtFinal = 0;
             hgtFinal = hgtBase + hgtMod;
 
             string height = (hgtFinal / 12).ToString() + "'" + (hgtFinal % 12).ToString()+"\"";
             lblRandomHeight.Text = height.ToString();
         }
-        private int BuscaAltura(string heightString)
+        private int GetHeight(string heightString)
         {
             //string heightString = excelWorksheet.Range["CK18"].Value;            
             int feetPosition = heightString.IndexOf("'");
@@ -671,8 +673,41 @@ namespace HeroForge_OnceAgain
             //excelWorksheet.Range["CK19"].Value = totalInches;
             return totalInches;
         }
-        
-        
 
+        public class Root
+        {
+            public string Name { get; set; }
+        }
+        private static Random rng = new Random();
+
+        private void btRandomName_Click(object sender, EventArgs e)
+        {
+            Root root = new Root();
+            string path = "";
+            if (lblGender.Text == "Male")
+            {
+                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\names.json";
+            }
+            else
+            {
+                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\femalenames.json";
+            }
+            
+
+            if (File.Exists(path))
+            {
+                string jsonString = File.ReadAllText(path);
+                var dict = JsonConvert.DeserializeObject<IList<Root>>(jsonString);                
+                var name = dict[rng.Next(dict.Count)].Name;
+                lblRandomName.Text = name;
+            }
+                
+
+        }
+
+        private void btRandomWeight_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

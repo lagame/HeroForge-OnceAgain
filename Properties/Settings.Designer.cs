@@ -46,5 +46,17 @@ namespace HeroForge_OnceAgain.Properties {
                 this["LanguageIndex"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int SystemofUnit {
+            get {
+                return ((int)(this["SystemofUnit"]));
+            }
+            set {
+                this["SystemofUnit"] = value;
+            }
+        }
     }
 }
