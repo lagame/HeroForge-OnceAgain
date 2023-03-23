@@ -106,9 +106,9 @@
             this.btRandomEyes = new System.Windows.Forms.Button();
             this.btAssignRandomHair = new System.Windows.Forms.Button();
             this.btAssignRandomEyes = new System.Windows.Forms.Button();
-            this.label54 = new System.Windows.Forms.Label();
             this.lblRace = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelFavoredWeapon = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.llblDeity = new System.Windows.Forms.Label();
             this.ckLimitDeity = new System.Windows.Forms.CheckBox();
@@ -120,7 +120,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.labelRace = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -299,8 +299,6 @@
             this.ckDeityOptions = new System.Windows.Forms.CheckedListBox();
             this.gBUneathedArcana = new System.Windows.Forms.GroupBox();
             this.ckUneathedArcana = new System.Windows.Forms.CheckedListBox();
-            this.cBLanguage = new System.Windows.Forms.ComboBox();
-            this.lblLanguage = new System.Windows.Forms.Label();
             this.gBCharacterSheetDisplayHitPoints = new System.Windows.Forms.GroupBox();
             this.ckListCharacterSheetDisplayHitPointOptions = new System.Windows.Forms.CheckedListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -399,7 +397,6 @@
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.label54);
             this.tabPage2.Controls.Add(this.lblRace);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.label45);
@@ -408,7 +405,7 @@
             this.tabPage2.Controls.Add(this.label48);
             this.tabPage2.Controls.Add(this.label49);
             this.tabPage2.Controls.Add(this.label50);
-            this.tabPage2.Controls.Add(this.label44);
+            this.tabPage2.Controls.Add(this.labelRace);
             this.tabPage2.Controls.Add(this.label38);
             this.tabPage2.Controls.Add(this.label39);
             this.tabPage2.Controls.Add(this.label40);
@@ -1173,12 +1170,6 @@
             this.btAssignRandomEyes.UseVisualStyleBackColor = true;
             this.btAssignRandomEyes.Click += new System.EventHandler(this.button10_Click);
             // 
-            // label54
-            // 
-            resources.ApplyResources(this.label54, "label54");
-            this.label54.Name = "label54";
-            this.toolTip1.SetToolTip(this.label54, resources.GetString("label54.ToolTip"));
-            // 
             // lblRace
             // 
             resources.ApplyResources(this.lblRace, "lblRace");
@@ -1188,6 +1179,7 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.labelFavoredWeapon);
             this.groupBox1.Controls.Add(this.comboBox8);
             this.groupBox1.Controls.Add(this.llblDeity);
             this.groupBox1.Controls.Add(this.ckLimitDeity);
@@ -1196,6 +1188,12 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.toolTip1.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
+            // 
+            // labelFavoredWeapon
+            // 
+            resources.ApplyResources(this.labelFavoredWeapon, "labelFavoredWeapon");
+            this.labelFavoredWeapon.Name = "labelFavoredWeapon";
+            this.toolTip1.SetToolTip(this.labelFavoredWeapon, resources.GetString("labelFavoredWeapon.ToolTip"));
             // 
             // comboBox8
             // 
@@ -1278,11 +1276,11 @@
             this.label50.Name = "label50";
             this.toolTip1.SetToolTip(this.label50, resources.GetString("label50.ToolTip"));
             // 
-            // label44
+            // labelRace
             // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            this.toolTip1.SetToolTip(this.label44, resources.GetString("label44.ToolTip"));
+            resources.ApplyResources(this.labelRace, "labelRace");
+            this.labelRace.Name = "labelRace";
+            this.toolTip1.SetToolTip(this.labelRace, resources.GetString("labelRace.ToolTip"));
             // 
             // label38
             // 
@@ -2244,8 +2242,6 @@
             this.tabPage1.Controls.Add(this.gBSelectSources);
             this.tabPage1.Controls.Add(this.gBDeityOptions);
             this.tabPage1.Controls.Add(this.gBUneathedArcana);
-            this.tabPage1.Controls.Add(this.cBLanguage);
-            this.tabPage1.Controls.Add(this.lblLanguage);
             this.tabPage1.Controls.Add(this.gBCharacterSheetDisplayHitPoints);
             this.tabPage1.Name = "tabPage1";
             this.toolTip1.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
@@ -2518,26 +2514,6 @@
             this.ckUneathedArcana.Name = "ckUneathedArcana";
             this.toolTip1.SetToolTip(this.ckUneathedArcana, resources.GetString("ckUneathedArcana.ToolTip"));
             // 
-            // cBLanguage
-            // 
-            resources.ApplyResources(this.cBLanguage, "cBLanguage");
-            this.cBLanguage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cBLanguage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cBLanguage.FormattingEnabled = true;
-            this.cBLanguage.Items.AddRange(new object[] {
-            resources.GetString("cBLanguage.Items"),
-            resources.GetString("cBLanguage.Items1")});
-            this.cBLanguage.Name = "cBLanguage";
-            this.toolTip1.SetToolTip(this.cBLanguage, resources.GetString("cBLanguage.ToolTip"));
-            this.cBLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // lblLanguage
-            // 
-            resources.ApplyResources(this.lblLanguage, "lblLanguage");
-            this.lblLanguage.Name = "lblLanguage";
-            this.toolTip1.SetToolTip(this.lblLanguage, resources.GetString("lblLanguage.ToolTip"));
-            this.lblLanguage.Click += new System.EventHandler(this.lblLanguage_Click);
-            // 
             // gBCharacterSheetDisplayHitPoints
             // 
             resources.ApplyResources(this.gBCharacterSheetDisplayHitPoints, "gBCharacterSheetDisplayHitPoints");
@@ -2735,8 +2711,6 @@
         private System.Windows.Forms.CheckedListBox ckDeityOptions;
         private System.Windows.Forms.GroupBox gBUneathedArcana;
         private System.Windows.Forms.CheckedListBox ckUneathedArcana;
-        private System.Windows.Forms.ComboBox cBLanguage;
-        private System.Windows.Forms.Label lblLanguage;
         private System.Windows.Forms.GroupBox gBCharacterSheetDisplayHitPoints;
         private System.Windows.Forms.CheckedListBox ckListCharacterSheetDisplayHitPointOptions;
         private System.Windows.Forms.TabPage tabPage3;
@@ -2907,7 +2881,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label labelRace;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
@@ -2925,7 +2899,6 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
@@ -2995,6 +2968,7 @@
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem preferencesToolStripMenuItem;
+        private System.Windows.Forms.Label labelFavoredWeapon;
     }
 }
 

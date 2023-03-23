@@ -38,9 +38,43 @@ namespace HeroForge_OnceAgain
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    switch (cBLanguage.SelectedIndex)
+        //    {
+        //        case 0:
+        //            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+        //            break;
+        //        case 1:
+        //            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
+        //            break;
+        //    }
+
+        //    SaveChooseLanguage(cBLanguage.Text, cBLanguage.SelectedIndex);
+
+        //    this.Controls.Clear();
+        //    InitializeComponent();
+
+        //}
+        //private void SaveChooseLanguage(string language, Int32 integer)
+        //{
+        //    Properties.Settings.Default.Language = language;
+        //    Properties.Settings.Default.LanguageIndex = integer;
+        //    Properties.Settings.Default.Save();
+        //}
+
+        public void Form1_Load(object sender, EventArgs e)
         {
-            switch (cBLanguage.SelectedIndex)
+            //cBLanguage.SelectedIndex = Properties.Settings.Default.LanguageIndex;
+            if (workSheet == null)
+                workSheet = LoadFile();
+
+            Reload();
+        }
+
+        public void Reload()
+        {
+            switch (Properties.Settings.Default.LanguageIndex)
             {
                 case 0:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -49,26 +83,6 @@ namespace HeroForge_OnceAgain
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
                     break;
             }
-
-            SaveChooseLanguage(cBLanguage.Text, cBLanguage.SelectedIndex);
-
-            this.Controls.Clear();
-            InitializeComponent();
-
-        }
-        private void SaveChooseLanguage(string language, Int32 integer)
-        {
-            Properties.Settings.Default.Language = language;
-            Properties.Settings.Default.LanguageIndex = integer;
-            Properties.Settings.Default.Save();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            cBLanguage.SelectedIndex = Properties.Settings.Default.LanguageIndex;
-
-            workSheet = LoadFile();
-
             this.Controls.Clear();
             InitializeComponent();
         }

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Preferences));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cBLanguage = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cBBaseUnit = new System.Windows.Forms.ComboBox();
             this.lblLanguage = new System.Windows.Forms.Label();
             this.btCancel = new System.Windows.Forms.Button();
@@ -39,20 +41,38 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.cBLanguage);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cBBaseUnit);
             this.groupBox1.Controls.Add(this.lblLanguage);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // cBLanguage
+            // 
+            resources.ApplyResources(this.cBLanguage, "cBLanguage");
+            this.cBLanguage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cBLanguage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cBLanguage.FormattingEnabled = true;
+            this.cBLanguage.Items.AddRange(new object[] {
+            resources.GetString("cBLanguage.Items"),
+            resources.GetString("cBLanguage.Items1")});
+            this.cBLanguage.Name = "cBLanguage";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // cBBaseUnit
             // 
+            resources.ApplyResources(this.cBBaseUnit, "cBBaseUnit");
             this.cBBaseUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cBBaseUnit.FormattingEnabled = true;
             this.cBBaseUnit.Items.AddRange(new object[] {
             resources.GetString("cBBaseUnit.Items"),
             resources.GetString("cBBaseUnit.Items1")});
-            resources.ApplyResources(this.cBBaseUnit, "cBBaseUnit");
             this.cBBaseUnit.Name = "cBBaseUnit";
             // 
             // lblLanguage
@@ -96,5 +116,7 @@
         private System.Windows.Forms.Label lblLanguage;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btSaveSettings;
+        private System.Windows.Forms.ComboBox cBLanguage;
+        private System.Windows.Forms.Label label1;
     }
 }

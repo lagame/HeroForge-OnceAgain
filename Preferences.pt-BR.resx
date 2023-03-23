@@ -117,13 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cBLanguage.Items" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="cBLanguage.Items1" xml:space="preserve">
+    <value>Português brasileiro</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Linguagem do Programa:</value>
+  </data>
   <data name="cBBaseUnit.Items" xml:space="preserve">
     <value>Sistema imperial (Fahrenheit, pés, polegadas, milhas, libras, etc)</value>
   </data>
   <data name="cBBaseUnit.Items1" xml:space="preserve">
     <value>Sistema métrico (Celsius, centímetros, metros, quilômetros, gramas, etc)</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 13</value>
   </data>
