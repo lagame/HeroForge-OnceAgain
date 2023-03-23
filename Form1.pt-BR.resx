@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="loadCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="loadCharacterToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Carregar Personagem</value>
+  </data>
+  <data name="saveCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="saveCharacterToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Salvar Personagem</value>
+  </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
@@ -129,6 +141,12 @@
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Editar</value>
+  </data>
+  <data name="preferencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="preferencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Preferências</value>
   </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -142,29 +160,14 @@
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Aj&amp;uda</value>
   </data>
-  <data name="loadCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
-  </data>
-  <data name="loadCharacterToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Carregar Personagem</value>
-  </data>
-  <data name="saveCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
-  </data>
-  <data name="saveCharacterToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Salvar Personagem</value>
-  </data>
-  <data name="preferencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 22</value>
-  </data>
-  <data name="preferencesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Preferências</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Estatísticas &amp; Detalhes do Personagem</value>
+  <data name="menuStrip1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblGender.Location" type="System.Drawing.Point, System.Drawing">
     <value>586, 513</value>
+  </data>
+  <data name="lblGender.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 16</value>
@@ -172,28 +175,184 @@
   <data name="label70.Text" xml:space="preserve">
     <value>Sexo:</value>
   </data>
+  <data name="label70.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClasses.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label69.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label60.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label67.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label68.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label55.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label56.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label57.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label58.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label59.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label28.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label30.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Aumentos de Estatísticas Baseados em Nível</value>
+  </data>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Limpar Estatísticas,
 Descrição
 e Seleções</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Aparência</value>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRandomEyes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRandomHair.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRandomName.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btRandomName.Text" xml:space="preserve">
     <value>Nome Aleatório</value>
   </data>
+  <data name="btRandomName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomAge.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomHeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomWeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblRandomWeight.Text" xml:space="preserve">
     <value>0 kg</value>
+  </data>
+  <data name="lblRandomWeight.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblRandomHeight.Text" xml:space="preserve">
     <value>0 m</value>
   </data>
+  <data name="lblRandomHeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRandomAge.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btRandomAge.Text" xml:space="preserve">
     <value>Idade Aleatória</value>
+  </data>
+  <data name="btRandomAge.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEyes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHair.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtName.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -201,11 +360,17 @@ e Seleções</value>
   <data name="label61.Text" xml:space="preserve">
     <value>Olhos</value>
   </data>
+  <data name="label61.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 16</value>
   </data>
   <data name="label62.Text" xml:space="preserve">
     <value>Cabelo</value>
+  </data>
+  <data name="label62.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 16</value>
@@ -213,11 +378,17 @@ e Seleções</value>
   <data name="label63.Text" xml:space="preserve">
     <value>Peso</value>
   </data>
+  <data name="label63.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
   </data>
   <data name="label64.Text" xml:space="preserve">
     <value>Altura</value>
+  </data>
+  <data name="label64.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -225,17 +396,32 @@ e Seleções</value>
   <data name="label65.Text" xml:space="preserve">
     <value>Idade</value>
   </data>
+  <data name="label65.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label66.Text" xml:space="preserve">
     <value>Nome</value>
+  </data>
+  <data name="label66.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btRandomHeight.Text" xml:space="preserve">
     <value>Altura Aleatória</value>
   </data>
+  <data name="btRandomHeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btRandomWeight.Text" xml:space="preserve">
     <value>Peso Aleatório</value>
   </data>
+  <data name="btRandomWeight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btRandomHair.Text" xml:space="preserve">
     <value>Cabelo Aleatório</value>
+  </data>
+  <data name="btRandomHair.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btRandomEyes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 6.75pt</value>
@@ -243,8 +429,23 @@ e Seleções</value>
   <data name="btRandomEyes.Text" xml:space="preserve">
     <value>Cor Olhos Aleatória</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 117</value>
+  <data name="btRandomEyes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomHair.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAssignRandomEyes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="groupBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRace.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="labelFavoredWeapon.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 16</value>
@@ -252,8 +453,14 @@ e Seleções</value>
   <data name="labelFavoredWeapon.Text" xml:space="preserve">
     <value>Arma Favorita</value>
   </data>
+  <data name="labelFavoredWeapon.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 45</value>
+  </data>
+  <data name="comboBox8.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="llblDeity.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 45</value>
@@ -264,6 +471,9 @@ e Seleções</value>
   <data name="llblDeity.Text" xml:space="preserve">
     <value>Divindade</value>
   </data>
+  <data name="llblDeity.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ckLimitDeity.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 72</value>
   </data>
@@ -273,8 +483,14 @@ e Seleções</value>
   <data name="ckLimitDeity.Text" xml:space="preserve">
     <value>Limite a lista de divindades com base na tendência &amp;&amp; raça</value>
   </data>
+  <data name="ckLimitDeity.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 18</value>
+  </data>
+  <data name="comboBox7.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 19</value>
@@ -285,8 +501,56 @@ e Seleções</value>
   <data name="label51.Text" xml:space="preserve">
     <value>Tendência</value>
   </data>
+  <data name="label51.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 117</value>
+  </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label45.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label46.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label47.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label48.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label49.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label50.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="labelRace.Text" xml:space="preserve">
     <value>Raça:</value>
+  </data>
+  <data name="labelRace.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label39.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label40.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label41.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label42.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label43.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 225</value>
@@ -297,26 +561,71 @@ e Seleções</value>
   <data name="label37.Text" xml:space="preserve">
     <value>0 Pontos</value>
   </data>
+  <data name="label37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label35.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblModCha.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 194</value>
+  </data>
+  <data name="lblModCha.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblModWis.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 169</value>
   </data>
+  <data name="lblModWis.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblModInt.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 144</value>
+  </data>
+  <data name="lblModInt.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblModCon.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 119</value>
   </data>
+  <data name="lblModCon.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblModDes.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 94</value>
+  </data>
+  <data name="lblModDes.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblModStr.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 69</value>
   </data>
+  <data name="lblModStr.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label23.Text" xml:space="preserve">
     <value>CP</value>
+  </data>
+  <data name="label23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label22.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 30</value>
@@ -325,12 +634,333 @@ e Seleções</value>
     <value>Valor
 Atual</value>
   </data>
+  <data name="label21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox43.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox44.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox45.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox46.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox47.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox48.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 30</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Bônus
 Mágico</value>
+  </data>
+  <data name="label15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox49.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox50.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox51.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox52.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox53.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox54.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox55.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox56.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox57.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox58.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox59.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox60.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox61.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox62.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox63.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox64.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox65.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox66.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox67.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox68.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox69.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox70.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox71.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox72.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox73.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox74.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox75.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox76.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox77.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox78.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox79.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox80.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox81.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox82.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox83.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox84.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox85.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox86.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox87.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox88.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox89.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox90.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox28.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox30.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox35.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox39.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox40.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox41.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox42.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblInherentGains.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 37</value>
@@ -340,6 +970,45 @@ Mágico</value>
   </data>
   <data name="lblInherentGains.Text" xml:space="preserve">
     <value>Ganho de Bônus Inerente</value>
+  </data>
+  <data name="lblInherentGains.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModCharisma.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModWisdom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModIntelligence.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModConstitution.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModDexterity.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="increaseModStrength.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialCharisma.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialWisdom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialIntelligence.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialConstitution.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialDexterity.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="initialStrength.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
@@ -355,6 +1024,9 @@ Mágico</value>
     <value>Rolagem
 Inicial</value>
   </data>
+  <data name="label10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblPointBuy.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 224</value>
   </data>
@@ -363,6 +1035,9 @@ Inicial</value>
   </data>
   <data name="lblPointBuy.Text" xml:space="preserve">
     <value>Compra de Pontos:</value>
+  </data>
+  <data name="lblPointBuy.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblCharisma.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 200</value>
@@ -373,6 +1048,9 @@ Inicial</value>
   <data name="lblCharisma.Text" xml:space="preserve">
     <value>Carisma</value>
   </data>
+  <data name="lblCharisma.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblWisdom.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 175</value>
   </data>
@@ -382,11 +1060,17 @@ Inicial</value>
   <data name="lblWisdom.Text" xml:space="preserve">
     <value>Sabedoria</value>
   </data>
+  <data name="lblWisdom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblIntelligence.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 150</value>
   </data>
   <data name="lblIntelligence.Text" xml:space="preserve">
     <value>Inteligência</value>
+  </data>
+  <data name="lblIntelligence.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblConstitution.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 125</value>
@@ -397,6 +1081,9 @@ Inicial</value>
   <data name="lblConstitution.Text" xml:space="preserve">
     <value>Constituição</value>
   </data>
+  <data name="lblConstitution.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblDexterity.Location" type="System.Drawing.Point, System.Drawing">
     <value>38, 100</value>
   </data>
@@ -405,6 +1092,9 @@ Inicial</value>
   </data>
   <data name="lblDexterity.Text" xml:space="preserve">
     <value>Destreza</value>
+  </data>
+  <data name="lblDexterity.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblStrength.Location" type="System.Drawing.Point, System.Drawing">
     <value>60, 75</value>
@@ -415,6 +1105,9 @@ Inicial</value>
   <data name="lblStrength.Text" xml:space="preserve">
     <value>Força</value>
   </data>
+  <data name="lblStrength.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 49</value>
   </data>
@@ -424,8 +1117,14 @@ Inicial</value>
   <data name="label2.Text" xml:space="preserve">
     <value>Habilidade</value>
   </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblLevelAdjust.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 7</value>
+  </data>
+  <data name="lblLevelAdjust.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 16</value>
@@ -433,11 +1132,20 @@ Inicial</value>
   <data name="label1.Text" xml:space="preserve">
     <value>Ajuste de Nível:</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 43</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Opções</value>
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Estatísticas &amp; Detalhes do Personagem</value>
+  </data>
+  <data name="tabPage2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -451,6 +1159,9 @@ Inicial</value>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR</value>
   </data>
+  <data name="linkLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
     <value>681, 406</value>
   </data>
@@ -463,6 +1174,9 @@ Licença Atribuição-NãoComercial-
 CompartilhaIgual 4.0 Internacional.
 Para ver uma cópia desta licença, 
 visite:</value>
+  </data>
+  <data name="label53.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -506,6 +1220,9 @@ visite:</value>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 37</value>
   </data>
+  <data name="pictureBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="cBCampaignSelect.Items" xml:space="preserve">
     <value>D&amp;D 3.5 Genérico </value>
   </data>
@@ -514,6 +1231,9 @@ visite:</value>
   </data>
   <data name="cBCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>684, 28</value>
+  </data>
+  <data name="cBCampaignSelect.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>683, 8</value>
@@ -528,12 +1248,6 @@ visite:</value>
     <value>Comece selecionando seu cenário de campanha aqui.
 As opções de origem específicas da campanha serão selecionadas com base no material de origem atualizado.</value>
   </data>
-  <data name="gBSelectSources.Size" type="System.Drawing.Size, System.Drawing">
-    <value>664, 442</value>
-  </data>
-  <data name="gBSelectSources.Text" xml:space="preserve">
-    <value>Selecione as fontes abaixo para permitir acesso a conteúdo aberto/fechado (Living Greyhawk) ou para permitir (outras campanhas)</value>
-  </data>
   <data name="lblMonstrousNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 333</value>
   </data>
@@ -543,11 +1257,23 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="lblMonstrousNonSettingSources.Text" xml:space="preserve">
     <value>Fontes de Monstros sem Cenário</value>
   </data>
+  <data name="lblMonstrousNonSettingSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblOtherSources.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 16</value>
   </data>
   <data name="lblOtherSources.Text" xml:space="preserve">
     <value>Outras Fontes</value>
+  </data>
+  <data name="lblOtherSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckMonstrousNonSettingSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckOtherSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblLGSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 255</value>
@@ -557,6 +1283,12 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   </data>
   <data name="lblLGSources.Text" xml:space="preserve">
     <value>Fontes do Cenário Living Greyhawk</value>
+  </data>
+  <data name="lblLGSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckLGSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblDragonLanceSources.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -570,11 +1302,23 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="lblDragonLanceSources.Text" xml:space="preserve">
     <value>Fontes do Cenário DragonLance</value>
   </data>
+  <data name="lblDragonLanceSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ckDragonLanceSources.Items" xml:space="preserve">
     <value>Dragonlance: Cenário de Campanha</value>
   </data>
+  <data name="ckDragonLanceSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblEberronSettingSources.Text" xml:space="preserve">
     <value>Fontes do Cenário Eberron</value>
+  </data>
+  <data name="lblEberronSettingSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckSettingSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblForgottenRealmsSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 26</value>
@@ -584,6 +1328,9 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   </data>
   <data name="lblForgottenRealmsSources.Text" xml:space="preserve">
     <value>Fontes do Cenário Reinos Esquecidos</value>
+  </data>
+  <data name="lblForgottenRealmsSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ckForgottenRealmsSources.Items" xml:space="preserve">
     <value>Livro do Jogador para Faerûn</value>
@@ -600,6 +1347,9 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckForgottenRealmsSources.Items4" xml:space="preserve">
     <value>City of Splendors: Waterdeep</value>
   </data>
+  <data name="ckForgottenRealmsSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 26</value>
   </data>
@@ -608,6 +1358,9 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   </data>
   <data name="lblNonSettingSources.Text" xml:space="preserve">
     <value>Fontes sem Cenário</value>
+  </data>
+  <data name="lblNonSettingSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ckNonSettingSources.Items" xml:space="preserve">
     <value>Livro Completo do Aventureiro</value>
@@ -621,14 +1374,17 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckNonSettingSources.Items3" xml:space="preserve">
     <value>Livro Completo do Guerreiro</value>
   </data>
-  <data name="gBDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 9</value>
+  <data name="ckNonSettingSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="gBDeityOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 117</value>
+  <data name="gBSelectSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 442</value>
   </data>
-  <data name="gBDeityOptions.Text" xml:space="preserve">
-    <value>Opções de Divindade</value>
+  <data name="gBSelectSources.Text" xml:space="preserve">
+    <value>Selecione as fontes abaixo para permitir acesso a conteúdo aberto/fechado (Living Greyhawk) ou para permitir (outras campanhas)</value>
+  </data>
+  <data name="gBSelectSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ckDeityOptions.Items" xml:space="preserve">
     <value>Divindades de LG</value>
@@ -648,8 +1404,20 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckDeityOptions.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 79</value>
   </data>
-  <data name="gBUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 117</value>
+  <data name="ckDeityOptions.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gBDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 9</value>
+  </data>
+  <data name="gBDeityOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 117</value>
+  </data>
+  <data name="gBDeityOptions.Text" xml:space="preserve">
+    <value>Opções de Divindade</value>
+  </data>
+  <data name="gBDeityOptions.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ckUneathedArcana.Items1" xml:space="preserve">
     <value>BBA fracionário</value>
@@ -666,8 +1434,14 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 79</value>
   </data>
-  <data name="gBCharacterSheetDisplayHitPoints.Text" xml:space="preserve">
-    <value>Exibição da Ficha de Personagem &amp;&amp; Opções de Pontos de Vida</value>
+  <data name="ckUneathedArcana.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gBUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 117</value>
+  </data>
+  <data name="gBUneathedArcana.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ckListCharacterSheetDisplayHitPointOptions.Items" xml:space="preserve">
     <value>Ocultar Perícias Somente Treinadas sem graduações</value>
@@ -681,38 +1455,92 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckListCharacterSheetDisplayHitPointOptions.Items3" xml:space="preserve">
     <value>Use a regra de arredondamento de 3/4 para PV (nível 2-60)</value>
   </data>
+  <data name="ckListCharacterSheetDisplayHitPointOptions.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.Text" xml:space="preserve">
+    <value>Exibição da Ficha de Personagem &amp;&amp; Opções de Pontos de Vida</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="tabPage1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Raça &amp; Modelos</value>
+  </data>
+  <data name="tabPage3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage4.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
     <value>Perícias</value>
   </data>
+  <data name="tabPage5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage6.Text" xml:space="preserve">
     <value>Idiomas</value>
+  </data>
+  <data name="tabPage6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage7.Text" xml:space="preserve">
     <value>Talentos</value>
   </data>
+  <data name="tabPage7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage8.Text" xml:space="preserve">
     <value>Armadura</value>
+  </data>
+  <data name="tabPage8.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
     <value>Ataques</value>
   </data>
+  <data name="tabPage9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage10.Text" xml:space="preserve">
     <value>Aprimoramentos</value>
+  </data>
+  <data name="tabPage10.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage11.Text" xml:space="preserve">
     <value>Equipamentos Mágicos</value>
   </data>
+  <data name="tabPage11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage12.Text" xml:space="preserve">
     <value>Ficha de Personagem 1</value>
+  </data>
+  <data name="tabPage12.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage13.Text" xml:space="preserve">
     <value>Ficha de Personagem 2</value>
   </data>
+  <data name="tabPage13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage14.Text" xml:space="preserve">
     <value>Ficha de Personagem 3</value>
+  </data>
+  <data name="tabPage14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabControl1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1224,5 +2052,8 @@ As opções de origem específicas da campanha serão selecionadas com base no m
         SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZKW/h8iZPWcG7YwmQAAAABJRU5ErkJg
         gg==
 </value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

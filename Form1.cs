@@ -138,7 +138,10 @@ namespace HeroForge_OnceAgain
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (!lblRandomAge.Text.Equals("0"))
+            {
+                txtAge.Text = lblRandomAge.Text;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -151,12 +154,18 @@ namespace HeroForge_OnceAgain
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            if (!lblRandomHeight.Text.Equals("0 m") && !lblRandomHeight.Text.Equals("0 ft"))
+            {
+                txtHeight.Text = lblRandomHeight.Text;
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            if (!lblRandomWeight.Text.Equals("0 kg") && !lblRandomWeight.Text.Equals("0 lbs"))
+            {
+                txtWeight.Text = lblRandomWeight.Text;
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -710,6 +719,21 @@ namespace HeroForge_OnceAgain
         {
             public string Name { get; set; }
         }
+
+        public class HairColors
+        {
+            public string id { get; set; }
+            public string name { get; set; }
+            public string lang { get; set; }
+        }
+
+        public class HairTypes
+        {
+            public string id { get; set; }
+            public string name { get; set; }
+            public string lang { get; set; }
+        }
+
         private static Random rng = new Random();
 
         private void btRandomName_Click(object sender, EventArgs e)
@@ -792,13 +816,9 @@ namespace HeroForge_OnceAgain
         private void CalcWeight(string Dice, string weightDice, int hgtBase)
         {
             int wgtMod = RollDice(Dice);
-            // int wgtBase = var BaseWeightRace = await LookupRaceAsync("AS", race); 
-            //int wgtBase = 0;// GetWeight();
-            //int wgtBase = GetWeight(weightDice);
             int wgtFinal = 0;
             wgtFinal = int.Parse(weightDice) + (hgtBase * wgtMod);
-
-            //string weight = (wgtFinal / 12).ToString() + "'" + (wgtFinal % 12).ToString() + "\"";
+            
             if (Properties.Settings.Default.SystemofUnit == 1)
             {
                 lblRandomWeight.Text = Math.Round(ConvertPoundsToKilos(wgtFinal), 2).ToString() + " kg";
@@ -816,9 +836,6 @@ namespace HeroForge_OnceAgain
             return kilos;
         }
 
-
-
-
         private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Preferences nForm = new Preferences();
@@ -826,8 +843,27 @@ namespace HeroForge_OnceAgain
             nForm.Show();
         }
 
-        private void lblLanguage_Click(object sender, EventArgs e)
+        private void btRandomHair_Click(object sender, EventArgs e)
         {
+
+            // Load data from JSON files
+            var hairColorsJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\haircolors.json");
+            var hairTypesJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\hairtypes.json");
+            var hairColors = JsonConvert.DeserializeObject<List<HairColors>>(hairColorsJson);
+            var hairTypes = JsonConvert.DeserializeObject<List<HairTypes>>(hairTypesJson);
+
+            // Filter records in selected language
+            var languageCode = Properties.Settings.Default.LanguageIndex == 0 ? "en" : "pt-BR";
+            var filteredHairColors = hairColors.Where(c => c.lang == languageCode).ToList();
+            var filteredHairTypes = hairTypes.Where(t => t.lang == languageCode).ToList();
+
+            // Select a random record from each list
+            var randomHairColor = filteredHairColors[rng.Next(filteredHairColors.Count)];
+            var randomHairType = filteredHairTypes[rng.Next(filteredHairTypes.Count)];
+
+            // Display concatenated hair
+            lblRandomHair.Text = randomHairColor.name + " " + randomHairType.name;
+            
 
         }
     }

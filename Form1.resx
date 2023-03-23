@@ -130,6 +130,9 @@
   <data name="label67.TabIndex" type="System.Int32, mscorlib">
     <value>206</value>
   </data>
+  <data name="btAssignRandomName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 43</value>
@@ -176,9 +179,6 @@
   <data name="&gt;&gt;textBox88.ZOrder" xml:space="preserve">
     <value>91</value>
   </data>
-  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
-  </data>
   <data name="&gt;&gt;textBox51.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -205,6 +205,9 @@
   </data>
   <data name="&gt;&gt;textBox18.Name" xml:space="preserve">
     <value>textBox18</value>
+  </data>
+  <data name="textBox50.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
   </data>
   <data name="textBox54.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -290,8 +293,8 @@
   <data name="textBox86.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="&gt;&gt;textBox34.Name" xml:space="preserve">
-    <value>textBox34</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 366</value>
   </data>
   <data name="comboBox8.ToolTip" xml:space="preserve">
     <value />
@@ -308,8 +311,8 @@
   <data name="textBox18.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="textBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 194</value>
+  <data name="&gt;&gt;lblDragonLanceSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
   </data>
   <data name="&gt;&gt;increaseModConstitution.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -335,17 +338,14 @@
   <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="textBox33.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
   <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox29.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="lblInherentGains.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="lblOtherSources.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -383,11 +383,14 @@
   <data name="&gt;&gt;textBox34.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="textBox13.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="initialDexterity.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 94</value>
+  </data>
+  <data name="&gt;&gt;ckUneathedArcana.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>183</value>
@@ -432,6 +435,9 @@
   <data name="btRandomHair.TabIndex" type="System.Int32, mscorlib">
     <value>240</value>
   </data>
+  <data name="saveCharacterToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Save Character</value>
+  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>4</value>
   </data>
@@ -459,11 +465,14 @@
   <data name="lblLevelAdjust.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
+  </data>
   <data name="&gt;&gt;label61.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="ckNonSettingSources.ToolTip" xml:space="preserve">
-    <value />
+  <data name="textBox55.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
   </data>
   <data name="textBox89.Location" type="System.Drawing.Point, System.Drawing">
     <value>372, 94</value>
@@ -498,8 +507,8 @@
   <data name="ckNonSettingSources.Items17" xml:space="preserve">
     <value>Heroes of Battle</value>
   </data>
-  <data name="ckNonSettingSources.Items16" xml:space="preserve">
-    <value>Cityscape</value>
+  <data name="&gt;&gt;textBox49.Name" xml:space="preserve">
+    <value>textBox49</value>
   </data>
   <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
@@ -534,14 +543,17 @@
   <data name="&gt;&gt;label55.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="btRandomHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 23</value>
   </data>
   <data name="label46.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label27.Text" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label60.Name" xml:space="preserve">
+    <value>label60</value>
   </data>
   <data name="&gt;&gt;lblClasses.Name" xml:space="preserve">
     <value>lblClasses</value>
@@ -606,14 +618,14 @@
   <data name="lblModInt.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 144</value>
   </data>
-  <data name="&gt;&gt;textBox23.Name" xml:space="preserve">
-    <value>textBox23</value>
-  </data>
   <data name="label48.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 16</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 15</value>
@@ -639,17 +651,11 @@
   <data name="&gt;&gt;initialStrength.ZOrder" xml:space="preserve">
     <value>156</value>
   </data>
-  <data name="&gt;&gt;textBox49.Name" xml:space="preserve">
-    <value>textBox49</value>
-  </data>
   <data name="textBox61.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
   </data>
   <data name="&gt;&gt;txtWeight.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox74.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 169</value>
   </data>
   <data name="ckNonSettingSources.Items1" xml:space="preserve">
     <value>Complete Arcane</value>
@@ -666,8 +672,8 @@
   <data name="ckDeityOptions.Items1" xml:space="preserve">
     <value>FR Deities</value>
   </data>
-  <data name="&gt;&gt;textBox71.Name" xml:space="preserve">
-    <value>textBox71</value>
+  <data name="comboBox5.Items5" xml:space="preserve">
+    <value>Charisma</value>
   </data>
   <data name="ckDeityOptions.Items2" xml:space="preserve">
     <value>Eberron Deities</value>
@@ -802,9 +808,6 @@ Roll</value>
   <data name="&gt;&gt;cBCampaignSelect.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label62.Name" xml:space="preserve">
-    <value>label62</value>
-  </data>
   <data name="&gt;&gt;label59.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
@@ -822,6 +825,9 @@ Roll</value>
   </data>
   <data name="&gt;&gt;lblGender.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -853,11 +859,8 @@ Roll</value>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <data name="lblLevelAdjust.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="lblEberronSettingSources.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 138</value>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label38.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -870,9 +873,6 @@ Roll</value>
   </data>
   <data name="textBox42.Location" type="System.Drawing.Point, System.Drawing">
     <value>284, 69</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
   </data>
   <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -904,9 +904,6 @@ Roll</value>
   <data name="textBox36.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
-  <data name="btAssignRandomEyes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="&gt;&gt;textBox73.Name" xml:space="preserve">
     <value>textBox73</value>
   </data>
@@ -921,6 +918,9 @@ Roll</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
+  </data>
+  <data name="&gt;&gt;comboBox17.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;textBox45.ZOrder" xml:space="preserve">
     <value>40</value>
@@ -940,8 +940,8 @@ Roll</value>
   <data name="increaseModConstitution.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 119</value>
   </data>
-  <data name="gBSelectSources.ToolTip" xml:space="preserve">
-    <value />
+  <data name="ckNonSettingSources.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lblMonstrousNonSettingSources.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 16</value>
@@ -979,9 +979,6 @@ Roll</value>
   <data name="ckDragonLanceSources.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 79</value>
   </data>
-  <data name="ckMonstrousNonSettingSources.Items10" xml:space="preserve">
-    <value>Fiendish Codex II</value>
-  </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
   </data>
@@ -1012,14 +1009,14 @@ Roll</value>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;textBox76.ZOrder" xml:space="preserve">
+    <value>78</value>
+  </data>
   <data name="btAssignRandomWeight.Text" xml:space="preserve">
     <value>&lt;&lt;</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblDragonLanceSources.Parent" xml:space="preserve">
-    <value>gBSelectSources</value>
   </data>
   <data name="&gt;&gt;ckForgottenRealmsSources.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1081,8 +1078,8 @@ Roll</value>
   <data name="gBDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>489, 9</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox21.ZOrder" xml:space="preserve">
+    <value>103</value>
   </data>
   <data name="&gt;&gt;label59.Name" xml:space="preserve">
     <value>label59</value>
@@ -1114,6 +1111,9 @@ Roll</value>
   <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
     <value>203</value>
   </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="txtName.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1140,9 +1140,6 @@ Roll</value>
   </data>
   <data name="textBox56.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
-  </data>
-  <data name="&gt;&gt;lblModCha.Name" xml:space="preserve">
-    <value>lblModCha</value>
   </data>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1231,8 +1228,8 @@ Roll</value>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
   </data>
-  <data name="tabPage7.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;textBox32.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="tabControl1.ShowToolTips" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1303,8 +1300,8 @@ Roll</value>
   <data name="txtHair.TabIndex" type="System.Int32, mscorlib">
     <value>225</value>
   </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
+  <data name="lblLGSources.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="label69.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
@@ -1314,6 +1311,9 @@ Roll</value>
   </data>
   <data name="ckLimitDeity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="ckNonSettingSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label35.Name" xml:space="preserve">
     <value>label35</value>
@@ -1330,9 +1330,6 @@ Roll</value>
   <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="textBox46.TabIndex" type="System.Int32, mscorlib">
-    <value>136</value>
-  </data>
   <data name="comboBox7.Items1" xml:space="preserve">
     <value>Neutral Good</value>
   </data>
@@ -1347,6 +1344,9 @@ Roll</value>
   </data>
   <data name="label35.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="lblDexterity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="ckDeityOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
@@ -1429,6 +1429,9 @@ Roll</value>
   <data name="increaseModConstitution.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
+  <data name="comboBox9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;tabPage12.Name" xml:space="preserve">
     <value>tabPage12</value>
   </data>
@@ -1477,11 +1480,14 @@ Roll</value>
   <data name="label48.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;textBox44.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="textBox50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 169</value>
+  </data>
+  <data name="lblModInt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
   </data>
   <data name="comboBox12.TabIndex" type="System.Int32, mscorlib">
     <value>201</value>
@@ -1498,8 +1504,8 @@ Roll</value>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>https://creativecommons.org/licenses/by-nc-sa/4.0/</value>
   </data>
-  <data name="&gt;&gt;increaseModWisdom.Name" xml:space="preserve">
-    <value>increaseModWisdom</value>
+  <data name="btRandomEyes.Text" xml:space="preserve">
+    <value>Random Eyes</value>
   </data>
   <data name="comboBox10.Items" xml:space="preserve">
     <value>Strength</value>
@@ -1524,6 +1530,9 @@ Roll</value>
   </data>
   <data name="label36.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="gBSelectSources.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="lblRandomEyes.TabIndex" type="System.Int32, mscorlib">
     <value>243</value>
@@ -1579,8 +1588,8 @@ Roll</value>
   <data name="&gt;&gt;tabPage13.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="comboBox13.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="ckForgottenRealmsSources.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 79</value>
@@ -1590,6 +1599,9 @@ Roll</value>
   </data>
   <data name="&gt;&gt;textBox84.Name" xml:space="preserve">
     <value>textBox84</value>
+  </data>
+  <data name="&gt;&gt;tabPage14.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="comboBox13.Items" xml:space="preserve">
     <value>Strength</value>
@@ -1633,8 +1645,8 @@ Roll</value>
   <data name="&gt;&gt;label56.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox72.ZOrder" xml:space="preserve">
-    <value>74</value>
+  <data name="&gt;&gt;textBox15.Name" xml:space="preserve">
+    <value>textBox15</value>
   </data>
   <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -1660,17 +1672,23 @@ Roll</value>
   <data name="&gt;&gt;lblRandomHair.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="comboBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 169</value>
+  </data>
+  <data name="lblConstitution.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label19.Text" xml:space="preserve">
     <value>24</value>
   </data>
   <data name="cBCampaignSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
   </data>
+  <data name="tabPage7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>44</value>
-  </data>
-  <data name="&gt;&gt;label37.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="comboBox7.TabIndex" type="System.Int32, mscorlib">
     <value>207</value>
@@ -1693,8 +1711,8 @@ Roll</value>
   <data name="tabPage9.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;ckUneathedArcana.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblRandomEyes.Text" xml:space="preserve">
+    <value>__________________</value>
   </data>
   <data name="textBox46.ToolTip" xml:space="preserve">
     <value />
@@ -1702,11 +1720,17 @@ Roll</value>
   <data name="comboBox3.Items1" xml:space="preserve">
     <value>Dexterity</value>
   </data>
-  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="lblRandomHeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 16</value>
+  </data>
+  <data name="lblIntelligence.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="textBox61.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label55.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -1719,6 +1743,9 @@ Roll</value>
   </data>
   <data name="&gt;&gt;textBox78.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label70.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblRandomWeight.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -1735,13 +1762,13 @@ Roll</value>
   <data name="comboBox12.Items" xml:space="preserve">
     <value>Strength</value>
   </data>
-  <data name="&gt;&gt;textBox21.ZOrder" xml:space="preserve">
-    <value>103</value>
+  <data name="textBox78.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="label62.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 96</value>
   </data>
-  <data name="comboBox9.ToolTip" xml:space="preserve">
+  <data name="textBox75.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="comboBox15.TabIndex" type="System.Int32, mscorlib">
@@ -1762,14 +1789,8 @@ Roll</value>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;textBox24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label47.Name" xml:space="preserve">
     <value>label47</value>
-  </data>
-  <data name="&gt;&gt;comboBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblModStr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1779,6 +1800,9 @@ Roll</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 53</value>
+  </data>
+  <data name="&gt;&gt;textBox55.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox38.Location" type="System.Drawing.Point, System.Drawing">
     <value>284, 169</value>
@@ -1813,9 +1837,6 @@ Roll</value>
   <data name="comboBox17.Items" xml:space="preserve">
     <value>Strength</value>
   </data>
-  <data name="lblRandomEyes.Text" xml:space="preserve">
-    <value>__________________</value>
-  </data>
   <data name="&gt;&gt;cBCampaignSelect.Name" xml:space="preserve">
     <value>cBCampaignSelect</value>
   </data>
@@ -1834,19 +1855,16 @@ Roll</value>
   <data name="label11.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblDexterity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="comboBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
   </data>
-  <data name="gBSelectSources.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="tabPage14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>878, 598</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
   <data name="textBox86.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblInherentGains.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;comboBox7.Type" xml:space="preserve">
@@ -1884,6 +1902,9 @@ Roll</value>
   </data>
   <data name="ckLimitDeity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblWisdom.Name" xml:space="preserve">
     <value>lblWisdom</value>
@@ -1960,11 +1981,8 @@ Roll</value>
   <data name="btRandomName.TabIndex" type="System.Int32, mscorlib">
     <value>237</value>
   </data>
-  <data name="lblGender.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="label68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label26.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblModInt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -2029,8 +2047,8 @@ Roll</value>
   <data name="textBox24.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="&gt;&gt;label46.Name" xml:space="preserve">
-    <value>label46</value>
+  <data name="label62.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;textBox42.ZOrder" xml:space="preserve">
     <value>124</value>
@@ -2047,9 +2065,6 @@ Roll</value>
   <data name="label58.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
   <data name="&gt;&gt;textBox51.Name" xml:space="preserve">
     <value>textBox51</value>
   </data>
@@ -2062,8 +2077,8 @@ Roll</value>
   <data name="&gt;&gt;label67.Name" xml:space="preserve">
     <value>label67</value>
   </data>
-  <data name="label58.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="initialDexterity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
   </data>
   <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2083,13 +2098,13 @@ Roll</value>
   <data name="&gt;&gt;btRandomHair.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="btAssignRandomWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 75</value>
+  </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
-  </data>
-  <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
   <data name="&gt;&gt;btRandomWeight.ZOrder" xml:space="preserve">
@@ -2116,8 +2131,8 @@ Roll</value>
   <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="saveCharacterToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Save Character</value>
+  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="&gt;&gt;lblRandomWeight.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2194,9 +2209,6 @@ Roll</value>
   <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold, Underline</value>
   </data>
-  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
   <data name="textBox68.Location" type="System.Drawing.Point, System.Drawing">
     <value>438, 169</value>
   </data>
@@ -2224,8 +2236,8 @@ Roll</value>
   <data name="&gt;&gt;ckListCharacterSheetDisplayHitPointOptions.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
   <data name="label60.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -2260,11 +2272,11 @@ Roll</value>
   <data name="txtHair.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
   </data>
-  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label17.Text" xml:space="preserve">
+    <value>32</value>
   </data>
-  <data name="&gt;&gt;textBox76.ZOrder" xml:space="preserve">
-    <value>78</value>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="textBox25.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -2302,14 +2314,11 @@ Roll</value>
   <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
   <data name="&gt;&gt;textBox53.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gBSelectSources.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox37.Name" xml:space="preserve">
+    <value>textBox37</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>168</value>
@@ -2341,8 +2350,8 @@ Roll</value>
   <data name="&gt;&gt;lblLevelAdjust.ZOrder" xml:space="preserve">
     <value>166</value>
   </data>
-  <data name="&gt;&gt;increaseModCharisma.ZOrder" xml:space="preserve">
-    <value>145</value>
+  <data name="comboBox12.Items5" xml:space="preserve">
+    <value>Charisma</value>
   </data>
   <data name="&gt;&gt;gBDeityOptions.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2401,6 +2410,9 @@ Roll</value>
   <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="label65.TabIndex" type="System.Int32, mscorlib">
+    <value>216</value>
+  </data>
   <data name="&gt;&gt;textBox29.ZOrder" xml:space="preserve">
     <value>111</value>
   </data>
@@ -2416,8 +2428,8 @@ Roll</value>
   <data name="&gt;&gt;txtHeight.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox89.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="&gt;&gt;increaseModStrength.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="labelRace.Text" xml:space="preserve">
     <value>Race:</value>
@@ -2439,6 +2451,9 @@ Roll</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>181</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 69</value>
   </data>
   <data name="lblRandomName.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 16</value>
@@ -2464,6 +2479,9 @@ Roll</value>
   <data name="increaseModConstitution.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="textBox13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2475,9 +2493,6 @@ Roll</value>
   </data>
   <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
-  </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 30</value>
   </data>
   <data name="&gt;&gt;comboBox10.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2497,17 +2512,14 @@ Roll</value>
   <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;comboBox15.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
   <data name="&gt;&gt;textBox33.ZOrder" xml:space="preserve">
     <value>115</value>
   </data>
   <data name="llblDeity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="ckDeityOptions.Items" xml:space="preserve">
-    <value>LG Deities</value>
+  <data name="&gt;&gt;lblOtherSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
   </data>
   <data name="&gt;&gt;label40.Name" xml:space="preserve">
     <value>label40</value>
@@ -2560,8 +2572,11 @@ Roll</value>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
   </data>
-  <data name="&gt;&gt;ckOtherSources.Parent" xml:space="preserve">
-    <value>gBSelectSources</value>
+  <data name="textBox84.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="label46.TabIndex" type="System.Int32, mscorlib">
     <value>198</value>
@@ -2575,9 +2590,6 @@ Roll</value>
   <data name="label13.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btAssignRandomEyes.TabIndex" type="System.Int32, mscorlib">
-    <value>245</value>
-  </data>
   <data name="initialWisdom.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -2588,7 +2600,7 @@ Roll</value>
     <value>MiddleCenter</value>
   </data>
   <data name="lblRandomHair.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>BottomCenter</value>
   </data>
   <data name="&gt;&gt;btAssignRandomHeight.Name" xml:space="preserve">
     <value>btAssignRandomHeight</value>
@@ -2614,9 +2626,6 @@ Roll</value>
   <data name="textBox64.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
   </data>
-  <data name="comboBox5.Items5" xml:space="preserve">
-    <value>Charisma</value>
-  </data>
   <data name="&gt;&gt;textBox31.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
@@ -2632,8 +2641,8 @@ Roll</value>
   <data name="&gt;&gt;textBox64.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 53</value>
+  <data name="textBox63.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
     <value>textBox5</value>
@@ -2701,8 +2710,8 @@ Roll</value>
   <data name="label21.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="comboBox9.Items1" xml:space="preserve">
-    <value>Dexterity</value>
+  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 44</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 194</value>
@@ -2710,14 +2719,8 @@ Roll</value>
   <data name="&gt;&gt;label55.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="txtAge.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="btRandomHair.Text" xml:space="preserve">
-    <value>Random Height</value>
   </data>
   <data name="&gt;&gt;textBox12.Name" xml:space="preserve">
     <value>textBox12</value>
@@ -2730,9 +2733,6 @@ Roll</value>
   </data>
   <data name="label49.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
-  </data>
-  <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 19</value>
   </data>
   <data name="label20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -2785,8 +2785,8 @@ Roll</value>
   <data name="btRandomEyes.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 116</value>
   </data>
-  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ckUneathedArcana.Items3" xml:space="preserve">
+    <value>Traits</value>
   </data>
   <data name="ckUneathedArcana.Items2" xml:space="preserve">
     <value>Fractional Save</value>
@@ -2799,6 +2799,9 @@ Roll</value>
   </data>
   <data name="ckUneathedArcana.Items4" xml:space="preserve">
     <value>Flaws</value>
+  </data>
+  <data name="tabPage12.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label50.TabIndex" type="System.Int32, mscorlib">
     <value>194</value>
@@ -2845,8 +2848,8 @@ Roll</value>
   <data name="&gt;&gt;textBox47.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;label60.Name" xml:space="preserve">
-    <value>label60</value>
+  <data name="&gt;&gt;textBox71.Name" xml:space="preserve">
+    <value>textBox71</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
     <value>28</value>
@@ -2890,17 +2893,14 @@ Roll</value>
   <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="ckNonSettingSources.Items" xml:space="preserve">
-    <value>Complete Adventurer</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
   </data>
   <data name="&gt;&gt;ckSettingSources.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
     <value>588, 28</value>
-  </data>
-  <data name="textBox78.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
   </data>
   <data name="textBox26.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -2943,9 +2943,6 @@ Roll</value>
   </data>
   <data name="comboBox10.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Parent" xml:space="preserve">
-    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3049,9 +3046,6 @@ Roll</value>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>50</value>
   </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>878, 598</value>
-  </data>
   <data name="initialCharisma.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -3060,9 +3054,6 @@ Roll</value>
   </data>
   <data name="ckUneathedArcana.Items" xml:space="preserve">
     <value>Gestalt</value>
-  </data>
-  <data name="ckLGSources.Items" xml:space="preserve">
-    <value>Dragon Magazine (315 &amp; 319)</value>
   </data>
   <data name="label41.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -3079,8 +3070,8 @@ Roll</value>
   <data name="label59.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold, Underline</value>
+  <data name="&gt;&gt;gBSelectSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox81.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3133,9 +3124,6 @@ Roll</value>
   <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="&gt;&gt;textBox27.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3145,8 +3133,8 @@ Roll</value>
   <data name="&gt;&gt;textBox33.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;ckDragonLanceSources.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="textBox46.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
   </data>
   <data name="ckOtherSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>318, 274</value>
@@ -3160,8 +3148,8 @@ Roll</value>
   <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
     <value>130</value>
   </data>
-  <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 30</value>
   </data>
   <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 76</value>
@@ -3187,6 +3175,9 @@ Roll</value>
   <data name="&gt;&gt;textBox30.Name" xml:space="preserve">
     <value>textBox30</value>
   </data>
+  <data name="gBSelectSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>625, 442</value>
+  </data>
   <data name="&gt;&gt;ckLimitDeity.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3199,8 +3190,8 @@ Roll</value>
   <data name="saveCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 22</value>
   </data>
-  <data name="lblConstitution.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="cBCampaignSelect.Items2" xml:space="preserve">
+    <value>Eberron</value>
   </data>
   <data name="&gt;&gt;label41.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -3214,8 +3205,8 @@ Roll</value>
   <data name="cBCampaignSelect.Items4" xml:space="preserve">
     <value>Living Greyhawk</value>
   </data>
-  <data name="lblModInt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="cBCampaignSelect.Items5" xml:space="preserve">
+    <value>Ravenloft</value>
   </data>
   <data name="&gt;&gt;textBox37.ZOrder" xml:space="preserve">
     <value>119</value>
@@ -3225,6 +3216,9 @@ Roll</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
+  </data>
+  <data name="lblModDes.Text" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
@@ -3280,8 +3274,11 @@ Roll</value>
   <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="label58.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblCharisma.Name" xml:space="preserve">
+    <value>lblCharisma</value>
   </data>
   <data name="&gt;&gt;comboBox12.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -3292,8 +3289,8 @@ Roll</value>
   <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
     <value>editToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;lblCharisma.Name" xml:space="preserve">
-    <value>lblCharisma</value>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 146</value>
   </data>
   <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3325,8 +3322,8 @@ Roll</value>
   <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="&gt;&gt;tabPage14.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="label59.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;textBox21.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -3385,8 +3382,8 @@ Roll</value>
   <data name="label62.Text" xml:space="preserve">
     <value>Hair</value>
   </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="textBox2.ToolTip" xml:space="preserve">
     <value />
@@ -3397,8 +3394,8 @@ Roll</value>
   <data name="label11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="textBox65.ToolTip" xml:space="preserve">
-    <value />
+  <data name="ckSettingSources.Items8" xml:space="preserve">
+    <value>Secrets of Sarlona</value>
   </data>
   <data name="ckSettingSources.Items7" xml:space="preserve">
     <value>Magic of Eberron</value>
@@ -3448,8 +3445,8 @@ Roll</value>
   <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 16</value>
   </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox74.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 169</value>
   </data>
   <data name="comboBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
@@ -3487,9 +3484,6 @@ Roll</value>
   <data name="&gt;&gt;textBox45.Name" xml:space="preserve">
     <value>textBox45</value>
   </data>
-  <data name="lblConstitution.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
   <data name="lblModDes.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 94</value>
   </data>
@@ -3526,8 +3520,8 @@ Roll</value>
   <data name="textBox33.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox89.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="btRandomEyes.ToolTip" xml:space="preserve">
     <value />
@@ -3598,11 +3592,14 @@ Roll</value>
   <data name="&gt;&gt;label26.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblModInt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="&gt;&gt;textBox73.ZOrder" xml:space="preserve">
     <value>75</value>
   </data>
-  <data name="&gt;&gt;label49.Name" xml:space="preserve">
-    <value>label49</value>
+  <data name="&gt;&gt;lblModCha.Name" xml:space="preserve">
+    <value>lblModCha</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -3618,6 +3615,9 @@ Roll</value>
   </data>
   <data name="&gt;&gt;textBox50.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label46.Name" xml:space="preserve">
+    <value>label46</value>
   </data>
   <data name="gBUneathedArcana.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3649,11 +3649,14 @@ Roll</value>
   <data name="label51.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;ckDragonLanceSources.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label7.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;textBox44.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;textBox51.ZOrder" xml:space="preserve">
     <value>53</value>
@@ -3691,11 +3694,8 @@ Roll</value>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>140</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblRace.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="cBCampaignSelect.Items3" xml:space="preserve">
     <value>Forgotten Realms</value>
@@ -3703,8 +3703,8 @@ Roll</value>
   <data name="lblModDes.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="ckForgottenRealmsSources.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lblNonSettingSources.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;tabPage14.Name" xml:space="preserve">
     <value>tabPage14</value>
@@ -3714,9 +3714,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;label65.Parent" xml:space="preserve">
     <value>groupBox2</value>
-  </data>
-  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
   </data>
   <data name="&gt;&gt;lblModWis.ZOrder" xml:space="preserve">
     <value>30</value>
@@ -3732,9 +3729,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;label33.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox15.Name" xml:space="preserve">
-    <value>textBox15</value>
   </data>
   <data name="comboBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
@@ -3772,8 +3766,14 @@ Roll</value>
   <data name="&gt;&gt;textBox76.Name" xml:space="preserve">
     <value>textBox76</value>
   </data>
-  <data name="comboBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+  <data name="label68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;increaseModCharisma.ZOrder" xml:space="preserve">
+    <value>145</value>
+  </data>
+  <data name="textBox56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="lblInherentGains.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3786,9 +3786,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;textBox37.Parent" xml:space="preserve">
     <value>tabPage2</value>
-  </data>
-  <data name="textBox27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
   </data>
   <data name="comboBox9.Items2" xml:space="preserve">
     <value>Constitution</value>
@@ -3841,6 +3838,9 @@ Roll</value>
   <data name="&gt;&gt;label50.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;textBox72.ZOrder" xml:space="preserve">
+    <value>74</value>
+  </data>
   <data name="tabControl1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -3871,14 +3871,14 @@ Roll</value>
   <data name="&gt;&gt;textBox79.Name" xml:space="preserve">
     <value>textBox79</value>
   </data>
-  <data name="textBox80.ToolTip" xml:space="preserve">
-    <value />
+  <data name="ckNonSettingSources.Items7" xml:space="preserve">
+    <value>Complete Scoundrel</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3892,8 +3892,8 @@ Roll</value>
   <data name="lblMonstrousNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 333</value>
   </data>
-  <data name="lblInherentGains.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;ckOtherSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
   </data>
   <data name="loadCharacterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 22</value>
@@ -3907,7 +3907,7 @@ Roll</value>
   <data name="&gt;&gt;textBox40.Name" xml:space="preserve">
     <value>textBox40</value>
   </data>
-  <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
   </data>
   <data name="comboBox7.Items2" xml:space="preserve">
@@ -3925,8 +3925,8 @@ Roll</value>
   <data name="textBox64.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>32</value>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>87</value>
   </data>
   <data name="&gt;&gt;lblMonstrousNonSettingSources.Parent" xml:space="preserve">
     <value>gBSelectSources</value>
@@ -3952,17 +3952,14 @@ Roll</value>
   <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox43.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
   <data name="&gt;&gt;label69.Name" xml:space="preserve">
     <value>label69</value>
   </data>
   <data name="textBox33.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 144</value>
   </data>
-  <data name="textBox61.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;txtWeight.Name" xml:space="preserve">
+    <value>txtWeight</value>
   </data>
   <data name="&gt;&gt;textBox58.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3973,8 +3970,8 @@ Roll</value>
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="lblCampaignSelect.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold, Underline</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 48</value>
@@ -3994,11 +3991,8 @@ Roll</value>
   <data name="label66.TabIndex" type="System.Int32, mscorlib">
     <value>215</value>
   </data>
-  <data name="lblForgottenRealmsSources.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cBCampaignSelect.Items2" xml:space="preserve">
-    <value>Eberron</value>
+  <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4036,8 +4030,8 @@ Roll</value>
   <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
     <value>191</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 119</value>
+  <data name="&gt;&gt;textBox43.ZOrder" xml:space="preserve">
+    <value>38</value>
   </data>
   <data name="label68.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -4054,26 +4048,32 @@ Roll</value>
   <data name="textBox52.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
   </data>
+  <data name="gBUneathedArcana.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;label68.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
+  <data name="textBox48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 69</value>
+  </data>
   <data name="comboBox15.Items3" xml:space="preserve">
     <value>Intelligence</value>
+  </data>
+  <data name="&gt;&gt;textBox29.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="label27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;increaseModStrength.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
   <data name="btAssignRandomWeight.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="textBox76.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="ckMonstrousNonSettingSources.Items10" xml:space="preserve">
+    <value>Fiendish Codex II</value>
   </data>
   <data name="pictureBox1.ToolTip" xml:space="preserve">
     <value />
@@ -4165,14 +4165,14 @@ Roll</value>
   <data name="lblModCon.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
   </data>
+  <data name="&gt;&gt;lblStrength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="comboBox5.Items2" xml:space="preserve">
     <value>Constitution</value>
   </data>
   <data name="&gt;&gt;btRandomEyes.Name" xml:space="preserve">
     <value>btRandomEyes</value>
-  </data>
-  <data name="ckNonSettingSources.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;label46.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4204,8 +4204,8 @@ Roll</value>
   <data name="tabPage8.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tabPage8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="lblRandomHeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 56</value>
@@ -4243,8 +4243,8 @@ Roll</value>
   <data name="tabPage5.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btAssignRandomHair.ZOrder" xml:space="preserve">
-    <value>28</value>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Settings</value>
   </data>
   <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -4261,8 +4261,8 @@ Roll</value>
   <data name="textBox74.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
   </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;textBox55.ZOrder" xml:space="preserve">
+    <value>57</value>
   </data>
   <data name="comboBox11.TabIndex" type="System.Int32, mscorlib">
     <value>202</value>
@@ -4285,6 +4285,9 @@ Roll</value>
   <data name="&gt;&gt;lblForgottenRealmsSources.Name" xml:space="preserve">
     <value>lblForgottenRealmsSources</value>
   </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -4296,9 +4299,6 @@ Roll</value>
   </data>
   <data name="lblCharisma.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
-  </data>
-  <data name="cBCampaignSelect.Items5" xml:space="preserve">
-    <value>Ravenloft</value>
   </data>
   <data name="label61.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4333,11 +4333,11 @@ Roll</value>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
+  <data name="label68.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 144</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
   </data>
   <data name="lblPointBuy.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -4360,8 +4360,8 @@ Roll</value>
   <data name="textBox65.Location" type="System.Drawing.Point, System.Drawing">
     <value>460, 94</value>
   </data>
-  <data name="comboBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 169</value>
+  <data name="&gt;&gt;textBox24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label63.Text" xml:space="preserve">
     <value>Weight</value>
@@ -4371,6 +4371,9 @@ Roll</value>
   </data>
   <data name="textBox38.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="initialStrength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
   </data>
   <data name="textBox62.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -4393,14 +4396,17 @@ Roll</value>
   <data name="lblEberronSettingSources.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="ckNonSettingSources.Items7" xml:space="preserve">
-    <value>Complete Scoundrel</value>
+  <data name="&gt;&gt;textBox23.Name" xml:space="preserve">
+    <value>textBox23</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 15</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;initialCharisma.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4471,8 +4477,8 @@ Roll</value>
   <data name="&gt;&gt;lblRandomAge.Name" xml:space="preserve">
     <value>lblRandomAge</value>
   </data>
-  <data name="lblModStr.ToolTip" xml:space="preserve">
-    <value />
+  <data name="btAssignRandomWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 23</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4986,10 +4992,10 @@ Roll</value>
 </value>
   </data>
   <data name="lblRandomName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;textBox55.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label68.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="textBox47.Location" type="System.Drawing.Point, System.Drawing">
     <value>544, 94</value>
@@ -5005,6 +5011,9 @@ Roll</value>
   </data>
   <data name="lblInherentGains.Text" xml:space="preserve">
     <value>Inherent Gains</value>
+  </data>
+  <data name="ckDeityOptions.Items" xml:space="preserve">
+    <value>LG Deities</value>
   </data>
   <data name="textBox75.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -5038,6 +5047,9 @@ Roll</value>
   </data>
   <data name="textBox34.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label45.Text" xml:space="preserve">
     <value>0</value>
@@ -5074,6 +5086,9 @@ Roll</value>
   </data>
   <data name="&gt;&gt;textBox31.Name" xml:space="preserve">
     <value>textBox31</value>
+  </data>
+  <data name="tabPage6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btAssignRandomHair.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -5117,9 +5132,6 @@ Roll</value>
   <data name="lblPointBuy.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 16</value>
   </data>
-  <data name="label22.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblIntelligence.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -5128,9 +5140,6 @@ Roll</value>
   </data>
   <data name="increaseModWisdom.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 169</value>
-  </data>
-  <data name="ckNonSettingSources.Items21" xml:space="preserve">
-    <value>Book of Exalted Deeds</value>
   </data>
   <data name="&gt;&gt;txtName.Name" xml:space="preserve">
     <value>txtName</value>
@@ -5158,9 +5167,6 @@ Roll</value>
   </data>
   <data name="textBox60.Location" type="System.Drawing.Point, System.Drawing">
     <value>482, 69</value>
-  </data>
-  <data name="&gt;&gt;textBox22.Name" xml:space="preserve">
-    <value>textBox22</value>
   </data>
   <data name="ckSettingSources.ToolTip" xml:space="preserve">
     <value />
@@ -5216,8 +5222,8 @@ Roll</value>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
   </data>
-  <data name="label20.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
+  <data name="lblGender.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>185</value>
@@ -5243,17 +5249,23 @@ Roll</value>
   <data name="lblCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>642, 8</value>
   </data>
+  <data name="label43.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
-  <data name="btRandomHair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;ckMonstrousNonSettingSources.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label38.TabIndex" type="System.Int32, mscorlib">
     <value>192</value>
   </data>
   <data name="&gt;&gt;textBox66.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="label67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -5276,6 +5288,9 @@ Roll</value>
   <data name="&gt;&gt;textBox11.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="textBox57.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblForgottenRealmsSources.Text" xml:space="preserve">
     <value>Forgotten Realms Sources</value>
   </data>
@@ -5284,6 +5299,9 @@ Roll</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 53</value>
+  </data>
+  <data name="ckNonSettingSources.Items16" xml:space="preserve">
+    <value>Cityscape</value>
   </data>
   <data name="&gt;&gt;textBox78.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -5303,14 +5321,14 @@ Roll</value>
   <data name="&gt;&gt;lblIntelligence.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ckNonSettingSources.Items" xml:space="preserve">
+    <value>Complete Adventurer</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>28</value>
+  <data name="&gt;&gt;tabPage11.Name" xml:space="preserve">
+    <value>tabPage11</value>
   </data>
   <data name="lblRandomWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 76</value>
@@ -5324,8 +5342,8 @@ Roll</value>
   <data name="&gt;&gt;textBox52.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>689, 366</value>
+  <data name="&gt;&gt;label55.Name" xml:space="preserve">
+    <value>label55</value>
   </data>
   <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
@@ -5363,20 +5381,17 @@ Roll</value>
   <data name="comboBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
   </data>
-  <data name="&gt;&gt;ckLGSources.Parent" xml:space="preserve">
-    <value>gBSelectSources</value>
-  </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;comboBox17.Name" xml:space="preserve">
+    <value>comboBox17</value>
   </data>
   <data name="textBox50.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblLevelAdjust.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
   </data>
   <data name="&gt;&gt;textBox30.ZOrder" xml:space="preserve">
     <value>112</value>
@@ -5396,6 +5411,12 @@ Roll</value>
   <data name="ckForgottenRealmsSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>318, 45</value>
   </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 53</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>94</value>
+  </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>98</value>
   </data>
@@ -5414,9 +5435,6 @@ Roll</value>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Settings</value>
-  </data>
   <data name="&gt;&gt;initialIntelligence.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
@@ -5425,9 +5443,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
-  </data>
-  <data name="lblDragonLanceSources.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="increaseModStrength.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 69</value>
@@ -5447,23 +5462,14 @@ Roll</value>
   <data name="&gt;&gt;labelRace.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>Feats</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="lblCharisma.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;lblStrength.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btRandomHair.Text" xml:space="preserve">
+    <value>Random Hair</value>
   </data>
   <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
     <value>tabControl1</value>
-  </data>
-  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="lblModStr.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -5498,9 +5504,6 @@ Roll</value>
   <data name="&gt;&gt;txtAge.Name" xml:space="preserve">
     <value>txtAge</value>
   </data>
-  <data name="textBox63.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
@@ -5525,14 +5528,14 @@ Roll</value>
   <data name="comboBox16.Items1" xml:space="preserve">
     <value>Dexterity</value>
   </data>
-  <data name="textBox84.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
   </data>
   <data name="lblDexterity.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
-  <data name="txtEyes.ToolTip" xml:space="preserve">
-    <value />
+  <data name="comboBox16.Items4" xml:space="preserve">
+    <value>Wisdom</value>
   </data>
   <data name="comboBox16.Items5" xml:space="preserve">
     <value>Charisma</value>
@@ -5549,8 +5552,8 @@ Roll</value>
   <data name="label35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>94</value>
+  <data name="&gt;&gt;label62.Name" xml:space="preserve">
+    <value>label62</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5582,6 +5585,9 @@ Roll</value>
   <data name="initialConstitution.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 119</value>
   </data>
+  <data name="gBSelectSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="textBox76.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
   </data>
@@ -5603,11 +5609,8 @@ Roll</value>
   <data name="comboBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
-  <data name="&gt;&gt;ckMonstrousNonSettingSources.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblIntelligence.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;ckLGSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
   </data>
   <data name="textBox48.ToolTip" xml:space="preserve">
     <value />
@@ -5620,9 +5623,6 @@ Roll</value>
   </data>
   <data name="textBox40.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
-  </data>
-  <data name="ckSettingSources.Items8" xml:space="preserve">
-    <value>Secrets of Sarlona</value>
   </data>
   <data name="&gt;&gt;lblIntelligence.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -5639,8 +5639,8 @@ Roll</value>
   <data name="&gt;&gt;lblModStr.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label68.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage11.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="textBox21.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -5651,8 +5651,8 @@ Roll</value>
   <data name="label69.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label53.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
   </data>
   <data name="&gt;&gt;textBox66.ZOrder" xml:space="preserve">
     <value>68</value>
@@ -5729,17 +5729,20 @@ Roll</value>
   <data name="label69.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
-  <data name="initialStrength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+  <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 19</value>
   </data>
   <data name="&gt;&gt;lblModWis.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="ckForgottenRealmsSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;textBox20.Name" xml:space="preserve">
     <value>textBox20</value>
   </data>
-  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox56.Name" xml:space="preserve">
+    <value>textBox56</value>
   </data>
   <data name="textBox21.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 144</value>
@@ -5756,8 +5759,8 @@ Roll</value>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 169</value>
   </data>
-  <data name="textBox48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 69</value>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 119</value>
   </data>
   <data name="lblDragonLanceSources.ToolTip" xml:space="preserve">
     <value />
@@ -5822,8 +5825,8 @@ Roll</value>
         CIi58Bu4vpmloKMMgBMDnVfIj1ckgaWlpX8A+tv04AJESiAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;textBox54.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="textBox27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="&gt;&gt;textBox10.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -5834,14 +5837,17 @@ Roll</value>
   <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 94</value>
   </data>
+  <data name="txtEyes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBox75.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
   <data name="btAssignRandomEyes.Text" xml:space="preserve">
     <value>&lt;&lt;</value>
   </data>
   <data name="&gt;&gt;textBox23.Parent" xml:space="preserve">
     <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;comboBox14.ZOrder" xml:space="preserve">
-    <value>17</value>
   </data>
   <data name="&gt;&gt;label24.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -5966,20 +5972,14 @@ Roll</value>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
-  <data name="textBox57.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;gBSelectSources.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="btAssignRandomAge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 33</value>
   </data>
   <data name="textBox39.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>20</value>
-  </data>
-  <data name="&gt;&gt;lblConstitution.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox56.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -5992,9 +5992,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;preferencesToolStripMenuItem.Name" xml:space="preserve">
     <value>preferencesToolStripMenuItem</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
   </data>
   <data name="&gt;&gt;textBox21.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6016,6 +6013,9 @@ Roll</value>
   </data>
   <data name="textBox24.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;tabPage11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label61.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -6065,9 +6065,6 @@ Roll</value>
   <data name="lblOtherSources.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 16</value>
   </data>
-  <data name="&gt;&gt;lblRandomWeight.Name" xml:space="preserve">
-    <value>lblRandomWeight</value>
-  </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>167</value>
   </data>
@@ -6104,8 +6101,8 @@ Roll</value>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
   </data>
-  <data name="&gt;&gt;lblNonSettingSources.Name" xml:space="preserve">
-    <value>lblNonSettingSources</value>
+  <data name="&gt;&gt;comboBox15.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;textBox18.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6116,11 +6113,11 @@ Roll</value>
   <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="gBSelectSources.Size" type="System.Drawing.Size, System.Drawing">
-    <value>625, 442</value>
+  <data name="lblModStr.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblRandomHeight.Text" xml:space="preserve">
-    <value>0</value>
+    <value>0 ft</value>
   </data>
   <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6131,8 +6128,8 @@ Roll</value>
   <data name="textBox16.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="ckUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 79</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
     <value>-1</value>
@@ -6158,6 +6155,9 @@ Roll</value>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="labelRace.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 16</value>
   </data>
@@ -6167,8 +6167,8 @@ Roll</value>
   <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;initialCharisma.Name" xml:space="preserve">
-    <value>initialCharisma</value>
+  <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="&gt;&gt;textBox67.Name" xml:space="preserve">
     <value>textBox67</value>
@@ -6212,8 +6212,11 @@ Roll</value>
   <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label62.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Race &amp; Templates</value>
+  </data>
+  <data name="gBCharacterSheetDisplayHitPoints.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 117</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -6233,8 +6236,8 @@ Roll</value>
   <data name="tabPage4.Text" xml:space="preserve">
     <value>Classes</value>
   </data>
-  <data name="comboBox9.Items" xml:space="preserve">
-    <value>Strength</value>
+  <data name="ckLGSources.Items" xml:space="preserve">
+    <value>Dragon Magazine (315 &amp; 319)</value>
   </data>
   <data name="textBox87.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -6242,8 +6245,8 @@ Roll</value>
   <data name="lblWisdom.Text" xml:space="preserve">
     <value>Wisdom</value>
   </data>
-  <data name="&gt;&gt;label55.Name" xml:space="preserve">
-    <value>label55</value>
+  <data name="lblInherentGains.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;lblNonSettingSources.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6257,8 +6260,8 @@ Roll</value>
   <data name="label55.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="gBCharacterSheetDisplayHitPoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 117</value>
+  <data name="&gt;&gt;textBox39.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="label49.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -6323,8 +6326,8 @@ Roll</value>
   <data name="label70.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btAssignRandomHeight.Text" xml:space="preserve">
-    <value>&lt;&lt;</value>
+  <data name="&gt;&gt;lblConstitution.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtHeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -6353,6 +6356,9 @@ Roll</value>
   <data name="ckListCharacterSheetDisplayHitPointOptions.Items" xml:space="preserve">
     <value>Hide Trained Only skills with no ranks</value>
   </data>
+  <data name="ckNonSettingSources.Items3" xml:space="preserve">
+    <value>Complete Warrior</value>
+  </data>
   <data name="&gt;&gt;textBox63.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -6380,11 +6386,14 @@ Roll</value>
   <data name="label40.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;ckNonSettingSources.Parent" xml:space="preserve">
+    <value>gBSelectSources</value>
+  </data>
   <data name="textBox28.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 45</value>
+  <data name="&gt;&gt;textBox83.ZOrder" xml:space="preserve">
+    <value>85</value>
   </data>
   <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
     <value>541, 513</value>
@@ -6400,9 +6409,6 @@ Roll</value>
   </data>
   <data name="&gt;&gt;llblDeity.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label26.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="textBox86.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -6421,9 +6427,6 @@ Roll</value>
   </data>
   <data name="lblCharisma.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
-  </data>
-  <data name="textBox55.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
   </data>
   <data name="lblModStr.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6498,6 +6501,9 @@ Gain</value>
   <data name="textBox42.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="btRandomWeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 23</value>
   </data>
@@ -6570,6 +6576,9 @@ Gain</value>
   <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
     <value>878, 598</value>
   </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 13</value>
+  </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
   </data>
@@ -6579,8 +6588,8 @@ Gain</value>
   <data name="lblModCha.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
   </data>
-  <data name="textBox50.TabIndex" type="System.Int32, mscorlib">
-    <value>118</value>
+  <data name="ckNonSettingSources.Items10" xml:space="preserve">
+    <value>Races of Stone</value>
   </data>
   <data name="lblMonstrousNonSettingSources.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -6590,12 +6599,6 @@ Gain</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Race &amp; Templates</value>
-  </data>
-  <data name="&gt;&gt;lblOtherSources.Parent" xml:space="preserve">
-    <value>gBSelectSources</value>
   </data>
   <data name="&gt;&gt;textBox27.ZOrder" xml:space="preserve">
     <value>109</value>
@@ -6611,9 +6614,6 @@ Gain</value>
   </data>
   <data name="textBox28.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 119</value>
-  </data>
-  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 196</value>
@@ -6681,8 +6681,8 @@ Gain</value>
   <data name="label69.Text" xml:space="preserve">
     <value>Classes:</value>
   </data>
-  <data name="ckDragonLanceSources.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lblModCha.TabIndex" type="System.Int32, mscorlib">
+    <value>166</value>
   </data>
   <data name="comboBox11.Items2" xml:space="preserve">
     <value>Constitution</value>
@@ -6732,11 +6732,14 @@ Gain</value>
   <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
     <value>textBox7</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBox33.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="label46.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;textBox34.Name" xml:space="preserve">
+    <value>textBox34</value>
   </data>
   <data name="lblModWis.Text" xml:space="preserve">
     <value>0</value>
@@ -6767,8 +6770,8 @@ Selections</value>
   <data name="&gt;&gt;lblModCon.Name" xml:space="preserve">
     <value>lblModCon</value>
   </data>
-  <data name="textBox50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 169</value>
+  <data name="btRandomHair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="textBox74.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -6787,6 +6790,9 @@ Selections</value>
   </data>
   <data name="textBox76.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 45</value>
   </data>
   <data name="&gt;&gt;textBox74.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6848,9 +6854,6 @@ Selections</value>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelRace.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
   <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -6865,9 +6868,6 @@ Selections</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 44</value>
-  </data>
-  <data name="comboBox16.Items4" xml:space="preserve">
-    <value>Wisdom</value>
   </data>
   <data name="lblEberronSettingSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6902,8 +6902,8 @@ Selections</value>
   <data name="tabPage11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="textBox75.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 15</value>
@@ -6911,17 +6911,14 @@ Selections</value>
   <data name="initialStrength.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;textBox83.ZOrder" xml:space="preserve">
-    <value>85</value>
-  </data>
   <data name="textBox58.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label56.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="gBUneathedArcana.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="&gt;&gt;ckLGSources.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -6959,14 +6956,14 @@ Selections</value>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
-  <data name="&gt;&gt;txtWeight.Name" xml:space="preserve">
-    <value>txtWeight</value>
-  </data>
   <data name="textBox53.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
   </data>
   <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 69</value>
+  </data>
+  <data name="&gt;&gt;lblRandomName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>0</value>
@@ -6988,6 +6985,9 @@ Selections</value>
   </data>
   <data name="increaseModWisdom.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 28</value>
   </data>
   <data name="lblForgottenRealmsSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7052,11 +7052,11 @@ Selections</value>
   <data name="&gt;&gt;ckSettingSources.Parent" xml:space="preserve">
     <value>gBSelectSources</value>
   </data>
-  <data name="&gt;&gt;btRandomHeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
     <value>groupBox3</value>
+  </data>
+  <data name="lblRace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label16.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -7085,6 +7085,9 @@ Selections</value>
   <data name="textBox48.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
+  <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
   <data name="&gt;&gt;textBox64.Name" xml:space="preserve">
     <value>textBox64</value>
   </data>
@@ -7099,6 +7102,9 @@ Selections</value>
   </data>
   <data name="initialDexterity.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
+  </data>
+  <data name="textBox80.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 121</value>
@@ -7118,11 +7124,8 @@ Selections</value>
   <data name="textBox48.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
   </data>
-  <data name="ckUneathedArcana.Items3" xml:space="preserve">
-    <value>Traits</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblModStr.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
   </data>
   <data name="textBox45.Location" type="System.Drawing.Point, System.Drawing">
     <value>544, 144</value>
@@ -7154,9 +7157,6 @@ Selections</value>
   <data name="textBox29.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
-  <data name="&gt;&gt;textBox39.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>206</value>
   </data>
@@ -7178,17 +7178,11 @@ Selections</value>
   <data name="&gt;&gt;textBox53.Name" xml:space="preserve">
     <value>textBox53</value>
   </data>
-  <data name="&gt;&gt;lblRandomName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="increaseModDexterity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="&gt;&gt;textBox54.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="comboBox7.Items" xml:space="preserve">
-    <value>Lawful Good</value>
   </data>
   <data name="textBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -7202,9 +7196,6 @@ Selections</value>
   <data name="&gt;&gt;lblModInt.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="textBox35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 94</value>
-  </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
   </data>
@@ -7217,9 +7208,6 @@ Selections</value>
   <data name="&gt;&gt;comboBox14.Name" xml:space="preserve">
     <value>comboBox14</value>
   </data>
-  <data name="textBox56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
-  </data>
   <data name="txtWeight.TabIndex" type="System.Int32, mscorlib">
     <value>224</value>
   </data>
@@ -7231,6 +7219,9 @@ Selections</value>
   </data>
   <data name="comboBox17.Items3" xml:space="preserve">
     <value>Intelligence</value>
+  </data>
+  <data name="comboBox9.Items1" xml:space="preserve">
+    <value>Dexterity</value>
   </data>
   <data name="comboBox12.Items2" xml:space="preserve">
     <value>Constitution</value>
@@ -7247,8 +7238,8 @@ Selections</value>
   <data name="comboBox12.Items4" xml:space="preserve">
     <value>Wisdom</value>
   </data>
-  <data name="comboBox12.Items5" xml:space="preserve">
-    <value>Charisma</value>
+  <data name="ckNonSettingSources.Items28" xml:space="preserve">
+    <value>Magic of Incarnum</value>
   </data>
   <data name="&gt;&gt;gBUneathedArcana.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -7259,8 +7250,8 @@ Selections</value>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 13</value>
+  <data name="lblConstitution.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;ckDeityOptions.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -7286,9 +7277,6 @@ Selections</value>
   <data name="&gt;&gt;ckForgottenRealmsSources.Parent" xml:space="preserve">
     <value>gBSelectSources</value>
   </data>
-  <data name="&gt;&gt;textBox13.Name" xml:space="preserve">
-    <value>textBox13</value>
-  </data>
   <data name="label45.TabIndex" type="System.Int32, mscorlib">
     <value>199</value>
   </data>
@@ -7303,6 +7291,9 @@ Selections</value>
   </data>
   <data name="&gt;&gt;textBox53.Parent" xml:space="preserve">
     <value>tabPage2</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;lblNonSettingSources.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -7325,6 +7316,9 @@ Selections</value>
   <data name="label70.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="ckDragonLanceSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -7346,14 +7340,17 @@ Selections</value>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>653, 455</value>
   </data>
+  <data name="comboBox9.Items" xml:space="preserve">
+    <value>Strength</value>
+  </data>
   <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 194</value>
   </data>
   <data name="textBox88.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="&gt;&gt;textBox75.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="textBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 94</value>
   </data>
   <data name="textBox78.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -7382,8 +7379,8 @@ Selections</value>
   <data name="textBox40.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="lblConstitution.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
+    <value>textBox6</value>
   </data>
   <data name="&gt;&gt;comboBox12.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -7391,8 +7388,8 @@ Selections</value>
   <data name="btAssignRandomAge.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btAssignRandomWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 75</value>
+  <data name="&gt;&gt;gBSelectSources.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="txtEyes.TabIndex" type="System.Int32, mscorlib">
     <value>226</value>
@@ -7409,9 +7406,6 @@ Selections</value>
   <data name="label30.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="ckNonSettingSources.Items28" xml:space="preserve">
-    <value>Magic of Incarnum</value>
-  </data>
   <data name="lblRandomEyes.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -7421,20 +7415,14 @@ Selections</value>
   <data name="comboBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 44</value>
   </data>
-  <data name="comboBox13.TabIndex" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="label69.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblConstitution.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 119</value>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="textBox90.Location" type="System.Drawing.Point, System.Drawing">
     <value>372, 69</value>
   </data>
-  <data name="loadCharacterToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Load Character</value>
+  <data name="&gt;&gt;label53.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox76.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 119</value>
@@ -7454,8 +7442,8 @@ Selections</value>
   <data name="&gt;&gt;gBDeityOptions.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblCampaignSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox59.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -7481,8 +7469,8 @@ Selections</value>
   <data name="label63.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;comboBox13.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="lblCampaignSelect.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;lblRace.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7517,12 +7505,8 @@ Selections</value>
   <data name="gBUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 117</value>
   </data>
-  <data name="label53.Text" xml:space="preserve">
-    <value>This work is licensed under the Creative 
-Commons Attribution-NonCommercial-
-ShareAlike 4.0 International License. 
-To view a copy of this license, visit:
-</value>
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
@@ -7542,6 +7526,9 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;textBox82.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;textBox16.Name" xml:space="preserve">
     <value>textBox16</value>
   </data>
@@ -7551,14 +7538,14 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;lblDexterity.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="btRandomHeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
-  </data>
   <data name="ckNonSettingSources.Items25" xml:space="preserve">
     <value>Player's Handbook II</value>
   </data>
   <data name="&gt;&gt;textBox44.ZOrder" xml:space="preserve">
     <value>39</value>
+  </data>
+  <data name="&gt;&gt;comboBox13.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7566,17 +7553,14 @@ To view a copy of this license, visit:
   <data name="lblIntelligence.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
-  </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>49</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 44</value>
+  <data name="textBox19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 194</value>
   </data>
   <data name="label43.ToolTip" xml:space="preserve">
     <value />
@@ -7680,9 +7664,6 @@ To view a copy of this license, visit:
   <data name="tabPage11.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;textBox32.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
   <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -7698,14 +7679,14 @@ To view a copy of this license, visit:
   <data name="lblGender.TabIndex" type="System.Int32, mscorlib">
     <value>221</value>
   </data>
-  <data name="lblRace.TabIndex" type="System.Int32, mscorlib">
-    <value>207</value>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
   </data>
   <data name="ckNonSettingSources.Items15" xml:space="preserve">
     <value>Dungeonscape</value>
   </data>
-  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+  <data name="lblEberronSettingSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 138</value>
   </data>
   <data name="&gt;&gt;textBox83.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7737,8 +7718,8 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;label36.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btAssignRandomName.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="textBox51.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -7749,6 +7730,9 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="loadCharacterToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Load Character</value>
+  </data>
   <data name="&gt;&gt;lblStrength.Name" xml:space="preserve">
     <value>lblStrength</value>
   </data>
@@ -7757,9 +7741,6 @@ To view a copy of this license, visit:
   </data>
   <data name="textBox79.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
-  </data>
-  <data name="lblModStr.TabIndex" type="System.Int32, mscorlib">
-    <value>161</value>
   </data>
   <data name="comboBox17.Items4" xml:space="preserve">
     <value>Wisdom</value>
@@ -7772,9 +7753,6 @@ To view a copy of this license, visit:
   </data>
   <data name="ckMonstrousNonSettingSources.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="lblNonSettingSources.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;textBox47.Name" xml:space="preserve">
     <value>textBox47</value>
@@ -7803,11 +7781,11 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;txtEyes.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="&gt;&gt;lblNonSettingSources.Name" xml:space="preserve">
+    <value>lblNonSettingSources</value>
+  </data>
   <data name="&gt;&gt;textBox58.Name" xml:space="preserve">
     <value>textBox58</value>
-  </data>
-  <data name="&gt;&gt;textBox55.ZOrder" xml:space="preserve">
-    <value>57</value>
   </data>
   <data name="textBox61.Location" type="System.Drawing.Point, System.Drawing">
     <value>460, 194</value>
@@ -7866,8 +7844,8 @@ To view a copy of this license, visit:
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>438, 53</value>
   </data>
-  <data name="ckNonSettingSources.Items3" xml:space="preserve">
-    <value>Complete Warrior</value>
+  <data name="&gt;&gt;gBCharacterSheetDisplayHitPoints.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="tabPage14.Text" xml:space="preserve">
     <value>Character Sheet 3</value>
@@ -7890,20 +7868,23 @@ To view a copy of this license, visit:
   <data name="textBox35.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="btAssignRandomWeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
+  <data name="comboBox13.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;lblCampaignSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>52</value>
   </data>
+  <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>878, 598</value>
+  </data>
   <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;lblRace.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="lblDragonLanceSources.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="textBox1.ToolTip" xml:space="preserve">
     <value />
@@ -7917,8 +7898,8 @@ To view a copy of this license, visit:
   <data name="label48.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblRace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
   </data>
   <data name="&gt;&gt;lblRandomHair.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -7965,11 +7946,18 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox17.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
   </data>
   <data name="lblPointBuy.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
+  </data>
+  <data name="label53.Text" xml:space="preserve">
+    <value>This work is licensed under the Creative 
+Commons Attribution-NonCommercial-
+ShareAlike 4.0 International License. 
+To view a copy of this license, visit:
+</value>
   </data>
   <data name="lblWisdom.ToolTip" xml:space="preserve">
     <value />
@@ -7980,8 +7968,11 @@ To view a copy of this license, visit:
   <data name="lblForgottenRealmsSources.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;lblRandomAge.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;label62.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
@@ -8007,8 +7998,8 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
     <value>128</value>
   </data>
-  <data name="&gt;&gt;textBox68.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ckNonSettingSources.Items21" xml:space="preserve">
+    <value>Book of Exalted Deeds</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -8021,6 +8012,9 @@ To view a copy of this license, visit:
   </data>
   <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblOtherSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;textBox38.Name" xml:space="preserve">
     <value>textBox38</value>
@@ -8046,9 +8040,6 @@ To view a copy of this license, visit:
   <data name="label59.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btRandomEyes.Text" xml:space="preserve">
-    <value>Random Weight</value>
-  </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>489, 159</value>
   </data>
@@ -8057,6 +8048,9 @@ To view a copy of this license, visit:
   </data>
   <data name="lblModStr.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 69</value>
+  </data>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblRace.ToolTip" xml:space="preserve">
     <value />
@@ -8089,10 +8083,10 @@ To view a copy of this license, visit:
     <value>NoControl</value>
   </data>
   <data name="lblRandomEyes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+    <value>Microsoft Sans Serif, 6.75pt, style=Underline</value>
   </data>
-  <data name="tabPage12.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;textBox22.Name" xml:space="preserve">
+    <value>textBox22</value>
   </data>
   <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -8114,9 +8108,6 @@ To view a copy of this license, visit:
   </data>
   <data name="label28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>87</value>
   </data>
   <data name="textBox77.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -8178,8 +8169,8 @@ To view a copy of this license, visit:
   <data name="label32.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;label70.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;comboBox14.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="initialIntelligence.ToolTip" xml:space="preserve">
     <value />
@@ -8229,8 +8220,8 @@ To view a copy of this license, visit:
   <data name="&gt;&gt;tabPage8.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 16</value>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>140</value>
   </data>
   <data name="textBox44.Location" type="System.Drawing.Point, System.Drawing">
     <value>544, 169</value>
@@ -8256,8 +8247,8 @@ To view a copy of this license, visit:
   <data name="comboBox10.Items1" xml:space="preserve">
     <value>Dexterity</value>
   </data>
-  <data name="lblOtherSources.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label4.Text" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="comboBox10.Items5" xml:space="preserve">
     <value>Charisma</value>
@@ -8304,8 +8295,8 @@ To view a copy of this license, visit:
   <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="btAssignRandomAge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 33</value>
+  <data name="&gt;&gt;lblRandomWeight.Name" xml:space="preserve">
+    <value>lblRandomWeight</value>
   </data>
   <data name="textBox37.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -8331,8 +8322,8 @@ To view a copy of this license, visit:
   <data name="textBox31.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 28</value>
+  <data name="increaseModDexterity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="&gt;&gt;textBox60.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -8401,8 +8392,11 @@ Campaign specific source options will be selected based on updated source materi
   <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 36</value>
   </data>
-  <data name="label68.ToolTip" xml:space="preserve">
-    <value />
+  <data name="btAssignRandomEyes.TabIndex" type="System.Int32, mscorlib">
+    <value>245</value>
+  </data>
+  <data name="btAssignRandomHeight.Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
   </data>
   <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
     <value>tabControl1</value>
@@ -8506,8 +8500,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;textBox62.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Feats</value>
   </data>
   <data name="lblRace.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -8563,8 +8557,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="label64.Text" xml:space="preserve">
     <value>Height</value>
   </data>
-  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="&gt;&gt;comboBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="comboBox3.Items4" xml:space="preserve">
     <value>Wisdom</value>
@@ -8592,6 +8586,12 @@ Campaign specific source options will be selected based on updated source materi
   </data>
   <data name="cBCampaignSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>643, 28</value>
+  </data>
+  <data name="comboBox13.TabIndex" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="lblForgottenRealmsSources.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label50.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8629,8 +8629,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>143</value>
   </data>
-  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btAssignRandomHair.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="&gt;&gt;increaseModConstitution.ZOrder" xml:space="preserve">
     <value>148</value>
@@ -8677,9 +8677,6 @@ Campaign specific source options will be selected based on updated source materi
   <data name="&gt;&gt;lblInherentGains.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="label59.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
-  </data>
   <data name="labelRace.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -8692,20 +8689,17 @@ Campaign specific source options will be selected based on updated source materi
   <data name="&gt;&gt;textBox14.ZOrder" xml:space="preserve">
     <value>132</value>
   </data>
-  <data name="label65.TabIndex" type="System.Int32, mscorlib">
-    <value>216</value>
+  <data name="label22.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="textBox17.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="lblModDes.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="lblConstitution.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 119</value>
   </data>
   <data name="textBox68.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
-  </data>
-  <data name="initialDexterity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
   </data>
   <data name="label66.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -8732,7 +8726,7 @@ Campaign specific source options will be selected based on updated source materi
     <value>21</value>
   </data>
   <data name="lblRandomHair.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+    <value>Microsoft Sans Serif, 6.75pt</value>
   </data>
   <data name="&gt;&gt;textBox18.ZOrder" xml:space="preserve">
     <value>136</value>
@@ -8782,11 +8776,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="lblModCon.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="ckUneathedArcana.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 79</value>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox67.ZOrder" xml:space="preserve">
     <value>69</value>
@@ -8809,8 +8800,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="textBox23.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 94</value>
   </data>
-  <data name="btRandomAge.TabIndex" type="System.Int32, mscorlib">
-    <value>228</value>
+  <data name="label69.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label60.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8823,6 +8814,12 @@ Campaign specific source options will be selected based on updated source materi
   </data>
   <data name="ckLGSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 274</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox76.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -8851,8 +8848,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="ckOtherSources.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="comboBox7.Items" xml:space="preserve">
+    <value>Lawful Good</value>
   </data>
   <data name="textBox52.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -8866,8 +8863,8 @@ Campaign specific source options will be selected based on updated source materi
   <data name="&gt;&gt;txtHair.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 69</value>
+  <data name="lblRace.TabIndex" type="System.Int32, mscorlib">
+    <value>207</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -8966,8 +8963,8 @@ Value</value>
   <data name="textBox87.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <data name="&gt;&gt;comboBox17.Name" xml:space="preserve">
-    <value>comboBox17</value>
+  <data name="&gt;&gt;textBox13.Name" xml:space="preserve">
+    <value>textBox13</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -8975,8 +8972,8 @@ Value</value>
   <data name="lblCharisma.Text" xml:space="preserve">
     <value>Charisma</value>
   </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="comboBox15.Items" xml:space="preserve">
     <value>Strength</value>
@@ -9008,6 +9005,9 @@ Value</value>
   <data name="&gt;&gt;btRandomEyes.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="lblModCon.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="&gt;&gt;comboBox17.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
@@ -9016,6 +9016,9 @@ Value</value>
   </data>
   <data name="&gt;&gt;label42.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox62.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;textBox76.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -9047,12 +9050,6 @@ Value</value>
   <data name="textBox34.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 119</value>
   </data>
-  <data name="ckNonSettingSources.Items10" xml:space="preserve">
-    <value>Races of Stone</value>
-  </data>
-  <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
   <data name="textBox43.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
   </data>
@@ -9061,6 +9058,12 @@ Value</value>
   </data>
   <data name="lblOtherSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label49.Name" xml:space="preserve">
+    <value>label49</value>
+  </data>
+  <data name="&gt;&gt;lblRandomAge.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -9077,11 +9080,11 @@ Value</value>
   <data name="label40.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 146</value>
+  <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
-  <data name="label43.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="btAssignRandomEyes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>461, 53</value>
@@ -9089,11 +9092,8 @@ Value</value>
   <data name="&gt;&gt;textBox24.ZOrder" xml:space="preserve">
     <value>106</value>
   </data>
-  <data name="&gt;&gt;textBox37.Name" xml:space="preserve">
-    <value>textBox37</value>
-  </data>
-  <data name="lblLGSources.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;btRandomHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label23.ToolTip" xml:space="preserve">
     <value />
@@ -9110,9 +9110,6 @@ Value</value>
   <data name="&gt;&gt;lblModDes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Name" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
   <data name="lblRandomHeight.TabIndex" type="System.Int32, mscorlib">
     <value>232</value>
   </data>
@@ -9122,11 +9119,17 @@ Value</value>
   <data name="&gt;&gt;textBox25.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="btRandomAge.TabIndex" type="System.Int32, mscorlib">
+    <value>228</value>
+  </data>
   <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;initialCharisma.Name" xml:space="preserve">
+    <value>initialCharisma</value>
   </data>
   <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -9139,6 +9142,9 @@ Value</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
+  </data>
+  <data name="lblConstitution.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 169</value>
@@ -9155,7 +9161,7 @@ Value</value>
   <data name="textBox12.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="labelRace.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="textBox71.ToolTip" xml:space="preserve">
@@ -9185,8 +9191,8 @@ Value</value>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;ckNonSettingSources.Parent" xml:space="preserve">
-    <value>gBSelectSources</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="textBox27.ToolTip" xml:space="preserve">
     <value />
@@ -9203,9 +9209,6 @@ Value</value>
   <data name="label57.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
-  </data>
   <data name="&gt;&gt;textBox59.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
@@ -9213,10 +9216,13 @@ Value</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblRandomEyes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>BottomCenter</value>
   </data>
   <data name="label51.Text" xml:space="preserve">
     <value>Alignment</value>
+  </data>
+  <data name="&gt;&gt;increaseModWisdom.Name" xml:space="preserve">
+    <value>increaseModWisdom</value>
   </data>
   <data name="&gt;&gt;comboBox5.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -9231,7 +9237,7 @@ Value</value>
     <value>18, 275</value>
   </data>
   <data name="lblRandomName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>Microsoft Sans Serif, 6.75pt</value>
   </data>
   <data name="&gt;&gt;btAssignRandomName.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -9275,8 +9281,8 @@ Value</value>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Appearance</value>
   </data>
-  <data name="tabPage6.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="textBox26.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -9302,9 +9308,6 @@ Value</value>
   <data name="tabPage14.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>878, 598</value>
-  </data>
   <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
     <value>tabPage4</value>
   </data>
@@ -9320,14 +9323,23 @@ Value</value>
   <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 18</value>
   </data>
+  <data name="textBox65.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
   </data>
   <data name="btRandomWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 74</value>
   </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;btAssignRandomWeight.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox68.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9395,9 +9407,6 @@ Value</value>
   <data name="lblPointBuy.Text" xml:space="preserve">
     <value>Point Buy:</value>
   </data>
-  <data name="&gt;&gt;textBox56.Name" xml:space="preserve">
-    <value>textBox56</value>
-  </data>
   <data name="ckListCharacterSheetDisplayHitPointOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
   </data>
@@ -9418,9 +9427,6 @@ Value</value>
   </data>
   <data name="textBox75.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 144</value>
-  </data>
-  <data name="lblModInt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
   </data>
   <data name="&gt;&gt;label34.Name" xml:space="preserve">
     <value>label34</value>
@@ -9476,9 +9482,6 @@ Value</value>
   <data name="ckNonSettingSources.Items20" xml:space="preserve">
     <value>Tome of Magic</value>
   </data>
-  <data name="label62.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
   <data name="label38.Text" xml:space="preserve">
     <value>8</value>
   </data>
@@ -9499,9 +9502,6 @@ Value</value>
   </data>
   <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
-  </data>
-  <data name="lblModCha.TabIndex" type="System.Int32, mscorlib">
-    <value>166</value>
   </data>
   <data name="label39.Text" xml:space="preserve">
     <value>8</value>

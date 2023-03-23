@@ -1146,6 +1146,7 @@
             this.btRandomHair.Name = "btRandomHair";
             this.toolTip1.SetToolTip(this.btRandomHair, resources.GetString("btRandomHair.ToolTip"));
             this.btRandomHair.UseVisualStyleBackColor = true;
+            this.btRandomHair.Click += new System.EventHandler(this.btRandomHair_Click);
             // 
             // btRandomEyes
             // 
