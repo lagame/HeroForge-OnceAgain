@@ -121,6 +121,15 @@
   <data name="baseInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\baseInfo.xlsm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MsgSaveCharacter" xml:space="preserve">
+    <value>Personagem salvo com sucesso!</value>
+  </data>
+  <data name="OpenSaveCharacter" xml:space="preserve">
+    <value>Salvar Personagem</value>
+  </data>
+  <data name="SelectFileToOpen" xml:space="preserve">
+    <value>Carregar Personagem</value>
+  </data>
   <data name="UnableOpenLink" xml:space="preserve">
     <value>Não é possível abrir o link que foi clicado</value>
   </data>

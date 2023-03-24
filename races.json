@@ -1,0 +1,16 @@
+[
+{"id":"0","name":"Select a Race", "lang":"en"},
+{"id":"1","name":" Custom Race", "lang":"en"},
+{"id":"2","name":"Aarakocra", "lang":"en"},
+{"id":"3","name":"Dwarf, Hill", "lang":"en"},
+{"id":"4","name":"Human", "lang":"en"},
+{"id":"5","name":"Ogre", "lang":"en"},
+{"id":"6","name":"Orc", "lang":"en"},
+{"id":"0","name":"Selecione uma Raça", "lang":"pt-BR"},
+{"id":"1","name":" Raça Personalizada", "lang":"pt-BR"},
+{"id":"2","name":"Aarakocra", "lang":"pt-BR"},
+{"id":"3","name":"Anão da Colina", "lang":"pt-BR"},
+{"id":"4","name":"Humano", "lang":"pt-BR"},
+{"id":"5","name":"Ogro", "lang":"pt-BR"},
+{"id":"6","name":"Orc", "lang":"pt-BR"},
+]

@@ -1470,6 +1470,54 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="tabPage1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="cBGender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 111</value>
+  </data>
+  <data name="cBGender.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 39</value>
+  </data>
+  <data name="comboBox18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelGender.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labelGender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 16</value>
+  </data>
+  <data name="labelGender.Text" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="labelGender.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cBIgnoreSourceSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 66</value>
+  </data>
+  <data name="cBIgnoreSourceSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 17</value>
+  </data>
+  <data name="cBIgnoreSourceSelection.Text" xml:space="preserve">
+    <value>Ignorar seleção de livros de origem</value>
+  </data>
+  <data name="cBIgnoreSourceSelection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelRace1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labelRace1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="labelRace1.Text" xml:space="preserve">
+    <value>Raça</value>
+  </data>
+  <data name="labelRace1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Raça &amp; Modelos</value>
   </data>

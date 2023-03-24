@@ -27,15 +27,26 @@ using HeroForge_OnceAgain.Properties;
 using DocumentFormat.OpenXml.InkML;
 using Newtonsoft.Json;
 using DocumentFormat.OpenXml.Office2010.ExcelAc;
-
+using static HeroForge_OnceAgain.Form1;
+using HeroForge_OnceAgain.Models;
+using DocumentFormat.OpenXml.ExtendedProperties;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using System.Resources;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using HeroForge_OnceAgain.Utils;
+using DocumentFormat.OpenXml.Math;
 
 namespace HeroForge_OnceAgain
 {
     public partial class Form1 : Form
     {
+        private Character character;
+
         public Form1()
         {
             InitializeComponent();
+            CharacterCreationInfo creationInfo = new CharacterCreationInfo();
+            character = new Character(creationInfo);
         }
 
         //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,8 +79,13 @@ namespace HeroForge_OnceAgain
             //cBLanguage.SelectedIndex = Properties.Settings.Default.LanguageIndex;
             if (workSheet == null)
                 workSheet = LoadFile();
-
+            
             Reload();
+            RaceUtils.PopulateRaceComboBox(cbRaces, 3);
+            //if (cbRaces.SelectedIndex != null && cbRaces.SelectedIndex != -1)
+            //{
+                //lblRace.Text = cbRaces.Text;
+            //}
         }
 
         public void Reload()
@@ -191,75 +207,59 @@ namespace HeroForge_OnceAgain
 
 
         private void RandomAge()
-        {
-            int ageMod = 0, hgtMod = 0, wgtMod = 0;
+        {   
+            int agebasic = 0;
+            int ageMod = 0;
+            string textLookup = lblRace.Text;
+            List<string> AgeRace = new List<string>();
 
-            string race = lblRace.Text;
-            var BaseAgeRace = LookupRace("AR", race); //await LookupRaceAsync("Base Age", raca);
-            if (BaseAgeRace != null && !string.IsNullOrEmpty(BaseAgeRace))
+            var BaseAgeRace = LookupInfo("AR", textLookup, "Race Info");
+            if (string.IsNullOrEmpty(BaseAgeRace))
             {
-                var AgeRace = BaseAgeRace.Split('/').ToList();
+                lblRandomAge.Text = "0";
+                return;
+            }
 
-                if (!string.IsNullOrEmpty(BaseAgeRace.Trim()))
+            AgeRace = BaseAgeRace.Split('/').ToList();
+            var classe = lblClasses.Text;
+
+            if (string.IsNullOrEmpty(classe))
+            {
+                lblRandomAge.Text = "0";
+                return;
+            }
+
+            var vetorClasse = classe.Split('/');
+            foreach (var item in vetorClasse)
+            {
+                var AgeString = AgeRace[0];
+                var Age = AgeString.Split('+').ToList();
+                agebasic = Convert.ToInt32(Age[0]);
+                var item2 = item.ToUpper();
+
+                if (item2.Contains("BARBARIAN") || item2.Contains("ROGUE") || item2.Contains("SORCERER"))
                 {
-
-                    var classe = lblClasses.Text;
-
-                    if (!string.IsNullOrEmpty(classe))
+                    if (!string.IsNullOrEmpty(AgeRace[0]))
                     {
-                        var vetorClasse = classe.Split('/');
-                        foreach (var item in vetorClasse)
-                        {
-                            var item2 = item.ToUpper();
-                            if (item2.Contains("BARBARIAN") || item2.Contains("ROGUE") || item2.Contains("SORCERER"))
-                            {
-                                if (!string.IsNullOrEmpty(AgeRace[0]))
-                                {
-                                    string AgeString = AgeRace[0];
-                                    var Age = AgeString.Split('+').ToList();
-                                    int agebasic = Convert.ToInt32(Age[0]);
-                                    string Dice = Age[1];
-                                    ageMod = RollDice(Dice);
-                                    lblRandomAge.Text = (agebasic + ageMod).ToString();
-                                }
-
-                            }
-                            else if (item2.Contains("BARD") || item2.Contains("FIGHTER") || item2.Contains("PALADIN") || item2.Contains("RANGER"))
-                            {
-                                string AgeString = AgeRace[0];
-                                var Age = AgeString.Split('+').ToList();
-                                int agebasic = Convert.ToInt32(Age[0]);
-
-                                string AgeString2 = AgeRace[1];
-                                ageMod = RollDice(AgeString2);
-                                lblRandomAge.Text = (agebasic + ageMod).ToString();
-                            }
-                            else if (item2.Contains("CLERIC") || item2.Contains("DRUID") || item2.Contains("MONK") || item2.Contains("WIZARD"))
-                            {
-                                string AgeString = AgeRace[0];
-                                var Age = AgeString.Split('+').ToList();
-                                int agebasic = Convert.ToInt32(Age[0]);
-
-                                string AgeString2 = AgeRace[2];
-                                ageMod = RollDice(AgeString2);
-                                lblRandomAge.Text = (agebasic + ageMod).ToString();
-                            }
-                        }
-
+                        string Dice = Age[1];
+                        ageMod = RollDice(Dice);
                     }
-                    else
-                    {
-                        lblRandomAge.Text = "0";
-                    }
-
-
-
-                } else
+                }
+                else if (item2.Contains("BARD") || item2.Contains("FIGHTER") || item2.Contains("PALADIN") || item2.Contains("RANGER"))
                 {
-                    lblRandomAge.Text = "0";
+                    string AgeString2 = AgeRace[1];
+                    ageMod = RollDice(AgeString2);
+                }
+                else if (item2.Contains("CLERIC") || item2.Contains("DRUID") || item2.Contains("MONK") || item2.Contains("WIZARD"))
+                {
+                    string AgeString2 = AgeRace[2];
+                    ageMod = RollDice(AgeString2);
                 }
             }
+
+            lblRandomAge.Text = (agebasic + ageMod).ToString();
         }
+
 
         //private int RollDice(int numDice, int dieType)
         //{
@@ -336,6 +336,7 @@ namespace HeroForge_OnceAgain
             pathfile = path;
             tmpfile = Path.ChangeExtension(path, "xlsm");
             var workbook = new XLWorkbook(tmpfile);
+
             return workbook;
         }
 
@@ -354,8 +355,8 @@ namespace HeroForge_OnceAgain
                     throw new Exception("Planilha não encontrada");
                 }
 
-                if (!validaCabecalho(sheet, campo))
-                    throw new Exception("Cabeçalho incorreto");
+                //if (!validaCabecalho(sheet, campo))
+                //    throw new Exception("Cabeçalho incorreto");
 
                 return sheet;
 
@@ -367,10 +368,10 @@ namespace HeroForge_OnceAgain
 
         }
 
-        private string LookupRace(string colunm, string race)
+        private string LookupInfo(string colunm, string textLookup, string table)
         {
             IXLWorksheet sheet;
-            sheet = getTable("Race Info", "RACE*");
+            sheet = getTable(table, "RACE*");
 
             var totalLines = sheet.Rows().Count();
 
@@ -381,9 +382,9 @@ namespace HeroForge_OnceAgain
                 var _lineSheet = sheet.Row(l);
                 var _colunmSheet = sheet.Column(colunm);
 
-                var strNameRace = _lineSheet.Cell($"A").Value.ToString();
+                var strName = _lineSheet.Cell($"A").Value.ToString();
                 var strBase = "";
-                if (strNameRace == race)
+                if (strName == textLookup)
                 {
                     strBase = _lineSheet.Cell(colunm).Value.ToString();
                     //4'10"/4'5"+2d10
@@ -391,7 +392,7 @@ namespace HeroForge_OnceAgain
                     return strBase;
                 }
             }
-            workSheet.Dispose();
+            //workSheet.Dispose();
             return "";
 
         }
@@ -627,7 +628,7 @@ namespace HeroForge_OnceAgain
             int ageMod = 0, hgtMod = 0, wgtMod = 0;
 
             string race = lblRace.Text;
-            var BaseHeightRace = LookupRace("AS", race); //LookupRaceAsync("Height", race);
+            var BaseHeightRace = LookupInfo("AS", race, "Race Info"); //LookupRaceAsync("Height", race);
             if (BaseHeightRace != null && !string.IsNullOrEmpty(BaseHeightRace))
             {
                 var HeightRace = BaseHeightRace.Split('/').ToList();
@@ -734,6 +735,13 @@ namespace HeroForge_OnceAgain
             public string lang { get; set; }
         }
 
+        public class EyesColors
+        {
+            public string id { get; set; }
+            public string name { get; set; }
+            public string lang { get; set; }
+        }
+
         private static Random rng = new Random();
 
         private void btRandomName_Click(object sender, EventArgs e)
@@ -773,7 +781,7 @@ namespace HeroForge_OnceAgain
             int ageMod = 0, wgtMod = 0;
 
             string race = lblRace.Text;
-            var BaseWeightRace = LookupRace("AT", race); //LookupRaceAsync("Weight", race);
+            var BaseWeightRace = LookupInfo("AT", race, "Race Info"); //LookupRaceAsync("Weight", race);
             if (BaseWeightRace != null && !string.IsNullOrEmpty(BaseWeightRace))
             {
                 var WeightRace = BaseWeightRace.Split('/').ToList();
@@ -865,6 +873,150 @@ namespace HeroForge_OnceAgain
             lblRandomHair.Text = randomHairColor.name + " " + randomHairType.name;
             
 
+        }
+
+        private async void btRandomEyes_Click(object sender, EventArgs e)
+        {
+            string eyes = "";
+            string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "eyescolors.json");
+
+            if (File.Exists(path))
+            {
+                var eyesColors = await LoadJsonAsync<EyesColors>(path);
+
+                // Filter records in selected language
+                var languageCode = Properties.Settings.Default.LanguageIndex == 0 ? "en" : "pt-BR";
+                var filteredEyesColors = eyesColors.Where(c => c.lang == languageCode).ToList();
+
+                // Select a random record from each list
+                var randomEyesColors = filteredEyesColors[rng.Next(filteredEyesColors.Count)];
+                eyes = randomEyesColors.name;
+            }
+            lblRandomEyes.Text = eyes;
+        }
+
+        private async Task<IList<T>> LoadJsonAsync<T>(string path)
+        {
+            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, useAsync: true))
+            {
+                var serializer = new JsonSerializer();
+                using (var streamReader = new StreamReader(stream))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    return await Task.Run(() => serializer.Deserialize<IList<T>>(jsonTextReader));
+                }
+            }
+        }
+        private void saveCharacterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Preenche os campos da instância da classe Character com as informações do personagem
+            character.Name = txtName.Text;
+            CharacterClass Class = new CharacterClass();
+            Class.Name = "Guerreiro";
+            Class.Level = 5; //Convert.ToInt32(txtLevel.Text);            
+            character.Age = int.Parse(txtAge.Text);
+            character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedItem) : 0;
+            
+            character.Race = cbRaces.SelectedItem.ToString();
+            character.Alignment = cbAlignment.SelectedItem.ToString();
+            character.Deity = cbDeity.SelectedIndex;
+            character.Height = txtHeight.Text;
+            character.Weight = txtWeight.Text;
+            character.Eyes = txtEyes.Text;
+            character.Hair = txtHair.Text;
+
+
+            character.CharacterClasses.Add(Class);
+
+            // Abre uma janela de diálogo para permitir que o usuário escolha onde salvar o arquivo
+
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Arquivos JSON (*.json)|*.json";
+                saveFileDialog.Title = LocalizationUtils.L("OpenSaveCharacter");
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string json = JsonConvert.SerializeObject(character);
+
+                    string fileName = saveFileDialog.FileName;
+                    // Salva a última pasta usada nas configurações de usuário
+                    string folderPath = Path.GetDirectoryName(fileName);
+                    Properties.Settings.Default.LastUsedFolder = folderPath;
+                    Properties.Settings.Default.Save();
+
+                    File.WriteAllText(fileName, json);
+                    string msg = LocalizationUtils.L("MsgSaveCharacter");
+                    MessageBox.Show(msg);
+                }
+            }
+        }
+
+        //private void SaveCharacter(SaveFileDialog dialog, Character character)
+        //{
+            
+
+        //    JsonSerializerSettings settings = new JsonSerializerSettings
+        //    {
+        //        TypeNameHandling = TypeNameHandling.All
+        //    };
+        //    string json = JsonConvert.SerializeObject(character, settings);
+
+        //    dialog.Filter = "Json files (*.json)|*.json";
+        //    dialog.DefaultExt = "json";
+
+            
+
+        //    if (dialog.ShowDialog() == DialogResult.OK)
+        //    {
+        //        string fileName = dialog.FileName;
+        //        // Salva a última pasta usada nas configurações de usuário
+        //        string folderPath = Path.GetDirectoryName(fileName);
+        //        Properties.Settings.Default.LastUsedFolder = folderPath;
+        //        Properties.Settings.Default.Save();
+                
+        //        using (StreamWriter streamWriter = new StreamWriter(fileName))
+        //        {
+        //            streamWriter.Write(json);
+        //        }
+        //    }
+        //}
+
+        private void loadCharacterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                // Recuperar a última pasta usada
+                if (!string.IsNullOrEmpty(Properties.Settings.Default.LastUsedFolder))
+                {
+                    openFileDialog.InitialDirectory = Properties.Settings.Default.LastUsedFolder;
+                }
+                openFileDialog.Title = LocalizationUtils.L("SelectFileToOpen");
+                openFileDialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string json = File.ReadAllText(openFileDialog.FileName);                    
+                    character = JsonConvert.DeserializeObject<Character>(json);
+
+                    txtName.Text = character.Name;
+                    txtAge.Text = character.Age.ToString();
+                    cBGender.SelectedItem = character.Gender;
+                    cbRaces.SelectedItem = character.Race;                    
+                    cbAlignment.SelectedItem = character.Alignment;
+                    cbDeity.SelectedIndex = character.Deity;
+                    txtHeight.Text = character.Height;
+                    txtWeight.Text = character.Weight;
+                    txtEyes.Text = character.Eyes;
+                    txtHair.Text = character.Hair;
+                    //cbClass.SelectedItem = character.Class;
+                }
+            }
+        }
+
+        private void cbRaces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedRace = (Race)cbRaces.SelectedItem;
+            lblRace.Text = selectedRace.Name;
         }
     }
 }

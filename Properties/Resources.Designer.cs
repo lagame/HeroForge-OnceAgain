@@ -71,6 +71,33 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Character successfully saved!.
+        /// </summary>
+        public static string MsgSaveCharacter {
+            get {
+                return ResourceManager.GetString("MsgSaveCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Save Character.
+        /// </summary>
+        public static string OpenSaveCharacter {
+            get {
+                return ResourceManager.GetString("OpenSaveCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Load Character.
+        /// </summary>
+        public static string SelectFileToOpen {
+            get {
+                return ResourceManager.GetString("SelectFileToOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Unable to open link that was clicked.
         /// </summary>
         public static string UnableOpenLink {
