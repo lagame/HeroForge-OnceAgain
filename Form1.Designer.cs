@@ -2320,6 +2320,7 @@
             resources.GetString("cBGender.Items1")});
             resources.ApplyResources(this.cBGender, "cBGender");
             this.cBGender.Name = "cBGender";
+            this.cBGender.SelectedIndexChanged += new System.EventHandler(this.cBGender_SelectedIndexChanged);
             // 
             // cbRaces
             // 

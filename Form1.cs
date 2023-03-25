@@ -82,9 +82,10 @@ namespace HeroForge_OnceAgain
             
             Reload();
             RaceUtils.PopulateRaceComboBox(cbRaces, 3);
+            cbAlignment.SelectedIndex = 0;
             //if (cbRaces.SelectedIndex != null && cbRaces.SelectedIndex != -1)
             //{
-                //lblRace.Text = cbRaces.Text;
+            //lblRace.Text = cbRaces.Text;
             //}
         }
 
@@ -915,12 +916,14 @@ namespace HeroForge_OnceAgain
             Class.Name = "Guerreiro";
             Class.Level = 5; //Convert.ToInt32(txtLevel.Text);            
             character.Age = int.Parse(txtAge.Text);
-            character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedItem) : 0;
+            character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;            
             
-            character.Race = cbRaces.SelectedItem.ToString();
-            character.Alignment = cbAlignment.SelectedItem.ToString();
+            var selectedRace = (Race)cbRaces.SelectedItem;
+            character.Race = selectedRace.Name;
+
+            character.Alignment = cbAlignment.SelectedIndex;
             character.Deity = cbDeity.SelectedIndex;
-            character.Height = txtHeight.Text;
+            character.Height = txtHeight.Text.Replace("\\", "");
             character.Weight = txtWeight.Text;
             character.Eyes = txtEyes.Text;
             character.Hair = txtHair.Text;
@@ -1000,15 +1003,26 @@ namespace HeroForge_OnceAgain
 
                     txtName.Text = character.Name;
                     txtAge.Text = character.Age.ToString();
-                    cBGender.SelectedItem = character.Gender;
-                    cbRaces.SelectedItem = character.Race;                    
-                    cbAlignment.SelectedItem = character.Alignment;
+                    cBGender.SelectedIndex = character.Gender;    
+                    lblRace.Text = character.Race;
+                    foreach (var item in cbRaces.Items)
+                    {
+                        var race = item as Race;
+                        if (race.Name.Equals(character.Race))
+                        {
+                            cbRaces.SelectedIndex = race.Id;
+                        }
+                    }
+                    //cbRaces.SelectedValue = character.Race;
+                    cbAlignment.SelectedIndex = character.Alignment;
                     cbDeity.SelectedIndex = character.Deity;
                     txtHeight.Text = character.Height;
                     txtWeight.Text = character.Weight;
                     txtEyes.Text = character.Eyes;
                     txtHair.Text = character.Hair;
                     //cbClass.SelectedItem = character.Class;
+                    string msg = LocalizationUtils.L("LoadSavedCharacter");
+                    MessageBox.Show(msg);
                 }
             }
         }
@@ -1017,6 +1031,11 @@ namespace HeroForge_OnceAgain
         {
             var selectedRace = (Race)cbRaces.SelectedItem;
             lblRace.Text = selectedRace.Name;
+        }
+
+        private void cBGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblGender.Text = (string)cBGender.SelectedItem;
         }
     }
 }

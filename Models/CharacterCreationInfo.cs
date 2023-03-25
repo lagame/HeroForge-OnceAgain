@@ -13,7 +13,7 @@ namespace HeroForge_OnceAgain.Models
         public int Age { get; set; }
         public string Race { get; set; }
         public int Gender { get; set; }
-        public string Alignment { get; set; }
+        public int Alignment { get; set; }
         public int Deity { get; set; }
         public string Height { get; set; }
         public string Weight { get; set; }

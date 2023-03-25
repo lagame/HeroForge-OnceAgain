@@ -121,6 +121,9 @@
   <data name="baseInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\baseInfo.xlsm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="LoadSavedCharacter" xml:space="preserve">
+    <value>Character loaded successfully!</value>
+  </data>
   <data name="MsgSaveCharacter" xml:space="preserve">
     <value>Character successfully saved!</value>
   </data>

@@ -71,6 +71,15 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Character loaded successfully!.
+        /// </summary>
+        public static string LoadSavedCharacter {
+            get {
+                return ResourceManager.GetString("LoadSavedCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Character successfully saved!.
         /// </summary>
         public static string MsgSaveCharacter {
