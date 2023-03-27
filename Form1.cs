@@ -914,9 +914,13 @@ namespace HeroForge_OnceAgain
             character.Name = txtName.Text;
             CharacterClass Class = new CharacterClass();
             Class.Name = "Guerreiro";
-            Class.Level = 5; //Convert.ToInt32(txtLevel.Text);            
-            character.Age = int.Parse(txtAge.Text);
-            character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;            
+            Class.Level = 5; //Convert.ToInt32(txtLevel.Text);
+            if (!string.IsNullOrEmpty(txtAge.Text))
+            {
+                character.Age = int.Parse(txtAge.Text);
+            }
+                
+            character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;
             
             var selectedRace = (Race)cbRaces.SelectedItem;
             character.Race = selectedRace.Name;
