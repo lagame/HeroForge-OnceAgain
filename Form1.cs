@@ -751,11 +751,11 @@ namespace HeroForge_OnceAgain
             string path = "";
             if (lblGender.Text == "Male")
             {
-                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\names.json";
+                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\names.json";
             }
             else
             {
-                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\femalenames.json";
+                path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\femalenames.json";
             }
             
 
@@ -856,8 +856,8 @@ namespace HeroForge_OnceAgain
         {
 
             // Load data from JSON files
-            var hairColorsJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\haircolors.json");
-            var hairTypesJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\hairtypes.json");
+            var hairColorsJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\haircolors.json");
+            var hairTypesJson = File.ReadAllText(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\hairtypes.json");
             var hairColors = JsonConvert.DeserializeObject<List<HairColors>>(hairColorsJson);
             var hairTypes = JsonConvert.DeserializeObject<List<HairTypes>>(hairTypesJson);
 
@@ -879,7 +879,7 @@ namespace HeroForge_OnceAgain
         private async void btRandomEyes_Click(object sender, EventArgs e)
         {
             string eyes = "";
-            string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "eyescolors.json");
+            string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "Resources\\eyescolors.json");
 
             if (File.Exists(path))
             {

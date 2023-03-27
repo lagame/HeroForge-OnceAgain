@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>heroforge.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\heroforge.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>BD9FC5980D3E0328878A3187B04A5754D88D08DA</ManifestCertificateThumbprint>
@@ -159,7 +159,9 @@
       <DependentUpon>Preferences.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Form1.pt-BR.resx" />
-    <EmbeddedResource Include="Properties\Resources.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Resources.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -170,7 +172,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="baseInfo.xlsm" />
+    <None Include="Resources\baseInfo.xlsm" />
     <None Include="HeroForge-OnceAgain_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -182,12 +184,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\eyescolors.json" />
+    <None Include="Resources\femalenames.json" />
+    <None Include="Resources\haircolors.json" />
+    <None Include="Resources\hairtypes.json" />
+    <None Include="Resources\names.json" />
+    <None Include="Resources\races.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="heroforge.ico" />
+    <Content Include="Resources\cc.png" />
+    <Content Include="Resources\heroforge.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

@@ -31,7 +31,7 @@ namespace HeroForge_OnceAgain.Utils
         {
             if (_races == null)
             {
-                string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "races.json");
+                string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "Resources\\races.json");
                 if (File.Exists(path))
                 {
                     string json = File.ReadAllText(path);
