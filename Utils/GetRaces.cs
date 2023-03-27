@@ -19,7 +19,8 @@ namespace HeroForge_OnceAgain.Utils
     public class Race
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string DisplayName { get; set; }
+        public string OriginalName { get; set; }
         public string Lang { get; set; }
     }
 
@@ -29,8 +30,8 @@ namespace HeroForge_OnceAgain.Utils
 
         public static List<Race> GetRaces()
         {
-            if (_races == null)
-            {
+            //if (_races == null)
+            //{
                 string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "Resources\\races.json");
                 if (File.Exists(path))
                 {
@@ -42,17 +43,37 @@ namespace HeroForge_OnceAgain.Utils
                     _races = filteredRaces.OrderBy(r => r.Id).ToList();
                 }
                 return _races;
-            }else { 
-                return _races; 
-            }
+            //}else { 
+            //    return _races; 
+            //}
             
+        }
+
+        public static Race GetOriginalRace(string raceText)
+        {
+            Race race = null;
+                string path = Path.Combine(System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", ""), "Resources\\races.json");
+                if (File.Exists(path))
+                {
+                    string json = File.ReadAllText(path);
+
+                    var races = JsonConvert.DeserializeObject<List<Race>>(json);
+                    var languageCode = Properties.Settings.Default.LanguageIndex == 0 ? "en" : "pt-BR";
+
+                    race = races
+                        .Where(c => c.DisplayName == raceText)
+                        .Where(c => c.Lang == languageCode).FirstOrDefault();
+                    
+                }
+                return race;          
+
         }
 
         public static void PopulateRaceComboBox(ComboBox cbRace, int selectedValue = 3)
         {
             var races = GetRaces();
             cbRace.DataSource = races;
-            cbRace.DisplayMember = "Name";
+            cbRace.DisplayMember = "DisplayName";
             cbRace.ValueMember = "Id";
             cbRace.SelectedValue = selectedValue;
         }

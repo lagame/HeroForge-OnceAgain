@@ -1,21 +1,49 @@
-/HeroForge-OnceAgain_TemporaryKey.pfx
-/HeroForge-OnceAgain.csproj.user
-/.vs/HeroForge-OnceAgain/FileContentIndex/3bc2f80d-2f32-4a4f-a164-8e514cb8a4c9.vsidx
-/.vs/HeroForge-OnceAgain/FileContentIndex/fbe0dd7c-b385-4504-9322-bc9a067f06d0.vsidx
-/.vs/HeroForge-OnceAgain/v17/TestStore/0/000.testlog
-/.vs/HeroForge-OnceAgain/v17/TestStore/0/testlog.manifest
 packages
-/CreatureInfo (1).csv
-/CreatureInfo (1).xlsx
-/CreatureInfo (2).xlsx
-/CreatureInfo (3).xlsx
-/CreatureInfo.csv
-/~$CreatureInfo.xlsx
 .vs
 obj
 bin
-/first-names.json
-/characters.json
-/baseInfo.xls
-/middle-names.json
-/names.ts
+#Junk Files
+*.DS_Store
+[Tt]humbs.db
+
+#Visual Studio Files
+[Oo]bj
+[Bb]in
+[Dd]ebug
+[Bb]uild/
+*.pfx
+*.user
+*.suo
+*.exe
+*.pdb
+*.aps
+*_i.c
+*_p.c
+*.ncb
+*.tlb
+*.tlh
+*.[Cc]ache
+*.bak
+*.ncb
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+ipch/ 
+*.dbmdl
+*.csproj.user
+*.cache
+*.swp
+*.vspscc
+*.vssscc
+*.bak.*
+*.bak
+
+#Tools
+_ReSharper.*
+_ReSharper*/
+*.resharper
+*.resharper.user
+[Nn][Dd]epend[Oo]ut*/
+Ankh.NoLoad

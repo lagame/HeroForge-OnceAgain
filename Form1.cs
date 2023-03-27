@@ -101,7 +101,10 @@ namespace HeroForge_OnceAgain
                     break;
             }
             this.Controls.Clear();
+            RaceUtils.PopulateRaceComboBox(cbRaces, 3);
             InitializeComponent();
+            RaceUtils.PopulateRaceComboBox(cbRaces, 3);
+            cbAlignment.SelectedIndex = 0;
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -214,7 +217,15 @@ namespace HeroForge_OnceAgain
             string textLookup = lblRace.Text;
             List<string> AgeRace = new List<string>();
 
-            var BaseAgeRace = LookupInfo("AR", textLookup, "Race Info");
+            Race race = RaceUtils.GetOriginalRace(textLookup);
+
+            string BaseAgeRace = "";
+            if (race != null) 
+            { 
+                BaseAgeRace = LookupInfo("AR", race.OriginalName, "Race Info");
+            }        
+
+
             if (string.IsNullOrEmpty(BaseAgeRace))
             {
                 lblRandomAge.Text = "0";
@@ -407,26 +418,6 @@ namespace HeroForge_OnceAgain
                 return true;
 
         }
-
-        //public static string LookupRace(string key)
-        //{
-        //    //string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\CreatureInfo.xlsx";
-        //    string path = @"C:\Users\cristiano.lagame\source\repos\HeroForge-OnceAgain2\HeroForge-OnceAgain\"+ baseInfoCreatures;
-
-        //    using (var reader = new StreamReader(path))
-        //    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-        //    {
-        //        var records = csv.GetRecords<CsvRecord>();
-        //        foreach (var record in records)
-        //        {
-        //            if (record.Race == key)
-        //            {
-        //                return record.BaseAge;
-        //            }
-        //        }
-        //    }
-        //    return "";
-        //}
 
         public class CsvRecord
         {
@@ -628,8 +619,16 @@ namespace HeroForge_OnceAgain
         {
             int ageMod = 0, hgtMod = 0, wgtMod = 0;
 
-            string race = lblRace.Text;
-            var BaseHeightRace = LookupInfo("AS", race, "Race Info"); //LookupRaceAsync("Height", race);
+            string textLookup = lblRace.Text;
+
+            Race race = RaceUtils.GetOriginalRace(textLookup);
+
+            string BaseHeightRace = "";
+            if (race != null)
+            {
+                BaseHeightRace = LookupInfo("AS", race.OriginalName, "Race Info");
+            }
+            
             if (BaseHeightRace != null && !string.IsNullOrEmpty(BaseHeightRace))
             {
                 var HeightRace = BaseHeightRace.Split('/').ToList();
@@ -781,8 +780,16 @@ namespace HeroForge_OnceAgain
         {
             int ageMod = 0, wgtMod = 0;
 
-            string race = lblRace.Text;
-            var BaseWeightRace = LookupInfo("AT", race, "Race Info"); //LookupRaceAsync("Weight", race);
+            string textLookup = lblRace.Text;
+
+            Race race = RaceUtils.GetOriginalRace(textLookup);
+
+            string BaseWeightRace = "";
+            if (race != null)
+            {
+                BaseWeightRace = LookupInfo("AT", race.OriginalName, "Race Info");
+            }
+            
             if (BaseWeightRace != null && !string.IsNullOrEmpty(BaseWeightRace))
             {
                 var WeightRace = BaseWeightRace.Split('/').ToList();
@@ -923,7 +930,7 @@ namespace HeroForge_OnceAgain
             character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;
             
             var selectedRace = (Race)cbRaces.SelectedItem;
-            character.Race = selectedRace.Name;
+            character.Race = selectedRace.DisplayName;
 
             character.Alignment = cbAlignment.SelectedIndex;
             character.Deity = cbDeity.SelectedIndex;
@@ -1012,7 +1019,7 @@ namespace HeroForge_OnceAgain
                     foreach (var item in cbRaces.Items)
                     {
                         var race = item as Race;
-                        if (race.Name.Equals(character.Race))
+                        if (race.DisplayName.Equals(character.Race))
                         {
                             cbRaces.SelectedIndex = race.Id;
                         }
@@ -1034,7 +1041,7 @@ namespace HeroForge_OnceAgain
         private void cbRaces_SelectedIndexChanged(object sender, EventArgs e)
         {
             var selectedRace = (Race)cbRaces.SelectedItem;
-            lblRace.Text = selectedRace.Name;
+            lblRace.Text = selectedRace.DisplayName;
         }
 
         private void cBGender_SelectedIndexChanged(object sender, EventArgs e)
