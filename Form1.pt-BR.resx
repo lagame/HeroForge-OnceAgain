@@ -163,6 +163,21 @@
   <data name="menuStrip1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblTypeCampaign.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelTypeCampaign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 242</value>
+  </data>
+  <data name="labelTypeCampaign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 16</value>
+  </data>
+  <data name="labelTypeCampaign.Text" xml:space="preserve">
+    <value>Tipo de Campanha:</value>
+  </data>
+  <data name="labelTypeCampaign.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblGender.Location" type="System.Drawing.Point, System.Drawing">
     <value>586, 513</value>
   </data>
@@ -280,12 +295,12 @@
   <data name="groupBox3.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Limpar Estatísticas,
-Descrição
-e Seleções</value>
+  <data name="btClearStatsDescriptionSelections.Text" xml:space="preserve">
+    <value>Limpar Habilidades,
+Descrições &amp;&amp;
+Seleções</value>
   </data>
-  <data name="button1.ToolTip" xml:space="preserve">
+  <data name="btClearStatsDescriptionSelections.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblRandomEyes.ToolTip" xml:space="preserve">
@@ -456,22 +471,19 @@ e Seleções</value>
   <data name="labelFavoredWeapon.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cbDeity.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 45</value>
   </data>
-  <data name="comboBox8.ToolTip" xml:space="preserve">
+  <data name="cbDeity.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="llblDeity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 45</value>
-  </data>
-  <data name="llblDeity.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblDeity.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 16</value>
   </data>
-  <data name="llblDeity.Text" xml:space="preserve">
+  <data name="lblDeity.Text" xml:space="preserve">
     <value>Divindade</value>
   </data>
-  <data name="llblDeity.ToolTip" xml:space="preserve">
+  <data name="lblDeity.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="ckLimitDeity.Location" type="System.Drawing.Point, System.Drawing">
@@ -486,22 +498,19 @@ e Seleções</value>
   <data name="ckLimitDeity.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cbAlignment.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 18</value>
   </data>
-  <data name="comboBox7.ToolTip" xml:space="preserve">
+  <data name="cbAlignment.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 19</value>
-  </data>
-  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelAlignment.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 16</value>
   </data>
-  <data name="label51.Text" xml:space="preserve">
+  <data name="labelAlignment.Text" xml:space="preserve">
     <value>Tendência</value>
   </data>
-  <data name="label51.ToolTip" xml:space="preserve">
+  <data name="labelAlignment.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
@@ -534,34 +543,34 @@ e Seleções</value>
   <data name="labelRace.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label38.ToolTip" xml:space="preserve">
+  <data name="labelCha.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label39.ToolTip" xml:space="preserve">
+  <data name="labelWis.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label40.ToolTip" xml:space="preserve">
+  <data name="labelInt.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label41.ToolTip" xml:space="preserve">
+  <data name="labelCon.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label42.ToolTip" xml:space="preserve">
+  <data name="labelDex.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label43.ToolTip" xml:space="preserve">
+  <data name="labelStr.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 225</value>
+  <data name="lblTotalPoints.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 225</value>
   </data>
-  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblTotalPoints.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
   </data>
-  <data name="label37.Text" xml:space="preserve">
+  <data name="lblTotalPoints.Text" xml:space="preserve">
     <value>0 Pontos</value>
   </data>
-  <data name="label37.ToolTip" xml:space="preserve">
+  <data name="lblTotalPoints.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label31.ToolTip" xml:space="preserve">
@@ -606,10 +615,10 @@ e Seleções</value>
   <data name="lblModCon.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblModDes.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblModDex.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 94</value>
   </data>
-  <data name="lblModDes.ToolTip" xml:space="preserve">
+  <data name="lblModDex.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblModStr.Location" type="System.Drawing.Point, System.Drawing">
@@ -1121,7 +1130,7 @@ Inicial</value>
     <value />
   </data>
   <data name="lblLevelAdjust.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 7</value>
+    <value>128, 6</value>
   </data>
   <data name="lblLevelAdjust.ToolTip" xml:space="preserve">
     <value />
@@ -1145,6 +1154,27 @@ Inicial</value>
     <value>Estatísticas &amp; Detalhes do Personagem</value>
   </data>
   <data name="tabPage2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxNick.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox91.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
@@ -1248,6 +1278,27 @@ visite:</value>
     <value>Comece selecionando seu cenário de campanha aqui.
 As opções de origem específicas da campanha serão selecionadas com base no material de origem atualizado.</value>
   </data>
+  <data name="labelRavenloftSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 254</value>
+  </data>
+  <data name="labelRavenloftSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 16</value>
+  </data>
+  <data name="labelRavenloftSources.Text" xml:space="preserve">
+    <value>Fontes do Cenário Ravenloft</value>
+  </data>
+  <data name="labelRavenloftSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cBRavenloftSources.Items" xml:space="preserve">
+    <value>Ravenloft Cenário de Campanha</value>
+  </data>
+  <data name="cBRavenloftSources.Items4" xml:space="preserve">
+    <value>Nativos das Trevas</value>
+  </data>
+  <data name="cBRavenloftSources.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblMonstrousNonSettingSources.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 333</value>
   </data>
@@ -1311,13 +1362,19 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="ckDragonLanceSources.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblEberronSettingSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 138</value>
+  </data>
+  <data name="lblEberronSettingSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 19</value>
+  </data>
   <data name="lblEberronSettingSources.Text" xml:space="preserve">
     <value>Fontes do Cenário Eberron</value>
   </data>
   <data name="lblEberronSettingSources.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="ckSettingSources.ToolTip" xml:space="preserve">
+  <data name="ckEberronSettingSources.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblForgottenRealmsSources.Location" type="System.Drawing.Point, System.Drawing">
@@ -1476,10 +1533,7 @@ As opções de origem específicas da campanha serão selecionadas com base no m
   <data name="cBGender.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 39</value>
-  </data>
-  <data name="comboBox18.ToolTip" xml:space="preserve">
+  <data name="cbRaces.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="labelGender.Font" type="System.Drawing.Font, System.Drawing">

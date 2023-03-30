@@ -35,58 +35,162 @@ using System.Resources;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using HeroForge_OnceAgain.Utils;
 using DocumentFormat.OpenXml.Math;
+using System.Security.Cryptography;
+using System.Net.Sockets;
+using System.Windows.Interop;
+using static System.Windows.Forms.AxHost;
+using DocumentFormat.OpenXml.Presentation;
+using System.Drawing.Printing;
 
 namespace HeroForge_OnceAgain
 {
     public partial class Form1 : Form
     {
         private Character character;
+        //private System.Windows.Forms.Button printButton = new System.Windows.Forms.Button();
+        private PrintDocument printDocument1 = new PrintDocument();
+        Bitmap memoryImage;
 
         public Form1()
         {
             InitializeComponent();
             CharacterCreationInfo creationInfo = new CharacterCreationInfo();
             character = new Character(creationInfo);
+
+            
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            
         }
-
-        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    switch (cBLanguage.SelectedIndex)
-        //    {
-        //        case 0:
-        //            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-        //            break;
-        //        case 1:
-        //            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
-        //            break;
-        //    }
-
-        //    SaveChooseLanguage(cBLanguage.Text, cBLanguage.SelectedIndex);
-
-        //    this.Controls.Clear();
-        //    InitializeComponent();
-
-        //}
-        //private void SaveChooseLanguage(string language, Int32 integer)
-        //{
-        //    Properties.Settings.Default.Language = language;
-        //    Properties.Settings.Default.LanguageIndex = integer;
-        //    Properties.Settings.Default.Save();
-        //}
-
         public void Form1_Load(object sender, EventArgs e)
         {
-            //cBLanguage.SelectedIndex = Properties.Settings.Default.LanguageIndex;
             if (workSheet == null)
                 workSheet = LoadFile();
-            
+
             Reload();
             RaceUtils.PopulateRaceComboBox(cbRaces, 3);
             cbAlignment.SelectedIndex = 0;
-            //if (cbRaces.SelectedIndex != null && cbRaces.SelectedIndex != -1)
-            //{
-            //lblRace.Text = cbRaces.Text;
-            //}
+            CheckedListBox checkede = ckListCharacterSheetDisplayHitPointOptions;
+            for (int i = 0; i < checkede.Items.Count; i++)
+            {
+                if (i.Equals(0))
+                {
+                    checkede.SetItemCheckState(i, (true ? CheckState.Checked : CheckState.Unchecked));
+                }                   
+            }
+        }
+
+        public void CalculatePointBuy()
+        {
+            int str = Convert.ToInt32(initialStrength.Value);
+            int dex = Convert.ToInt32(initialDexterity.Value);
+            int con = Convert.ToInt32(initialConstitution.Value);
+            int inte = Convert.ToInt32(initialIntelligence.Value);
+            int wis = Convert.ToInt32(initialWisdom.Value);
+            int cha = Convert.ToInt32(initialCharisma.Value);
+
+
+            lblModStr.Text = CalcAttribute(str).ToString();
+            lblModDex.Text = CalcAttribute(dex).ToString();
+            lblModCon.Text = CalcAttribute(con).ToString();
+            lblModInt.Text = CalcAttribute(inte).ToString();
+            lblModWis.Text = CalcAttribute(wis).ToString();
+            lblModCha.Text = CalcAttribute(cha).ToString();
+
+            int totalAttrib = (Convert.ToInt32(lblModStr.Text) + Convert.ToInt32(lblModDex.Text) + Convert.ToInt32(lblModCon.Text) + Convert.ToInt32(lblModInt.Text) + Convert.ToInt32(lblModWis.Text) + Convert.ToInt32(lblModCha.Text));
+
+            lblTotalPoints.Text = (totalAttrib).ToString() + " " + LocalizationUtils.L("Points");
+
+            if (totalAttrib > 0)
+            {
+                lblTypeCampaign.Text = "";
+                switch (totalAttrib)
+                {
+                    case 15:
+                        lblTypeCampaign.Text = LocalizationUtils.L("LowPoweredCampaign");
+                        break;
+                    case 22:
+                        lblTypeCampaign.Text = LocalizationUtils.L("ChallengingCampaign");
+                        break;
+                    case 25:
+                        lblTypeCampaign.Text = LocalizationUtils.L("StandardCampaign");
+                        break;
+                    case 28:
+                        lblTypeCampaign.Text = LocalizationUtils.L("TougherCampaign");
+                        break;
+                    case 32:
+                        lblTypeCampaign.Text = LocalizationUtils.L("HighPoweredCampaign");
+                        break;
+                }
+            }
+
+            labelStr.Text = initialStrength.Value.ToString();
+            labelDex.Text = initialDexterity.Value.ToString();
+            labelCon.Text = initialConstitution.Value.ToString();
+            labelInt.Text = initialIntelligence.Value.ToString();
+            labelWis.Text = initialWisdom.Value.ToString();
+            labelCha.Text = initialCharisma.Value.ToString();
+        }
+
+        public void ClearStatsDescriptionSelections()
+        {
+
+            var confirmResult = MessageBox.Show(LocalizationUtils.L("AreYouSureClearForm1Stats"),
+                                     LocalizationUtils.L("ConfirmClear"),
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                initialStrength.Value = 8;
+                initialDexterity.Value = 8;
+                initialConstitution.Value = 8;
+                initialIntelligence.Value = 8;
+                initialWisdom.Value = 8;
+                initialCharisma.Value = 8;
+
+                cbAlignment.SelectedIndex = 0;
+            }
+
+        }
+
+        private int CalcAttribute(int valAttrib)
+        {
+            int attrib = 0;
+            int valueBase = valAttrib - 8;
+
+            if (valAttrib >= 8 && valAttrib <= 14)
+            {
+                attrib = valueBase;
+            }
+            else
+            {
+                if (valAttrib == 15)
+                {
+                    attrib = (valueBase + 1);
+                }
+                else
+                {
+                    if (valAttrib == 16)
+                    {
+                        attrib = (valueBase + 2);
+                    }
+                    else
+                    {
+                        if (valAttrib == 17)
+                        {
+                            attrib = (valueBase + 4);
+                        }
+                        else
+                        {
+                            if (valAttrib == 18)
+                            {
+                                attrib = (valueBase + 6);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            return attrib;
         }
 
         public void Reload()
@@ -211,7 +315,7 @@ namespace HeroForge_OnceAgain
 
 
         private void RandomAge()
-        {   
+        {
             int agebasic = 0;
             int ageMod = 0;
             string textLookup = lblRace.Text;
@@ -220,10 +324,10 @@ namespace HeroForge_OnceAgain
             Race race = RaceUtils.GetOriginalRace(textLookup);
 
             string BaseAgeRace = "";
-            if (race != null) 
-            { 
+            if (race != null)
+            {
                 BaseAgeRace = LookupInfo("AR", race.OriginalName, "Race Info");
-            }        
+            }
 
 
             if (string.IsNullOrEmpty(BaseAgeRace))
@@ -312,30 +416,6 @@ namespace HeroForge_OnceAgain
             return 0;
         }
 
-        //private const int ageNumDice = 2;
-        //private const int ageDieType = 4;
-        //private const string baseInfoCreatures = "baseInfo.xlsm";
-
-        //static async Task<string> ReadAllTextAsync(string path)
-        //{
-        //    switch (path)
-        //    {
-        //        case "": throw new ArgumentException("Empty path name is not legal.", nameof(path));
-        //        case null: throw new ArgumentNullException(nameof(path));
-        //    }
-
-        //    var sourceStream = new FileStream(path, FileMode.Open,
-        //        FileAccess.Read, FileShare.Read,
-        //        bufferSize: 4096,
-        //        useAsync: true);
-        //    var streamReader = new StreamReader(sourceStream, Encoding.UTF8,
-        //        detectEncodingFromByteOrderMarks: true);
-        //    // detectEncodingFromByteOrderMarks allows you to handle files with BOM correctly. 
-        //    // Otherwise you may get chinese characters even when your text does not contain any
-
-        //    return await streamReader.ReadToEndAsync();
-        //}
-
         private XLWorkbook LoadFile()
         {
             string path = System.IO.Path.GetTempFileName();
@@ -352,7 +432,8 @@ namespace HeroForge_OnceAgain
             return workbook;
         }
 
-        private IXLWorksheet getTable(string tabela, string campo) {
+        private IXLWorksheet getTable(string tabela, string campo)
+        {
             try
             {
 
@@ -408,7 +489,6 @@ namespace HeroForge_OnceAgain
             return "";
 
         }
-
         private bool validaCabecalho(IXLWorksheet plan, string campo)
         {
             if (plan.Cell($"A{3}").Value.ToString().Trim().ToUpper() != campo
@@ -575,6 +655,11 @@ namespace HeroForge_OnceAgain
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
+            CloseProgram();
+        }
+
+        private void CloseProgram()
+        {
             this.Hide();
             string path = System.IO.Path.GetTempFileName();
             //File.Delete(path);
@@ -628,7 +713,7 @@ namespace HeroForge_OnceAgain
             {
                 BaseHeightRace = LookupInfo("AS", race.OriginalName, "Race Info");
             }
-            
+
             if (BaseHeightRace != null && !string.IsNullOrEmpty(BaseHeightRace))
             {
                 var HeightRace = BaseHeightRace.Split('/').ToList();
@@ -636,7 +721,7 @@ namespace HeroForge_OnceAgain
 
                 if (!string.IsNullOrEmpty(BaseHeightRace.Trim()))
                 {
-                    
+
                     if (!string.IsNullOrEmpty(gender))
                     {
                         var vetorGender = HeightRace[1].Split('+');
@@ -658,7 +743,7 @@ namespace HeroForge_OnceAgain
                             hgtMod = CalcHeight(Dice, Height);
                         }
                     }
-                    
+
 
                 }
                 else
@@ -679,9 +764,9 @@ namespace HeroForge_OnceAgain
             int hgtFinal = 0;
             hgtFinal = hgtBase + hgtMod;
 
-            string height = (hgtFinal / 12).ToString() + "'" + (hgtFinal % 12).ToString()+"\"";
-            if (Properties.Settings.Default.SystemofUnit == 1) 
-            { 
+            string height = (hgtFinal / 12).ToString() + "'" + (hgtFinal % 12).ToString() + "\"";
+            if (Properties.Settings.Default.SystemofUnit == 1)
+            {
                 height = ConvertHeightToMetersCm(height);
             }
             lblRandomHeight.Text = height.ToString();
@@ -743,6 +828,7 @@ namespace HeroForge_OnceAgain
         }
 
         private static Random rng = new Random();
+        private bool state;
 
         private void btRandomName_Click(object sender, EventArgs e)
         {
@@ -756,16 +842,16 @@ namespace HeroForge_OnceAgain
             {
                 path = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\femalenames.json";
             }
-            
+
 
             if (File.Exists(path))
             {
                 string jsonString = File.ReadAllText(path);
-                var dict = JsonConvert.DeserializeObject<IList<Root>>(jsonString);                
+                var dict = JsonConvert.DeserializeObject<IList<Root>>(jsonString);
                 var name = dict[rng.Next(dict.Count)].Name;
                 lblRandomName.Text = name;
             }
-                
+
 
         }
 
@@ -789,14 +875,14 @@ namespace HeroForge_OnceAgain
             {
                 BaseWeightRace = LookupInfo("AT", race.OriginalName, "Race Info");
             }
-            
+
             if (BaseWeightRace != null && !string.IsNullOrEmpty(BaseWeightRace))
             {
                 var WeightRace = BaseWeightRace.Split('/').ToList();
                 var gender = lblGender.Text;
 
                 if (!string.IsNullOrEmpty(BaseWeightRace.Trim()))
-                {                    
+                {
                     if (!string.IsNullOrEmpty(gender))
                     {
                         var vetorGender = WeightRace[1].Split('+');
@@ -818,7 +904,7 @@ namespace HeroForge_OnceAgain
                             CalcWeight(Dice, Weight, hgtBase);
                         }
                     }
-                    
+
 
                 }
                 else
@@ -834,7 +920,7 @@ namespace HeroForge_OnceAgain
             int wgtMod = RollDice(Dice);
             int wgtFinal = 0;
             wgtFinal = int.Parse(weightDice) + (hgtBase * wgtMod);
-            
+
             if (Properties.Settings.Default.SystemofUnit == 1)
             {
                 lblRandomWeight.Text = Math.Round(ConvertPoundsToKilos(wgtFinal), 2).ToString() + " kg";
@@ -843,7 +929,7 @@ namespace HeroForge_OnceAgain
             {
                 lblRandomWeight.Text = wgtFinal.ToString() + " lbs";
             }
-            
+
         }
 
         public static double ConvertPoundsToKilos(int pounds)
@@ -879,10 +965,7 @@ namespace HeroForge_OnceAgain
 
             // Display concatenated hair
             lblRandomHair.Text = randomHairColor.name + " " + randomHairType.name;
-            
-
         }
-
         private async void btRandomEyes_Click(object sender, EventArgs e)
         {
             string eyes = "";
@@ -926,9 +1009,9 @@ namespace HeroForge_OnceAgain
             {
                 character.Age = int.Parse(txtAge.Text);
             }
-                
+
             character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;
-            
+
             var selectedRace = (Race)cbRaces.SelectedItem;
             character.Race = selectedRace.DisplayName;
 
@@ -964,37 +1047,6 @@ namespace HeroForge_OnceAgain
                 }
             }
         }
-
-        //private void SaveCharacter(SaveFileDialog dialog, Character character)
-        //{
-            
-
-        //    JsonSerializerSettings settings = new JsonSerializerSettings
-        //    {
-        //        TypeNameHandling = TypeNameHandling.All
-        //    };
-        //    string json = JsonConvert.SerializeObject(character, settings);
-
-        //    dialog.Filter = "Json files (*.json)|*.json";
-        //    dialog.DefaultExt = "json";
-
-            
-
-        //    if (dialog.ShowDialog() == DialogResult.OK)
-        //    {
-        //        string fileName = dialog.FileName;
-        //        // Salva a última pasta usada nas configurações de usuário
-        //        string folderPath = Path.GetDirectoryName(fileName);
-        //        Properties.Settings.Default.LastUsedFolder = folderPath;
-        //        Properties.Settings.Default.Save();
-                
-        //        using (StreamWriter streamWriter = new StreamWriter(fileName))
-        //        {
-        //            streamWriter.Write(json);
-        //        }
-        //    }
-        //}
-
         private void loadCharacterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -1009,12 +1061,12 @@ namespace HeroForge_OnceAgain
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string json = File.ReadAllText(openFileDialog.FileName);                    
+                    string json = File.ReadAllText(openFileDialog.FileName);
                     character = JsonConvert.DeserializeObject<Character>(json);
 
                     txtName.Text = character.Name;
                     txtAge.Text = character.Age.ToString();
-                    cBGender.SelectedIndex = character.Gender;    
+                    cBGender.SelectedIndex = character.Gender;
                     lblRace.Text = character.Race;
                     foreach (var item in cbRaces.Items)
                     {
@@ -1047,6 +1099,203 @@ namespace HeroForge_OnceAgain
         private void cBGender_SelectedIndexChanged(object sender, EventArgs e)
         {
             lblGender.Text = (string)cBGender.SelectedItem;
+        }
+
+        private void initialStrength_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void initialDexterity_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void initialConstitution_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void initialIntelligence_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void initialWisdom_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void initialCharisma_ValueChanged(object sender, EventArgs e)
+        {
+            CalculatePointBuy();
+        }
+
+        private void btClearStatsDescriptionSelections_Click(object sender, EventArgs e)
+        {
+            ClearStatsDescriptionSelections();
+        }
+        private void cBCampaignSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            setCampaign(cBCampaignSelect.SelectedIndex);
+            
+        }
+
+        private void inactiveCampaign(CheckedListBox campaign)
+        {
+            for (int i = 0; i < campaign.Items.Count; i++)
+            {
+                campaign.SetItemCheckState(i, (state ? CheckState.Checked : CheckState.Unchecked));
+            }
+        }
+
+        private void activeCampaign(CheckedListBox campaign)
+        {
+            for (int i = 0; i < campaign.Items.Count; i++)
+            {
+                if (campaign.Name.Equals("ckOtherSources"))
+                {
+                    if (i.Equals(0))
+                    {
+                        campaign.SetItemCheckState(i, (true ? CheckState.Checked : CheckState.Unchecked));
+                    }
+                }
+                else
+                {
+                    campaign.SetItemCheckState(i, (true ? CheckState.Checked : CheckState.Unchecked));
+                    
+                    if (i.Equals(0))
+                    {
+                        CheckedListBox checkede = ckListCharacterSheetDisplayHitPointOptions;                        
+                        checkede.SetItemCheckState(1, (true ? CheckState.Checked : CheckState.Unchecked));                        
+                    }
+                }
+            }
+        }
+
+        private void setCampaign(int selectedCampaign)
+        {
+            var forgotten =   ckForgottenRealmsSources;
+            var eberron =     ckEberronSettingSources;
+            var dragonlance = ckDragonLanceSources;
+            var greyhawk =    ckLGSources;
+            var ravenloft = cBRavenloftSources;
+            var rokugan = ckOtherSources;
+            var deities = ckDeityOptions;
+
+            switch (cBCampaignSelect.SelectedIndex)
+            {
+                case 0: //cBCampaignSelect.SelectedItem = Generic 3.5 D&D                    
+                    inactiveCampaign(forgotten);
+                    inactiveCampaign(eberron);
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(rokugan);                    
+                    inactiveCampaign(deities);
+
+                    break;
+                case 1: // Dragonlance
+                    inactiveCampaign(forgotten);
+                    inactiveCampaign(eberron);                    
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(rokugan);
+                    inactiveCampaign(deities);
+                    activeCampaign(dragonlance);
+                    ckDeityOptions.SetItemCheckState(4, (true ? CheckState.Checked : CheckState.Unchecked));
+                    break;
+                case 2: // Eberron
+                    inactiveCampaign(forgotten);                    
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(rokugan);
+                    inactiveCampaign(deities);
+                    activeCampaign(eberron);
+                    ckDeityOptions.SetItemCheckState(2, (true ? CheckState.Checked : CheckState.Unchecked));
+                    break;
+                case 3: // Forgotten Realms                    
+                    inactiveCampaign(eberron);
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(rokugan);
+                    inactiveCampaign(deities);
+                    activeCampaign(forgotten);
+                    ckDeityOptions.SetItemCheckState(1, (true ? CheckState.Checked : CheckState.Unchecked));
+                    break;
+                case 4: // Living Greyhawk
+                    inactiveCampaign(eberron);
+                    inactiveCampaign(forgotten);
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(rokugan);
+                    inactiveCampaign(deities);
+                    activeCampaign(greyhawk);
+                    ckDeityOptions.SetItemCheckState(0, (true ? CheckState.Checked : CheckState.Unchecked));
+                    break;
+                case 5: // Ravenloft
+                    inactiveCampaign(eberron);
+                    inactiveCampaign(forgotten);
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(rokugan);
+                    inactiveCampaign(deities);
+                    activeCampaign(ravenloft);
+                    ckDeityOptions.SetItemCheckState(3, (true ? CheckState.Checked : CheckState.Unchecked));
+                    break;
+                case 6: // Rokugan                    
+                    inactiveCampaign(eberron);
+                    inactiveCampaign(forgotten);
+                    inactiveCampaign(dragonlance);
+                    inactiveCampaign(greyhawk);
+                    inactiveCampaign(ravenloft);
+                    inactiveCampaign(deities);
+                    activeCampaign(rokugan);
+                    break;
+            }
+        }
+
+        private void btChat_Click(object sender, EventArgs e)
+        {
+            Chat cForm = new Chat();
+            cForm.TopLevel = true;
+            cForm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CloseProgram();
+        }
+
+        void printButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+
+        private void CaptureScreen()
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+        }
+
+        private void printDocument1_PrintPage(System.Object sender,
+               System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage, 0, 0);
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CaptureScreen();
+            printDocument1.Print();
         }
     }
 }

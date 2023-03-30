@@ -61,6 +61,15 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Are you sure to clear stats, descriptins and selections in this form?.
+        /// </summary>
+        public static string AreYouSureClearForm1Stats {
+            get {
+                return ResourceManager.GetString("AreYouSureClearForm1Stats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
         public static byte[] baseInfo {
@@ -71,11 +80,47 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Challenging campaign.
+        /// </summary>
+        public static string ChallengingCampaign {
+            get {
+                return ResourceManager.GetString("ChallengingCampaign", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Confirm cleaning?.
+        /// </summary>
+        public static string ConfirmClear {
+            get {
+                return ResourceManager.GetString("ConfirmClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a High-powered campaign.
+        /// </summary>
+        public static string HighPoweredCampaign {
+            get {
+                return ResourceManager.GetString("HighPoweredCampaign", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Character loaded successfully!.
         /// </summary>
         public static string LoadSavedCharacter {
             get {
                 return ResourceManager.GetString("LoadSavedCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Low-powered campaign.
+        /// </summary>
+        public static string LowPoweredCampaign {
+            get {
+                return ResourceManager.GetString("LowPoweredCampaign", resourceCulture);
             }
         }
         
@@ -98,11 +143,38 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Points.
+        /// </summary>
+        public static string Points {
+            get {
+                return ResourceManager.GetString("Points", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Load Character.
         /// </summary>
         public static string SelectFileToOpen {
             get {
                 return ResourceManager.GetString("SelectFileToOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Standard campaign.
+        /// </summary>
+        public static string StandardCampaign {
+            get {
+                return ResourceManager.GetString("StandardCampaign", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tougher campaign.
+        /// </summary>
+        public static string TougherCampaign {
+            get {
+                return ResourceManager.GetString("TougherCampaign", resourceCulture);
             }
         }
         

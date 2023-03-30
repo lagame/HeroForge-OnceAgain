@@ -117,12 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AreYouSureClearForm1Stats" xml:space="preserve">
+    <value>Tem certeza de limpar habilidades, descrições e seleções neste formulário?</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="baseInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baseInfo.xlsm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ChallengingCampaign" xml:space="preserve">
+    <value>Campanha desafiadora</value>
+  </data>
+  <data name="ConfirmClear" xml:space="preserve">
+    <value>Confirmar limpeza?</value>
+  </data>
+  <data name="HighPoweredCampaign" xml:space="preserve">
+    <value>Campanha de poder elevado</value>
+  </data>
   <data name="LoadSavedCharacter" xml:space="preserve">
     <value>Personagem carregado com sucesso!</value>
+  </data>
+  <data name="LowPoweredCampaign" xml:space="preserve">
+    <value>Campanha de poder reduzido</value>
   </data>
   <data name="MsgSaveCharacter" xml:space="preserve">
     <value>Personagem salvo com sucesso!</value>
@@ -130,8 +145,17 @@
   <data name="OpenSaveCharacter" xml:space="preserve">
     <value>Salvar Personagem</value>
   </data>
+  <data name="Points" xml:space="preserve">
+    <value>Pontos</value>
+  </data>
   <data name="SelectFileToOpen" xml:space="preserve">
     <value>Carregar Personagem</value>
+  </data>
+  <data name="StandardCampaign" xml:space="preserve">
+    <value>Campanha padrão</value>
+  </data>
+  <data name="TougherCampaign" xml:space="preserve">
+    <value>Campanha difícil</value>
   </data>
   <data name="UnableOpenLink" xml:space="preserve">
     <value>Não é possível abrir o link que foi clicado</value>

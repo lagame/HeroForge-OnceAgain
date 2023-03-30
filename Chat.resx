@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AreYouSureClearForm1Stats" xml:space="preserve">
-    <value>Are you sure to clear stats, descriptins and selections in this form?</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="baseInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\baseInfo.xlsm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ChallengingCampaign" xml:space="preserve">
-    <value>Challenging campaign</value>
-  </data>
-  <data name="ConfirmClear" xml:space="preserve">
-    <value>Confirm cleaning?</value>
-  </data>
-  <data name="HighPoweredCampaign" xml:space="preserve">
-    <value>High-powered campaign</value>
-  </data>
-  <data name="LoadSavedCharacter" xml:space="preserve">
-    <value>Character loaded successfully!</value>
-  </data>
-  <data name="LowPoweredCampaign" xml:space="preserve">
-    <value>Low-powered campaign</value>
-  </data>
-  <data name="MsgSaveCharacter" xml:space="preserve">
-    <value>Character successfully saved!</value>
-  </data>
-  <data name="OpenSaveCharacter" xml:space="preserve">
-    <value>Save Character</value>
-  </data>
-  <data name="Points" xml:space="preserve">
-    <value>Points</value>
-  </data>
-  <data name="SelectFileToOpen" xml:space="preserve">
-    <value>Load Character</value>
-  </data>
-  <data name="StandardCampaign" xml:space="preserve">
-    <value>Standard campaign</value>
-  </data>
-  <data name="TougherCampaign" xml:space="preserve">
-    <value>Tougher campaign</value>
-  </data>
-  <data name="UnableOpenLink" xml:space="preserve">
-    <value>Unable to open link that was clicked</value>
-  </data>
 </root>

@@ -34,11 +34,15 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadCharacterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveCharacterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblTypeCampaign = new System.Windows.Forms.Label();
+            this.labelTypeCampaign = new System.Windows.Forms.Label();
             this.lblGender = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.lblClasses = new System.Windows.Forms.Label();
@@ -74,7 +78,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btClearStatsDescriptionSelections = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblRandomEyes = new System.Windows.Forms.Label();
             this.lblRandomHair = new System.Windows.Forms.Label();
@@ -121,13 +125,13 @@
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.labelRace = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
+            this.labelCha = new System.Windows.Forms.Label();
+            this.labelWis = new System.Windows.Forms.Label();
+            this.labelInt = new System.Windows.Forms.Label();
+            this.labelCon = new System.Windows.Forms.Label();
+            this.labelDex = new System.Windows.Forms.Label();
+            this.labelStr = new System.Windows.Forms.Label();
+            this.lblTotalPoints = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -138,7 +142,7 @@
             this.lblModWis = new System.Windows.Forms.Label();
             this.lblModInt = new System.Windows.Forms.Label();
             this.lblModCon = new System.Windows.Forms.Label();
-            this.lblModDes = new System.Windows.Forms.Label();
+            this.lblModDex = new System.Windows.Forms.Label();
             this.lblModStr = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -275,12 +279,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btChat = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label53 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cBCampaignSelect = new System.Windows.Forms.ComboBox();
             this.lblCampaignSelect = new System.Windows.Forms.Label();
             this.gBSelectSources = new System.Windows.Forms.GroupBox();
+            this.labelRavenloftSources = new System.Windows.Forms.Label();
+            this.cBRavenloftSources = new System.Windows.Forms.CheckedListBox();
             this.lblMonstrousNonSettingSources = new System.Windows.Forms.Label();
             this.lblOtherSources = new System.Windows.Forms.Label();
             this.ckMonstrousNonSettingSources = new System.Windows.Forms.CheckedListBox();
@@ -290,7 +297,7 @@
             this.lblDragonLanceSources = new System.Windows.Forms.Label();
             this.ckDragonLanceSources = new System.Windows.Forms.CheckedListBox();
             this.lblEberronSettingSources = new System.Windows.Forms.Label();
-            this.ckSettingSources = new System.Windows.Forms.CheckedListBox();
+            this.ckEberronSettingSources = new System.Windows.Forms.CheckedListBox();
             this.lblForgottenRealmsSources = new System.Windows.Forms.Label();
             this.ckForgottenRealmsSources = new System.Windows.Forms.CheckedListBox();
             this.lblNonSettingSources = new System.Windows.Forms.Label();
@@ -355,7 +362,9 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadCharacterToolStripMenuItem,
-            this.saveCharacterToolStripMenuItem});
+            this.saveCharacterToolStripMenuItem,
+            this.printToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
@@ -370,6 +379,18 @@
             this.saveCharacterToolStripMenuItem.Name = "saveCharacterToolStripMenuItem";
             resources.ApplyResources(this.saveCharacterToolStripMenuItem, "saveCharacterToolStripMenuItem");
             this.saveCharacterToolStripMenuItem.Click += new System.EventHandler(this.saveCharacterToolStripMenuItem_Click);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            resources.ApplyResources(this.printToolStripMenuItem, "printToolStripMenuItem");
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -397,12 +418,14 @@
             // tabPage2
             // 
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.lblTypeCampaign);
+            this.tabPage2.Controls.Add(this.labelTypeCampaign);
             this.tabPage2.Controls.Add(this.lblGender);
             this.tabPage2.Controls.Add(this.label70);
             this.tabPage2.Controls.Add(this.lblClasses);
             this.tabPage2.Controls.Add(this.label69);
             this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.btClearStatsDescriptionSelections);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.lblRace);
             this.tabPage2.Controls.Add(this.groupBox1);
@@ -413,13 +436,13 @@
             this.tabPage2.Controls.Add(this.label49);
             this.tabPage2.Controls.Add(this.label50);
             this.tabPage2.Controls.Add(this.labelRace);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.label42);
-            this.tabPage2.Controls.Add(this.label43);
-            this.tabPage2.Controls.Add(this.label37);
+            this.tabPage2.Controls.Add(this.labelCha);
+            this.tabPage2.Controls.Add(this.labelWis);
+            this.tabPage2.Controls.Add(this.labelInt);
+            this.tabPage2.Controls.Add(this.labelCon);
+            this.tabPage2.Controls.Add(this.labelDex);
+            this.tabPage2.Controls.Add(this.labelStr);
+            this.tabPage2.Controls.Add(this.lblTotalPoints);
             this.tabPage2.Controls.Add(this.label31);
             this.tabPage2.Controls.Add(this.label32);
             this.tabPage2.Controls.Add(this.label33);
@@ -430,7 +453,7 @@
             this.tabPage2.Controls.Add(this.lblModWis);
             this.tabPage2.Controls.Add(this.lblModInt);
             this.tabPage2.Controls.Add(this.lblModCon);
-            this.tabPage2.Controls.Add(this.lblModDes);
+            this.tabPage2.Controls.Add(this.lblModDex);
             this.tabPage2.Controls.Add(this.lblModStr);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.label22);
@@ -568,6 +591,17 @@
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblTypeCampaign
+            // 
+            resources.ApplyResources(this.lblTypeCampaign, "lblTypeCampaign");
+            this.lblTypeCampaign.Name = "lblTypeCampaign";
+            // 
+            // labelTypeCampaign
+            // 
+            resources.ApplyResources(this.labelTypeCampaign, "labelTypeCampaign");
+            this.labelTypeCampaign.BackColor = System.Drawing.Color.Transparent;
+            this.labelTypeCampaign.Name = "labelTypeCampaign";
             // 
             // lblGender
             // 
@@ -895,11 +929,12 @@
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             // 
-            // button1
+            // btClearStatsDescriptionSelections
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btClearStatsDescriptionSelections, "btClearStatsDescriptionSelections");
+            this.btClearStatsDescriptionSelections.Name = "btClearStatsDescriptionSelections";
+            this.btClearStatsDescriptionSelections.UseVisualStyleBackColor = true;
+            this.btClearStatsDescriptionSelections.Click += new System.EventHandler(this.btClearStatsDescriptionSelections_Click);
             // 
             // groupBox2
             // 
@@ -1208,40 +1243,40 @@
             resources.ApplyResources(this.labelRace, "labelRace");
             this.labelRace.Name = "labelRace";
             // 
-            // label38
+            // labelCha
             // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
+            resources.ApplyResources(this.labelCha, "labelCha");
+            this.labelCha.Name = "labelCha";
             // 
-            // label39
+            // labelWis
             // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
+            resources.ApplyResources(this.labelWis, "labelWis");
+            this.labelWis.Name = "labelWis";
             // 
-            // label40
+            // labelInt
             // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
+            resources.ApplyResources(this.labelInt, "labelInt");
+            this.labelInt.Name = "labelInt";
             // 
-            // label41
+            // labelCon
             // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
+            resources.ApplyResources(this.labelCon, "labelCon");
+            this.labelCon.Name = "labelCon";
             // 
-            // label42
+            // labelDex
             // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
+            resources.ApplyResources(this.labelDex, "labelDex");
+            this.labelDex.Name = "labelDex";
             // 
-            // label43
+            // labelStr
             // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
+            resources.ApplyResources(this.labelStr, "labelStr");
+            this.labelStr.Name = "labelStr";
             // 
-            // label37
+            // lblTotalPoints
             // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
+            resources.ApplyResources(this.lblTotalPoints, "lblTotalPoints");
+            this.lblTotalPoints.Name = "lblTotalPoints";
             // 
             // label31
             // 
@@ -1293,10 +1328,10 @@
             resources.ApplyResources(this.lblModCon, "lblModCon");
             this.lblModCon.Name = "lblModCon";
             // 
-            // lblModDes
+            // lblModDex
             // 
-            resources.ApplyResources(this.lblModDes, "lblModDes");
-            this.lblModDes.Name = "lblModDes";
+            resources.ApplyResources(this.lblModDex, "lblModDex");
+            this.lblModDex.Name = "lblModDex";
             // 
             // lblModStr
             // 
@@ -1892,6 +1927,7 @@
             0,
             0,
             0});
+            this.initialCharisma.ValueChanged += new System.EventHandler(this.initialCharisma_ValueChanged);
             // 
             // initialWisdom
             // 
@@ -1902,6 +1938,7 @@
             0,
             0,
             0});
+            this.initialWisdom.ValueChanged += new System.EventHandler(this.initialWisdom_ValueChanged);
             // 
             // initialIntelligence
             // 
@@ -1912,6 +1949,7 @@
             0,
             0,
             0});
+            this.initialIntelligence.ValueChanged += new System.EventHandler(this.initialIntelligence_ValueChanged);
             // 
             // initialConstitution
             // 
@@ -1922,6 +1960,7 @@
             0,
             0,
             0});
+            this.initialConstitution.ValueChanged += new System.EventHandler(this.initialConstitution_ValueChanged);
             // 
             // initialDexterity
             // 
@@ -1932,6 +1971,7 @@
             0,
             0,
             0});
+            this.initialDexterity.ValueChanged += new System.EventHandler(this.initialDexterity_ValueChanged);
             // 
             // initialStrength
             // 
@@ -1942,6 +1982,7 @@
             0,
             0,
             0});
+            this.initialStrength.ValueChanged += new System.EventHandler(this.initialStrength_ValueChanged);
             // 
             // label10
             // 
@@ -2007,6 +2048,7 @@
             // tabPage1
             // 
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.btChat);
             this.tabPage1.Controls.Add(this.linkLabel1);
             this.tabPage1.Controls.Add(this.label53);
             this.tabPage1.Controls.Add(this.pictureBox1);
@@ -2018,6 +2060,13 @@
             this.tabPage1.Controls.Add(this.gBCharacterSheetDisplayHitPoints);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btChat
+            // 
+            resources.ApplyResources(this.btChat, "btChat");
+            this.btChat.Name = "btChat";
+            this.btChat.UseVisualStyleBackColor = true;
+            this.btChat.Click += new System.EventHandler(this.btChat_Click);
             // 
             // linkLabel1
             // 
@@ -2050,6 +2099,7 @@
             resources.GetString("cBCampaignSelect.Items6")});
             resources.ApplyResources(this.cBCampaignSelect, "cBCampaignSelect");
             this.cBCampaignSelect.Name = "cBCampaignSelect";
+            this.cBCampaignSelect.SelectedIndexChanged += new System.EventHandler(this.cBCampaignSelect_SelectedIndexChanged);
             // 
             // lblCampaignSelect
             // 
@@ -2059,6 +2109,8 @@
             // 
             // gBSelectSources
             // 
+            this.gBSelectSources.Controls.Add(this.labelRavenloftSources);
+            this.gBSelectSources.Controls.Add(this.cBRavenloftSources);
             this.gBSelectSources.Controls.Add(this.lblMonstrousNonSettingSources);
             this.gBSelectSources.Controls.Add(this.lblOtherSources);
             this.gBSelectSources.Controls.Add(this.ckMonstrousNonSettingSources);
@@ -2068,7 +2120,7 @@
             this.gBSelectSources.Controls.Add(this.lblDragonLanceSources);
             this.gBSelectSources.Controls.Add(this.ckDragonLanceSources);
             this.gBSelectSources.Controls.Add(this.lblEberronSettingSources);
-            this.gBSelectSources.Controls.Add(this.ckSettingSources);
+            this.gBSelectSources.Controls.Add(this.ckEberronSettingSources);
             this.gBSelectSources.Controls.Add(this.lblForgottenRealmsSources);
             this.gBSelectSources.Controls.Add(this.ckForgottenRealmsSources);
             this.gBSelectSources.Controls.Add(this.lblNonSettingSources);
@@ -2076,6 +2128,23 @@
             resources.ApplyResources(this.gBSelectSources, "gBSelectSources");
             this.gBSelectSources.Name = "gBSelectSources";
             this.gBSelectSources.TabStop = false;
+            // 
+            // labelRavenloftSources
+            // 
+            resources.ApplyResources(this.labelRavenloftSources, "labelRavenloftSources");
+            this.labelRavenloftSources.Name = "labelRavenloftSources";
+            // 
+            // cBRavenloftSources
+            // 
+            this.cBRavenloftSources.FormattingEnabled = true;
+            this.cBRavenloftSources.Items.AddRange(new object[] {
+            resources.GetString("cBRavenloftSources.Items"),
+            resources.GetString("cBRavenloftSources.Items1"),
+            resources.GetString("cBRavenloftSources.Items2"),
+            resources.GetString("cBRavenloftSources.Items3"),
+            resources.GetString("cBRavenloftSources.Items4")});
+            resources.ApplyResources(this.cBRavenloftSources, "cBRavenloftSources");
+            this.cBRavenloftSources.Name = "cBRavenloftSources";
             // 
             // lblMonstrousNonSettingSources
             // 
@@ -2149,21 +2218,21 @@
             resources.ApplyResources(this.lblEberronSettingSources, "lblEberronSettingSources");
             this.lblEberronSettingSources.Name = "lblEberronSettingSources";
             // 
-            // ckSettingSources
+            // ckEberronSettingSources
             // 
-            this.ckSettingSources.FormattingEnabled = true;
-            this.ckSettingSources.Items.AddRange(new object[] {
-            resources.GetString("ckSettingSources.Items"),
-            resources.GetString("ckSettingSources.Items1"),
-            resources.GetString("ckSettingSources.Items2"),
-            resources.GetString("ckSettingSources.Items3"),
-            resources.GetString("ckSettingSources.Items4"),
-            resources.GetString("ckSettingSources.Items5"),
-            resources.GetString("ckSettingSources.Items6"),
-            resources.GetString("ckSettingSources.Items7"),
-            resources.GetString("ckSettingSources.Items8")});
-            resources.ApplyResources(this.ckSettingSources, "ckSettingSources");
-            this.ckSettingSources.Name = "ckSettingSources";
+            this.ckEberronSettingSources.FormattingEnabled = true;
+            this.ckEberronSettingSources.Items.AddRange(new object[] {
+            resources.GetString("ckEberronSettingSources.Items"),
+            resources.GetString("ckEberronSettingSources.Items1"),
+            resources.GetString("ckEberronSettingSources.Items2"),
+            resources.GetString("ckEberronSettingSources.Items3"),
+            resources.GetString("ckEberronSettingSources.Items4"),
+            resources.GetString("ckEberronSettingSources.Items5"),
+            resources.GetString("ckEberronSettingSources.Items6"),
+            resources.GetString("ckEberronSettingSources.Items7"),
+            resources.GetString("ckEberronSettingSources.Items8")});
+            resources.ApplyResources(this.ckEberronSettingSources, "ckEberronSettingSources");
+            this.ckEberronSettingSources.Name = "ckEberronSettingSources";
             // 
             // lblForgottenRealmsSources
             // 
@@ -2475,7 +2544,7 @@
         private System.Windows.Forms.Label lblDragonLanceSources;
         private System.Windows.Forms.CheckedListBox ckDragonLanceSources;
         private System.Windows.Forms.Label lblEberronSettingSources;
-        private System.Windows.Forms.CheckedListBox ckSettingSources;
+        private System.Windows.Forms.CheckedListBox ckEberronSettingSources;
         private System.Windows.Forms.Label lblForgottenRealmsSources;
         private System.Windows.Forms.CheckedListBox ckForgottenRealmsSources;
         private System.Windows.Forms.Label lblNonSettingSources;
@@ -2636,18 +2705,18 @@
         private System.Windows.Forms.Label lblModWis;
         private System.Windows.Forms.Label lblModInt;
         private System.Windows.Forms.Label lblModCon;
-        private System.Windows.Forms.Label lblModDes;
+        private System.Windows.Forms.Label lblModDex;
         private System.Windows.Forms.Label lblModStr;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label labelCha;
+        private System.Windows.Forms.Label labelWis;
+        private System.Windows.Forms.Label labelInt;
+        private System.Windows.Forms.Label labelCon;
+        private System.Windows.Forms.Label labelDex;
+        private System.Windows.Forms.Label labelStr;
+        private System.Windows.Forms.Label lblTotalPoints;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -2734,7 +2803,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btClearStatsDescriptionSelections;
         private System.Windows.Forms.Label lblClasses;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label lblGender;
@@ -2747,6 +2816,13 @@
         private System.Windows.Forms.CheckBox cBIgnoreSourceSelection;
         private System.Windows.Forms.Label labelRace1;
         private System.Windows.Forms.ComboBox cBGender;
+        private System.Windows.Forms.Label lblTypeCampaign;
+        private System.Windows.Forms.Label labelTypeCampaign;
+        private System.Windows.Forms.Label labelRavenloftSources;
+        private System.Windows.Forms.CheckedListBox cBRavenloftSources;
+        private System.Windows.Forms.Button btChat;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
