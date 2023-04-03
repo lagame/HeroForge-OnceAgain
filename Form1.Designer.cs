@@ -41,8 +41,12 @@
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblTypeCampaign = new System.Windows.Forms.Label();
             this.labelTypeCampaign = new System.Windows.Forms.Label();
+            this.lblTotalPoints = new System.Windows.Forms.Label();
+            this.lblPointBuy = new System.Windows.Forms.Label();
+            this.cBAbilityScoreSystem = new System.Windows.Forms.ComboBox();
             this.lblGender = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.lblClasses = new System.Windows.Forms.Label();
@@ -131,13 +135,12 @@
             this.labelCon = new System.Windows.Forms.Label();
             this.labelDex = new System.Windows.Forms.Label();
             this.labelStr = new System.Windows.Forms.Label();
-            this.lblTotalPoints = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lblModChaTotal = new System.Windows.Forms.Label();
+            this.lblModWisTotal = new System.Windows.Forms.Label();
+            this.lblModIntTotal = new System.Windows.Forms.Label();
+            this.lblModConTotal = new System.Windows.Forms.Label();
+            this.lblModDexTotal = new System.Windows.Forms.Label();
+            this.lblModStrTotal = new System.Windows.Forms.Label();
             this.lblModCha = new System.Windows.Forms.Label();
             this.lblModWis = new System.Windows.Forms.Label();
             this.lblModInt = new System.Windows.Forms.Label();
@@ -267,7 +270,6 @@
             this.initialDexterity = new System.Windows.Forms.NumericUpDown();
             this.initialStrength = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.lblPointBuy = new System.Windows.Forms.Label();
             this.lblCharisma = new System.Windows.Forms.Label();
             this.lblWisdom = new System.Windows.Forms.Label();
             this.lblIntelligence = new System.Windows.Forms.Label();
@@ -279,6 +281,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btResetAllTabsSelections = new System.Windows.Forms.Button();
+            this.btResetAllTabsButSelections = new System.Windows.Forms.Button();
+            this.btResetOptionSelections = new System.Windows.Forms.Button();
+            this.btAllNonAvaliable = new System.Windows.Forms.Button();
             this.btChat = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label53 = new System.Windows.Forms.Label();
@@ -329,6 +336,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -339,6 +347,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.initialDexterity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.initialStrength)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gBSelectSources.SuspendLayout();
             this.gBDeityOptions.SuspendLayout();
@@ -418,8 +427,7 @@
             // tabPage2
             // 
             resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Controls.Add(this.lblTypeCampaign);
-            this.tabPage2.Controls.Add(this.labelTypeCampaign);
+            this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.lblGender);
             this.tabPage2.Controls.Add(this.label70);
             this.tabPage2.Controls.Add(this.lblClasses);
@@ -442,13 +450,12 @@
             this.tabPage2.Controls.Add(this.labelCon);
             this.tabPage2.Controls.Add(this.labelDex);
             this.tabPage2.Controls.Add(this.labelStr);
-            this.tabPage2.Controls.Add(this.lblTotalPoints);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.label36);
+            this.tabPage2.Controls.Add(this.lblModChaTotal);
+            this.tabPage2.Controls.Add(this.lblModWisTotal);
+            this.tabPage2.Controls.Add(this.lblModIntTotal);
+            this.tabPage2.Controls.Add(this.lblModConTotal);
+            this.tabPage2.Controls.Add(this.lblModDexTotal);
+            this.tabPage2.Controls.Add(this.lblModStrTotal);
             this.tabPage2.Controls.Add(this.lblModCha);
             this.tabPage2.Controls.Add(this.lblModWis);
             this.tabPage2.Controls.Add(this.lblModInt);
@@ -578,7 +585,6 @@
             this.tabPage2.Controls.Add(this.initialDexterity);
             this.tabPage2.Controls.Add(this.initialStrength);
             this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.lblPointBuy);
             this.tabPage2.Controls.Add(this.lblCharisma);
             this.tabPage2.Controls.Add(this.lblWisdom);
             this.tabPage2.Controls.Add(this.lblIntelligence);
@@ -592,6 +598,17 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.lblTypeCampaign);
+            this.groupBox5.Controls.Add(this.labelTypeCampaign);
+            this.groupBox5.Controls.Add(this.lblTotalPoints);
+            this.groupBox5.Controls.Add(this.lblPointBuy);
+            this.groupBox5.Controls.Add(this.cBAbilityScoreSystem);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
             // lblTypeCampaign
             // 
             resources.ApplyResources(this.lblTypeCampaign, "lblTypeCampaign");
@@ -602,6 +619,32 @@
             resources.ApplyResources(this.labelTypeCampaign, "labelTypeCampaign");
             this.labelTypeCampaign.BackColor = System.Drawing.Color.Transparent;
             this.labelTypeCampaign.Name = "labelTypeCampaign";
+            // 
+            // lblTotalPoints
+            // 
+            resources.ApplyResources(this.lblTotalPoints, "lblTotalPoints");
+            this.lblTotalPoints.Name = "lblTotalPoints";
+            // 
+            // lblPointBuy
+            // 
+            resources.ApplyResources(this.lblPointBuy, "lblPointBuy");
+            this.lblPointBuy.Name = "lblPointBuy";
+            // 
+            // cBAbilityScoreSystem
+            // 
+            this.cBAbilityScoreSystem.FormattingEnabled = true;
+            this.cBAbilityScoreSystem.Items.AddRange(new object[] {
+            resources.GetString("cBAbilityScoreSystem.Items"),
+            resources.GetString("cBAbilityScoreSystem.Items1"),
+            resources.GetString("cBAbilityScoreSystem.Items2"),
+            resources.GetString("cBAbilityScoreSystem.Items3"),
+            resources.GetString("cBAbilityScoreSystem.Items4"),
+            resources.GetString("cBAbilityScoreSystem.Items5"),
+            resources.GetString("cBAbilityScoreSystem.Items6"),
+            resources.GetString("cBAbilityScoreSystem.Items7")});
+            resources.ApplyResources(this.cBAbilityScoreSystem, "cBAbilityScoreSystem");
+            this.cBAbilityScoreSystem.Name = "cBAbilityScoreSystem";
+            this.cBAbilityScoreSystem.SelectedIndexChanged += new System.EventHandler(this.cBAbilityScoreSystem_SelectedIndexChanged);
             // 
             // lblGender
             // 
@@ -1273,40 +1316,35 @@
             resources.ApplyResources(this.labelStr, "labelStr");
             this.labelStr.Name = "labelStr";
             // 
-            // lblTotalPoints
+            // lblModChaTotal
             // 
-            resources.ApplyResources(this.lblTotalPoints, "lblTotalPoints");
-            this.lblTotalPoints.Name = "lblTotalPoints";
+            resources.ApplyResources(this.lblModChaTotal, "lblModChaTotal");
+            this.lblModChaTotal.Name = "lblModChaTotal";
             // 
-            // label31
+            // lblModWisTotal
             // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
+            resources.ApplyResources(this.lblModWisTotal, "lblModWisTotal");
+            this.lblModWisTotal.Name = "lblModWisTotal";
             // 
-            // label32
+            // lblModIntTotal
             // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
+            resources.ApplyResources(this.lblModIntTotal, "lblModIntTotal");
+            this.lblModIntTotal.Name = "lblModIntTotal";
             // 
-            // label33
+            // lblModConTotal
             // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
+            resources.ApplyResources(this.lblModConTotal, "lblModConTotal");
+            this.lblModConTotal.Name = "lblModConTotal";
             // 
-            // label34
+            // lblModDexTotal
             // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
+            resources.ApplyResources(this.lblModDexTotal, "lblModDexTotal");
+            this.lblModDexTotal.Name = "lblModDexTotal";
             // 
-            // label35
+            // lblModStrTotal
             // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
+            resources.ApplyResources(this.lblModStrTotal, "lblModStrTotal");
+            this.lblModStrTotal.Name = "lblModStrTotal";
             // 
             // lblModCha
             // 
@@ -1990,11 +2028,6 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Name = "label10";
             // 
-            // lblPointBuy
-            // 
-            resources.ApplyResources(this.lblPointBuy, "lblPointBuy");
-            this.lblPointBuy.Name = "lblPointBuy";
-            // 
             // lblCharisma
             // 
             resources.ApplyResources(this.lblCharisma, "lblCharisma");
@@ -2048,6 +2081,7 @@
             // tabPage1
             // 
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.btChat);
             this.tabPage1.Controls.Add(this.linkLabel1);
             this.tabPage1.Controls.Add(this.label53);
@@ -2060,6 +2094,43 @@
             this.tabPage1.Controls.Add(this.gBCharacterSheetDisplayHitPoints);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btResetAllTabsSelections);
+            this.groupBox4.Controls.Add(this.btResetAllTabsButSelections);
+            this.groupBox4.Controls.Add(this.btResetOptionSelections);
+            this.groupBox4.Controls.Add(this.btAllNonAvaliable);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // btResetAllTabsSelections
+            // 
+            resources.ApplyResources(this.btResetAllTabsSelections, "btResetAllTabsSelections");
+            this.btResetAllTabsSelections.Name = "btResetAllTabsSelections";
+            this.btResetAllTabsSelections.UseVisualStyleBackColor = true;
+            this.btResetAllTabsSelections.Click += new System.EventHandler(this.btResetAllTabsSelections_Click);
+            // 
+            // btResetAllTabsButSelections
+            // 
+            resources.ApplyResources(this.btResetAllTabsButSelections, "btResetAllTabsButSelections");
+            this.btResetAllTabsButSelections.Name = "btResetAllTabsButSelections";
+            this.btResetAllTabsButSelections.UseVisualStyleBackColor = true;
+            // 
+            // btResetOptionSelections
+            // 
+            resources.ApplyResources(this.btResetOptionSelections, "btResetOptionSelections");
+            this.btResetOptionSelections.Name = "btResetOptionSelections";
+            this.btResetOptionSelections.UseVisualStyleBackColor = true;
+            this.btResetOptionSelections.Click += new System.EventHandler(this.btResetOptionSelections_Click);
+            // 
+            // btAllNonAvaliable
+            // 
+            resources.ApplyResources(this.btAllNonAvaliable, "btAllNonAvaliable");
+            this.btAllNonAvaliable.Name = "btAllNonAvaliable";
+            this.btAllNonAvaliable.UseVisualStyleBackColor = true;
+            this.btAllNonAvaliable.Click += new System.EventHandler(this.btAllNonAvaliable_Click);
             // 
             // btChat
             // 
@@ -2496,6 +2567,8 @@
             this.menuStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2510,6 +2583,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.initialStrength)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gBSelectSources.ResumeLayout(false);
             this.gBSelectSources.PerformLayout();
@@ -2581,7 +2655,6 @@
         private System.Windows.Forms.NumericUpDown initialStrength;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblPointBuy;
         private System.Windows.Forms.Label lblCharisma;
         private System.Windows.Forms.Label lblWisdom;
         private System.Windows.Forms.Label lblIntelligence;
@@ -2716,13 +2789,12 @@
         private System.Windows.Forms.Label labelCon;
         private System.Windows.Forms.Label labelDex;
         private System.Windows.Forms.Label labelStr;
-        private System.Windows.Forms.Label lblTotalPoints;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lblModChaTotal;
+        private System.Windows.Forms.Label lblModWisTotal;
+        private System.Windows.Forms.Label lblModIntTotal;
+        private System.Windows.Forms.Label lblModConTotal;
+        private System.Windows.Forms.Label lblModDexTotal;
+        private System.Windows.Forms.Label lblModStrTotal;
         private System.Windows.Forms.Label labelRace;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
@@ -2816,13 +2888,22 @@
         private System.Windows.Forms.CheckBox cBIgnoreSourceSelection;
         private System.Windows.Forms.Label labelRace1;
         private System.Windows.Forms.ComboBox cBGender;
-        private System.Windows.Forms.Label lblTypeCampaign;
-        private System.Windows.Forms.Label labelTypeCampaign;
         private System.Windows.Forms.Label labelRavenloftSources;
         private System.Windows.Forms.CheckedListBox cBRavenloftSources;
         private System.Windows.Forms.Button btChat;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btResetAllTabsSelections;
+        private System.Windows.Forms.Button btResetAllTabsButSelections;
+        private System.Windows.Forms.Button btResetOptionSelections;
+        private System.Windows.Forms.Button btAllNonAvaliable;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ComboBox cBAbilityScoreSystem;
+        private System.Windows.Forms.Label lblTypeCampaign;
+        private System.Windows.Forms.Label labelTypeCampaign;
+        private System.Windows.Forms.Label lblTotalPoints;
+        private System.Windows.Forms.Label lblPointBuy;
     }
 }
 

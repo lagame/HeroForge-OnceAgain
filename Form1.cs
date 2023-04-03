@@ -69,6 +69,7 @@ namespace HeroForge_OnceAgain
             Reload();
             RaceUtils.PopulateRaceComboBox(cbRaces, 3);
             cbAlignment.SelectedIndex = 0;
+            cBAbilityScoreSystem.SelectedIndex = 0;
             CheckedListBox checkede = ckListCharacterSheetDisplayHitPointOptions;
             for (int i = 0; i < checkede.Items.Count; i++)
             {
@@ -79,8 +80,51 @@ namespace HeroForge_OnceAgain
             }
         }
 
+        public void CalculateAbility()
+        {
+            labelStr.Text = initialStrength.Value.ToString();
+            labelDex.Text = initialDexterity.Value.ToString();
+            labelCon.Text = initialConstitution.Value.ToString();
+            labelInt.Text = initialIntelligence.Value.ToString();
+            labelWis.Text = initialWisdom.Value.ToString();
+            labelCha.Text = initialCharisma.Value.ToString();
+
+            int str = Convert.ToInt32(labelStr.Text);
+            int dex = Convert.ToInt32(labelDex.Text);
+            int con = Convert.ToInt32(labelCon.Text);
+            int inte = Convert.ToInt32(labelInt.Text);
+            int wis = Convert.ToInt32(labelWis.Text);
+            int cha = Convert.ToInt32(labelCha.Text);
+
+            lblModStrTotal.Text = CalcAttributeTotal(str).ToString();
+            lblModDexTotal.Text = CalcAttributeTotal(dex).ToString();
+            lblModConTotal.Text = CalcAttributeTotal(con).ToString();
+            lblModIntTotal.Text = CalcAttributeTotal(inte).ToString();
+            lblModWisTotal.Text = CalcAttributeTotal(wis).ToString();
+            lblModChaTotal.Text = CalcAttributeTotal(cha).ToString();
+        }
+
+        private int CalcAttributeTotal(int valAttrib)
+        {
+            double val = valAttrib;
+            val = val - 10;
+
+            double valpos = val % 2;
+            
+
+            val = val / 2;
+
+            if (valpos == 1 || valpos == -1)
+            {   
+                val = val - 0.5;                
+            }
+
+            return Convert.ToInt32(val);
+        }
+
         public void CalculatePointBuy()
         {
+            Localization();
             int str = Convert.ToInt32(initialStrength.Value);
             int dex = Convert.ToInt32(initialDexterity.Value);
             int con = Convert.ToInt32(initialConstitution.Value);
@@ -123,12 +167,7 @@ namespace HeroForge_OnceAgain
                 }
             }
 
-            labelStr.Text = initialStrength.Value.ToString();
-            labelDex.Text = initialDexterity.Value.ToString();
-            labelCon.Text = initialConstitution.Value.ToString();
-            labelInt.Text = initialIntelligence.Value.ToString();
-            labelWis.Text = initialWisdom.Value.ToString();
-            labelCha.Text = initialCharisma.Value.ToString();
+            CalculateAbility();
         }
 
         public void ClearStatsDescriptionSelections()
@@ -209,6 +248,20 @@ namespace HeroForge_OnceAgain
             InitializeComponent();
             RaceUtils.PopulateRaceComboBox(cbRaces, 3);
             cbAlignment.SelectedIndex = 0;
+        }
+
+        public void Localization()
+        {
+            switch (Properties.Settings.Default.LanguageIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
+                    break;
+            }
+            
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -1049,6 +1102,7 @@ namespace HeroForge_OnceAgain
         }
         private void loadCharacterToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Localization();
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 // Recuperar a última pasta usada
@@ -1092,6 +1146,7 @@ namespace HeroForge_OnceAgain
 
         private void cbRaces_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Localization();
             var selectedRace = (Race)cbRaces.SelectedItem;
             lblRace.Text = selectedRace.DisplayName;
         }
@@ -1103,32 +1158,32 @@ namespace HeroForge_OnceAgain
 
         private void initialStrength_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void initialDexterity_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void initialConstitution_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void initialIntelligence_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void initialWisdom_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void initialCharisma_ValueChanged(object sender, EventArgs e)
         {
-            CalculatePointBuy();
+            AbilityScoreSystem();
         }
 
         private void btClearStatsDescriptionSelections_Click(object sender, EventArgs e)
@@ -1176,6 +1231,7 @@ namespace HeroForge_OnceAgain
 
         private void setCampaign(int selectedCampaign)
         {
+            Localization();
             var forgotten =   ckForgottenRealmsSources;
             var eberron =     ckEberronSettingSources;
             var dragonlance = ckDragonLanceSources;
@@ -1268,14 +1324,7 @@ namespace HeroForge_OnceAgain
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CloseProgram();
-        }
-
-        void printButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        
+        } 
 
         private void CaptureScreen()
         {
@@ -1296,6 +1345,108 @@ namespace HeroForge_OnceAgain
         {
             CaptureScreen();
             printDocument1.Print();
+        }
+
+        private void btAllNonAvaliable_Click(object sender, EventArgs e)
+        {
+            Localization();
+            activeCampaign(ckNonSettingSources);
+            activeCampaign(ckMonstrousNonSettingSources);
+        }
+
+        private void btResetOptionSelections_Click(object sender, EventArgs e)
+        {
+            Localization();
+            inactiveCampaign(ckNonSettingSources);
+            inactiveCampaign(ckMonstrousNonSettingSources);
+        }
+
+        private void btResetAllTabsSelections_Click(object sender, EventArgs e)
+        {
+            inactiveCampaign(ckForgottenRealmsSources);
+            inactiveCampaign(ckEberronSettingSources);
+            inactiveCampaign(ckDragonLanceSources);
+            inactiveCampaign(ckLGSources);
+            inactiveCampaign(cBRavenloftSources);
+            inactiveCampaign(ckOtherSources);
+            inactiveCampaign(ckDeityOptions);
+            inactiveCampaign(ckNonSettingSources);
+            inactiveCampaign(ckMonstrousNonSettingSources);
+        }
+
+        public void AbilityScoreSystem()
+        {
+            Localization();
+            var selectedItem = cBAbilityScoreSystem.SelectedIndex;
+            switch (selectedItem)
+            {
+                case 0:
+                    lblTotalPoints.Visible = true;
+                    lblPointBuy.Visible = true;
+                    labelTypeCampaign.Visible = true;
+                    lblTypeCampaign.Visible = true;
+
+                    lblTotalPoints.Text = "25 " + LocalizationUtils.L("Points");
+                    lblTypeCampaign.Text = "";
+                    CalculatePointBuy();
+                    break;
+                case 1:
+                    lblTotalPoints.Visible = true;
+                    lblPointBuy.Visible = true;
+                    labelTypeCampaign.Visible = true;
+                    lblTypeCampaign.Visible = true;
+                    lblTotalPoints.Text = "15 " + LocalizationUtils.L("Points");
+                    lblTypeCampaign.Text = LocalizationUtils.L("LowPoweredCampaign");
+                    CalculatePointBuy();
+                    break;
+                case 2:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+                case 3:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+                case 4:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+                case 5:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+                case 6:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+                case 7:
+                    lblTotalPoints.Visible = false;
+                    lblPointBuy.Visible = false;
+                    labelTypeCampaign.Visible = false;
+                    lblTypeCampaign.Visible = false;
+                    CalculateAbility();
+                    break;
+            }
+        }
+
+        private void cBAbilityScoreSystem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityScoreSystem();
         }
     }
 }
