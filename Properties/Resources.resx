@@ -120,6 +120,9 @@
   <data name="AreYouSureClearForm1Stats" xml:space="preserve">
     <value>Are you sure to clear stats, descriptins and selections in this form?</value>
   </data>
+  <data name="ArrangeAsDesired" xml:space="preserve">
+    <value>Arrange as desired: 15, 14, 13, 12, 10, and 8.</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="baseInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baseInfo.xlsm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -129,6 +132,9 @@
   </data>
   <data name="ConfirmClear" xml:space="preserve">
     <value>Confirm cleaning?</value>
+  </data>
+  <data name="EliteArrayText" xml:space="preserve">
+    <value>Roll 4d6 six times, always discarding the lowest result. Once during this process, you can reroll the die that obtains the lowest result. Distribute the values as you wish.</value>
   </data>
   <data name="HighPoweredCampaign" xml:space="preserve">
     <value>High-powered campaign</value>

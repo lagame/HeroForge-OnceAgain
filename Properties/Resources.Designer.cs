@@ -70,6 +70,15 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Arrange as desired: 15, 14, 13, 12, 10, and 8..
+        /// </summary>
+        public static string ArrangeAsDesired {
+            get {
+                return ResourceManager.GetString("ArrangeAsDesired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
         public static byte[] baseInfo {
@@ -94,6 +103,15 @@ namespace HeroForge_OnceAgain.Properties {
         public static string ConfirmClear {
             get {
                 return ResourceManager.GetString("ConfirmClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Roll 4d6 six times, always discarding the lowest result. Once during this process, you can reroll the die that obtains the lowest result. Distribute the values as you wish..
+        /// </summary>
+        public static string EliteArrayText {
+            get {
+                return ResourceManager.GetString("EliteArrayText", resourceCulture);
             }
         }
         

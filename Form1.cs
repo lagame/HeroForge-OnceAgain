@@ -41,6 +41,7 @@ using System.Windows.Interop;
 using static System.Windows.Forms.AxHost;
 using DocumentFormat.OpenXml.Presentation;
 using System.Drawing.Printing;
+using System.Runtime.Remoting.Messaging;
 
 namespace HeroForge_OnceAgain
 {
@@ -80,21 +81,46 @@ namespace HeroForge_OnceAgain
             }
         }
 
-        public void CalculateAbility()
+        public void CalculateAbility(Label ability)
         {
-            labelStr.Text = initialStrength.Value.ToString();
-            labelDex.Text = initialDexterity.Value.ToString();
-            labelCon.Text = initialConstitution.Value.ToString();
-            labelInt.Text = initialIntelligence.Value.ToString();
-            labelWis.Text = initialWisdom.Value.ToString();
-            labelCha.Text = initialCharisma.Value.ToString();
+            int mod = Convert.ToInt32(ability.Text);
+            //switch (ability)
+            //{
+            //    case 0:
+            //        break;
+            //    case 1:
+            //        break;
+            //    case 2:
+            //        break;
+            //    case 3:
+            //        break;
+            //    case 4:
+            //        break;
+            //    case 5:
+            //        break;
+            //}
 
-            int str = Convert.ToInt32(labelStr.Text);
-            int dex = Convert.ToInt32(labelDex.Text);
-            int con = Convert.ToInt32(labelCon.Text);
-            int inte = Convert.ToInt32(labelInt.Text);
-            int wis = Convert.ToInt32(labelWis.Text);
-            int cha = Convert.ToInt32(labelCha.Text);
+
+                    int strMod = Convert.ToInt32(labelModStr.Text);
+            int dexMod = Convert.ToInt32(labelModDex.Text);
+            int conMod = Convert.ToInt32(labelModCon.Text);
+            int intMod = Convert.ToInt32(labelModInt.Text);
+            int wisMod = Convert.ToInt32(labelModWis.Text);
+            int chaMod = Convert.ToInt32(labelModCha.Text);
+
+            int str = Convert.ToInt32(labelStr.Text) ;//+ strMod;
+            int dex = Convert.ToInt32(labelDex.Text) ;//+ dexMod;
+            int con = Convert.ToInt32(labelCon.Text) ;//+ conMod;
+            int inte = Convert.ToInt32(labelInt.Text);// + intMod;
+            int wis = Convert.ToInt32(labelWis.Text) ;//+ wisMod;
+            int cha = Convert.ToInt32(labelCha.Text); //+ chaMod;
+
+            labelStr.Text = (Convert.ToInt32(initialStrength.Value) + strMod).ToString();
+            labelDex.Text = (Convert.ToInt32(initialDexterity.Value) + dexMod).ToString();
+            labelCon.Text = (Convert.ToInt32(initialConstitution.Value) + conMod).ToString();
+            labelInt.Text = (Convert.ToInt32(initialIntelligence.Value) + intMod).ToString();
+            labelWis.Text = (Convert.ToInt32(initialWisdom.Value) + wisMod).ToString();
+            labelCha.Text = (Convert.ToInt32(initialCharisma.Value) + chaMod).ToString();
 
             lblModStrTotal.Text = CalcAttributeTotal(str).ToString();
             lblModDexTotal.Text = CalcAttributeTotal(dex).ToString();
@@ -125,13 +151,27 @@ namespace HeroForge_OnceAgain
         public void CalculatePointBuy()
         {
             Localization();
-            int str = Convert.ToInt32(initialStrength.Value);
-            int dex = Convert.ToInt32(initialDexterity.Value);
-            int con = Convert.ToInt32(initialConstitution.Value);
-            int inte = Convert.ToInt32(initialIntelligence.Value);
-            int wis = Convert.ToInt32(initialWisdom.Value);
-            int cha = Convert.ToInt32(initialCharisma.Value);
+            
+            int strMod = Convert.ToInt32(labelModStr.Text);
+            int dexMod = Convert.ToInt32(labelModDex.Text);
+            int conMod = Convert.ToInt32(labelModCon.Text);
+            int intMod = Convert.ToInt32(labelModInt.Text);
+            int wisMod = Convert.ToInt32(labelModWis.Text);
+            int chaMod = Convert.ToInt32(labelModCha.Text);
 
+            int str = Convert.ToInt32(initialStrength.Value)       ;//+ strMod;
+            int dex = Convert.ToInt32(initialDexterity.Value)      ;//+ dexMod;
+            int con = Convert.ToInt32(initialConstitution.Value)   ;//+ conMod;
+            int inte = Convert.ToInt32(initialIntelligence.Value)  ;//+ intMod;
+            int wis = Convert.ToInt32(initialWisdom.Value)         ;//+ wisMod;
+            int cha = Convert.ToInt32(initialCharisma.Value)       ;//+ chaMod;
+
+            labelStr.Text = str.ToString();
+            labelDex.Text = dex.ToString();
+            labelCon.Text = con.ToString();
+            labelInt.Text = inte.ToString();
+            labelWis.Text = wis.ToString();
+            labelCha.Text = cha.ToString();
 
             lblModStr.Text = CalcAttribute(str).ToString();
             lblModDex.Text = CalcAttribute(dex).ToString();
@@ -139,11 +179,18 @@ namespace HeroForge_OnceAgain
             lblModInt.Text = CalcAttribute(inte).ToString();
             lblModWis.Text = CalcAttribute(wis).ToString();
             lblModCha.Text = CalcAttribute(cha).ToString();
+            
+            lblModStrTotal.Text = CalcAttributeTotal(str).ToString();
+            lblModDexTotal.Text = CalcAttributeTotal(dex).ToString();
+            lblModConTotal.Text = CalcAttributeTotal(con).ToString();
+            lblModIntTotal.Text = CalcAttributeTotal(inte).ToString();
+            lblModWisTotal.Text = CalcAttributeTotal(wis).ToString();
+            lblModChaTotal.Text = CalcAttributeTotal(cha).ToString();
+
+            CalcAbilityScore();
 
             int totalAttrib = (Convert.ToInt32(lblModStr.Text) + Convert.ToInt32(lblModDex.Text) + Convert.ToInt32(lblModCon.Text) + Convert.ToInt32(lblModInt.Text) + Convert.ToInt32(lblModWis.Text) + Convert.ToInt32(lblModCha.Text));
-
-            lblTotalPoints.Text = (totalAttrib).ToString() + " " + LocalizationUtils.L("Points");
-
+            
             if (totalAttrib > 0)
             {
                 lblTypeCampaign.Text = "";
@@ -167,7 +214,7 @@ namespace HeroForge_OnceAgain
                 }
             }
 
-            CalculateAbility();
+            //CalculateAbility();
         }
 
         public void ClearStatsDescriptionSelections()
@@ -1374,10 +1421,52 @@ namespace HeroForge_OnceAgain
             inactiveCampaign(ckMonstrousNonSettingSources);
         }
 
+        public void CalcAbilityScore()
+        {
+            int totalStr = Convert.ToInt32(initialStrength.Value) + CalculaCampo(labelModStr.Text) +
+                 CalculaCampo(increaseModStr.Text) + CalculaCampo(txtMagicBonusStr.Text);
+            labelStr.Text = totalStr.ToString();
+
+            int totalDex = Convert.ToInt32(initialDexterity.Value) + CalculaCampo(labelModDex.Text) +
+                CalculaCampo(increaseModDex.Text) + CalculaCampo(txtMagicBonusDex.Text);
+            labelDex.Text = totalDex.ToString();
+
+            int totalCon = Convert.ToInt32(initialConstitution.Text) + CalculaCampo(labelModCon.Text) +
+                CalculaCampo(increaseModCon.Text) + CalculaCampo(txtMagicBonusCon.Text);
+            labelCon.Text = totalCon.ToString();
+
+            int totalInt = Convert.ToInt32(initialIntelligence.Text) + CalculaCampo(labelModInt.Text) +
+                CalculaCampo(increaseModInt.Text) + CalculaCampo(txtMagicBonusInt.Text);
+            labelInt.Text = totalInt.ToString();
+
+            int totalWis = Convert.ToInt32(initialWisdom.Text) + CalculaCampo(labelModWis.Text) +
+                CalculaCampo(increaseModWis.Text) + CalculaCampo(txtMagicBonusWis.Text);
+            labelWis.Text = totalWis.ToString();
+
+            int totalCha = Convert.ToInt32(initialCharisma.Text) + CalculaCampo(labelModCha.Text) +
+                CalculaCampo(increaseModCha.Text) + CalculaCampo(txtMagicBonusCha.Text);
+            labelCha.Text = totalCha.ToString();
+        }
+
+        private int CalculaCampo(string campo)
+        {
+            int increasemod = 0;
+            if (campo.Trim() != "0" && campo.Trim() != "")
+            {                
+                increasemod = Convert.ToInt32(campo);
+            }
+            return increasemod;
+        }
+
         public void AbilityScoreSystem()
         {
             Localization();
+            int totalAttrib = (Convert.ToInt32(lblModStr.Text) + Convert.ToInt32(lblModDex.Text) + Convert.ToInt32(lblModCon.Text) + Convert.ToInt32(lblModInt.Text) + Convert.ToInt32(lblModWis.Text) + Convert.ToInt32(lblModCha.Text));
             var selectedItem = cBAbilityScoreSystem.SelectedIndex;
+            
+            lblAlternativeRoll.Location = new Point(185, 25);            
+            lblAlternativeRoll.Size = new Size(0, 13);
+            lblAlternativeRoll.AutoSize = true;
             switch (selectedItem)
             {
                 case 0:
@@ -1388,7 +1477,9 @@ namespace HeroForge_OnceAgain
 
                     lblTotalPoints.Text = "25 " + LocalizationUtils.L("Points");
                     lblTypeCampaign.Text = "";
-                    CalculatePointBuy();
+                    lblTotalPoints.Text = (totalAttrib).ToString() + " " + LocalizationUtils.L("Points");
+                    lblAlternativeRoll.Text = "";                    
+                    CalculatePointBuy();                    
                     break;
                 case 1:
                     lblTotalPoints.Visible = true;
@@ -1397,49 +1488,62 @@ namespace HeroForge_OnceAgain
                     lblTypeCampaign.Visible = true;
                     lblTotalPoints.Text = "15 " + LocalizationUtils.L("Points");
                     lblTypeCampaign.Text = LocalizationUtils.L("LowPoweredCampaign");
-                    CalculatePointBuy();
+                    lblTotalPoints.Text = (totalAttrib).ToString() + " " + LocalizationUtils.L("Points");
+                    lblAlternativeRoll.Text = "";
                     break;
                 case 2:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+
+                    lblAlternativeRoll.Size = new Size(0, 13);
+                    lblAlternativeRoll.Location = new Point(185, 25);
+                    lblAlternativeRoll.Text = LocalizationUtils.L("ArrangeAsDesired");
                     break;
                 case 3:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+                    lblAlternativeRoll.AutoSize = false;
+                    lblAlternativeRoll.Size = new Size(320, 39);
+                    lblAlternativeRoll.Location = new Point(185, 13);
+                    lblAlternativeRoll.Text = LocalizationUtils.L("EliteArrayText");
                     break;
                 case 4:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+                    lblAlternativeRoll.Text = "";
                     break;
                 case 5:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+                    lblAlternativeRoll.Text = "";
                     break;
                 case 6:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+                    lblAlternativeRoll.Text = "";
                     break;
                 case 7:
                     lblTotalPoints.Visible = false;
                     lblPointBuy.Visible = false;
                     labelTypeCampaign.Visible = false;
                     lblTypeCampaign.Visible = false;
-                    CalculateAbility();
+                    lblTotalPoints.Text = "";
+                    lblAlternativeRoll.Text = "";
                     break;
             }
         }
@@ -1447,6 +1551,201 @@ namespace HeroForge_OnceAgain
         private void cBAbilityScoreSystem_SelectedIndexChanged(object sender, EventArgs e)
         {
             AbilityScoreSystem();
+        }
+
+        public void AbilityBump(System.Windows.Forms.ComboBox comboBox)
+        {
+            int value = 0;
+            var selectedItem = comboBox.SelectedIndex;
+            switch (selectedItem)
+            {
+                case 0:
+                    break;
+                case 1:
+                    labelModStr.Visible = true;
+                    labelModStr.Text = (Convert.ToInt32(labelModStr.Text) + 1).ToString();                                        
+                    labelStr.Text = (Convert.ToInt32(initialStrength.Value) + Convert.ToInt32(labelModStr.Text)).ToString();                    
+                    lblModStrTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelStr.Text)).ToString();                    
+                    break;
+                case 2:
+                    labelModDex.Visible = true;
+                    labelModDex.Text = (Convert.ToInt32(labelModDex.Text) + 1).ToString();                    
+                    labelDex.Text = (Convert.ToInt32(initialDexterity.Value) + Convert.ToInt32(labelModDex.Text)).ToString();                    
+                    lblModDexTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelDex.Text)).ToString();
+                    break;
+                case 3:
+                    labelModCon.Visible = true;
+                    labelModCon.Text = (Convert.ToInt32(labelModCon.Text) + 1).ToString();                    
+                    labelCon.Text = (Convert.ToInt32(initialConstitution.Value) + Convert.ToInt32(labelModCon.Text)).ToString();                    
+                    lblModConTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelCon.Text)).ToString();
+                    break;
+                case 4:
+                    labelModInt.Visible = true;                    
+                    labelModInt.Text = (Convert.ToInt32(labelModInt.Text) + 1).ToString();
+                    labelInt.Text = (Convert.ToInt32(initialIntelligence.Value) + Convert.ToInt32(labelModInt.Text)).ToString();
+                    lblModIntTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelInt.Text)).ToString();
+                    break;
+                case 5:
+                    labelModWis.Visible = true;                    
+                    labelModWis.Text = (Convert.ToInt32(labelModWis.Text) + 1).ToString();
+                    labelWis.Text = (Convert.ToInt32(initialWisdom.Value) + Convert.ToInt32(labelModWis.Text)).ToString();
+                    lblModWisTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelWis.Text)).ToString();
+                    break;
+                case 6:
+                    labelModCha.Visible = true;
+                    labelModCha.Visible = true;
+                    labelModCha.Text = (Convert.ToInt32(labelModCha.Text) + 1).ToString();
+                    labelCha.Text = (Convert.ToInt32(initialCharisma.Value) + Convert.ToInt32(labelModCha.Text)).ToString();
+                    lblModChaTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelCha.Text)).ToString();
+                    break;
+            }
+        }
+
+        private int BumpAttribute(string attributeValue)
+        {
+            int numero;
+            bool resultado = Int32.TryParse(attributeValue, out numero);
+            if (resultado)
+            {
+                Console.WriteLine("Conversão de '{0}' para {1}.", attributeValue, numero);
+            }
+            else
+            {
+                Console.WriteLine("A conversão de '{0}' Falhou.", attributeValue == null ? "<null>" : attributeValue);
+            }
+            return numero;
+        }
+
+        private void cbBump1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }        
+
+        private void cbBump2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void cbBump4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void cbBump7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void cbBump9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void cbBump12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void cbBump14_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+        private void cbBump15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AbilityBump((System.Windows.Forms.ComboBox)sender);
+        }
+
+        private void labelModStr_TextChanged(object sender, EventArgs e)
+        {
+            //CalculateAbility();
+        }
+
+        private void increaseModStr_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void increaseModDex_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void increaseModCon_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void increaseModInt_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void increaseModWis_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void increaseModCha_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusStr_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusDex_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusCon_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusInt_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusWis_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
+        }
+
+        private void txtMagicBonusCha_TextChanged(object sender, EventArgs e)
+        {
+            CalcAbilityScore();
         }
     }
 }
