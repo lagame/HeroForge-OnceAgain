@@ -1616,18 +1616,70 @@ namespace HeroForge_OnceAgain
             return numero;
         }
 
+        private void AtualizarAtributo(NumericUpDown num, System.Windows.Forms.ComboBox[] combos, System.Windows.Forms.TextBox[] ganhoInerente, System.Windows.Forms.TextBox[] ganhoMagico, Label label)
+        {
+            int valor = (int)num.Value;
+            string atributo = label.Name.Substring(5); // obtém o nome do atributo a partir do nome da label
+
+            // soma o valor dos combos, ganho inerente e ganho mágico para o atributo correspondente
+            for (int i = 0; i < combos.Length; i++)
+            {
+                if (combos[i].SelectedIndex == 0) // se o combo selecionado for referente ao atributo correspondente
+                {
+                    valor += 1;
+                }
+            }
+            for (int i = 0; i < ganhoInerente.Length; i++)
+            {
+                if (ganhoInerente[i].Name.EndsWith(atributo)) // se o campo de ganho inerente for referente ao atributo correspondente
+                {
+                    int ganho = 0;
+                    int.TryParse(ganhoInerente[i].Text, out ganho);
+                    if (ganho > 0 && ganho <= 5) // limita o ganho inerente em +5
+                    {
+                        valor += ganho;
+                    }
+                }
+            }
+            for (int i = 0; i < ganhoMagico.Length; i++)
+            {
+                if (ganhoMagico[i].Name.EndsWith(atributo)) // se o campo de ganho mágico for referente ao atributo correspondente
+                {
+                    int ganho = 0;
+                    int.TryParse(ganhoMagico[i].Text, out ganho);
+                    if (ganho > 0) // só soma o ganho mágico se ele for maior que 0
+                    {
+                        valor += ganho;
+                    }
+                }
+            }
+
+            // atualiza a label correspondente
+            label.Text = valor.ToString();
+        }
+
+
         private void cbBump1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
+            //AbilityBump((System.Windows.Forms.ComboBox)sender);
+            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6, 
+                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr }, 
+                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
         }        
 
         private void cbBump2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
+            //AbilityBump((System.Windows.Forms.ComboBox)sender);
+            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6,
+                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr },
+                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
         }
         private void cbBump3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
+            //AbilityBump((System.Windows.Forms.ComboBox)sender);
+            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6,
+                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr },
+                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
         }
 
         private void cbBump4_SelectedIndexChanged(object sender, EventArgs e)
