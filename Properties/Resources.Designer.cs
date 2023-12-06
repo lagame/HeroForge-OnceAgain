@@ -107,6 +107,16 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Election_2020_Background {
+            get {
+                object obj = ResourceManager.GetObject("Election-2020-Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Roll 4d6 six times, always discarding the lowest result. Once during this process, you can reroll the die that obtains the lowest result. Distribute the values as you wish..
         /// </summary>
         public static string EliteArrayText {
@@ -125,11 +135,41 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_close_window_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_google_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-google-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Character loaded successfully!.
         /// </summary>
         public static string LoadSavedCharacter {
             get {
                 return ResourceManager.GetString("LoadSavedCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap logingoogle {
+            get {
+                object obj = ResourceManager.GetObject("logingoogle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -148,6 +188,16 @@ namespace HeroForge_OnceAgain.Properties {
         public static string MsgSaveCharacter {
             get {
                 return ResourceManager.GetString("MsgSaveCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap no_avatar {
+            get {
+                object obj = ResourceManager.GetObject("no_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -184,6 +234,16 @@ namespace HeroForge_OnceAgain.Properties {
         public static string StandardCampaign {
             get {
                 return ResourceManager.GetString("StandardCampaign", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tong_hop_cac_mau_background_dep_nhat_10070 {
+            get {
+                object obj = ResourceManager.GetObject("tong-hop-cac-mau-background-dep-nhat-10070", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

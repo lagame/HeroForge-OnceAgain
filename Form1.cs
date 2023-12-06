@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Status;
+
 using static System.Net.Mime.MediaTypeNames;
 using System.IO;
 using ClosedXML.Excel;
@@ -42,6 +40,9 @@ using static System.Windows.Forms.AxHost;
 using DocumentFormat.OpenXml.Presentation;
 using System.Drawing.Printing;
 using System.Runtime.Remoting.Messaging;
+using DocumentFormat.OpenXml.Bibliography;
+
+
 
 namespace HeroForge_OnceAgain
 {
@@ -51,21 +52,32 @@ namespace HeroForge_OnceAgain
         //private System.Windows.Forms.Button printButton = new System.Windows.Forms.Button();
         private PrintDocument printDocument1 = new PrintDocument();
         Bitmap memoryImage;
+        private Random random = new Random();
 
         public Form1()
         {
             InitializeComponent();
+
+            // Inicialização do botão
+            
+            btnRolar.Text = "Rolar dados";
+            btnRolar.Location = new System.Drawing.Point(500, 25); // Posição inicial
+            btnRolar.Size = new System.Drawing.Size(110, 50);   // Tamanho inicial
+            this.Controls.Add(btnRolar);  // Nome alterado
+
             CharacterCreationInfo creationInfo = new CharacterCreationInfo();
             character = new Character(creationInfo);
 
             
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            
         }
         public void Form1_Load(object sender, EventArgs e)
         {
-            if (workSheet == null)
-                workSheet = LoadFile();
+            
+
+            if (workSheet == null)                
+                workSheet = LoadFileFromResource();
+                //workSheet = LoadFile();
 
             Reload();
             RaceUtils.PopulateRaceComboBox(cbRaces, 3);
@@ -79,48 +91,183 @@ namespace HeroForge_OnceAgain
                     checkede.SetItemCheckState(i, (true ? CheckState.Checked : CheckState.Unchecked));
                 }                   
             }
+
+            LoadSupplementSources();
         }
+
+        private void LoadSupplementSources()
+        {
+            // Caminho para a pasta de suplementos
+            string supplementsFolderPath = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\Supplements";
+
+            // Verifica se existem arquivos JSON na pasta
+            if (Directory.Exists(supplementsFolderPath))
+            {
+                string[] jsonFiles = Directory.GetFiles(supplementsFolderPath, "*.json");
+
+                if (jsonFiles.Length > 0)
+            {
+                    // Carrega as fontes de suplementos da pasta
+                    List<SupplementSource> sources = LoadSourcesFromFolder(supplementsFolderPath);
+                    if (sources != null)
+                    {
+                        //if (listViewDragonLanceSources != null)
+                        {
+                            dataGridViewDragonLanceSources.AutoGenerateColumns = false;
+                            
+                            dataGridViewDragonLanceSources.BackgroundColor = System.Drawing.Color.White; // Define o fundo branco
+                            dataGridViewDragonLanceSources.DefaultCellStyle.BackColor = System.Drawing.Color.White; // Define a cor de fundo das células
+                            dataGridViewDragonLanceSources.RowHeadersVisible = false; // Torna as linhas de grade invisíveis
+
+                            // Adicione a coluna de checkboxes
+                            DataGridViewCheckBoxColumn checkboxColumn = new DataGridViewCheckBoxColumn();
+                            checkboxColumn.HeaderText = "";
+                            checkboxColumn.Name = "CheckboxColumn";
+                            checkboxColumn.Width = 20;
+
+                            dataGridViewDragonLanceSources.RowsDefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8);                            
+                            dataGridViewDragonLanceSources.Columns.Add(checkboxColumn);
+                            dataGridViewDragonLanceSources.GridColor = dataGridViewDragonLanceSources.BackgroundColor;
+
+                            // Adiciona uma coluna para exibir o campo "SupplementName"
+                            DataGridViewTextBoxColumn supplementNameColumn = new DataGridViewTextBoxColumn();
+                            supplementNameColumn.DataPropertyName = "SupplementName"; // O nome da propriedade no seu objeto de dados
+                            supplementNameColumn.HeaderText = "Supplement Name"; // O cabeçalho da coluna
+                            supplementNameColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                            supplementNameColumn.ReadOnly = true;
+                            dataGridViewDragonLanceSources.Columns.Add(supplementNameColumn);
+
+                            // Remove os cabeçalhos de coluna
+                            dataGridViewDragonLanceSources.ColumnHeadersVisible = false;
+
+                            // Definindo a fonte de dados
+                            dataGridViewDragonLanceSources.DataSource = sources;
+
+                            //foreach (var source in sources)
+                            //{
+                            //    ListViewItem item = new ListViewItem();
+                            //    item.Text = source.SupplementName;
+                            //    item.SubItems.Add(source.SupplementSourceAbbreviation);
+                            //    listViewDragonLanceSources.Items.Add(item);
+                            //}
+                            //listViewDragonLanceSources.Invalidate();
+                            //DataTable dt = new DataTable();
+                            //dt.Columns.Add(new DataColumn("column1"));
+                            //DataRow row = dt.NewRow();
+                            //dataGridView1.AutoGenerateColumns = false;
+                            //dataGridView1.Columns.Add("Name", "Name");
+                            //foreach (var item in sources)
+                            //{
+                            //    //row[0] = item.SupplementName;
+                            //    dataGridView1.Rows.Add(item.SupplementName);
+                            //}
+                            //dt.Rows.Add(row);
+                            //dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum arquivo JSON encontrado na pasta de suplementos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+
+        }
+
+        // Método para carregar as fontes de um arquivo JSON        
+        public static List<SupplementSource> LoadFromJson(string filePath)
+        {
+            try
+            {
+                string jsonContent = File.ReadAllText(filePath);
+
+                // Deserializa o JSON para uma lista de SupplementSource
+                List<SupplementSource> sources = JsonConvert.DeserializeObject<List<SupplementSource>>(jsonContent);
+
+                return sources;
+            }
+            catch (Exception ex)
+            {
+                // Lida com qualquer erro ao ler os arquivos JSON
+                MessageBox.Show($"Erro ao ler {filePath}: {ex.Message}");
+                return new List<SupplementSource>();
+            }
+        }
+        public static List<SupplementSource> LoadSourcesFromFolders(string rootFolder)
+        {
+            List<SupplementSource> allSources = new List<SupplementSource>();
+
+            try
+            {
+                // Obtém todas as pastas dentro do diretório rootFolder
+                string[] supplementFolders = Directory.GetDirectories(rootFolder);
+
+                // Para cada pasta, carrega os arquivos JSON e adiciona as fontes
+                foreach (string supplementFolder in supplementFolders)
+                {
+                    List<SupplementSource> sourcesInFolder = LoadSourcesFromFolder(supplementFolder);
+                    allSources.AddRange(sourcesInFolder);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar fontes: {ex.Message}");
+            }
+
+            return allSources;
+        }
+
+        public static List<SupplementSource> LoadSourcesFromFolder(string folderPath)
+        {
+            List<SupplementSource> sources = new List<SupplementSource>();
+
+            try
+            {
+                // Obtém todos os arquivos JSON dentro da pasta
+                string[] jsonFiles = Directory.GetFiles(folderPath, "*.json");
+
+                // Para cada arquivo, carrega as fontes e adiciona à lista
+                foreach (string jsonFile in jsonFiles)
+                {
+                    List<SupplementSource> sourcesFromFile = LoadFromJson(jsonFile);
+                    sources.AddRange(sourcesFromFile);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar fontes: {ex.Message}");
+            }
+
+            return sources;
+        }
+
 
         public void CalculateAbility(Label ability)
         {
             int mod = Convert.ToInt32(ability.Text);
-            //switch (ability)
-            //{
-            //    case 0:
-            //        break;
-            //    case 1:
-            //        break;
-            //    case 2:
-            //        break;
-            //    case 3:
-            //        break;
-            //    case 4:
-            //        break;
-            //    case 5:
-            //        break;
-            //}
 
 
-                    int strMod = Convert.ToInt32(labelModStr.Text);
+            int strMod = Convert.ToInt32(labelModStr.Text);
             int dexMod = Convert.ToInt32(labelModDex.Text);
             int conMod = Convert.ToInt32(labelModCon.Text);
             int intMod = Convert.ToInt32(labelModInt.Text);
             int wisMod = Convert.ToInt32(labelModWis.Text);
             int chaMod = Convert.ToInt32(labelModCha.Text);
 
-            int str = Convert.ToInt32(labelStr.Text) ;//+ strMod;
-            int dex = Convert.ToInt32(labelDex.Text) ;//+ dexMod;
-            int con = Convert.ToInt32(labelCon.Text) ;//+ conMod;
-            int inte = Convert.ToInt32(labelInt.Text);// + intMod;
-            int wis = Convert.ToInt32(labelWis.Text) ;//+ wisMod;
-            int cha = Convert.ToInt32(labelCha.Text); //+ chaMod;
+            int str = Convert.ToInt32(lblTotalStr.Text) ;
+            int dex = Convert.ToInt32(lblTotalDex.Text) ;
+            int con = Convert.ToInt32(lblTotalCon.Text) ;
+            int inte = Convert.ToInt32(lblTotalInt.Text);
+            int wis = Convert.ToInt32(lblTotalWis.Text) ;
+            int cha = Convert.ToInt32(lblTotalCha.Text); 
 
-            labelStr.Text = (Convert.ToInt32(initialStrength.Value) + strMod).ToString();
-            labelDex.Text = (Convert.ToInt32(initialDexterity.Value) + dexMod).ToString();
-            labelCon.Text = (Convert.ToInt32(initialConstitution.Value) + conMod).ToString();
-            labelInt.Text = (Convert.ToInt32(initialIntelligence.Value) + intMod).ToString();
-            labelWis.Text = (Convert.ToInt32(initialWisdom.Value) + wisMod).ToString();
-            labelCha.Text = (Convert.ToInt32(initialCharisma.Value) + chaMod).ToString();
+            lblTotalStr.Text = (Convert.ToInt32(InitialStr.Value) + strMod).ToString();
+            lblTotalDex.Text = (Convert.ToInt32(InitialDex.Value) + dexMod).ToString();
+            lblTotalCon.Text = (Convert.ToInt32(InitialCon.Value) + conMod).ToString();
+            lblTotalInt.Text = (Convert.ToInt32(InitialInt.Value) + intMod).ToString();
+            lblTotalWis.Text = (Convert.ToInt32(InitialWis.Value) + wisMod).ToString();
+            lblTotalCha.Text = (Convert.ToInt32(InitialCha.Value) + chaMod).ToString();
 
             lblModStrTotal.Text = CalcAttributeTotal(str).ToString();
             lblModDexTotal.Text = CalcAttributeTotal(dex).ToString();
@@ -132,6 +279,11 @@ namespace HeroForge_OnceAgain
 
         private int CalcAttributeTotal(int valAttrib)
         {
+            if (valAttrib < 1 || valAttrib > 99)
+            {
+                throw new ArgumentException("Valor da habilidade inválido.");
+            }
+
             double val = valAttrib;
             val = val - 10;
 
@@ -150,44 +302,9 @@ namespace HeroForge_OnceAgain
 
         public void CalculatePointBuy()
         {
-            Localization();
+            //Localization();
             
-            int strMod = Convert.ToInt32(labelModStr.Text);
-            int dexMod = Convert.ToInt32(labelModDex.Text);
-            int conMod = Convert.ToInt32(labelModCon.Text);
-            int intMod = Convert.ToInt32(labelModInt.Text);
-            int wisMod = Convert.ToInt32(labelModWis.Text);
-            int chaMod = Convert.ToInt32(labelModCha.Text);
-
-            int str = Convert.ToInt32(initialStrength.Value)       ;//+ strMod;
-            int dex = Convert.ToInt32(initialDexterity.Value)      ;//+ dexMod;
-            int con = Convert.ToInt32(initialConstitution.Value)   ;//+ conMod;
-            int inte = Convert.ToInt32(initialIntelligence.Value)  ;//+ intMod;
-            int wis = Convert.ToInt32(initialWisdom.Value)         ;//+ wisMod;
-            int cha = Convert.ToInt32(initialCharisma.Value)       ;//+ chaMod;
-
-            labelStr.Text = str.ToString();
-            labelDex.Text = dex.ToString();
-            labelCon.Text = con.ToString();
-            labelInt.Text = inte.ToString();
-            labelWis.Text = wis.ToString();
-            labelCha.Text = cha.ToString();
-
-            lblModStr.Text = CalcAttribute(str).ToString();
-            lblModDex.Text = CalcAttribute(dex).ToString();
-            lblModCon.Text = CalcAttribute(con).ToString();
-            lblModInt.Text = CalcAttribute(inte).ToString();
-            lblModWis.Text = CalcAttribute(wis).ToString();
-            lblModCha.Text = CalcAttribute(cha).ToString();
-            
-            lblModStrTotal.Text = CalcAttributeTotal(str).ToString();
-            lblModDexTotal.Text = CalcAttributeTotal(dex).ToString();
-            lblModConTotal.Text = CalcAttributeTotal(con).ToString();
-            lblModIntTotal.Text = CalcAttributeTotal(inte).ToString();
-            lblModWisTotal.Text = CalcAttributeTotal(wis).ToString();
-            lblModChaTotal.Text = CalcAttributeTotal(cha).ToString();
-
-            CalcAbilityScore();
+            UpdateLabels();
 
             int totalAttrib = (Convert.ToInt32(lblModStr.Text) + Convert.ToInt32(lblModDex.Text) + Convert.ToInt32(lblModCon.Text) + Convert.ToInt32(lblModInt.Text) + Convert.ToInt32(lblModWis.Text) + Convert.ToInt32(lblModCha.Text));
             
@@ -213,8 +330,6 @@ namespace HeroForge_OnceAgain
                         break;
                 }
             }
-
-            //CalculateAbility();
         }
 
         public void ClearStatsDescriptionSelections()
@@ -225,12 +340,12 @@ namespace HeroForge_OnceAgain
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                initialStrength.Value = 8;
-                initialDexterity.Value = 8;
-                initialConstitution.Value = 8;
-                initialIntelligence.Value = 8;
-                initialWisdom.Value = 8;
-                initialCharisma.Value = 8;
+                InitialStr.Value = 8;
+                InitialDex.Value = 8;
+                InitialCon.Value = 8;
+                InitialInt.Value = 8;
+                InitialWis.Value = 8;
+                InitialCha.Value = 8;
 
                 cbAlignment.SelectedIndex = 0;
             }
@@ -492,7 +607,7 @@ namespace HeroForge_OnceAgain
         {
             if (!string.IsNullOrEmpty(diceString))
             {
-                Random random = new Random();
+                //Random random = new Random();
                 if (diceString.Contains("d"))
                 {
                     var dice = diceString.Split('d').ToList();
@@ -531,6 +646,27 @@ namespace HeroForge_OnceAgain
 
             return workbook;
         }
+
+        private XLWorkbook LoadFileFromResource()
+        {
+            // Caminho para o arquivo no sistema de arquivos
+            string filePath = System.Windows.Forms.Application.StartupPath.Replace("\\bin\\Debug", "") + "\\Resources\\baseInfo.xlsm";
+
+            if (File.Exists(filePath))
+            {
+                using (FileStream fileStream = File.OpenRead(filePath))
+                {
+                    // Crie o XLWorkbook diretamente do FileStream
+                    var workbook = new XLWorkbook(fileStream);
+                    return workbook;
+                }
+            }
+            else
+            {
+                throw new Exception("Arquivo não encontrado.");
+            }
+        }
+
 
         private IXLWorksheet getTable(string tabela, string campo)
         {
@@ -760,6 +896,7 @@ namespace HeroForge_OnceAgain
 
         private void CloseProgram()
         {
+            HttpListenerService.Instance.StopListener();
             this.Hide();
             string path = System.IO.Path.GetTempFileName();
             //File.Delete(path);
@@ -925,6 +1062,14 @@ namespace HeroForge_OnceAgain
             public string id { get; set; }
             public string name { get; set; }
             public string lang { get; set; }
+        }
+
+        public class SupplementSource
+        {
+            public string SupplementSourceAbbreviation { get; set; }
+            public string SupplementName { get; set; }
+            public string DisplayLanguage { get; set; }
+
         }
 
         private static Random rng = new Random();
@@ -1423,29 +1568,29 @@ namespace HeroForge_OnceAgain
 
         public void CalcAbilityScore()
         {
-            int totalStr = Convert.ToInt32(initialStrength.Value) + CalculaCampo(labelModStr.Text) +
-                 CalculaCampo(increaseModStr.Text) + CalculaCampo(txtMagicBonusStr.Text);
-            labelStr.Text = totalStr.ToString();
+            int totalStr = Convert.ToInt32(InitialStr.Value) + CalculaCampo(labelModStr.Text) +
+                 CalculaCampo(IncreaseModStr.Text) + CalculaCampo(MagicBonusStr.Text);
+            lblTotalStr.Text = totalStr.ToString();
 
-            int totalDex = Convert.ToInt32(initialDexterity.Value) + CalculaCampo(labelModDex.Text) +
-                CalculaCampo(increaseModDex.Text) + CalculaCampo(txtMagicBonusDex.Text);
-            labelDex.Text = totalDex.ToString();
+            int totalDex = Convert.ToInt32(InitialDex.Value) + CalculaCampo(labelModDex.Text) +
+                CalculaCampo(IncreaseModDex.Text) + CalculaCampo(MagicBonusDex.Text);
+            lblTotalDex.Text = totalDex.ToString();
 
-            int totalCon = Convert.ToInt32(initialConstitution.Text) + CalculaCampo(labelModCon.Text) +
-                CalculaCampo(increaseModCon.Text) + CalculaCampo(txtMagicBonusCon.Text);
-            labelCon.Text = totalCon.ToString();
+            int totalCon = Convert.ToInt32(InitialCon.Text) + CalculaCampo(labelModCon.Text) +
+                CalculaCampo(IncreaseModCon.Text) + CalculaCampo(MagicBonusCon.Text);
+            lblTotalCon.Text = totalCon.ToString();
 
-            int totalInt = Convert.ToInt32(initialIntelligence.Text) + CalculaCampo(labelModInt.Text) +
-                CalculaCampo(increaseModInt.Text) + CalculaCampo(txtMagicBonusInt.Text);
-            labelInt.Text = totalInt.ToString();
+            int totalInt = Convert.ToInt32(InitialInt.Text) + CalculaCampo(labelModInt.Text) +
+                CalculaCampo(IncreaseModInt.Text) + CalculaCampo(MagicBonusInt.Text);
+            lblTotalInt.Text = totalInt.ToString();
 
-            int totalWis = Convert.ToInt32(initialWisdom.Text) + CalculaCampo(labelModWis.Text) +
-                CalculaCampo(increaseModWis.Text) + CalculaCampo(txtMagicBonusWis.Text);
-            labelWis.Text = totalWis.ToString();
+            int totalWis = Convert.ToInt32(InitialWis.Text) + CalculaCampo(labelModWis.Text) +
+                CalculaCampo(IncreaseModWis.Text) + CalculaCampo(MagicBonusWis.Text);
+            lblTotalWis.Text = totalWis.ToString();
 
-            int totalCha = Convert.ToInt32(initialCharisma.Text) + CalculaCampo(labelModCha.Text) +
-                CalculaCampo(increaseModCha.Text) + CalculaCampo(txtMagicBonusCha.Text);
-            labelCha.Text = totalCha.ToString();
+            int totalCha = Convert.ToInt32(InitialCha.Text) + CalculaCampo(labelModCha.Text) +
+                CalculaCampo(IncreaseModCha.Text) + CalculaCampo(MagicBonusCha.Text);
+            lblTotalCha.Text = totalCha.ToString();
         }
 
         private int CalculaCampo(string campo)
@@ -1461,12 +1606,16 @@ namespace HeroForge_OnceAgain
         public void AbilityScoreSystem()
         {
             Localization();
+            CalculatePointBuy();
             int totalAttrib = (Convert.ToInt32(lblModStr.Text) + Convert.ToInt32(lblModDex.Text) + Convert.ToInt32(lblModCon.Text) + Convert.ToInt32(lblModInt.Text) + Convert.ToInt32(lblModWis.Text) + Convert.ToInt32(lblModCha.Text));
             var selectedItem = cBAbilityScoreSystem.SelectedIndex;
             
+            EventHandler newClickEvent;
+
             lblAlternativeRoll.Location = new Point(185, 25);            
             lblAlternativeRoll.Size = new Size(0, 13);
             lblAlternativeRoll.AutoSize = true;
+
             switch (selectedItem)
             {
                 case 0:
@@ -1479,7 +1628,7 @@ namespace HeroForge_OnceAgain
                     lblTypeCampaign.Text = "";
                     lblTotalPoints.Text = (totalAttrib).ToString() + " " + LocalizationUtils.L("Points");
                     lblAlternativeRoll.Text = "";                    
-                    CalculatePointBuy();                    
+                                      
                     break;
                 case 1:
                     lblTotalPoints.Visible = true;
@@ -1512,6 +1661,11 @@ namespace HeroForge_OnceAgain
                     lblAlternativeRoll.Size = new Size(320, 39);
                     lblAlternativeRoll.Location = new Point(185, 13);
                     lblAlternativeRoll.Text = LocalizationUtils.L("EliteArrayText");
+
+                    //newClickEvent = (s, args) => { rolar3d6(s, args); };
+                    newClickEvent = (s, args) => { rolar4d6DropLowest(s, args); };
+                    UpdateButton(btnRolar, new Size(110, 50), new Point(500, 25), "Rolar Jogada Flutuante", newClickEvent);                   
+
                     break;
                 case 4:
                     lblTotalPoints.Visible = false;
@@ -1520,6 +1674,12 @@ namespace HeroForge_OnceAgain
                     lblTypeCampaign.Visible = false;
                     lblTotalPoints.Text = "";
                     lblAlternativeRoll.Text = "";
+
+                    lblAlternativeRoll.Text = LocalizationUtils.L("EliteArrayText");
+                    newClickEvent = (s, args) => { rolarOrganic(s, args); };
+                    
+                    UpdateButton(btnRolar, new Size(110, 50), new Point(500, 25), "Rolar Personagens Orgânicos", newClickEvent);
+
                     break;
                 case 5:
                     lblTotalPoints.Visible = false;
@@ -1528,6 +1688,9 @@ namespace HeroForge_OnceAgain
                     lblTypeCampaign.Visible = false;
                     lblTotalPoints.Text = "";
                     lblAlternativeRoll.Text = "";
+                    newClickEvent = (s, args) => { rolar3d6(s, args); };
+
+                    UpdateButton(btnRolar, new Size(110, 50), new Point(500, 25), "Rolar Personagens Padrão Personalizados", newClickEvent);
                     break;
                 case 6:
                     lblTotalPoints.Visible = false;
@@ -1536,6 +1699,7 @@ namespace HeroForge_OnceAgain
                     lblTypeCampaign.Visible = false;
                     lblTotalPoints.Text = "";
                     lblAlternativeRoll.Text = "";
+
                     break;
                 case 7:
                     lblTotalPoints.Visible = false;
@@ -1564,39 +1728,39 @@ namespace HeroForge_OnceAgain
                 case 1:
                     labelModStr.Visible = true;
                     labelModStr.Text = (Convert.ToInt32(labelModStr.Text) + 1).ToString();                                        
-                    labelStr.Text = (Convert.ToInt32(initialStrength.Value) + Convert.ToInt32(labelModStr.Text)).ToString();                    
-                    lblModStrTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelStr.Text)).ToString();                    
+                    lblTotalStr.Text = (Convert.ToInt32(InitialStr.Value) + Convert.ToInt32(labelModStr.Text)).ToString();                    
+                    lblModStrTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalStr.Text)).ToString();                    
                     break;
                 case 2:
                     labelModDex.Visible = true;
                     labelModDex.Text = (Convert.ToInt32(labelModDex.Text) + 1).ToString();                    
-                    labelDex.Text = (Convert.ToInt32(initialDexterity.Value) + Convert.ToInt32(labelModDex.Text)).ToString();                    
-                    lblModDexTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelDex.Text)).ToString();
+                    lblTotalDex.Text = (Convert.ToInt32(InitialDex.Value) + Convert.ToInt32(labelModDex.Text)).ToString();                    
+                    lblModDexTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalDex.Text)).ToString();
                     break;
                 case 3:
                     labelModCon.Visible = true;
                     labelModCon.Text = (Convert.ToInt32(labelModCon.Text) + 1).ToString();                    
-                    labelCon.Text = (Convert.ToInt32(initialConstitution.Value) + Convert.ToInt32(labelModCon.Text)).ToString();                    
-                    lblModConTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelCon.Text)).ToString();
+                    lblTotalCon.Text = (Convert.ToInt32(InitialCon.Value) + Convert.ToInt32(labelModCon.Text)).ToString();                    
+                    lblModConTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalCon.Text)).ToString();
                     break;
                 case 4:
                     labelModInt.Visible = true;                    
                     labelModInt.Text = (Convert.ToInt32(labelModInt.Text) + 1).ToString();
-                    labelInt.Text = (Convert.ToInt32(initialIntelligence.Value) + Convert.ToInt32(labelModInt.Text)).ToString();
-                    lblModIntTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelInt.Text)).ToString();
+                    lblTotalInt.Text = (Convert.ToInt32(InitialInt.Value) + Convert.ToInt32(labelModInt.Text)).ToString();
+                    lblModIntTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalInt.Text)).ToString();
                     break;
                 case 5:
                     labelModWis.Visible = true;                    
                     labelModWis.Text = (Convert.ToInt32(labelModWis.Text) + 1).ToString();
-                    labelWis.Text = (Convert.ToInt32(initialWisdom.Value) + Convert.ToInt32(labelModWis.Text)).ToString();
-                    lblModWisTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelWis.Text)).ToString();
+                    lblTotalWis.Text = (Convert.ToInt32(InitialWis.Value) + Convert.ToInt32(labelModWis.Text)).ToString();
+                    lblModWisTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalWis.Text)).ToString();
                     break;
                 case 6:
                     labelModCha.Visible = true;
                     labelModCha.Visible = true;
                     labelModCha.Text = (Convert.ToInt32(labelModCha.Text) + 1).ToString();
-                    labelCha.Text = (Convert.ToInt32(initialCharisma.Value) + Convert.ToInt32(labelModCha.Text)).ToString();
-                    lblModChaTotal.Text = CalcAttributeTotal(Convert.ToInt32(labelCha.Text)).ToString();
+                    lblTotalCha.Text = (Convert.ToInt32(InitialCha.Value) + Convert.ToInt32(labelModCha.Text)).ToString();
+                    lblModChaTotal.Text = CalcAttributeTotal(Convert.ToInt32(lblTotalCha.Text)).ToString();
                     break;
             }
         }
@@ -1657,147 +1821,352 @@ namespace HeroForge_OnceAgain
             // atualiza a label correspondente
             label.Text = valor.ToString();
         }
+        public void UpdateLabels(params Label[] labels)
+        {
+            // Inicializar a soma das habilidades com seus valores iniciais
+            int totalStr = (int)InitialStr.Value;
+            int totalDex = (int)InitialDex.Value;
+            int totalCon = (int)InitialCon.Value;
+            int totalInt = (int)InitialInt.Value;
+            int totalWis = (int)InitialWis.Value;
+            int totalCha = (int)InitialCha.Value;
+
+            // Adicionar o bônus das combos de aumento de habilidade
+            Dictionary<int, string> bumpOptions = new Dictionary<int, string>()
+            {
+                { 1, "1" },
+                { 2, "2" },
+                { 3, "3" },
+                { 4, "4" },
+                { 5, "5" },
+                { 6, "6" }
+            };
+
+            for (int i = 1; i <= 15; i++)
+            {
+                System.Windows.Forms.ComboBox cbBump = Controls.Find($"cbBump{i}", true).FirstOrDefault() as System.Windows.Forms.ComboBox;
+                if (cbBump == null) continue;
+                if (cbBump.SelectedItem != null)
+                {
+                    string selectedOption = cbBump.SelectedIndex.ToString();
+                    if (bumpOptions.ContainsValue(selectedOption))
+                    {
+                        int bumpValue = bumpOptions.FirstOrDefault(x => x.Value == selectedOption).Key;
+                        switch (bumpValue)
+                        {
+                            case 1:
+                                totalStr += 1;
+                                break;
+                            case 2:
+                                totalDex += 1;
+                                break;
+                            case 3:
+                                totalCon += 1;
+                                break;
+                            case 4:
+                                totalInt += 1;
+                                break;
+                            case 5:
+                                totalWis += 1;
+                                break;
+                            case 6:
+                                totalCha += 1;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+
+            }
+
+            // Adicionar o bônus dos campos de aumento inerente e mágico
+            List<TextBox> increaseModTextBoxes = new List<TextBox>() { IncreaseModStr, IncreaseModDex, IncreaseModCon, IncreaseModInt, IncreaseModWis, IncreaseModCha };
+            int[] increaseMods = new int[increaseModTextBoxes.Count];
+            for (int i = 0; i < increaseModTextBoxes.Count; i++)
+            {
+                increaseMods[i] = CalculaCampo(increaseModTextBoxes[i].Text);
+            }
+
+            List<TextBox> magicModTextBoxes = new List<TextBox>() { MagicBonusStr, MagicBonusDex, MagicBonusCon, MagicBonusInt, MagicBonusWis, MagicBonusCha };
+            int[] magicBonuses = new int[magicModTextBoxes.Count];
+            for (int i = 0; i < magicModTextBoxes.Count; i++)
+            {
+                magicBonuses[i] = CalculaCampo(magicModTextBoxes[i].Text);
+            }
+
+            totalStr += increaseMods[0] + magicBonuses[0];
+            totalDex += increaseMods[1] + magicBonuses[1];
+            totalCon += increaseMods[2] + magicBonuses[2];
+            totalInt += increaseMods[3] + magicBonuses[3];
+            totalWis += increaseMods[4] + magicBonuses[4];
+            totalCha += increaseMods[5] + magicBonuses[5];
 
 
-        private void cbBump1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //AbilityBump((System.Windows.Forms.ComboBox)sender);
-            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6, 
-                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr }, 
-                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
-        }        
+            lblTotalStr.Text = totalStr.ToString();
+            lblTotalDex.Text = totalDex.ToString();
+            lblTotalCon.Text = totalCon.ToString();
+            lblTotalInt.Text = totalInt.ToString();
+            lblTotalWis.Text = totalWis.ToString();
+            lblTotalCha.Text = totalCha.ToString();
 
-        private void cbBump2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //AbilityBump((System.Windows.Forms.ComboBox)sender);
-            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6,
-                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr },
-                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
-        }
-        private void cbBump3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //AbilityBump((System.Windows.Forms.ComboBox)sender);
-            AtualizarAtributo(initialStrength, new System.Windows.Forms.ComboBox[] { cbBump1, cbBump2, cbBump3, cbBump4, cbBump5, cbBump6,
-                cbBump7, cbBump8, cbBump9, cbBump10, cbBump11, cbBump12, cbBump13, cbBump14, cbBump15 }, new System.Windows.Forms.TextBox[] { increaseModStr },
-                new System.Windows.Forms.TextBox[] { txtMagicBonusStr }, labelStr);
-        }
+            lblModStrTotal.Text = CalcAttributeTotal(totalStr).ToString();
+            lblModDexTotal.Text = CalcAttributeTotal(totalDex).ToString();
+            lblModConTotal.Text = CalcAttributeTotal(totalCon).ToString();
+            lblModIntTotal.Text = CalcAttributeTotal(totalInt).ToString();
+            lblModWisTotal.Text = CalcAttributeTotal(totalWis).ToString();
+            lblModChaTotal.Text = CalcAttributeTotal(totalCha).ToString();
 
-        private void cbBump4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
+            lblModStr.Text = CalcAttribute(totalStr).ToString();
+            lblModDex.Text = CalcAttribute(totalDex).ToString();
+            lblModCon.Text = CalcAttribute(totalCon).ToString();
+            lblModInt.Text = CalcAttribute(totalInt).ToString();
+            lblModWis.Text = CalcAttribute(totalWis).ToString();
+            lblModCha.Text = CalcAttribute(totalCha).ToString();
         }
-        private void cbBump5_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbBump_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-
-        private void cbBump7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump8_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-
-        private void cbBump9_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump10_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump11_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-
-        private void cbBump12_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump13_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-
-        private void cbBump14_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-        private void cbBump15_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AbilityBump((System.Windows.Forms.ComboBox)sender);
-        }
-
-        private void labelModStr_TextChanged(object sender, EventArgs e)
-        {
-            //CalculateAbility();
+            UpdateLabels();
         }
 
         private void increaseModStr_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void increaseModDex_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void increaseModCon_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void increaseModInt_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void increaseModWis_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void increaseModCha_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusStr_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusDex_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusCon_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusInt_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusWis_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
 
         private void txtMagicBonusCha_TextChanged(object sender, EventArgs e)
         {
-            CalcAbilityScore();
+            UpdateLabels(); //CalcAbilityScore();
         }
+
+        private void UpdateButton(Button button, Size size, Point location, string text, EventHandler newClickEvent)
+        {
+            button.Size = size;
+            button.Location = location;
+            button.Text = text;
+            //button.Click -= SomeOtherEventHandler;  // Remover evento anterior
+            button.Click += newClickEvent;  // Adicionar novo evento
+        }
+
+        private void rolarXd6(object sender, EventArgs e, int numDados)
+        {
+            string resultado = "Atributos: ";
+            for (int i = 0; i < 6; i++)  // Uma vez para cada atributo
+            {
+                int roll = RollDice($"{numDados}d6");
+                resultado += roll.ToString() + ", ";
+            }
+            lblResultado.Text = resultado;
+        }
+        private (int, string) Roll3d6()
+        {
+            int total = 0;
+            string details = "(";
+
+            for (int i = 0; i < 3; i++) // Rolar 3 dados
+            {
+                int roll = RollDice("1d6");
+                total += roll;
+                details += roll.ToString() + ", ";
+            }
+
+            details = details.TrimEnd(' ', ',') + ")";
+            return (total, details);
+        }
+
+
+        private void rolar3d6(object sender, EventArgs e)
+        {
+            StringBuilder resultado = new StringBuilder("Atributos:\n");
+            List<(int total, string detalhes)> listaResultados = new List<(int, string)>();
+
+            for (int i = 0; i < 6; i++)  // Uma vez para cada atributo
+            {
+                var (total, detalhes) = Roll3d6();
+                listaResultados.Add((total, $"{total} {detalhes}"));
+            }
+
+            // Ordenar a lista de forma ascendente com base no total
+            listaResultados.Sort((x, y) => y.total.CompareTo(x.total));
+
+            foreach (var (total, res) in listaResultados)
+            {
+                resultado.AppendLine(res);
+            }
+
+            lblResultado.Text = resultado.ToString();
+        }
+
+
+        private (int total, string detalhes) Roll4d6DropLowest()
+        {
+            List<int> rolagens = new List<int>();
+            int total = 0;
+            for (int i = 0; i < 4; i++)  // Rolar 4 dados
+            {
+                int roll = RollDice("1d6");
+                rolagens.Add(roll);
+            }
+
+            rolagens.Sort();  // ordena a lista de rolagens
+            rolagens.RemoveAt(0);  // remove o menor valor
+
+            total = rolagens.Sum();  // atualiza o total
+            string detalhes = $"{total} ({string.Join(", ", rolagens)})";  // cria a string de detalhes
+
+            return (total, detalhes);
+        }
+
+        private void rolarOrganic(object sender, EventArgs e)
+        {
+            StringBuilder resultado = new StringBuilder("Atributos Orgânicos:\n");
+            List<KeyValuePair<int, string>> pairs = new List<KeyValuePair<int, string>>();
+
+            for (int i = 0; i < 6; i++) // Uma vez para cada atributo
+            {
+                List<int> rolls = new List<int>();
+
+                for (int j = 0; j < 4; j++) // Rolar 4d6
+                {
+                    int roll = random.Next(1, 7);
+                    rolls.Add(roll);
+                }
+
+                rolls.Sort();  // Ordena de forma ascendente
+                int total = rolls.Skip(1).Sum();  // Descarta o menor
+
+                string rollDetails = $"{total} ({string.Join(", ", rolls.Skip(1))}, [{rolls[0]}])";
+                pairs.Add(new KeyValuePair<int, string>(total, rollDetails));
+            }
+
+            // Ordenar de forma descendente os totais e atualizar a label.
+            var orderedPairs = pairs.OrderByDescending(x => x.Key).ToList();
+
+            foreach (var pair in orderedPairs)
+            {
+                resultado.AppendLine(pair.Value);
+            }
+
+            lblResultado.Text = resultado.ToString();
+        }
+
+
+        private void rolar4d6DropLowest(object sender, EventArgs e)
+        {
+            StringBuilder resultado = new StringBuilder("Atributos:\n");
+            List<int> totals = new List<int>();
+
+            for (int i = 0; i < 6; i++)  // Uma vez para cada atributo
+            {
+                List<int> rolls = new List<int>();
+
+                for (int j = 0; j < 4; j++) // 4d6
+                {
+                    int roll = random.Next(1, 7);
+                    rolls.Add(roll);
+                }
+
+                rolls.Sort();
+                int total = rolls.Skip(1).Sum(); // Descarta o menor
+
+                totals.Add(total);
+                resultado.AppendLine($"{total} ({string.Join(", ", rolls)})");
+            }
+
+            totals.Sort();
+            totals.Reverse(); // Para ordenar de forma descendente
+
+            lblResultado.Text = resultado.ToString();
+        }
+
+        private (int, string, int) Roll4d6DropLowestWithMin()
+        {
+            List<int> rolls = new List<int>();
+            for (int i = 0; i < 4; i++)  // Rolar 4 dados
+            {
+                int roll = random.Next(1, 7);  // Rolar um d6
+                rolls.Add(roll);
+            }
+
+            int minRoll = rolls.Min(); // Encontrar o menor resultado
+            rolls.Remove(minRoll);  // Remover o menor resultado
+
+            int total = rolls.Sum(); // Soma dos 3 maiores resultados
+            string detalhes = $"{total} ({String.Join(", ", rolls)})";
+            return (total, detalhes, minRoll);
+        }
+
+        private void dataGridViewDragonLanceSources_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula clicada pertence à coluna de CheckBox (suponhamos que seja a primeira coluna)
+            if (e.ColumnIndex == 1 && e.RowIndex != -1)
+            {
+                DataGridViewCheckBoxCell cell = dataGridViewDragonLanceSources.Rows[e.RowIndex].Cells[e.ColumnIndex - 1] as DataGridViewCheckBoxCell;
+
+                if (cell != null)
+                {
+                    if (cell.Value != null)
+                    {
+                        cell.Value = !(bool)cell.Value;
+                    }
+                    else
+                    {
+                        cell.Value = true;
+                    }
+                        
+                }
+            }
+        }
+
     }
 }

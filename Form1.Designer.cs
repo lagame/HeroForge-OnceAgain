@@ -41,15 +41,17 @@
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnRolar = new System.Windows.Forms.Button();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.labelCha = new System.Windows.Forms.Label();
-            this.labelWis = new System.Windows.Forms.Label();
-            this.labelInt = new System.Windows.Forms.Label();
-            this.labelCon = new System.Windows.Forms.Label();
-            this.labelDex = new System.Windows.Forms.Label();
-            this.labelStr = new System.Windows.Forms.Label();
+            this.lblTotalCha = new System.Windows.Forms.Label();
+            this.lblTotalWis = new System.Windows.Forms.Label();
+            this.lblTotalInt = new System.Windows.Forms.Label();
+            this.lblTotalCon = new System.Windows.Forms.Label();
+            this.lblTotalDex = new System.Windows.Forms.Label();
+            this.lblTotalStr = new System.Windows.Forms.Label();
             this.lblModChaTotal = new System.Windows.Forms.Label();
             this.lblModWisTotal = new System.Windows.Forms.Label();
             this.lblModIntTotal = new System.Windows.Forms.Label();
@@ -154,26 +156,26 @@
             this.labelModDex = new System.Windows.Forms.Label();
             this.labelModStr = new System.Windows.Forms.Label();
             this.labelRace = new System.Windows.Forms.Label();
-            this.txtMagicBonusCha = new System.Windows.Forms.TextBox();
-            this.txtMagicBonusWis = new System.Windows.Forms.TextBox();
-            this.txtMagicBonusInt = new System.Windows.Forms.TextBox();
-            this.txtMagicBonusCon = new System.Windows.Forms.TextBox();
-            this.txtMagicBonusDex = new System.Windows.Forms.TextBox();
-            this.txtMagicBonusStr = new System.Windows.Forms.TextBox();
+            this.MagicBonusCha = new System.Windows.Forms.TextBox();
+            this.MagicBonusWis = new System.Windows.Forms.TextBox();
+            this.MagicBonusInt = new System.Windows.Forms.TextBox();
+            this.MagicBonusCon = new System.Windows.Forms.TextBox();
+            this.MagicBonusDex = new System.Windows.Forms.TextBox();
+            this.MagicBonusStr = new System.Windows.Forms.TextBox();
             this.lblMagicalGain = new System.Windows.Forms.Label();
             this.lblInherentGains = new System.Windows.Forms.Label();
-            this.increaseModCha = new System.Windows.Forms.TextBox();
-            this.increaseModWis = new System.Windows.Forms.TextBox();
-            this.increaseModInt = new System.Windows.Forms.TextBox();
-            this.increaseModCon = new System.Windows.Forms.TextBox();
-            this.increaseModDex = new System.Windows.Forms.TextBox();
-            this.increaseModStr = new System.Windows.Forms.TextBox();
-            this.initialCharisma = new System.Windows.Forms.NumericUpDown();
-            this.initialWisdom = new System.Windows.Forms.NumericUpDown();
-            this.initialIntelligence = new System.Windows.Forms.NumericUpDown();
-            this.initialConstitution = new System.Windows.Forms.NumericUpDown();
-            this.initialDexterity = new System.Windows.Forms.NumericUpDown();
-            this.initialStrength = new System.Windows.Forms.NumericUpDown();
+            this.IncreaseModCha = new System.Windows.Forms.TextBox();
+            this.IncreaseModWis = new System.Windows.Forms.TextBox();
+            this.IncreaseModInt = new System.Windows.Forms.TextBox();
+            this.IncreaseModCon = new System.Windows.Forms.TextBox();
+            this.IncreaseModDex = new System.Windows.Forms.TextBox();
+            this.IncreaseModStr = new System.Windows.Forms.TextBox();
+            this.InitialCha = new System.Windows.Forms.NumericUpDown();
+            this.InitialWis = new System.Windows.Forms.NumericUpDown();
+            this.InitialInt = new System.Windows.Forms.NumericUpDown();
+            this.InitialCon = new System.Windows.Forms.NumericUpDown();
+            this.InitialDex = new System.Windows.Forms.NumericUpDown();
+            this.InitialStr = new System.Windows.Forms.NumericUpDown();
             this.lblCharisma = new System.Windows.Forms.Label();
             this.lblWisdom = new System.Windows.Forms.Label();
             this.lblIntelligence = new System.Windows.Forms.Label();
@@ -196,6 +198,7 @@
             this.cBCampaignSelect = new System.Windows.Forms.ComboBox();
             this.lblCampaignSelect = new System.Windows.Forms.Label();
             this.gBSelectSources = new System.Windows.Forms.GroupBox();
+            this.dataGridViewDragonLanceSources = new System.Windows.Forms.DataGridView();
             this.labelRavenloftSources = new System.Windows.Forms.Label();
             this.cBRavenloftSources = new System.Windows.Forms.CheckedListBox();
             this.lblMonstrousNonSettingSources = new System.Windows.Forms.Label();
@@ -244,16 +247,17 @@
             this.gBLevelBasedStatBumps.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.initialCharisma)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialWisdom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialIntelligence)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialConstitution)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialDexterity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialCha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialWis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialInt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialCon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialDex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialStr)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gBSelectSources.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDragonLanceSources)).BeginInit();
             this.gBDeityOptions.SuspendLayout();
             this.gBUneathedArcana.SuspendLayout();
             this.gBCharacterSheetDisplayHitPoints.SuspendLayout();
@@ -263,75 +267,76 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.helpToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.toolTip1.SetToolTip(this.menuStrip1, resources.GetString("menuStrip1.ToolTip"));
             // 
             // fileToolStripMenuItem
             // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadCharacterToolStripMenuItem,
             this.saveCharacterToolStripMenuItem,
             this.printToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
             // loadCharacterToolStripMenuItem
             // 
-            resources.ApplyResources(this.loadCharacterToolStripMenuItem, "loadCharacterToolStripMenuItem");
             this.loadCharacterToolStripMenuItem.Name = "loadCharacterToolStripMenuItem";
+            resources.ApplyResources(this.loadCharacterToolStripMenuItem, "loadCharacterToolStripMenuItem");
             this.loadCharacterToolStripMenuItem.Click += new System.EventHandler(this.loadCharacterToolStripMenuItem_Click);
             // 
             // saveCharacterToolStripMenuItem
             // 
-            resources.ApplyResources(this.saveCharacterToolStripMenuItem, "saveCharacterToolStripMenuItem");
             this.saveCharacterToolStripMenuItem.Name = "saveCharacterToolStripMenuItem";
+            resources.ApplyResources(this.saveCharacterToolStripMenuItem, "saveCharacterToolStripMenuItem");
             this.saveCharacterToolStripMenuItem.Click += new System.EventHandler(this.saveCharacterToolStripMenuItem_Click);
             // 
             // printToolStripMenuItem
             // 
-            resources.ApplyResources(this.printToolStripMenuItem, "printToolStripMenuItem");
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            resources.ApplyResources(this.printToolStripMenuItem, "printToolStripMenuItem");
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
-            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             // 
             // settingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preferencesToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             // 
             // preferencesToolStripMenuItem
             // 
-            resources.ApplyResources(this.preferencesToolStripMenuItem, "preferencesToolStripMenuItem");
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
+            resources.ApplyResources(this.preferencesToolStripMenuItem, "preferencesToolStripMenuItem");
             this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.preferencesToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // tabPage2
             // 
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.btnRolar);
+            this.tabPage2.Controls.Add(this.lblResultado);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.groupBox3);
@@ -352,26 +357,26 @@
             this.tabPage2.Controls.Add(this.labelModDex);
             this.tabPage2.Controls.Add(this.labelModStr);
             this.tabPage2.Controls.Add(this.labelRace);
-            this.tabPage2.Controls.Add(this.txtMagicBonusCha);
-            this.tabPage2.Controls.Add(this.txtMagicBonusWis);
-            this.tabPage2.Controls.Add(this.txtMagicBonusInt);
-            this.tabPage2.Controls.Add(this.txtMagicBonusCon);
-            this.tabPage2.Controls.Add(this.txtMagicBonusDex);
-            this.tabPage2.Controls.Add(this.txtMagicBonusStr);
+            this.tabPage2.Controls.Add(this.MagicBonusCha);
+            this.tabPage2.Controls.Add(this.MagicBonusWis);
+            this.tabPage2.Controls.Add(this.MagicBonusInt);
+            this.tabPage2.Controls.Add(this.MagicBonusCon);
+            this.tabPage2.Controls.Add(this.MagicBonusDex);
+            this.tabPage2.Controls.Add(this.MagicBonusStr);
             this.tabPage2.Controls.Add(this.lblMagicalGain);
             this.tabPage2.Controls.Add(this.lblInherentGains);
-            this.tabPage2.Controls.Add(this.increaseModCha);
-            this.tabPage2.Controls.Add(this.increaseModWis);
-            this.tabPage2.Controls.Add(this.increaseModInt);
-            this.tabPage2.Controls.Add(this.increaseModCon);
-            this.tabPage2.Controls.Add(this.increaseModDex);
-            this.tabPage2.Controls.Add(this.increaseModStr);
-            this.tabPage2.Controls.Add(this.initialCharisma);
-            this.tabPage2.Controls.Add(this.initialWisdom);
-            this.tabPage2.Controls.Add(this.initialIntelligence);
-            this.tabPage2.Controls.Add(this.initialConstitution);
-            this.tabPage2.Controls.Add(this.initialDexterity);
-            this.tabPage2.Controls.Add(this.initialStrength);
+            this.tabPage2.Controls.Add(this.IncreaseModCha);
+            this.tabPage2.Controls.Add(this.IncreaseModWis);
+            this.tabPage2.Controls.Add(this.IncreaseModInt);
+            this.tabPage2.Controls.Add(this.IncreaseModCon);
+            this.tabPage2.Controls.Add(this.IncreaseModDex);
+            this.tabPage2.Controls.Add(this.IncreaseModStr);
+            this.tabPage2.Controls.Add(this.InitialCha);
+            this.tabPage2.Controls.Add(this.InitialWis);
+            this.tabPage2.Controls.Add(this.InitialInt);
+            this.tabPage2.Controls.Add(this.InitialCon);
+            this.tabPage2.Controls.Add(this.InitialDex);
+            this.tabPage2.Controls.Add(this.InitialStr);
             this.tabPage2.Controls.Add(this.lblCharisma);
             this.tabPage2.Controls.Add(this.lblWisdom);
             this.tabPage2.Controls.Add(this.lblIntelligence);
@@ -382,31 +387,38 @@
             this.tabPage2.Controls.Add(this.lblLevelAdjust);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Name = "tabPage2";
-            this.toolTip1.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip"));
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnRolar
+            // 
+            resources.ApplyResources(this.btnRolar, "btnRolar");
+            this.btnRolar.Name = "btnRolar";
+            this.btnRolar.UseVisualStyleBackColor = true;
+            // 
+            // lblResultado
+            // 
+            resources.ApplyResources(this.lblResultado, "lblResultado");
+            this.lblResultado.Name = "lblResultado";
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Name = "label10";
-            this.toolTip1.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Controls.Add(this.labelCha);
-            this.groupBox3.Controls.Add(this.labelWis);
-            this.groupBox3.Controls.Add(this.labelInt);
-            this.groupBox3.Controls.Add(this.labelCon);
-            this.groupBox3.Controls.Add(this.labelDex);
-            this.groupBox3.Controls.Add(this.labelStr);
+            this.groupBox3.Controls.Add(this.lblTotalCha);
+            this.groupBox3.Controls.Add(this.lblTotalWis);
+            this.groupBox3.Controls.Add(this.lblTotalInt);
+            this.groupBox3.Controls.Add(this.lblTotalCon);
+            this.groupBox3.Controls.Add(this.lblTotalDex);
+            this.groupBox3.Controls.Add(this.lblTotalStr);
             this.groupBox3.Controls.Add(this.lblModChaTotal);
             this.groupBox3.Controls.Add(this.lblModWisTotal);
             this.groupBox3.Controls.Add(this.lblModIntTotal);
@@ -422,177 +434,150 @@
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.label21);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
             // 
-            // labelCha
+            // lblTotalCha
             // 
-            resources.ApplyResources(this.labelCha, "labelCha");
-            this.labelCha.Name = "labelCha";
-            this.toolTip1.SetToolTip(this.labelCha, resources.GetString("labelCha.ToolTip"));
+            resources.ApplyResources(this.lblTotalCha, "lblTotalCha");
+            this.lblTotalCha.Name = "lblTotalCha";
             // 
-            // labelWis
+            // lblTotalWis
             // 
-            resources.ApplyResources(this.labelWis, "labelWis");
-            this.labelWis.Name = "labelWis";
-            this.toolTip1.SetToolTip(this.labelWis, resources.GetString("labelWis.ToolTip"));
+            resources.ApplyResources(this.lblTotalWis, "lblTotalWis");
+            this.lblTotalWis.Name = "lblTotalWis";
             // 
-            // labelInt
+            // lblTotalInt
             // 
-            resources.ApplyResources(this.labelInt, "labelInt");
-            this.labelInt.Name = "labelInt";
-            this.toolTip1.SetToolTip(this.labelInt, resources.GetString("labelInt.ToolTip"));
+            resources.ApplyResources(this.lblTotalInt, "lblTotalInt");
+            this.lblTotalInt.Name = "lblTotalInt";
             // 
-            // labelCon
+            // lblTotalCon
             // 
-            resources.ApplyResources(this.labelCon, "labelCon");
-            this.labelCon.Name = "labelCon";
-            this.toolTip1.SetToolTip(this.labelCon, resources.GetString("labelCon.ToolTip"));
+            resources.ApplyResources(this.lblTotalCon, "lblTotalCon");
+            this.lblTotalCon.Name = "lblTotalCon";
             // 
-            // labelDex
+            // lblTotalDex
             // 
-            resources.ApplyResources(this.labelDex, "labelDex");
-            this.labelDex.Name = "labelDex";
-            this.toolTip1.SetToolTip(this.labelDex, resources.GetString("labelDex.ToolTip"));
+            resources.ApplyResources(this.lblTotalDex, "lblTotalDex");
+            this.lblTotalDex.Name = "lblTotalDex";
             // 
-            // labelStr
+            // lblTotalStr
             // 
-            resources.ApplyResources(this.labelStr, "labelStr");
-            this.labelStr.Name = "labelStr";
-            this.toolTip1.SetToolTip(this.labelStr, resources.GetString("labelStr.ToolTip"));
+            resources.ApplyResources(this.lblTotalStr, "lblTotalStr");
+            this.lblTotalStr.Name = "lblTotalStr";
             // 
             // lblModChaTotal
             // 
             resources.ApplyResources(this.lblModChaTotal, "lblModChaTotal");
             this.lblModChaTotal.Name = "lblModChaTotal";
-            this.toolTip1.SetToolTip(this.lblModChaTotal, resources.GetString("lblModChaTotal.ToolTip"));
             // 
             // lblModWisTotal
             // 
             resources.ApplyResources(this.lblModWisTotal, "lblModWisTotal");
             this.lblModWisTotal.Name = "lblModWisTotal";
-            this.toolTip1.SetToolTip(this.lblModWisTotal, resources.GetString("lblModWisTotal.ToolTip"));
             // 
             // lblModIntTotal
             // 
             resources.ApplyResources(this.lblModIntTotal, "lblModIntTotal");
             this.lblModIntTotal.Name = "lblModIntTotal";
-            this.toolTip1.SetToolTip(this.lblModIntTotal, resources.GetString("lblModIntTotal.ToolTip"));
             // 
             // lblModConTotal
             // 
             resources.ApplyResources(this.lblModConTotal, "lblModConTotal");
             this.lblModConTotal.Name = "lblModConTotal";
-            this.toolTip1.SetToolTip(this.lblModConTotal, resources.GetString("lblModConTotal.ToolTip"));
             // 
             // lblModDexTotal
             // 
             resources.ApplyResources(this.lblModDexTotal, "lblModDexTotal");
             this.lblModDexTotal.Name = "lblModDexTotal";
-            this.toolTip1.SetToolTip(this.lblModDexTotal, resources.GetString("lblModDexTotal.ToolTip"));
             // 
             // lblModStrTotal
             // 
             resources.ApplyResources(this.lblModStrTotal, "lblModStrTotal");
             this.lblModStrTotal.Name = "lblModStrTotal";
-            this.toolTip1.SetToolTip(this.lblModStrTotal, resources.GetString("lblModStrTotal.ToolTip"));
             // 
             // lblModCha
             // 
             resources.ApplyResources(this.lblModCha, "lblModCha");
             this.lblModCha.Name = "lblModCha";
-            this.toolTip1.SetToolTip(this.lblModCha, resources.GetString("lblModCha.ToolTip"));
             // 
             // lblModWis
             // 
             resources.ApplyResources(this.lblModWis, "lblModWis");
             this.lblModWis.Name = "lblModWis";
-            this.toolTip1.SetToolTip(this.lblModWis, resources.GetString("lblModWis.ToolTip"));
             // 
             // lblModInt
             // 
             resources.ApplyResources(this.lblModInt, "lblModInt");
             this.lblModInt.Name = "lblModInt";
-            this.toolTip1.SetToolTip(this.lblModInt, resources.GetString("lblModInt.ToolTip"));
             // 
             // lblModCon
             // 
             resources.ApplyResources(this.lblModCon, "lblModCon");
             this.lblModCon.Name = "lblModCon";
-            this.toolTip1.SetToolTip(this.lblModCon, resources.GetString("lblModCon.ToolTip"));
             // 
             // lblModDex
             // 
             resources.ApplyResources(this.lblModDex, "lblModDex");
             this.lblModDex.Name = "lblModDex";
-            this.toolTip1.SetToolTip(this.lblModDex, resources.GetString("lblModDex.ToolTip"));
             // 
             // lblModStr
             // 
             resources.ApplyResources(this.lblModStr, "lblModStr");
             this.lblModStr.Name = "lblModStr";
-            this.toolTip1.SetToolTip(this.lblModStr, resources.GetString("lblModStr.ToolTip"));
             // 
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            this.toolTip1.SetToolTip(this.label23, resources.GetString("label23.ToolTip"));
             // 
             // label22
             // 
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            this.toolTip1.SetToolTip(this.label22, resources.GetString("label22.ToolTip"));
             // 
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.toolTip1.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
             // 
             // groupBox5
             // 
-            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.lblTypeCampaign);
             this.groupBox5.Controls.Add(this.labelTypeCampaign);
             this.groupBox5.Controls.Add(this.lblTotalPoints);
             this.groupBox5.Controls.Add(this.lblPointBuy);
             this.groupBox5.Controls.Add(this.cBAbilityScoreSystem);
             this.groupBox5.Controls.Add(this.lblAlternativeRoll);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox5, resources.GetString("groupBox5.ToolTip"));
             // 
             // lblTypeCampaign
             // 
             resources.ApplyResources(this.lblTypeCampaign, "lblTypeCampaign");
             this.lblTypeCampaign.Name = "lblTypeCampaign";
-            this.toolTip1.SetToolTip(this.lblTypeCampaign, resources.GetString("lblTypeCampaign.ToolTip"));
             // 
             // labelTypeCampaign
             // 
             resources.ApplyResources(this.labelTypeCampaign, "labelTypeCampaign");
             this.labelTypeCampaign.BackColor = System.Drawing.Color.Transparent;
             this.labelTypeCampaign.Name = "labelTypeCampaign";
-            this.toolTip1.SetToolTip(this.labelTypeCampaign, resources.GetString("labelTypeCampaign.ToolTip"));
             // 
             // lblTotalPoints
             // 
             resources.ApplyResources(this.lblTotalPoints, "lblTotalPoints");
             this.lblTotalPoints.Name = "lblTotalPoints";
-            this.toolTip1.SetToolTip(this.lblTotalPoints, resources.GetString("lblTotalPoints.ToolTip"));
             // 
             // lblPointBuy
             // 
             resources.ApplyResources(this.lblPointBuy, "lblPointBuy");
             this.lblPointBuy.Name = "lblPointBuy";
-            this.toolTip1.SetToolTip(this.lblPointBuy, resources.GetString("lblPointBuy.ToolTip"));
             // 
             // cBAbilityScoreSystem
             // 
-            resources.ApplyResources(this.cBAbilityScoreSystem, "cBAbilityScoreSystem");
             this.cBAbilityScoreSystem.FormattingEnabled = true;
             this.cBAbilityScoreSystem.Items.AddRange(new object[] {
             resources.GetString("cBAbilityScoreSystem.Items"),
@@ -603,43 +588,37 @@
             resources.GetString("cBAbilityScoreSystem.Items5"),
             resources.GetString("cBAbilityScoreSystem.Items6"),
             resources.GetString("cBAbilityScoreSystem.Items7")});
+            resources.ApplyResources(this.cBAbilityScoreSystem, "cBAbilityScoreSystem");
             this.cBAbilityScoreSystem.Name = "cBAbilityScoreSystem";
-            this.toolTip1.SetToolTip(this.cBAbilityScoreSystem, resources.GetString("cBAbilityScoreSystem.ToolTip"));
             this.cBAbilityScoreSystem.SelectedIndexChanged += new System.EventHandler(this.cBAbilityScoreSystem_SelectedIndexChanged);
             // 
             // lblAlternativeRoll
             // 
             resources.ApplyResources(this.lblAlternativeRoll, "lblAlternativeRoll");
             this.lblAlternativeRoll.Name = "lblAlternativeRoll";
-            this.toolTip1.SetToolTip(this.lblAlternativeRoll, resources.GetString("lblAlternativeRoll.ToolTip"));
             // 
             // lblGender
             // 
             resources.ApplyResources(this.lblGender, "lblGender");
             this.lblGender.Name = "lblGender";
-            this.toolTip1.SetToolTip(this.lblGender, resources.GetString("lblGender.ToolTip"));
             // 
             // label70
             // 
             resources.ApplyResources(this.label70, "label70");
             this.label70.Name = "label70";
-            this.toolTip1.SetToolTip(this.label70, resources.GetString("label70.ToolTip"));
             // 
             // lblClasses
             // 
             resources.ApplyResources(this.lblClasses, "lblClasses");
             this.lblClasses.Name = "lblClasses";
-            this.toolTip1.SetToolTip(this.lblClasses, resources.GetString("lblClasses.ToolTip"));
             // 
             // label69
             // 
             resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
-            this.toolTip1.SetToolTip(this.label69, resources.GetString("label69.ToolTip"));
             // 
             // gBLevelBasedStatBumps
             // 
-            resources.ApplyResources(this.gBLevelBasedStatBumps, "gBLevelBasedStatBumps");
             this.gBLevelBasedStatBumps.Controls.Add(this.cbBump15);
             this.gBLevelBasedStatBumps.Controls.Add(this.cbBump14);
             this.gBLevelBasedStatBumps.Controls.Add(this.cbBump13);
@@ -670,13 +649,12 @@
             this.gBLevelBasedStatBumps.Controls.Add(this.label29);
             this.gBLevelBasedStatBumps.Controls.Add(this.label30);
             this.gBLevelBasedStatBumps.Controls.Add(this.cbBump1);
+            resources.ApplyResources(this.gBLevelBasedStatBumps, "gBLevelBasedStatBumps");
             this.gBLevelBasedStatBumps.Name = "gBLevelBasedStatBumps";
             this.gBLevelBasedStatBumps.TabStop = false;
-            this.toolTip1.SetToolTip(this.gBLevelBasedStatBumps, resources.GetString("gBLevelBasedStatBumps.ToolTip"));
             // 
             // cbBump15
             // 
-            resources.ApplyResources(this.cbBump15, "cbBump15");
             this.cbBump15.FormattingEnabled = true;
             this.cbBump15.Items.AddRange(new object[] {
             resources.GetString("cbBump15.Items"),
@@ -686,13 +664,12 @@
             resources.GetString("cbBump15.Items4"),
             resources.GetString("cbBump15.Items5"),
             resources.GetString("cbBump15.Items6")});
+            resources.ApplyResources(this.cbBump15, "cbBump15");
             this.cbBump15.Name = "cbBump15";
-            this.toolTip1.SetToolTip(this.cbBump15, resources.GetString("cbBump15.ToolTip"));
-            this.cbBump15.SelectedIndexChanged += new System.EventHandler(this.cbBump15_SelectedIndexChanged);
+            this.cbBump15.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump14
             // 
-            resources.ApplyResources(this.cbBump14, "cbBump14");
             this.cbBump14.FormattingEnabled = true;
             this.cbBump14.Items.AddRange(new object[] {
             resources.GetString("cbBump14.Items"),
@@ -702,13 +679,12 @@
             resources.GetString("cbBump14.Items4"),
             resources.GetString("cbBump14.Items5"),
             resources.GetString("cbBump14.Items6")});
+            resources.ApplyResources(this.cbBump14, "cbBump14");
             this.cbBump14.Name = "cbBump14";
-            this.toolTip1.SetToolTip(this.cbBump14, resources.GetString("cbBump14.ToolTip"));
-            this.cbBump14.SelectedIndexChanged += new System.EventHandler(this.cbBump14_SelectedIndexChanged);
+            this.cbBump14.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump13
             // 
-            resources.ApplyResources(this.cbBump13, "cbBump13");
             this.cbBump13.FormattingEnabled = true;
             this.cbBump13.Items.AddRange(new object[] {
             resources.GetString("cbBump13.Items"),
@@ -718,31 +694,27 @@
             resources.GetString("cbBump13.Items4"),
             resources.GetString("cbBump13.Items5"),
             resources.GetString("cbBump13.Items6")});
+            resources.ApplyResources(this.cbBump13, "cbBump13");
             this.cbBump13.Name = "cbBump13";
-            this.toolTip1.SetToolTip(this.cbBump13, resources.GetString("cbBump13.ToolTip"));
-            this.cbBump13.SelectedIndexChanged += new System.EventHandler(this.cbBump13_SelectedIndexChanged);
+            this.cbBump13.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // label60
             // 
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
-            this.toolTip1.SetToolTip(this.label60, resources.GetString("label60.ToolTip"));
             // 
             // label67
             // 
             resources.ApplyResources(this.label67, "label67");
             this.label67.Name = "label67";
-            this.toolTip1.SetToolTip(this.label67, resources.GetString("label67.ToolTip"));
             // 
             // label68
             // 
             resources.ApplyResources(this.label68, "label68");
             this.label68.Name = "label68";
-            this.toolTip1.SetToolTip(this.label68, resources.GetString("label68.ToolTip"));
             // 
             // cbBump12
             // 
-            resources.ApplyResources(this.cbBump12, "cbBump12");
             this.cbBump12.FormattingEnabled = true;
             this.cbBump12.Items.AddRange(new object[] {
             resources.GetString("cbBump12.Items"),
@@ -752,13 +724,12 @@
             resources.GetString("cbBump12.Items4"),
             resources.GetString("cbBump12.Items5"),
             resources.GetString("cbBump12.Items6")});
+            resources.ApplyResources(this.cbBump12, "cbBump12");
             this.cbBump12.Name = "cbBump12";
-            this.toolTip1.SetToolTip(this.cbBump12, resources.GetString("cbBump12.ToolTip"));
-            this.cbBump12.SelectedIndexChanged += new System.EventHandler(this.cbBump12_SelectedIndexChanged);
+            this.cbBump12.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump11
             // 
-            resources.ApplyResources(this.cbBump11, "cbBump11");
             this.cbBump11.FormattingEnabled = true;
             this.cbBump11.Items.AddRange(new object[] {
             resources.GetString("cbBump11.Items"),
@@ -768,13 +739,12 @@
             resources.GetString("cbBump11.Items4"),
             resources.GetString("cbBump11.Items5"),
             resources.GetString("cbBump11.Items6")});
+            resources.ApplyResources(this.cbBump11, "cbBump11");
             this.cbBump11.Name = "cbBump11";
-            this.toolTip1.SetToolTip(this.cbBump11, resources.GetString("cbBump11.ToolTip"));
-            this.cbBump11.SelectedIndexChanged += new System.EventHandler(this.cbBump11_SelectedIndexChanged);
+            this.cbBump11.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump10
             // 
-            resources.ApplyResources(this.cbBump10, "cbBump10");
             this.cbBump10.FormattingEnabled = true;
             this.cbBump10.Items.AddRange(new object[] {
             resources.GetString("cbBump10.Items"),
@@ -784,13 +754,12 @@
             resources.GetString("cbBump10.Items4"),
             resources.GetString("cbBump10.Items5"),
             resources.GetString("cbBump10.Items6")});
+            resources.ApplyResources(this.cbBump10, "cbBump10");
             this.cbBump10.Name = "cbBump10";
-            this.toolTip1.SetToolTip(this.cbBump10, resources.GetString("cbBump10.ToolTip"));
-            this.cbBump10.SelectedIndexChanged += new System.EventHandler(this.cbBump10_SelectedIndexChanged);
+            this.cbBump10.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump9
             // 
-            resources.ApplyResources(this.cbBump9, "cbBump9");
             this.cbBump9.FormattingEnabled = true;
             this.cbBump9.Items.AddRange(new object[] {
             resources.GetString("cbBump9.Items"),
@@ -800,13 +769,12 @@
             resources.GetString("cbBump9.Items4"),
             resources.GetString("cbBump9.Items5"),
             resources.GetString("cbBump9.Items6")});
+            resources.ApplyResources(this.cbBump9, "cbBump9");
             this.cbBump9.Name = "cbBump9";
-            this.toolTip1.SetToolTip(this.cbBump9, resources.GetString("cbBump9.ToolTip"));
-            this.cbBump9.SelectedIndexChanged += new System.EventHandler(this.cbBump9_SelectedIndexChanged);
+            this.cbBump9.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump8
             // 
-            resources.ApplyResources(this.cbBump8, "cbBump8");
             this.cbBump8.FormattingEnabled = true;
             this.cbBump8.Items.AddRange(new object[] {
             resources.GetString("cbBump8.Items"),
@@ -816,49 +784,42 @@
             resources.GetString("cbBump8.Items4"),
             resources.GetString("cbBump8.Items5"),
             resources.GetString("cbBump8.Items6")});
+            resources.ApplyResources(this.cbBump8, "cbBump8");
             this.cbBump8.Name = "cbBump8";
-            this.toolTip1.SetToolTip(this.cbBump8, resources.GetString("cbBump8.ToolTip"));
-            this.cbBump8.SelectedIndexChanged += new System.EventHandler(this.cbBump8_SelectedIndexChanged);
+            this.cbBump8.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
-            this.toolTip1.SetToolTip(this.label24, resources.GetString("label24.ToolTip"));
             // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
             this.label55.Name = "label55";
-            this.toolTip1.SetToolTip(this.label55, resources.GetString("label55.ToolTip"));
             // 
             // label56
             // 
             resources.ApplyResources(this.label56, "label56");
             this.label56.Name = "label56";
-            this.toolTip1.SetToolTip(this.label56, resources.GetString("label56.ToolTip"));
             // 
             // label57
             // 
             resources.ApplyResources(this.label57, "label57");
             this.label57.Name = "label57";
-            this.toolTip1.SetToolTip(this.label57, resources.GetString("label57.ToolTip"));
             // 
             // label58
             // 
             resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
-            this.toolTip1.SetToolTip(this.label58, resources.GetString("label58.ToolTip"));
             // 
             // label59
             // 
             resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
-            this.toolTip1.SetToolTip(this.label59, resources.GetString("label59.ToolTip"));
             // 
             // cbBump7
             // 
-            resources.ApplyResources(this.cbBump7, "cbBump7");
             this.cbBump7.FormattingEnabled = true;
             this.cbBump7.Items.AddRange(new object[] {
             resources.GetString("cbBump7.Items"),
@@ -868,13 +829,12 @@
             resources.GetString("cbBump7.Items4"),
             resources.GetString("cbBump7.Items5"),
             resources.GetString("cbBump7.Items6")});
+            resources.ApplyResources(this.cbBump7, "cbBump7");
             this.cbBump7.Name = "cbBump7";
-            this.toolTip1.SetToolTip(this.cbBump7, resources.GetString("cbBump7.ToolTip"));
-            this.cbBump7.SelectedIndexChanged += new System.EventHandler(this.cbBump7_SelectedIndexChanged);
+            this.cbBump7.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump6
             // 
-            resources.ApplyResources(this.cbBump6, "cbBump6");
             this.cbBump6.FormattingEnabled = true;
             this.cbBump6.Items.AddRange(new object[] {
             resources.GetString("cbBump6.Items"),
@@ -884,13 +844,12 @@
             resources.GetString("cbBump6.Items4"),
             resources.GetString("cbBump6.Items5"),
             resources.GetString("cbBump6.Items6")});
+            resources.ApplyResources(this.cbBump6, "cbBump6");
             this.cbBump6.Name = "cbBump6";
-            this.toolTip1.SetToolTip(this.cbBump6, resources.GetString("cbBump6.ToolTip"));
-            this.cbBump6.SelectedIndexChanged += new System.EventHandler(this.cbBump6_SelectedIndexChanged);
+            this.cbBump6.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump5
             // 
-            resources.ApplyResources(this.cbBump5, "cbBump5");
             this.cbBump5.FormattingEnabled = true;
             this.cbBump5.Items.AddRange(new object[] {
             resources.GetString("cbBump5.Items"),
@@ -900,13 +859,12 @@
             resources.GetString("cbBump5.Items4"),
             resources.GetString("cbBump5.Items5"),
             resources.GetString("cbBump5.Items6")});
+            resources.ApplyResources(this.cbBump5, "cbBump5");
             this.cbBump5.Name = "cbBump5";
-            this.toolTip1.SetToolTip(this.cbBump5, resources.GetString("cbBump5.ToolTip"));
-            this.cbBump5.SelectedIndexChanged += new System.EventHandler(this.cbBump5_SelectedIndexChanged);
+            this.cbBump5.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump4
             // 
-            resources.ApplyResources(this.cbBump4, "cbBump4");
             this.cbBump4.FormattingEnabled = true;
             this.cbBump4.Items.AddRange(new object[] {
             resources.GetString("cbBump4.Items"),
@@ -916,13 +874,12 @@
             resources.GetString("cbBump4.Items4"),
             resources.GetString("cbBump4.Items5"),
             resources.GetString("cbBump4.Items6")});
+            resources.ApplyResources(this.cbBump4, "cbBump4");
             this.cbBump4.Name = "cbBump4";
-            this.toolTip1.SetToolTip(this.cbBump4, resources.GetString("cbBump4.ToolTip"));
-            this.cbBump4.SelectedIndexChanged += new System.EventHandler(this.cbBump4_SelectedIndexChanged);
+            this.cbBump4.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump3
             // 
-            resources.ApplyResources(this.cbBump3, "cbBump3");
             this.cbBump3.FormattingEnabled = true;
             this.cbBump3.Items.AddRange(new object[] {
             resources.GetString("cbBump3.Items"),
@@ -932,13 +889,12 @@
             resources.GetString("cbBump3.Items4"),
             resources.GetString("cbBump3.Items5"),
             resources.GetString("cbBump3.Items6")});
+            resources.ApplyResources(this.cbBump3, "cbBump3");
             this.cbBump3.Name = "cbBump3";
-            this.toolTip1.SetToolTip(this.cbBump3, resources.GetString("cbBump3.ToolTip"));
-            this.cbBump3.SelectedIndexChanged += new System.EventHandler(this.cbBump3_SelectedIndexChanged);
+            this.cbBump3.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // cbBump2
             // 
-            resources.ApplyResources(this.cbBump2, "cbBump2");
             this.cbBump2.FormattingEnabled = true;
             this.cbBump2.Items.AddRange(new object[] {
             resources.GetString("cbBump2.Items"),
@@ -948,49 +904,42 @@
             resources.GetString("cbBump2.Items4"),
             resources.GetString("cbBump2.Items5"),
             resources.GetString("cbBump2.Items6")});
+            resources.ApplyResources(this.cbBump2, "cbBump2");
             this.cbBump2.Name = "cbBump2";
-            this.toolTip1.SetToolTip(this.cbBump2, resources.GetString("cbBump2.ToolTip"));
-            this.cbBump2.SelectedIndexChanged += new System.EventHandler(this.cbBump2_SelectedIndexChanged);
+            this.cbBump2.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // label25
             // 
             resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            this.toolTip1.SetToolTip(this.label25, resources.GetString("label25.ToolTip"));
             // 
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
-            this.toolTip1.SetToolTip(this.label26, resources.GetString("label26.ToolTip"));
             // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.toolTip1.SetToolTip(this.label27, resources.GetString("label27.ToolTip"));
             // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
-            this.toolTip1.SetToolTip(this.label28, resources.GetString("label28.ToolTip"));
             // 
             // label29
             // 
             resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
-            this.toolTip1.SetToolTip(this.label29, resources.GetString("label29.ToolTip"));
             // 
             // label30
             // 
             resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            this.toolTip1.SetToolTip(this.label30, resources.GetString("label30.ToolTip"));
             // 
             // cbBump1
             // 
-            resources.ApplyResources(this.cbBump1, "cbBump1");
             this.cbBump1.FormattingEnabled = true;
             this.cbBump1.Items.AddRange(new object[] {
             resources.GetString("cbBump1.Items"),
@@ -1000,21 +949,19 @@
             resources.GetString("cbBump1.Items4"),
             resources.GetString("cbBump1.Items5"),
             resources.GetString("cbBump1.Items6")});
+            resources.ApplyResources(this.cbBump1, "cbBump1");
             this.cbBump1.Name = "cbBump1";
-            this.toolTip1.SetToolTip(this.cbBump1, resources.GetString("cbBump1.ToolTip"));
-            this.cbBump1.SelectedIndexChanged += new System.EventHandler(this.cbBump1_SelectedIndexChanged);
+            this.cbBump1.SelectedIndexChanged += new System.EventHandler(this.cbBump_SelectedIndexChanged);
             // 
             // btClearStatsDescriptionSelections
             // 
             resources.ApplyResources(this.btClearStatsDescriptionSelections, "btClearStatsDescriptionSelections");
             this.btClearStatsDescriptionSelections.Name = "btClearStatsDescriptionSelections";
-            this.toolTip1.SetToolTip(this.btClearStatsDescriptionSelections, resources.GetString("btClearStatsDescriptionSelections.ToolTip"));
             this.btClearStatsDescriptionSelections.UseVisualStyleBackColor = true;
             this.btClearStatsDescriptionSelections.Click += new System.EventHandler(this.btClearStatsDescriptionSelections_Click);
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.lblRandomEyes);
             this.groupBox2.Controls.Add(this.lblRandomHair);
             this.groupBox2.Controls.Add(this.btAssignRandomName);
@@ -1045,27 +992,24 @@
             this.groupBox2.Controls.Add(this.btRandomEyes);
             this.groupBox2.Controls.Add(this.btAssignRandomHair);
             this.groupBox2.Controls.Add(this.btAssignRandomEyes);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
             // 
             // lblRandomEyes
             // 
             resources.ApplyResources(this.lblRandomEyes, "lblRandomEyes");
             this.lblRandomEyes.Name = "lblRandomEyes";
-            this.toolTip1.SetToolTip(this.lblRandomEyes, resources.GetString("lblRandomEyes.ToolTip"));
             // 
             // lblRandomHair
             // 
             resources.ApplyResources(this.lblRandomHair, "lblRandomHair");
             this.lblRandomHair.Name = "lblRandomHair";
-            this.toolTip1.SetToolTip(this.lblRandomHair, resources.GetString("lblRandomHair.ToolTip"));
             // 
             // btAssignRandomName
             // 
             resources.ApplyResources(this.btAssignRandomName, "btAssignRandomName");
             this.btAssignRandomName.Name = "btAssignRandomName";
-            this.toolTip1.SetToolTip(this.btAssignRandomName, resources.GetString("btAssignRandomName.ToolTip"));
             this.btAssignRandomName.UseVisualStyleBackColor = true;
             this.btAssignRandomName.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -1073,13 +1017,11 @@
             // 
             resources.ApplyResources(this.lblRandomName, "lblRandomName");
             this.lblRandomName.Name = "lblRandomName";
-            this.toolTip1.SetToolTip(this.lblRandomName, resources.GetString("lblRandomName.ToolTip"));
             // 
             // btRandomName
             // 
             resources.ApplyResources(this.btRandomName, "btRandomName");
             this.btRandomName.Name = "btRandomName";
-            this.toolTip1.SetToolTip(this.btRandomName, resources.GetString("btRandomName.ToolTip"));
             this.btRandomName.UseVisualStyleBackColor = true;
             this.btRandomName.Click += new System.EventHandler(this.btRandomName_Click);
             // 
@@ -1087,7 +1029,6 @@
             // 
             resources.ApplyResources(this.btAssignRandomAge, "btAssignRandomAge");
             this.btAssignRandomAge.Name = "btAssignRandomAge";
-            this.toolTip1.SetToolTip(this.btAssignRandomAge, resources.GetString("btAssignRandomAge.ToolTip"));
             this.btAssignRandomAge.UseVisualStyleBackColor = true;
             this.btAssignRandomAge.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -1095,7 +1036,6 @@
             // 
             resources.ApplyResources(this.btAssignRandomHeight, "btAssignRandomHeight");
             this.btAssignRandomHeight.Name = "btAssignRandomHeight";
-            this.toolTip1.SetToolTip(this.btAssignRandomHeight, resources.GetString("btAssignRandomHeight.ToolTip"));
             this.btAssignRandomHeight.UseVisualStyleBackColor = true;
             this.btAssignRandomHeight.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -1103,7 +1043,6 @@
             // 
             resources.ApplyResources(this.btAssignRandomWeight, "btAssignRandomWeight");
             this.btAssignRandomWeight.Name = "btAssignRandomWeight";
-            this.toolTip1.SetToolTip(this.btAssignRandomWeight, resources.GetString("btAssignRandomWeight.ToolTip"));
             this.btAssignRandomWeight.UseVisualStyleBackColor = true;
             this.btAssignRandomWeight.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -1111,25 +1050,21 @@
             // 
             resources.ApplyResources(this.lblRandomWeight, "lblRandomWeight");
             this.lblRandomWeight.Name = "lblRandomWeight";
-            this.toolTip1.SetToolTip(this.lblRandomWeight, resources.GetString("lblRandomWeight.ToolTip"));
             // 
             // lblRandomHeight
             // 
             resources.ApplyResources(this.lblRandomHeight, "lblRandomHeight");
             this.lblRandomHeight.Name = "lblRandomHeight";
-            this.toolTip1.SetToolTip(this.lblRandomHeight, resources.GetString("lblRandomHeight.ToolTip"));
             // 
             // lblRandomAge
             // 
             resources.ApplyResources(this.lblRandomAge, "lblRandomAge");
             this.lblRandomAge.Name = "lblRandomAge";
-            this.toolTip1.SetToolTip(this.lblRandomAge, resources.GetString("lblRandomAge.ToolTip"));
             // 
             // btRandomAge
             // 
             resources.ApplyResources(this.btRandomAge, "btRandomAge");
             this.btRandomAge.Name = "btRandomAge";
-            this.toolTip1.SetToolTip(this.btRandomAge, resources.GetString("btRandomAge.ToolTip"));
             this.btRandomAge.UseVisualStyleBackColor = true;
             this.btRandomAge.Click += new System.EventHandler(this.btRandomAge_Click);
             // 
@@ -1137,79 +1072,66 @@
             // 
             resources.ApplyResources(this.txtEyes, "txtEyes");
             this.txtEyes.Name = "txtEyes";
-            this.toolTip1.SetToolTip(this.txtEyes, resources.GetString("txtEyes.ToolTip"));
             // 
             // txtHair
             // 
             resources.ApplyResources(this.txtHair, "txtHair");
             this.txtHair.Name = "txtHair";
-            this.toolTip1.SetToolTip(this.txtHair, resources.GetString("txtHair.ToolTip"));
             // 
             // txtWeight
             // 
             resources.ApplyResources(this.txtWeight, "txtWeight");
             this.txtWeight.Name = "txtWeight";
-            this.toolTip1.SetToolTip(this.txtWeight, resources.GetString("txtWeight.ToolTip"));
             // 
             // txtHeight
             // 
             resources.ApplyResources(this.txtHeight, "txtHeight");
             this.txtHeight.Name = "txtHeight";
-            this.toolTip1.SetToolTip(this.txtHeight, resources.GetString("txtHeight.ToolTip"));
             // 
             // txtAge
             // 
             resources.ApplyResources(this.txtAge, "txtAge");
             this.txtAge.Name = "txtAge";
-            this.toolTip1.SetToolTip(this.txtAge, resources.GetString("txtAge.ToolTip"));
             // 
             // txtName
             // 
             resources.ApplyResources(this.txtName, "txtName");
             this.txtName.Name = "txtName";
-            this.toolTip1.SetToolTip(this.txtName, resources.GetString("txtName.ToolTip"));
             // 
             // label61
             // 
             resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
-            this.toolTip1.SetToolTip(this.label61, resources.GetString("label61.ToolTip"));
             // 
             // label62
             // 
             resources.ApplyResources(this.label62, "label62");
             this.label62.Name = "label62";
-            this.toolTip1.SetToolTip(this.label62, resources.GetString("label62.ToolTip"));
             // 
             // label63
             // 
             resources.ApplyResources(this.label63, "label63");
             this.label63.Name = "label63";
-            this.toolTip1.SetToolTip(this.label63, resources.GetString("label63.ToolTip"));
             // 
             // label64
             // 
             resources.ApplyResources(this.label64, "label64");
             this.label64.Name = "label64";
-            this.toolTip1.SetToolTip(this.label64, resources.GetString("label64.ToolTip"));
             // 
             // label65
             // 
             resources.ApplyResources(this.label65, "label65");
             this.label65.Name = "label65";
-            this.toolTip1.SetToolTip(this.label65, resources.GetString("label65.ToolTip"));
             // 
             // label66
             // 
             resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
-            this.toolTip1.SetToolTip(this.label66, resources.GetString("label66.ToolTip"));
             // 
             // btRandomHeight
             // 
             resources.ApplyResources(this.btRandomHeight, "btRandomHeight");
             this.btRandomHeight.Name = "btRandomHeight";
-            this.toolTip1.SetToolTip(this.btRandomHeight, resources.GetString("btRandomHeight.ToolTip"));
             this.btRandomHeight.UseVisualStyleBackColor = true;
             this.btRandomHeight.Click += new System.EventHandler(this.btRandomHeight_Click);
             // 
@@ -1217,7 +1139,6 @@
             // 
             resources.ApplyResources(this.btRandomWeight, "btRandomWeight");
             this.btRandomWeight.Name = "btRandomWeight";
-            this.toolTip1.SetToolTip(this.btRandomWeight, resources.GetString("btRandomWeight.ToolTip"));
             this.btRandomWeight.UseVisualStyleBackColor = true;
             this.btRandomWeight.Click += new System.EventHandler(this.btRandomWeight_Click);
             // 
@@ -1225,7 +1146,6 @@
             // 
             resources.ApplyResources(this.btRandomHair, "btRandomHair");
             this.btRandomHair.Name = "btRandomHair";
-            this.toolTip1.SetToolTip(this.btRandomHair, resources.GetString("btRandomHair.ToolTip"));
             this.btRandomHair.UseVisualStyleBackColor = true;
             this.btRandomHair.Click += new System.EventHandler(this.btRandomHair_Click);
             // 
@@ -1233,7 +1153,6 @@
             // 
             resources.ApplyResources(this.btRandomEyes, "btRandomEyes");
             this.btRandomEyes.Name = "btRandomEyes";
-            this.toolTip1.SetToolTip(this.btRandomEyes, resources.GetString("btRandomEyes.ToolTip"));
             this.btRandomEyes.UseVisualStyleBackColor = true;
             this.btRandomEyes.Click += new System.EventHandler(this.btRandomEyes_Click);
             // 
@@ -1241,7 +1160,6 @@
             // 
             resources.ApplyResources(this.btAssignRandomHair, "btAssignRandomHair");
             this.btAssignRandomHair.Name = "btAssignRandomHair";
-            this.toolTip1.SetToolTip(this.btAssignRandomHair, resources.GetString("btAssignRandomHair.ToolTip"));
             this.btAssignRandomHair.UseVisualStyleBackColor = true;
             this.btAssignRandomHair.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -1249,7 +1167,6 @@
             // 
             resources.ApplyResources(this.btAssignRandomEyes, "btAssignRandomEyes");
             this.btAssignRandomEyes.Name = "btAssignRandomEyes";
-            this.toolTip1.SetToolTip(this.btAssignRandomEyes, resources.GetString("btAssignRandomEyes.ToolTip"));
             this.btAssignRandomEyes.UseVisualStyleBackColor = true;
             this.btAssignRandomEyes.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -1257,52 +1174,45 @@
             // 
             resources.ApplyResources(this.lblRace, "lblRace");
             this.lblRace.Name = "lblRace";
-            this.toolTip1.SetToolTip(this.lblRace, resources.GetString("lblRace.ToolTip"));
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.labelFavoredWeapon);
             this.groupBox1.Controls.Add(this.cbDeity);
             this.groupBox1.Controls.Add(this.lblDeity);
             this.groupBox1.Controls.Add(this.ckLimitDeity);
             this.groupBox1.Controls.Add(this.cbAlignment);
             this.groupBox1.Controls.Add(this.labelAlignment);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // labelFavoredWeapon
             // 
             resources.ApplyResources(this.labelFavoredWeapon, "labelFavoredWeapon");
             this.labelFavoredWeapon.Name = "labelFavoredWeapon";
-            this.toolTip1.SetToolTip(this.labelFavoredWeapon, resources.GetString("labelFavoredWeapon.ToolTip"));
             // 
             // cbDeity
             // 
-            resources.ApplyResources(this.cbDeity, "cbDeity");
             this.cbDeity.FormattingEnabled = true;
             this.cbDeity.Items.AddRange(new object[] {
             resources.GetString("cbDeity.Items")});
+            resources.ApplyResources(this.cbDeity, "cbDeity");
             this.cbDeity.Name = "cbDeity";
-            this.toolTip1.SetToolTip(this.cbDeity, resources.GetString("cbDeity.ToolTip"));
             // 
             // lblDeity
             // 
             resources.ApplyResources(this.lblDeity, "lblDeity");
             this.lblDeity.Name = "lblDeity";
-            this.toolTip1.SetToolTip(this.lblDeity, resources.GetString("lblDeity.ToolTip"));
             // 
             // ckLimitDeity
             // 
             resources.ApplyResources(this.ckLimitDeity, "ckLimitDeity");
             this.ckLimitDeity.Name = "ckLimitDeity";
-            this.toolTip1.SetToolTip(this.ckLimitDeity, resources.GetString("ckLimitDeity.ToolTip"));
             this.ckLimitDeity.UseVisualStyleBackColor = true;
             // 
             // cbAlignment
             // 
-            resources.ApplyResources(this.cbAlignment, "cbAlignment");
             this.cbAlignment.FormattingEnabled = true;
             this.cbAlignment.Items.AddRange(new object[] {
             resources.GetString("cbAlignment.Items"),
@@ -1314,279 +1224,241 @@
             resources.GetString("cbAlignment.Items6"),
             resources.GetString("cbAlignment.Items7"),
             resources.GetString("cbAlignment.Items8")});
+            resources.ApplyResources(this.cbAlignment, "cbAlignment");
             this.cbAlignment.Name = "cbAlignment";
-            this.toolTip1.SetToolTip(this.cbAlignment, resources.GetString("cbAlignment.ToolTip"));
             // 
             // labelAlignment
             // 
             resources.ApplyResources(this.labelAlignment, "labelAlignment");
             this.labelAlignment.Name = "labelAlignment";
-            this.toolTip1.SetToolTip(this.labelAlignment, resources.GetString("labelAlignment.ToolTip"));
             // 
             // labelModCha
             // 
             resources.ApplyResources(this.labelModCha, "labelModCha");
             this.labelModCha.Name = "labelModCha";
-            this.toolTip1.SetToolTip(this.labelModCha, resources.GetString("labelModCha.ToolTip"));
             // 
             // labelModWis
             // 
             resources.ApplyResources(this.labelModWis, "labelModWis");
             this.labelModWis.Name = "labelModWis";
-            this.toolTip1.SetToolTip(this.labelModWis, resources.GetString("labelModWis.ToolTip"));
             // 
             // labelModInt
             // 
             resources.ApplyResources(this.labelModInt, "labelModInt");
             this.labelModInt.Name = "labelModInt";
-            this.toolTip1.SetToolTip(this.labelModInt, resources.GetString("labelModInt.ToolTip"));
             // 
             // labelModCon
             // 
             resources.ApplyResources(this.labelModCon, "labelModCon");
             this.labelModCon.Name = "labelModCon";
-            this.toolTip1.SetToolTip(this.labelModCon, resources.GetString("labelModCon.ToolTip"));
             // 
             // labelModDex
             // 
             resources.ApplyResources(this.labelModDex, "labelModDex");
             this.labelModDex.Name = "labelModDex";
-            this.toolTip1.SetToolTip(this.labelModDex, resources.GetString("labelModDex.ToolTip"));
             // 
             // labelModStr
             // 
             resources.ApplyResources(this.labelModStr, "labelModStr");
             this.labelModStr.Name = "labelModStr";
-            this.toolTip1.SetToolTip(this.labelModStr, resources.GetString("labelModStr.ToolTip"));
-            this.labelModStr.TextChanged += new System.EventHandler(this.labelModStr_TextChanged);
             // 
             // labelRace
             // 
             resources.ApplyResources(this.labelRace, "labelRace");
             this.labelRace.Name = "labelRace";
-            this.toolTip1.SetToolTip(this.labelRace, resources.GetString("labelRace.ToolTip"));
             // 
-            // txtMagicBonusCha
+            // MagicBonusCha
             // 
-            resources.ApplyResources(this.txtMagicBonusCha, "txtMagicBonusCha");
-            this.txtMagicBonusCha.Name = "txtMagicBonusCha";
-            this.toolTip1.SetToolTip(this.txtMagicBonusCha, resources.GetString("txtMagicBonusCha.ToolTip"));
-            this.txtMagicBonusCha.TextChanged += new System.EventHandler(this.txtMagicBonusCha_TextChanged);
+            resources.ApplyResources(this.MagicBonusCha, "MagicBonusCha");
+            this.MagicBonusCha.Name = "MagicBonusCha";
+            this.MagicBonusCha.TextChanged += new System.EventHandler(this.txtMagicBonusCha_TextChanged);
             // 
-            // txtMagicBonusWis
+            // MagicBonusWis
             // 
-            resources.ApplyResources(this.txtMagicBonusWis, "txtMagicBonusWis");
-            this.txtMagicBonusWis.Name = "txtMagicBonusWis";
-            this.toolTip1.SetToolTip(this.txtMagicBonusWis, resources.GetString("txtMagicBonusWis.ToolTip"));
-            this.txtMagicBonusWis.TextChanged += new System.EventHandler(this.txtMagicBonusWis_TextChanged);
+            resources.ApplyResources(this.MagicBonusWis, "MagicBonusWis");
+            this.MagicBonusWis.Name = "MagicBonusWis";
+            this.MagicBonusWis.TextChanged += new System.EventHandler(this.txtMagicBonusWis_TextChanged);
             // 
-            // txtMagicBonusInt
+            // MagicBonusInt
             // 
-            resources.ApplyResources(this.txtMagicBonusInt, "txtMagicBonusInt");
-            this.txtMagicBonusInt.Name = "txtMagicBonusInt";
-            this.toolTip1.SetToolTip(this.txtMagicBonusInt, resources.GetString("txtMagicBonusInt.ToolTip"));
-            this.txtMagicBonusInt.TextChanged += new System.EventHandler(this.txtMagicBonusInt_TextChanged);
+            resources.ApplyResources(this.MagicBonusInt, "MagicBonusInt");
+            this.MagicBonusInt.Name = "MagicBonusInt";
+            this.MagicBonusInt.TextChanged += new System.EventHandler(this.txtMagicBonusInt_TextChanged);
             // 
-            // txtMagicBonusCon
+            // MagicBonusCon
             // 
-            resources.ApplyResources(this.txtMagicBonusCon, "txtMagicBonusCon");
-            this.txtMagicBonusCon.Name = "txtMagicBonusCon";
-            this.toolTip1.SetToolTip(this.txtMagicBonusCon, resources.GetString("txtMagicBonusCon.ToolTip"));
-            this.txtMagicBonusCon.TextChanged += new System.EventHandler(this.txtMagicBonusCon_TextChanged);
+            resources.ApplyResources(this.MagicBonusCon, "MagicBonusCon");
+            this.MagicBonusCon.Name = "MagicBonusCon";
+            this.MagicBonusCon.TextChanged += new System.EventHandler(this.txtMagicBonusCon_TextChanged);
             // 
-            // txtMagicBonusDex
+            // MagicBonusDex
             // 
-            resources.ApplyResources(this.txtMagicBonusDex, "txtMagicBonusDex");
-            this.txtMagicBonusDex.Name = "txtMagicBonusDex";
-            this.toolTip1.SetToolTip(this.txtMagicBonusDex, resources.GetString("txtMagicBonusDex.ToolTip"));
-            this.txtMagicBonusDex.TextChanged += new System.EventHandler(this.txtMagicBonusDex_TextChanged);
+            resources.ApplyResources(this.MagicBonusDex, "MagicBonusDex");
+            this.MagicBonusDex.Name = "MagicBonusDex";
+            this.MagicBonusDex.TextChanged += new System.EventHandler(this.txtMagicBonusDex_TextChanged);
             // 
-            // txtMagicBonusStr
+            // MagicBonusStr
             // 
-            resources.ApplyResources(this.txtMagicBonusStr, "txtMagicBonusStr");
-            this.txtMagicBonusStr.Name = "txtMagicBonusStr";
-            this.toolTip1.SetToolTip(this.txtMagicBonusStr, resources.GetString("txtMagicBonusStr.ToolTip"));
-            this.txtMagicBonusStr.TextChanged += new System.EventHandler(this.txtMagicBonusStr_TextChanged);
+            resources.ApplyResources(this.MagicBonusStr, "MagicBonusStr");
+            this.MagicBonusStr.Name = "MagicBonusStr";
+            this.MagicBonusStr.TextChanged += new System.EventHandler(this.txtMagicBonusStr_TextChanged);
             // 
             // lblMagicalGain
             // 
             resources.ApplyResources(this.lblMagicalGain, "lblMagicalGain");
             this.lblMagicalGain.Name = "lblMagicalGain";
-            this.toolTip1.SetToolTip(this.lblMagicalGain, resources.GetString("lblMagicalGain.ToolTip"));
             // 
             // lblInherentGains
             // 
             resources.ApplyResources(this.lblInherentGains, "lblInherentGains");
             this.lblInherentGains.Name = "lblInherentGains";
-            this.toolTip1.SetToolTip(this.lblInherentGains, resources.GetString("lblInherentGains.ToolTip"));
             // 
-            // increaseModCha
+            // IncreaseModCha
             // 
-            resources.ApplyResources(this.increaseModCha, "increaseModCha");
-            this.increaseModCha.Name = "increaseModCha";
-            this.toolTip1.SetToolTip(this.increaseModCha, resources.GetString("increaseModCha.ToolTip"));
-            this.increaseModCha.TextChanged += new System.EventHandler(this.increaseModCha_TextChanged);
+            resources.ApplyResources(this.IncreaseModCha, "IncreaseModCha");
+            this.IncreaseModCha.Name = "IncreaseModCha";
+            this.IncreaseModCha.TextChanged += new System.EventHandler(this.increaseModCha_TextChanged);
             // 
-            // increaseModWis
+            // IncreaseModWis
             // 
-            resources.ApplyResources(this.increaseModWis, "increaseModWis");
-            this.increaseModWis.Name = "increaseModWis";
-            this.toolTip1.SetToolTip(this.increaseModWis, resources.GetString("increaseModWis.ToolTip"));
-            this.increaseModWis.TextChanged += new System.EventHandler(this.increaseModWis_TextChanged);
+            resources.ApplyResources(this.IncreaseModWis, "IncreaseModWis");
+            this.IncreaseModWis.Name = "IncreaseModWis";
+            this.IncreaseModWis.TextChanged += new System.EventHandler(this.increaseModWis_TextChanged);
             // 
-            // increaseModInt
+            // IncreaseModInt
             // 
-            resources.ApplyResources(this.increaseModInt, "increaseModInt");
-            this.increaseModInt.Name = "increaseModInt";
-            this.toolTip1.SetToolTip(this.increaseModInt, resources.GetString("increaseModInt.ToolTip"));
-            this.increaseModInt.TextChanged += new System.EventHandler(this.increaseModInt_TextChanged);
+            resources.ApplyResources(this.IncreaseModInt, "IncreaseModInt");
+            this.IncreaseModInt.Name = "IncreaseModInt";
+            this.IncreaseModInt.TextChanged += new System.EventHandler(this.increaseModInt_TextChanged);
             // 
-            // increaseModCon
+            // IncreaseModCon
             // 
-            resources.ApplyResources(this.increaseModCon, "increaseModCon");
-            this.increaseModCon.Name = "increaseModCon";
-            this.toolTip1.SetToolTip(this.increaseModCon, resources.GetString("increaseModCon.ToolTip"));
-            this.increaseModCon.TextChanged += new System.EventHandler(this.increaseModCon_TextChanged);
+            resources.ApplyResources(this.IncreaseModCon, "IncreaseModCon");
+            this.IncreaseModCon.Name = "IncreaseModCon";
+            this.IncreaseModCon.TextChanged += new System.EventHandler(this.increaseModCon_TextChanged);
             // 
-            // increaseModDex
+            // IncreaseModDex
             // 
-            resources.ApplyResources(this.increaseModDex, "increaseModDex");
-            this.increaseModDex.Name = "increaseModDex";
-            this.toolTip1.SetToolTip(this.increaseModDex, resources.GetString("increaseModDex.ToolTip"));
-            this.increaseModDex.TextChanged += new System.EventHandler(this.increaseModDex_TextChanged);
+            resources.ApplyResources(this.IncreaseModDex, "IncreaseModDex");
+            this.IncreaseModDex.Name = "IncreaseModDex";
+            this.IncreaseModDex.TextChanged += new System.EventHandler(this.increaseModDex_TextChanged);
             // 
-            // increaseModStr
+            // IncreaseModStr
             // 
-            resources.ApplyResources(this.increaseModStr, "increaseModStr");
-            this.increaseModStr.Name = "increaseModStr";
-            this.toolTip1.SetToolTip(this.increaseModStr, resources.GetString("increaseModStr.ToolTip"));
-            this.increaseModStr.TextChanged += new System.EventHandler(this.increaseModStr_TextChanged);
+            resources.ApplyResources(this.IncreaseModStr, "IncreaseModStr");
+            this.IncreaseModStr.Name = "IncreaseModStr";
+            this.IncreaseModStr.TextChanged += new System.EventHandler(this.increaseModStr_TextChanged);
             // 
-            // initialCharisma
+            // InitialCha
             // 
-            resources.ApplyResources(this.initialCharisma, "initialCharisma");
-            this.initialCharisma.Name = "initialCharisma";
-            this.toolTip1.SetToolTip(this.initialCharisma, resources.GetString("initialCharisma.ToolTip"));
-            this.initialCharisma.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialCha, "InitialCha");
+            this.InitialCha.Name = "InitialCha";
+            this.InitialCha.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialCharisma.ValueChanged += new System.EventHandler(this.initialCharisma_ValueChanged);
+            this.InitialCha.ValueChanged += new System.EventHandler(this.initialCharisma_ValueChanged);
             // 
-            // initialWisdom
+            // InitialWis
             // 
-            resources.ApplyResources(this.initialWisdom, "initialWisdom");
-            this.initialWisdom.Name = "initialWisdom";
-            this.toolTip1.SetToolTip(this.initialWisdom, resources.GetString("initialWisdom.ToolTip"));
-            this.initialWisdom.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialWis, "InitialWis");
+            this.InitialWis.Name = "InitialWis";
+            this.InitialWis.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialWisdom.ValueChanged += new System.EventHandler(this.initialWisdom_ValueChanged);
+            this.InitialWis.ValueChanged += new System.EventHandler(this.initialWisdom_ValueChanged);
             // 
-            // initialIntelligence
+            // InitialInt
             // 
-            resources.ApplyResources(this.initialIntelligence, "initialIntelligence");
-            this.initialIntelligence.Name = "initialIntelligence";
-            this.toolTip1.SetToolTip(this.initialIntelligence, resources.GetString("initialIntelligence.ToolTip"));
-            this.initialIntelligence.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialInt, "InitialInt");
+            this.InitialInt.Name = "InitialInt";
+            this.InitialInt.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialIntelligence.ValueChanged += new System.EventHandler(this.initialIntelligence_ValueChanged);
+            this.InitialInt.ValueChanged += new System.EventHandler(this.initialIntelligence_ValueChanged);
             // 
-            // initialConstitution
+            // InitialCon
             // 
-            resources.ApplyResources(this.initialConstitution, "initialConstitution");
-            this.initialConstitution.Name = "initialConstitution";
-            this.toolTip1.SetToolTip(this.initialConstitution, resources.GetString("initialConstitution.ToolTip"));
-            this.initialConstitution.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialCon, "InitialCon");
+            this.InitialCon.Name = "InitialCon";
+            this.InitialCon.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialConstitution.ValueChanged += new System.EventHandler(this.initialConstitution_ValueChanged);
+            this.InitialCon.ValueChanged += new System.EventHandler(this.initialConstitution_ValueChanged);
             // 
-            // initialDexterity
+            // InitialDex
             // 
-            resources.ApplyResources(this.initialDexterity, "initialDexterity");
-            this.initialDexterity.Name = "initialDexterity";
-            this.toolTip1.SetToolTip(this.initialDexterity, resources.GetString("initialDexterity.ToolTip"));
-            this.initialDexterity.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialDex, "InitialDex");
+            this.InitialDex.Name = "InitialDex";
+            this.InitialDex.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialDexterity.ValueChanged += new System.EventHandler(this.initialDexterity_ValueChanged);
+            this.InitialDex.ValueChanged += new System.EventHandler(this.initialDexterity_ValueChanged);
             // 
-            // initialStrength
+            // InitialStr
             // 
-            resources.ApplyResources(this.initialStrength, "initialStrength");
-            this.initialStrength.Name = "initialStrength";
-            this.toolTip1.SetToolTip(this.initialStrength, resources.GetString("initialStrength.ToolTip"));
-            this.initialStrength.Value = new decimal(new int[] {
+            resources.ApplyResources(this.InitialStr, "InitialStr");
+            this.InitialStr.Name = "InitialStr";
+            this.InitialStr.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.initialStrength.ValueChanged += new System.EventHandler(this.initialStrength_ValueChanged);
+            this.InitialStr.ValueChanged += new System.EventHandler(this.initialStrength_ValueChanged);
             // 
             // lblCharisma
             // 
             resources.ApplyResources(this.lblCharisma, "lblCharisma");
             this.lblCharisma.Name = "lblCharisma";
-            this.toolTip1.SetToolTip(this.lblCharisma, resources.GetString("lblCharisma.ToolTip"));
             // 
             // lblWisdom
             // 
             resources.ApplyResources(this.lblWisdom, "lblWisdom");
             this.lblWisdom.Name = "lblWisdom";
-            this.toolTip1.SetToolTip(this.lblWisdom, resources.GetString("lblWisdom.ToolTip"));
             // 
             // lblIntelligence
             // 
             resources.ApplyResources(this.lblIntelligence, "lblIntelligence");
             this.lblIntelligence.Name = "lblIntelligence";
-            this.toolTip1.SetToolTip(this.lblIntelligence, resources.GetString("lblIntelligence.ToolTip"));
             // 
             // lblConstitution
             // 
             resources.ApplyResources(this.lblConstitution, "lblConstitution");
             this.lblConstitution.Name = "lblConstitution";
-            this.toolTip1.SetToolTip(this.lblConstitution, resources.GetString("lblConstitution.ToolTip"));
             // 
             // lblDexterity
             // 
             resources.ApplyResources(this.lblDexterity, "lblDexterity");
             this.lblDexterity.Name = "lblDexterity";
-            this.toolTip1.SetToolTip(this.lblDexterity, resources.GetString("lblDexterity.ToolTip"));
             // 
             // lblStrength
             // 
             resources.ApplyResources(this.lblStrength, "lblStrength");
             this.lblStrength.Name = "lblStrength";
-            this.toolTip1.SetToolTip(this.lblStrength, resources.GetString("lblStrength.ToolTip"));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // lblLevelAdjust
             // 
             resources.ApplyResources(this.lblLevelAdjust, "lblLevelAdjust");
             this.lblLevelAdjust.Name = "lblLevelAdjust";
-            this.toolTip1.SetToolTip(this.lblLevelAdjust, resources.GetString("lblLevelAdjust.ToolTip"));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // tabPage1
             // 
@@ -1603,25 +1475,22 @@
             this.tabPage1.Controls.Add(this.gBUneathedArcana);
             this.tabPage1.Controls.Add(this.gBCharacterSheetDisplayHitPoints);
             this.tabPage1.Name = "tabPage1";
-            this.toolTip1.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.btResetAllTabsSelections);
             this.groupBox4.Controls.Add(this.btResetAllTabsButSelections);
             this.groupBox4.Controls.Add(this.btResetOptionSelections);
             this.groupBox4.Controls.Add(this.btAllNonAvaliable);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox4, resources.GetString("groupBox4.ToolTip"));
             // 
             // btResetAllTabsSelections
             // 
             resources.ApplyResources(this.btResetAllTabsSelections, "btResetAllTabsSelections");
             this.btResetAllTabsSelections.Name = "btResetAllTabsSelections";
-            this.toolTip1.SetToolTip(this.btResetAllTabsSelections, resources.GetString("btResetAllTabsSelections.ToolTip"));
             this.btResetAllTabsSelections.UseVisualStyleBackColor = true;
             this.btResetAllTabsSelections.Click += new System.EventHandler(this.btResetAllTabsSelections_Click);
             // 
@@ -1629,14 +1498,12 @@
             // 
             resources.ApplyResources(this.btResetAllTabsButSelections, "btResetAllTabsButSelections");
             this.btResetAllTabsButSelections.Name = "btResetAllTabsButSelections";
-            this.toolTip1.SetToolTip(this.btResetAllTabsButSelections, resources.GetString("btResetAllTabsButSelections.ToolTip"));
             this.btResetAllTabsButSelections.UseVisualStyleBackColor = true;
             // 
             // btResetOptionSelections
             // 
             resources.ApplyResources(this.btResetOptionSelections, "btResetOptionSelections");
             this.btResetOptionSelections.Name = "btResetOptionSelections";
-            this.toolTip1.SetToolTip(this.btResetOptionSelections, resources.GetString("btResetOptionSelections.ToolTip"));
             this.btResetOptionSelections.UseVisualStyleBackColor = true;
             this.btResetOptionSelections.Click += new System.EventHandler(this.btResetOptionSelections_Click);
             // 
@@ -1644,7 +1511,6 @@
             // 
             resources.ApplyResources(this.btAllNonAvaliable, "btAllNonAvaliable");
             this.btAllNonAvaliable.Name = "btAllNonAvaliable";
-            this.toolTip1.SetToolTip(this.btAllNonAvaliable, resources.GetString("btAllNonAvaliable.ToolTip"));
             this.btAllNonAvaliable.UseVisualStyleBackColor = true;
             this.btAllNonAvaliable.Click += new System.EventHandler(this.btAllNonAvaliable_Click);
             // 
@@ -1652,7 +1518,6 @@
             // 
             resources.ApplyResources(this.btChat, "btChat");
             this.btChat.Name = "btChat";
-            this.toolTip1.SetToolTip(this.btChat, resources.GetString("btChat.ToolTip"));
             this.btChat.UseVisualStyleBackColor = true;
             this.btChat.Click += new System.EventHandler(this.btChat_Click);
             // 
@@ -1661,25 +1526,21 @@
             resources.ApplyResources(this.linkLabel1, "linkLabel1");
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.TabStop = true;
-            this.toolTip1.SetToolTip(this.linkLabel1, resources.GetString("linkLabel1.ToolTip"));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
-            this.toolTip1.SetToolTip(this.label53, resources.GetString("label53.ToolTip"));
             // 
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // cBCampaignSelect
             // 
-            resources.ApplyResources(this.cBCampaignSelect, "cBCampaignSelect");
             this.cBCampaignSelect.FormattingEnabled = true;
             this.cBCampaignSelect.Items.AddRange(new object[] {
             resources.GetString("cBCampaignSelect.Items"),
@@ -1689,8 +1550,8 @@
             resources.GetString("cBCampaignSelect.Items4"),
             resources.GetString("cBCampaignSelect.Items5"),
             resources.GetString("cBCampaignSelect.Items6")});
+            resources.ApplyResources(this.cBCampaignSelect, "cBCampaignSelect");
             this.cBCampaignSelect.Name = "cBCampaignSelect";
-            this.toolTip1.SetToolTip(this.cBCampaignSelect, resources.GetString("cBCampaignSelect.ToolTip"));
             this.cBCampaignSelect.SelectedIndexChanged += new System.EventHandler(this.cBCampaignSelect_SelectedIndexChanged);
             // 
             // lblCampaignSelect
@@ -1701,7 +1562,7 @@
             // 
             // gBSelectSources
             // 
-            resources.ApplyResources(this.gBSelectSources, "gBSelectSources");
+            this.gBSelectSources.Controls.Add(this.dataGridViewDragonLanceSources);
             this.gBSelectSources.Controls.Add(this.labelRavenloftSources);
             this.gBSelectSources.Controls.Add(this.cBRavenloftSources);
             this.gBSelectSources.Controls.Add(this.lblMonstrousNonSettingSources);
@@ -1718,19 +1579,31 @@
             this.gBSelectSources.Controls.Add(this.ckForgottenRealmsSources);
             this.gBSelectSources.Controls.Add(this.lblNonSettingSources);
             this.gBSelectSources.Controls.Add(this.ckNonSettingSources);
+            resources.ApplyResources(this.gBSelectSources, "gBSelectSources");
             this.gBSelectSources.Name = "gBSelectSources";
             this.gBSelectSources.TabStop = false;
-            this.toolTip1.SetToolTip(this.gBSelectSources, resources.GetString("gBSelectSources.ToolTip"));
+            // 
+            // dataGridViewDragonLanceSources
+            // 
+            this.dataGridViewDragonLanceSources.AllowUserToAddRows = false;
+            this.dataGridViewDragonLanceSources.AllowUserToDeleteRows = false;
+            this.dataGridViewDragonLanceSources.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewDragonLanceSources.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridViewDragonLanceSources, "dataGridViewDragonLanceSources");
+            this.dataGridViewDragonLanceSources.Name = "dataGridViewDragonLanceSources";
+            this.dataGridViewDragonLanceSources.RowTemplate.Height = 18;
+            this.dataGridViewDragonLanceSources.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDragonLanceSources.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDragonLanceSources.ShowEditingIcon = false;
+            this.dataGridViewDragonLanceSources.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDragonLanceSources_CellClick);
             // 
             // labelRavenloftSources
             // 
             resources.ApplyResources(this.labelRavenloftSources, "labelRavenloftSources");
             this.labelRavenloftSources.Name = "labelRavenloftSources";
-            this.toolTip1.SetToolTip(this.labelRavenloftSources, resources.GetString("labelRavenloftSources.ToolTip"));
             // 
             // cBRavenloftSources
             // 
-            resources.ApplyResources(this.cBRavenloftSources, "cBRavenloftSources");
             this.cBRavenloftSources.FormattingEnabled = true;
             this.cBRavenloftSources.Items.AddRange(new object[] {
             resources.GetString("cBRavenloftSources.Items"),
@@ -1738,24 +1611,21 @@
             resources.GetString("cBRavenloftSources.Items2"),
             resources.GetString("cBRavenloftSources.Items3"),
             resources.GetString("cBRavenloftSources.Items4")});
+            resources.ApplyResources(this.cBRavenloftSources, "cBRavenloftSources");
             this.cBRavenloftSources.Name = "cBRavenloftSources";
-            this.toolTip1.SetToolTip(this.cBRavenloftSources, resources.GetString("cBRavenloftSources.ToolTip"));
             // 
             // lblMonstrousNonSettingSources
             // 
             resources.ApplyResources(this.lblMonstrousNonSettingSources, "lblMonstrousNonSettingSources");
             this.lblMonstrousNonSettingSources.Name = "lblMonstrousNonSettingSources";
-            this.toolTip1.SetToolTip(this.lblMonstrousNonSettingSources, resources.GetString("lblMonstrousNonSettingSources.ToolTip"));
             // 
             // lblOtherSources
             // 
             resources.ApplyResources(this.lblOtherSources, "lblOtherSources");
             this.lblOtherSources.Name = "lblOtherSources";
-            this.toolTip1.SetToolTip(this.lblOtherSources, resources.GetString("lblOtherSources.ToolTip"));
             // 
             // ckMonstrousNonSettingSources
             // 
-            resources.ApplyResources(this.ckMonstrousNonSettingSources, "ckMonstrousNonSettingSources");
             this.ckMonstrousNonSettingSources.FormattingEnabled = true;
             this.ckMonstrousNonSettingSources.Items.AddRange(new object[] {
             resources.GetString("ckMonstrousNonSettingSources.Items"),
@@ -1769,62 +1639,55 @@
             resources.GetString("ckMonstrousNonSettingSources.Items8"),
             resources.GetString("ckMonstrousNonSettingSources.Items9"),
             resources.GetString("ckMonstrousNonSettingSources.Items10")});
+            resources.ApplyResources(this.ckMonstrousNonSettingSources, "ckMonstrousNonSettingSources");
             this.ckMonstrousNonSettingSources.Name = "ckMonstrousNonSettingSources";
-            this.toolTip1.SetToolTip(this.ckMonstrousNonSettingSources, resources.GetString("ckMonstrousNonSettingSources.ToolTip"));
             // 
             // ckOtherSources
             // 
-            resources.ApplyResources(this.ckOtherSources, "ckOtherSources");
             this.ckOtherSources.FormattingEnabled = true;
             this.ckOtherSources.Items.AddRange(new object[] {
             resources.GetString("ckOtherSources.Items"),
             resources.GetString("ckOtherSources.Items1"),
             resources.GetString("ckOtherSources.Items2"),
             resources.GetString("ckOtherSources.Items3")});
+            resources.ApplyResources(this.ckOtherSources, "ckOtherSources");
             this.ckOtherSources.Name = "ckOtherSources";
-            this.toolTip1.SetToolTip(this.ckOtherSources, resources.GetString("ckOtherSources.ToolTip"));
             // 
             // lblLGSources
             // 
             resources.ApplyResources(this.lblLGSources, "lblLGSources");
             this.lblLGSources.Name = "lblLGSources";
-            this.toolTip1.SetToolTip(this.lblLGSources, resources.GetString("lblLGSources.ToolTip"));
             // 
             // ckLGSources
             // 
-            resources.ApplyResources(this.ckLGSources, "ckLGSources");
             this.ckLGSources.FormattingEnabled = true;
             this.ckLGSources.Items.AddRange(new object[] {
             resources.GetString("ckLGSources.Items")});
+            resources.ApplyResources(this.ckLGSources, "ckLGSources");
             this.ckLGSources.Name = "ckLGSources";
-            this.toolTip1.SetToolTip(this.ckLGSources, resources.GetString("ckLGSources.ToolTip"));
             // 
             // lblDragonLanceSources
             // 
             resources.ApplyResources(this.lblDragonLanceSources, "lblDragonLanceSources");
             this.lblDragonLanceSources.Name = "lblDragonLanceSources";
-            this.toolTip1.SetToolTip(this.lblDragonLanceSources, resources.GetString("lblDragonLanceSources.ToolTip"));
             // 
             // ckDragonLanceSources
             // 
-            resources.ApplyResources(this.ckDragonLanceSources, "ckDragonLanceSources");
             this.ckDragonLanceSources.FormattingEnabled = true;
             this.ckDragonLanceSources.Items.AddRange(new object[] {
             resources.GetString("ckDragonLanceSources.Items"),
             resources.GetString("ckDragonLanceSources.Items1"),
             resources.GetString("ckDragonLanceSources.Items2")});
+            resources.ApplyResources(this.ckDragonLanceSources, "ckDragonLanceSources");
             this.ckDragonLanceSources.Name = "ckDragonLanceSources";
-            this.toolTip1.SetToolTip(this.ckDragonLanceSources, resources.GetString("ckDragonLanceSources.ToolTip"));
             // 
             // lblEberronSettingSources
             // 
             resources.ApplyResources(this.lblEberronSettingSources, "lblEberronSettingSources");
             this.lblEberronSettingSources.Name = "lblEberronSettingSources";
-            this.toolTip1.SetToolTip(this.lblEberronSettingSources, resources.GetString("lblEberronSettingSources.ToolTip"));
             // 
             // ckEberronSettingSources
             // 
-            resources.ApplyResources(this.ckEberronSettingSources, "ckEberronSettingSources");
             this.ckEberronSettingSources.FormattingEnabled = true;
             this.ckEberronSettingSources.Items.AddRange(new object[] {
             resources.GetString("ckEberronSettingSources.Items"),
@@ -1836,18 +1699,16 @@
             resources.GetString("ckEberronSettingSources.Items6"),
             resources.GetString("ckEberronSettingSources.Items7"),
             resources.GetString("ckEberronSettingSources.Items8")});
+            resources.ApplyResources(this.ckEberronSettingSources, "ckEberronSettingSources");
             this.ckEberronSettingSources.Name = "ckEberronSettingSources";
-            this.toolTip1.SetToolTip(this.ckEberronSettingSources, resources.GetString("ckEberronSettingSources.ToolTip"));
             // 
             // lblForgottenRealmsSources
             // 
             resources.ApplyResources(this.lblForgottenRealmsSources, "lblForgottenRealmsSources");
             this.lblForgottenRealmsSources.Name = "lblForgottenRealmsSources";
-            this.toolTip1.SetToolTip(this.lblForgottenRealmsSources, resources.GetString("lblForgottenRealmsSources.ToolTip"));
             // 
             // ckForgottenRealmsSources
             // 
-            resources.ApplyResources(this.ckForgottenRealmsSources, "ckForgottenRealmsSources");
             this.ckForgottenRealmsSources.FormattingEnabled = true;
             this.ckForgottenRealmsSources.Items.AddRange(new object[] {
             resources.GetString("ckForgottenRealmsSources.Items"),
@@ -1857,18 +1718,16 @@
             resources.GetString("ckForgottenRealmsSources.Items4"),
             resources.GetString("ckForgottenRealmsSources.Items5"),
             resources.GetString("ckForgottenRealmsSources.Items6")});
+            resources.ApplyResources(this.ckForgottenRealmsSources, "ckForgottenRealmsSources");
             this.ckForgottenRealmsSources.Name = "ckForgottenRealmsSources";
-            this.toolTip1.SetToolTip(this.ckForgottenRealmsSources, resources.GetString("ckForgottenRealmsSources.ToolTip"));
             // 
             // lblNonSettingSources
             // 
             resources.ApplyResources(this.lblNonSettingSources, "lblNonSettingSources");
             this.lblNonSettingSources.Name = "lblNonSettingSources";
-            this.toolTip1.SetToolTip(this.lblNonSettingSources, resources.GetString("lblNonSettingSources.ToolTip"));
             // 
             // ckNonSettingSources
             // 
-            resources.ApplyResources(this.ckNonSettingSources, "ckNonSettingSources");
             this.ckNonSettingSources.FormattingEnabled = true;
             this.ckNonSettingSources.Items.AddRange(new object[] {
             resources.GetString("ckNonSettingSources.Items"),
@@ -1900,20 +1759,18 @@
             resources.GetString("ckNonSettingSources.Items26"),
             resources.GetString("ckNonSettingSources.Items27"),
             resources.GetString("ckNonSettingSources.Items28")});
+            resources.ApplyResources(this.ckNonSettingSources, "ckNonSettingSources");
             this.ckNonSettingSources.Name = "ckNonSettingSources";
-            this.toolTip1.SetToolTip(this.ckNonSettingSources, resources.GetString("ckNonSettingSources.ToolTip"));
             // 
             // gBDeityOptions
             // 
-            resources.ApplyResources(this.gBDeityOptions, "gBDeityOptions");
             this.gBDeityOptions.Controls.Add(this.ckDeityOptions);
+            resources.ApplyResources(this.gBDeityOptions, "gBDeityOptions");
             this.gBDeityOptions.Name = "gBDeityOptions";
             this.gBDeityOptions.TabStop = false;
-            this.toolTip1.SetToolTip(this.gBDeityOptions, resources.GetString("gBDeityOptions.ToolTip"));
             // 
             // ckDeityOptions
             // 
-            resources.ApplyResources(this.ckDeityOptions, "ckDeityOptions");
             this.ckDeityOptions.FormattingEnabled = true;
             this.ckDeityOptions.Items.AddRange(new object[] {
             resources.GetString("ckDeityOptions.Items"),
@@ -1921,20 +1778,18 @@
             resources.GetString("ckDeityOptions.Items2"),
             resources.GetString("ckDeityOptions.Items3"),
             resources.GetString("ckDeityOptions.Items4")});
+            resources.ApplyResources(this.ckDeityOptions, "ckDeityOptions");
             this.ckDeityOptions.Name = "ckDeityOptions";
-            this.toolTip1.SetToolTip(this.ckDeityOptions, resources.GetString("ckDeityOptions.ToolTip"));
             // 
             // gBUneathedArcana
             // 
-            resources.ApplyResources(this.gBUneathedArcana, "gBUneathedArcana");
             this.gBUneathedArcana.Controls.Add(this.ckUneathedArcana);
+            resources.ApplyResources(this.gBUneathedArcana, "gBUneathedArcana");
             this.gBUneathedArcana.Name = "gBUneathedArcana";
             this.gBUneathedArcana.TabStop = false;
-            this.toolTip1.SetToolTip(this.gBUneathedArcana, resources.GetString("gBUneathedArcana.ToolTip"));
             // 
             // ckUneathedArcana
             // 
-            resources.ApplyResources(this.ckUneathedArcana, "ckUneathedArcana");
             this.ckUneathedArcana.FormattingEnabled = true;
             this.ckUneathedArcana.Items.AddRange(new object[] {
             resources.GetString("ckUneathedArcana.Items"),
@@ -1942,32 +1797,29 @@
             resources.GetString("ckUneathedArcana.Items2"),
             resources.GetString("ckUneathedArcana.Items3"),
             resources.GetString("ckUneathedArcana.Items4")});
+            resources.ApplyResources(this.ckUneathedArcana, "ckUneathedArcana");
             this.ckUneathedArcana.Name = "ckUneathedArcana";
-            this.toolTip1.SetToolTip(this.ckUneathedArcana, resources.GetString("ckUneathedArcana.ToolTip"));
             // 
             // gBCharacterSheetDisplayHitPoints
             // 
-            resources.ApplyResources(this.gBCharacterSheetDisplayHitPoints, "gBCharacterSheetDisplayHitPoints");
             this.gBCharacterSheetDisplayHitPoints.Controls.Add(this.ckListCharacterSheetDisplayHitPointOptions);
+            resources.ApplyResources(this.gBCharacterSheetDisplayHitPoints, "gBCharacterSheetDisplayHitPoints");
             this.gBCharacterSheetDisplayHitPoints.Name = "gBCharacterSheetDisplayHitPoints";
             this.gBCharacterSheetDisplayHitPoints.TabStop = false;
-            this.toolTip1.SetToolTip(this.gBCharacterSheetDisplayHitPoints, resources.GetString("gBCharacterSheetDisplayHitPoints.ToolTip"));
             // 
             // ckListCharacterSheetDisplayHitPointOptions
             // 
-            resources.ApplyResources(this.ckListCharacterSheetDisplayHitPointOptions, "ckListCharacterSheetDisplayHitPointOptions");
             this.ckListCharacterSheetDisplayHitPointOptions.FormattingEnabled = true;
             this.ckListCharacterSheetDisplayHitPointOptions.Items.AddRange(new object[] {
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items1"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items2"),
             resources.GetString("ckListCharacterSheetDisplayHitPointOptions.Items3")});
+            resources.ApplyResources(this.ckListCharacterSheetDisplayHitPointOptions, "ckListCharacterSheetDisplayHitPointOptions");
             this.ckListCharacterSheetDisplayHitPointOptions.Name = "ckListCharacterSheetDisplayHitPointOptions";
-            this.toolTip1.SetToolTip(this.ckListCharacterSheetDisplayHitPointOptions, resources.GetString("ckListCharacterSheetDisplayHitPointOptions.ToolTip"));
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -1982,9 +1834,9 @@
             this.tabControl1.Controls.Add(this.tabPage12);
             this.tabControl1.Controls.Add(this.tabPage13);
             this.tabControl1.Controls.Add(this.tabPage14);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.toolTip1.SetToolTip(this.tabControl1, resources.GetString("tabControl1.ToolTip"));
             // 
             // tabPage3
             // 
@@ -1995,122 +1847,105 @@
             this.tabPage3.Controls.Add(this.cBIgnoreSourceSelection);
             this.tabPage3.Controls.Add(this.labelRace1);
             this.tabPage3.Name = "tabPage3";
-            this.toolTip1.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip"));
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // cBGender
             // 
-            resources.ApplyResources(this.cBGender, "cBGender");
             this.cBGender.FormattingEnabled = true;
             this.cBGender.Items.AddRange(new object[] {
             resources.GetString("cBGender.Items"),
             resources.GetString("cBGender.Items1")});
+            resources.ApplyResources(this.cBGender, "cBGender");
             this.cBGender.Name = "cBGender";
-            this.toolTip1.SetToolTip(this.cBGender, resources.GetString("cBGender.ToolTip"));
             this.cBGender.SelectedIndexChanged += new System.EventHandler(this.cBGender_SelectedIndexChanged);
             // 
             // cbRaces
             // 
-            resources.ApplyResources(this.cbRaces, "cbRaces");
             this.cbRaces.FormattingEnabled = true;
+            resources.ApplyResources(this.cbRaces, "cbRaces");
             this.cbRaces.Name = "cbRaces";
-            this.toolTip1.SetToolTip(this.cbRaces, resources.GetString("cbRaces.ToolTip"));
             this.cbRaces.SelectedIndexChanged += new System.EventHandler(this.cbRaces_SelectedIndexChanged);
             // 
             // labelGender
             // 
             resources.ApplyResources(this.labelGender, "labelGender");
             this.labelGender.Name = "labelGender";
-            this.toolTip1.SetToolTip(this.labelGender, resources.GetString("labelGender.ToolTip"));
             // 
             // cBIgnoreSourceSelection
             // 
             resources.ApplyResources(this.cBIgnoreSourceSelection, "cBIgnoreSourceSelection");
             this.cBIgnoreSourceSelection.Name = "cBIgnoreSourceSelection";
-            this.toolTip1.SetToolTip(this.cBIgnoreSourceSelection, resources.GetString("cBIgnoreSourceSelection.ToolTip"));
             this.cBIgnoreSourceSelection.UseVisualStyleBackColor = true;
             // 
             // labelRace1
             // 
             resources.ApplyResources(this.labelRace1, "labelRace1");
             this.labelRace1.Name = "labelRace1";
-            this.toolTip1.SetToolTip(this.labelRace1, resources.GetString("labelRace1.ToolTip"));
             // 
             // tabPage4
             // 
             resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
-            this.toolTip1.SetToolTip(this.tabPage4, resources.GetString("tabPage4.ToolTip"));
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
-            this.toolTip1.SetToolTip(this.tabPage5, resources.GetString("tabPage5.ToolTip"));
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
             resources.ApplyResources(this.tabPage6, "tabPage6");
             this.tabPage6.Name = "tabPage6";
-            this.toolTip1.SetToolTip(this.tabPage6, resources.GetString("tabPage6.ToolTip"));
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabPage7
             // 
             resources.ApplyResources(this.tabPage7, "tabPage7");
             this.tabPage7.Name = "tabPage7";
-            this.toolTip1.SetToolTip(this.tabPage7, resources.GetString("tabPage7.ToolTip"));
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage8
             // 
             resources.ApplyResources(this.tabPage8, "tabPage8");
             this.tabPage8.Name = "tabPage8";
-            this.toolTip1.SetToolTip(this.tabPage8, resources.GetString("tabPage8.ToolTip"));
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage9
             // 
             resources.ApplyResources(this.tabPage9, "tabPage9");
             this.tabPage9.Name = "tabPage9";
-            this.toolTip1.SetToolTip(this.tabPage9, resources.GetString("tabPage9.ToolTip"));
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // tabPage10
             // 
             resources.ApplyResources(this.tabPage10, "tabPage10");
             this.tabPage10.Name = "tabPage10";
-            this.toolTip1.SetToolTip(this.tabPage10, resources.GetString("tabPage10.ToolTip"));
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // tabPage11
             // 
             resources.ApplyResources(this.tabPage11, "tabPage11");
             this.tabPage11.Name = "tabPage11";
-            this.toolTip1.SetToolTip(this.tabPage11, resources.GetString("tabPage11.ToolTip"));
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
             // tabPage12
             // 
             resources.ApplyResources(this.tabPage12, "tabPage12");
             this.tabPage12.Name = "tabPage12";
-            this.toolTip1.SetToolTip(this.tabPage12, resources.GetString("tabPage12.ToolTip"));
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // tabPage13
             // 
             resources.ApplyResources(this.tabPage13, "tabPage13");
             this.tabPage13.Name = "tabPage13";
-            this.toolTip1.SetToolTip(this.tabPage13, resources.GetString("tabPage13.ToolTip"));
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
             // tabPage14
             // 
             resources.ApplyResources(this.tabPage14, "tabPage14");
             this.tabPage14.Name = "tabPage14";
-            this.toolTip1.SetToolTip(this.tabPage14, resources.GetString("tabPage14.ToolTip"));
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -2122,7 +1957,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
@@ -2140,18 +1974,19 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.initialCharisma)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialWisdom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialIntelligence)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialConstitution)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialDexterity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.initialStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialCha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialWis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialInt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialCon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialDex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InitialStr)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gBSelectSources.ResumeLayout(false);
             this.gBSelectSources.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDragonLanceSources)).EndInit();
             this.gBDeityOptions.ResumeLayout(false);
             this.gBUneathedArcana.ResumeLayout(false);
             this.gBCharacterSheetDisplayHitPoints.ResumeLayout(false);
@@ -2211,13 +2046,13 @@
         private System.Windows.Forms.ToolStripMenuItem saveCharacterToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLevelAdjust;
-        private System.Windows.Forms.TextBox increaseModStr;
-        private System.Windows.Forms.NumericUpDown initialCharisma;
-        private System.Windows.Forms.NumericUpDown initialWisdom;
-        private System.Windows.Forms.NumericUpDown initialIntelligence;
-        private System.Windows.Forms.NumericUpDown initialConstitution;
-        private System.Windows.Forms.NumericUpDown initialDexterity;
-        private System.Windows.Forms.NumericUpDown initialStrength;
+        private System.Windows.Forms.TextBox IncreaseModStr;
+        private System.Windows.Forms.NumericUpDown InitialCha;
+        private System.Windows.Forms.NumericUpDown InitialWis;
+        private System.Windows.Forms.NumericUpDown InitialInt;
+        private System.Windows.Forms.NumericUpDown InitialCon;
+        private System.Windows.Forms.NumericUpDown InitialDex;
+        private System.Windows.Forms.NumericUpDown InitialStr;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblCharisma;
@@ -2227,19 +2062,19 @@
         private System.Windows.Forms.Label lblDexterity;
         private System.Windows.Forms.Label lblStrength;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox increaseModCha;
-        private System.Windows.Forms.TextBox increaseModWis;
-        private System.Windows.Forms.TextBox increaseModInt;
-        private System.Windows.Forms.TextBox increaseModCon;
-        private System.Windows.Forms.TextBox increaseModDex;
+        private System.Windows.Forms.TextBox IncreaseModCha;
+        private System.Windows.Forms.TextBox IncreaseModWis;
+        private System.Windows.Forms.TextBox IncreaseModInt;
+        private System.Windows.Forms.TextBox IncreaseModCon;
+        private System.Windows.Forms.TextBox IncreaseModDex;
         private System.Windows.Forms.Label lblMagicalGain;
         private System.Windows.Forms.Label lblInherentGains;
-        private System.Windows.Forms.TextBox txtMagicBonusCha;
-        private System.Windows.Forms.TextBox txtMagicBonusWis;
-        private System.Windows.Forms.TextBox txtMagicBonusInt;
-        private System.Windows.Forms.TextBox txtMagicBonusCon;
-        private System.Windows.Forms.TextBox txtMagicBonusDex;
-        private System.Windows.Forms.TextBox txtMagicBonusStr;
+        private System.Windows.Forms.TextBox MagicBonusCha;
+        private System.Windows.Forms.TextBox MagicBonusWis;
+        private System.Windows.Forms.TextBox MagicBonusInt;
+        private System.Windows.Forms.TextBox MagicBonusCon;
+        private System.Windows.Forms.TextBox MagicBonusDex;
+        private System.Windows.Forms.TextBox MagicBonusStr;
         private System.Windows.Forms.Label labelRace;
         private System.Windows.Forms.Label labelModCha;
         private System.Windows.Forms.Label labelModWis;
@@ -2351,12 +2186,12 @@
         private System.Windows.Forms.Label lblPointBuy;
         private System.Windows.Forms.Label lblAlternativeRoll;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label labelCha;
-        private System.Windows.Forms.Label labelWis;
-        private System.Windows.Forms.Label labelInt;
-        private System.Windows.Forms.Label labelCon;
-        private System.Windows.Forms.Label labelDex;
-        private System.Windows.Forms.Label labelStr;
+        private System.Windows.Forms.Label lblTotalCha;
+        private System.Windows.Forms.Label lblTotalWis;
+        private System.Windows.Forms.Label lblTotalInt;
+        private System.Windows.Forms.Label lblTotalCon;
+        private System.Windows.Forms.Label lblTotalDex;
+        private System.Windows.Forms.Label lblTotalStr;
         private System.Windows.Forms.Label lblModChaTotal;
         private System.Windows.Forms.Label lblModWisTotal;
         private System.Windows.Forms.Label lblModIntTotal;
@@ -2372,6 +2207,10 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button btnRollDice;
+        private System.Windows.Forms.Button btnRolar;
+        private System.Windows.Forms.DataGridView dataGridViewDragonLanceSources;
     }
 }
 

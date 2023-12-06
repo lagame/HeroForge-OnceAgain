@@ -166,4 +166,22 @@
   <data name="UnableOpenLink" xml:space="preserve">
     <value>Unable to open link that was clicked</value>
   </data>
+  <data name="no_avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_avatar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Election-2020-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Election-2020-Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-google-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-google-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logingoogle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logingoogle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-close-window-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-close-window-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tong-hop-cac-mau-background-dep-nhat-10070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tong-hop-cac-mau-background-dep-nhat-10070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
