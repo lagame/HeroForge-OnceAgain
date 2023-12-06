@@ -331,6 +331,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BancoSQL\dump-heroforge.sql" />
     <Content Include="Resources\cc.png" />
     <Content Include="Resources\Election-2020-Background.jpg" />
     <Content Include="Resources\heroforge.ico" />

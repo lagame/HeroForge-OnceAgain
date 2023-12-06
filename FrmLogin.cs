@@ -31,11 +31,9 @@ namespace HeroForge_OnceAgain
 
         // client configuration
 
-        public const string clientID = "122225228347-bnv4dakc7icmevkg33806vun9hcl4c6c.apps.googleusercontent.com";
+        public const string clientID = "";        
+        public const string clientSecret = "";
         
-        //"662959790489-sqt6ja2lqj5hnd4o7g7ki4jg7j0okvl5.apps.googleusercontent.com";
-        public const string clientSecret = "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";
-        //"pJFA5xdGQ-MbRdEniXIseRH-";
         public const string redirectURI = "http://localhost:8080";
         public bool flag = true;
 
