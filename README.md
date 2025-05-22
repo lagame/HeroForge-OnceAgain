@@ -31,8 +31,55 @@ BancoSQL/HeroForgeDb.sql
 
 ---
 
+## 💻 Running the Project in Visual Studio
+
+### Requirements
+- Visual Studio 2022 or later
+- .NET Framework 4.8
+- "Desktop Development with .NET" workload installed
+
+### Steps
+
+```bash
+git clone https://github.com/your-username/HeroForge-OnceAgain.git
+```
+
+Or download as ZIP and extract it.
+
+1. Open `HeroForge-OnceAgain.sln` in Visual Studio.
+2. Build the solution.
+3. Run (F5).
+
+> ❗ Tip: If you encounter errors loading JSON files, right-click them in Solution Explorer > Properties > **Copy to Output Directory** → `Copy if newer`.
+
+---
+
+## 🌐 Language & Translations
+
+Language can be changed in the program under **Configurations > Preferences**.
+
+Translation files are in:
+
+```
+Resources/Translations/
+```
+
+You can help expand translations by editing:
+- `menu/en.json`, `menu/pt-BR.json`, etc.
+- `races/Races.json` for race names
+- `RaceInfo.json` for detailed race attributes
+
+🔒 `RaceInfo.json` is used for technical race data and **should not be edited** manually.
+
+📌 A new `classes.json` file is planned for future implementation to handle localized class names similarly to races.
+
+---
+
 ## ⚙️ Conversion Progress
-HeroForge-OnceAgain is based on the original HeroForge-Anew 7.4.0.1 Excel spreadsheet.
+HeroForge-OnceAgain is based on the original HeroForge-Anew 7.4.0.0 Excel spreadsheet.
+
+We use this version (7.4.0.0) because it contains everything in a single file and this makes my life easier, in addition to having fewer bugs than spreadsheet 7.4.0.1.
+
 The current implementation represents approximately 8% of the total logic and formulas converted into C# code.
 
 We are steadily migrating the spreadsheet’s powerful features into a more robust and extensible codebase, using structured data, object-oriented design, and modern development practices.
@@ -52,3 +99,7 @@ There are several areas where you can help:
 
 Right now, the list of creatures available for transformation is pretty limited, and there's almost nothing beyond animals — which makes **Masters of Many Forms** quite sad.  
 If you’re willing to help, send me a message and I’ll guide you through the process.
+
+🔗 Based on HeroForge-Anew 7.4.0.0 (
+Thanks to Heliomance for the original spreadsheet that inspired this project.  
+https://github.com/Heliomance/HeroForge-Anew
