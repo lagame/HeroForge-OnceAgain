@@ -1,0 +1,9 @@
+{
+  "Menu.File": "File",
+  "Menu.File.Open": "Open...",
+  "Menu.File.Exit": "Exit",
+  "Menu.Edit": "Edit",
+  "Menu.Help": "Help",
+  "Menu.Help.About": "About",
+  "Menu.Edit.Preferences": "Preferences..."
+}

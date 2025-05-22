@@ -14,5 +14,14 @@
     <Setting Name="LastUsedFolder" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="RememberMe" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SavedEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

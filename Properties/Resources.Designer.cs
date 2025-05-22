@@ -126,6 +126,16 @@ namespace HeroForge_OnceAgain.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fundo {
+            get {
+                object obj = ResourceManager.GetObject("fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a High-powered campaign.
         /// </summary>
         public static string HighPoweredCampaign {
@@ -150,6 +160,16 @@ namespace HeroForge_OnceAgain.Properties {
         public static System.Drawing.Bitmap icons8_google_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-google-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap loading {
+            get {
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -234,16 +254,6 @@ namespace HeroForge_OnceAgain.Properties {
         public static string StandardCampaign {
             get {
                 return ResourceManager.GetString("StandardCampaign", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap tong_hop_cac_mau_background_dep_nhat_10070 {
-            get {
-                object obj = ResourceManager.GetObject("tong-hop-cac-mau-background-dep-nhat-10070", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

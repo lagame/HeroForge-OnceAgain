@@ -1,8 +1,11 @@
-﻿using System;
+﻿using HeroForge_OnceAgain.Infrastructure.Database;
+using HeroForge_OnceAgain.Migrations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static HeroForge_OnceAgain.Migrations.Configuration;
 
 namespace HeroForge_OnceAgain
 {
@@ -17,11 +20,15 @@ namespace HeroForge_OnceAgain
             log4net.Config.XmlConfigurator.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            HttpListenerService.Instance.StartListener(); // Iniciando o listener aqui           
+            HttpListenerService.Instance.StartListener();
 
-            //Application.Run(new Form1());
-            //Application.Run(new Form1());
-            Application.Run(FrmLogin.Default);
+            using (var context = new ApplicationDbContext())
+            {
+                SeedHelper.SeedData(context); // Agora é acessível
+                context.SaveChanges();
+            }
+
+            Application.Run(new FrmLogin());
         }
     }
 }

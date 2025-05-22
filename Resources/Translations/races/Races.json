@@ -1,0 +1,2249 @@
+{
+  "1": {
+    "en": "Aarakocra",
+    "pt-BR": "Aarakocra",
+    "es": "Aarakocra",
+    "fr": "Aarakocra",
+    "it": "Aarakocra"
+  },
+  "2": {
+    "en": "Aasimar",
+    "pt-BR": "Aasimar",
+    "es": "Aasimar",
+    "fr": "Aasimâr",
+    "it": "Aasimar"
+  },
+  "3": {
+    "en": "Abeil, Commander",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "4": {
+    "en": "Abeil, Soldier",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "5": {
+    "en": "Abeil, Vassal",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "6": {
+    "en": "Archon, Hound",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "7": {
+    "en": "Archon, Trumpet",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "8": {
+    "en": "Armand",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "9": {
+    "en": "Asherati",
+    "pt-BR": "",
+    "es": "Asheratis",
+    "fr": "",
+    "it": ""
+  },
+  "10": {
+    "en": "Aventi",
+    "pt-BR": "",
+    "es": "Aventi",
+    "fr": "",
+    "it": ""
+  },
+  "11": {
+    "en": "Azer",
+    "pt-BR": "",
+    "es": "Azers",
+    "fr": "",
+    "it": ""
+  },
+  "12": {
+    "en": "Azurin",
+    "pt-BR": "",
+    "es": "Azurinas",
+    "fr": "",
+    "it": ""
+  },
+  "13": {
+    "en": "Baphitaur",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "14": {
+    "en": "Barbazu (Bearded Devil)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "15": {
+    "en": "Bariaur",
+    "pt-BR": "",
+    "es": "Bariaurs",
+    "fr": "",
+    "it": ""
+  },
+  "16": {
+    "en": "Bhuka",
+    "pt-BR": "",
+    "es": "Bhukas",
+    "fr": "",
+    "it": ""
+  },
+  "17": {
+    "en": "Bladeling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "18": {
+    "en": "Blue",
+    "pt-BR": "",
+    "es": "Blues",
+    "fr": "",
+    "it": ""
+  },
+  "19": {
+    "en": "Boggle",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "20": {
+    "en": "Braxat",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "21": {
+    "en": "Bueroza",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "22": {
+    "en": "Bugbear",
+    "pt-BR": "Bugbear",
+    "es": "Trasgo",
+    "fr": "Bugbear",
+    "it": "Bugbear"
+  },
+  "23": {
+    "en": "Buomman",
+    "pt-BR": "",
+    "es": "Buommans",
+    "fr": "",
+    "it": ""
+  },
+  "24": {
+    "en": "Caliban",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "25": {
+    "en": "Canomorph, Haraknin",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "26": {
+    "en": "Canomorph, Shadurakul",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "27": {
+    "en": "Canomorph, Vultivor",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "28": {
+    "en": "Catfolk",
+    "pt-BR": "Povo Gato",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "29": {
+    "en": "Centaur",
+    "pt-BR": "",
+    "es": "Centauros",
+    "fr": "",
+    "it": ""
+  },
+  "30": {
+    "en": "Centaur, Wendle",
+    "pt-BR": "",
+    "es": "Centauros Wendle",
+    "fr": "",
+    "it": ""
+  },
+  "31": {
+    "en": "Changeling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "32": {
+    "en": "Chaond",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "33": {
+    "en": "Chitine",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "34": {
+    "en": "Crucian",
+    "pt-BR": "",
+    "es": "Crucianos",
+    "fr": "",
+    "it": ""
+  },
+  "35": {
+    "en": "Daelkyr Half-blood",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "36": {
+    "en": "Darfellan",
+    "pt-BR": "",
+    "es": "Darfellans",
+    "fr": "",
+    "it": ""
+  },
+  "37": {
+    "en": "Dark One, Dark Creeper",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "38": {
+    "en": "Dark One, Dark Stalker",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "39": {
+    "en": "Darkling, Vistani",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "40": {
+    "en": "Deep Imaskari",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "41": {
+    "en": "Desmodu",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "42": {
+    "en": "Dogai (Assassin Devil)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "43": {
+    "en": "Domovoi",
+    "pt-BR": "",
+    "es": "Domovoi",
+    "fr": "",
+    "it": ""
+  },
+  "44": {
+    "en": "Doppelganger",
+    "pt-BR": "",
+    "es": "Doppelgangers",
+    "fr": "",
+    "it": ""
+  },
+  "45": {
+    "en": "Draconian, Baaz",
+    "pt-BR": "Baaz Draconiano",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "46": {
+    "en": "Draconian, Flame",
+    "pt-BR": "Draconiano Flamejante",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "47": {
+    "en": "Draconian, Frost",
+    "pt-BR": "Draconiano Gélido",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "48": {
+    "en": "Draconian, Kapak",
+    "pt-BR": "Kapak Draconiano",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "49": {
+    "en": "Draconian, Lightning",
+    "pt-BR": "Draconiano Elétrico",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "50": {
+    "en": "Draconian, Vapor",
+    "pt-BR": "Draconiano do Vapor",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "51": {
+    "en": "Draconian, Venom",
+    "pt-BR": "Draconiano Venonoso",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "52": {
+    "en": "Dracotaur",
+    "pt-BR": "",
+    "es": "Dracotauros",
+    "fr": "",
+    "it": ""
+  },
+  "53": {
+    "en": "Draegloth",
+    "pt-BR": "",
+    "es": "Draegloths",
+    "fr": "",
+    "it": ""
+  },
+  "54": {
+    "en": "Dragonborn of Bahamut",
+    "pt-BR": "Draconato de Bahamut",
+    "es": "Sangre de dragón de Bahamut",
+    "fr": "Enfant de Dragon de Bahamut",
+    "it": "Progenie di Bahamut"
+  },
+  "55": {
+    "en": "Dromite",
+    "pt-BR": "",
+    "es": "Dromitas",
+    "fr": "",
+    "it": ""
+  },
+  "56": {
+    "en": "Durzagon",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "57": {
+    "en": "Duskling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "58": {
+    "en": "Dvati",
+    "pt-BR": "",
+    "es": "Dvati",
+    "fr": "",
+    "it": ""
+  },
+  "59": {
+    "en": "Dwarf, Arctic",
+    "pt-BR": "Anão Ártico",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "60": {
+    "en": "Dwarf, Badlands",
+    "pt-BR": "Anão das Terras Áridas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "61": {
+    "en": "Dwarf, Dark",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "62": {
+    "en": "Dwarf, Deep",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "63": {
+    "en": "Dwarf, Dream",
+    "pt-BR": "Anão dos Sonhos",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "64": {
+    "en": "Dwarf, Duergar",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "65": {
+    "en": "Dwarf, Fireblood",
+    "pt-BR": "Anão Sangue ígneo",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "66": {
+    "en": "Dwarf, Glacier",
+    "pt-BR": "Anão da Geleira",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "67": {
+    "en": "Dwarf, Gold",
+    "pt-BR": "Anão Dourado",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "68": {
+    "en": "Dwarf, Gray",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "69": {
+    "en": "Dwarf, Gully",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "70": {
+    "en": "Dwarf, Hill",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "71": {
+    "en": "Dwarf, Mountain",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "72": {
+    "en": "Dwarf, Seacliff",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "73": {
+    "en": "Dwarf, Shield",
+    "pt-BR": "Anão do Escudo",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "74": {
+    "en": "Dwarf, Urdunnir",
+    "pt-BR": "Anão Urdunnir",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "75": {
+    "en": "Dwarf, Wild",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "76": {
+    "en": "Dwarf/Elf",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "77": {
+    "en": "Dwarf/Gnome",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "78": {
+    "en": "Dwarf/Halfling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "79": {
+    "en": "Dwarf/Orc",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "80": {
+    "en": "Elan",
+    "pt-BR": "",
+    "es": "Elans",
+    "fr": "",
+    "it": ""
+  },
+  "81": {
+    "en": "Elf, Aquatic",
+    "pt-BR": "Elfo Aquático",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "82": {
+    "en": "Elf, Deepwyrm Drow",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "83": {
+    "en": "Elf, Drow",
+    "pt-BR": "Drow",
+    "es": "Elfo oscuro",
+    "fr": "Elfe noir",
+    "it": "Elfo scuro"
+  },
+  "84": {
+    "en": "Elf, Forestlord",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "85": {
+    "en": "Elf, Gray",
+    "pt-BR": "Elfo Cinzento",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "86": {
+    "en": "Elf, High",
+    "pt-BR": "Eladrin",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "87": {
+    "en": "Elf, Kagonesti",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "88": {
+    "en": "Elf, Moon",
+    "pt-BR": "Elfo da Lua",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "89": {
+    "en": "Elf, Painted",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "90": {
+    "en": "Elf, Qualinesti",
+    "pt-BR": "",
+    "es": "Qualinesti",
+    "fr": "",
+    "it": ""
+  },
+  "91": {
+    "en": "Elf, Sea (Dargonesti)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "92": {
+    "en": "Elf, Sea (Dimernesti)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "93": {
+    "en": "Elf, Silvanesti",
+    "pt-BR": "",
+    "es": "Silvanesti",
+    "fr": "",
+    "it": ""
+  },
+  "94": {
+    "en": "Elf, Snow",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "95": {
+    "en": "Elf, Sun",
+    "pt-BR": "Elfo do Sol",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "96": {
+    "en": "Elf, Umbragen",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "97": {
+    "en": "Elf, Wild",
+    "pt-BR": "Elfo Selvagem",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "98": {
+    "en": "Elf, Winged",
+    "pt-BR": "Elfo, Avariel",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "99": {
+    "en": "Elf, Wood",
+    "pt-BR": "Elfo das Florestas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "100": {
+    "en": "Elf/Gnome",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "101": {
+    "en": "Elf/Halfling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "102": {
+    "en": "Elf/Orc",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "103": {
+    "en": "Erinyes",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "104": {
+    "en": "Ethergaunt, Black",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "105": {
+    "en": "Ethergaunt, Red",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "106": {
+    "en": "Ethergaunt, White",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "107": {
+    "en": "Ettin",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "108": {
+    "en": "Extaminaar",
+    "pt-BR": "",
+    "es": "Extaminaars",
+    "fr": "",
+    "it": ""
+  },
+  "109": {
+    "en": "Falxugon (Harvester Deveil)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "110": {
+    "en": "Fensir",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "111": {
+    "en": "Feral Gargun",
+    "pt-BR": "Gargun Selvagem",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "112": {
+    "en": "Fey'ri",
+    "pt-BR": "Fey'ri",
+    "es": "Fey'ri",
+    "fr": "",
+    "it": ""
+  },
+  "113": {
+    "en": "Feytouched",
+    "pt-BR": "Tocado pelas Fadas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "114": {
+    "en": "Firbolg",
+    "pt-BR": "Firbolg",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "115": {
+    "en": "Fomorian",
+    "pt-BR": "Fomoriano",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "116": {
+    "en": "Frost Folk",
+    "pt-BR": "Povo do Gelo",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "117": {
+    "en": "Gargoyle",
+    "pt-BR": "Gárgula",
+    "es": "Gárgola",
+    "fr": "",
+    "it": ""
+  },
+  "118": {
+    "en": "Genasi, Air",
+    "pt-BR": "Genasi do Ar",
+    "es": "Genasi de aire",
+    "fr": "",
+    "it": ""
+  },
+  "119": {
+    "en": "Genasi, Earth",
+    "pt-BR": "Genasi da Terra",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "120": {
+    "en": "Genasi, Fire",
+    "pt-BR": "Genasi do Fogo",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "121": {
+    "en": "Genasi, Water",
+    "pt-BR": "Genasi da Água",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "122": {
+    "en": "Giant, Fire",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "123": {
+    "en": "Giant, Forest",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "124": {
+    "en": "Giant, Frost",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "125": {
+    "en": "Giant, Hill",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "126": {
+    "en": "Giant, Jungle",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "127": {
+    "en": "Giant, Sand",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "128": {
+    "en": "Giant, Stone",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "129": {
+    "en": "Giant, Sun",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "130": {
+    "en": "Githyanki",
+    "pt-BR": "",
+    "es": "Githyanki",
+    "fr": "",
+    "it": ""
+  },
+  "131": {
+    "en": "Githzerai",
+    "pt-BR": "",
+    "es": "Githzerai",
+    "fr": "",
+    "it": ""
+  },
+  "132": {
+    "en": "Gloaming",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "133": {
+    "en": "Gnoll",
+    "pt-BR": "Gnoll",
+    "es": "Gnolls",
+    "fr": "",
+    "it": ""
+  },
+  "134": {
+    "en": "Gnoll, Flind",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "135": {
+    "en": "Gnome, Chaos",
+    "pt-BR": "Gnomo do Caos",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "136": {
+    "en": "Gnome, Deep",
+    "pt-BR": "Gnomo das Profundezas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "137": {
+    "en": "Gnome, Forest",
+    "pt-BR": "Gnomo das Florestas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "138": {
+    "en": "Gnome, Ice",
+    "pt-BR": "Gnomo do Gelo",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "139": {
+    "en": "Gnome, Rock",
+    "pt-BR": "Gnomo das Rochas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "140": {
+    "en": "Gnome, Stonehunter",
+    "pt-BR": "Gnomo Caçador de Pedras",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "141": {
+    "en": "Gnome, Svirfneblin",
+    "pt-BR": "Svirfneblin",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "142": {
+    "en": "Gnome, Thinker",
+    "pt-BR": "Gnomo Inventor",
+    "es": "Gnomos Tinker",
+    "fr": "",
+    "it": ""
+  },
+  "143": {
+    "en": "Gnome, Tinker",
+    "pt-BR": "Gnomo Consertador",
+    "es": "Gnomos Tinker",
+    "fr": "",
+    "it": ""
+  },
+  "144": {
+    "en": "Gnome, Wavecrest",
+    "pt-BR": "Gnomo das Ondas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "145": {
+    "en": "Gnome, Whisper",
+    "pt-BR": "Gnomo do Sussurro",
+    "es": "",
+    "fr": "",
+    "it": "Gnomi del Sussurro"
+  },
+  "146": {
+    "en": "Gnome/Halfling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "147": {
+    "en": "Gnome/Orc",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "148": {
+    "en": "Goatfolk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "149": {
+    "en": "Goblin",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "150": {
+    "en": "Goblin, Dekanter",
+    "pt-BR": "Goblin de Dekanter",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "151": {
+    "en": "Goblin, Forestkith",
+    "pt-BR": "Goblin da Floresta",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "152": {
+    "en": "Goblin, Snow",
+    "pt-BR": "Goblin da Neve",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "153": {
+    "en": "Goliath",
+    "pt-BR": "Golias",
+    "es": "Goliats",
+    "fr": "",
+    "it": ""
+  },
+  "154": {
+    "en": "Grig",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "155": {
+    "en": "Grimlock",
+    "pt-BR": "Grimlock",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "156": {
+    "en": "Guardinal, Cervidal",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "157": {
+    "en": "Guardinal, Lupinal",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "158": {
+    "en": "Hadozee",
+    "pt-BR": "",
+    "es": "Hadozee",
+    "fr": "",
+    "it": ""
+  },
+  "159": {
+    "en": "Half-Elf",
+    "pt-BR": "Meio-Elfo",
+    "es": "Medio elfo",
+    "fr": "Demi-elfe",
+    "it": "Mezzo Elfo"
+  },
+	"160": {
+	  "en": "Half-Elf, Aquatic",
+	  "pt-BR": "Meio-Elfo, Aquático",
+	  "es": "",
+	  "fr": "",
+	  "it": ""
+	},
+	"161": {
+	  "en": "Half-Elf, Deepwyrm Drow",
+	  "pt-BR": "Meio-Elfo, Drow de Deepwyrm",
+	  "es": "",
+	  "fr": "",
+	  "it": ""
+	},
+	"162": {
+	  "en": "Half-Elf, Drow",
+	  "pt-BR": "Meio-Elfo, Drow",
+	  "es": "",
+	  "fr": "",
+	  "it": ""
+	},
+	"163": {
+	  "en": "Half-Elf, Forestlord",
+	  "pt-BR": "Meio-Elfo, Senhor da Floresta",
+	  "es": "",
+	  "fr": "",
+	  "it": ""
+	},
+	"164": {
+	  "en": "Half-Giant",
+	  "pt-BR": "Meio-Gigante",
+	  "es": "",
+	  "fr": "",
+	  "it": ""
+	},
+  "165": {
+    "en": "Half-Kender",
+    "pt-BR": "Meio Kender",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "166": {
+    "en": "Halfling, Deep",
+    "pt-BR": "Halfling das Profundezas",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "167": {
+    "en": "Halfling, Ghostwise",
+    "pt-BR": "Halfling Espectral",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "168": {
+    "en": "Halfling, Glimmerskin",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "169": {
+    "en": "Halfling, Lightfoot",
+    "pt-BR": "Halfling Pés-Leves",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "170": {
+    "en": "Halfling, Shoal",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "171": {
+    "en": "Halfling, Strongheart",
+    "pt-BR": "Halfling Austero",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "172": {
+    "en": "Halfling, Tallfellow",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "173": {
+    "en": "Halfling, Tundra",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "174": {
+    "en": "Halfling/Orc",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "175": {
+    "en": "Half-Ogre",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "176": {
+    "en": "Half-Orc",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "177": {
+    "en": "Half-Orc, Frostblood",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "178": {
+    "en": "Half-Orc, Scablands",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "179": {
+    "en": "Half-Vistani, Canjar",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "180": {
+    "en": "Half-Vistani, Corvara",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "181": {
+    "en": "Half-Vistani, Equaar",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "182": {
+    "en": "Half-Vistani, Kamii",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "183": {
+    "en": "Half-Vistani, Naiat",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "184": {
+    "en": "Half-Vistani, Vatmska",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "185": {
+    "en": "Half-Vistani, Zarovan",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "186": {
+    "en": "Harssaf",
+    "pt-BR": "",
+    "es": "Harssafs",
+    "fr": "",
+    "it": ""
+  },
+  "187": {
+    "en": "Hellbred",
+    "pt-BR": "",
+    "es": "Hellbred",
+    "fr": "",
+    "it": ""
+  },
+  "188": {
+    "en": "Hengeyokai",
+    "pt-BR": "",
+    "es": "Hengeyokai",
+    "fr": "",
+    "it": ""
+  },
+  "189": {
+    "en": "Hobgoblin",
+    "pt-BR": "",
+    "es": "Hobgoblins",
+    "fr": "",
+    "it": ""
+  },
+  "190": {
+    "en": "Hobgoblin, Sunscorch",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "191": {
+    "en": "Human",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "192": {
+    "en": "Human, Silverbrow",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "193": {
+    "en": "Human/Dwarf",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "194": {
+    "en": "Human/Gnome",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "195": {
+    "en": "Human/Halfling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "196": {
+    "en": "Illumian",
+    "pt-BR": "",
+    "es": "Illumianos",
+    "fr": "",
+    "it": ""
+  },
+  "197": {
+    "en": "Jackal Lord",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "198": {
+    "en": "Janni",
+    "pt-BR": "",
+    "es": "Jann",
+    "fr": "",
+    "it": ""
+  },
+  "199": {
+    "en": "Kalashtar",
+    "pt-BR": "",
+    "es": "Kalashtar",
+    "fr": "",
+    "it": ""
+  },
+  "200": {
+    "en": "Kaorti",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "201": {
+    "en": "Karsite",
+    "pt-BR": "",
+    "es": "Karsites",
+    "fr": "",
+    "it": ""
+  },
+  "202": {
+    "en": "Keeper",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "203": {
+    "en": "Kender",
+    "pt-BR": "",
+    "es": "Kender",
+    "fr": "",
+    "it": ""
+  },
+  "204": {
+    "en": "Kender, Afflicted",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "205": {
+    "en": "Kenku",
+    "pt-BR": "",
+    "es": "Kenkus",
+    "fr": "",
+    "it": ""
+  },
+  "206": {
+    "en": "Khaasta",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "207": {
+    "en": "Killoren",
+    "pt-BR": "",
+    "es": "Killoren",
+    "fr": "",
+    "it": ""
+  },
+  "208": {
+    "en": "Kir-Lanan",
+    "pt-BR": "",
+    "es": "Kir-Lanans",
+    "fr": "",
+    "it": ""
+  },
+  "209": {
+    "en": "Kobold",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "210": {
+    "en": "Korobokuru",
+    "pt-BR": "",
+    "es": "Korobokurus",
+    "fr": "",
+    "it": ""
+  },
+  "211": {
+    "en": "Krinth",
+    "pt-BR": "",
+    "es": "Krinth",
+    "fr": "",
+    "it": ""
+  },
+  "212": {
+    "en": "Kuo-Toa",
+    "pt-BR": "",
+    "es": "Kuo-Toas",
+    "fr": "",
+    "it": ""
+  },
+  "213": {
+    "en": "Kyrie",
+    "pt-BR": "",
+    "es": "Kyrie",
+    "fr": "",
+    "it": ""
+  },
+  "214": {
+    "en": "Kyton (Chain Devil)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "215": {
+    "en": "Lizardfolk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "216": {
+    "en": "Lizardfolk, Blackscale",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "217": {
+    "en": "Lizardfolk, Poison Dusk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "218": {
+    "en": "Lizardfolk, Viletooth",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "219": {
+    "en": "Locathah",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "220": {
+    "en": "Loxo",
+    "pt-BR": "",
+    "es": "Loxos",
+    "fr": "",
+    "it": ""
+  },
+  "221": {
+    "en": "Lumi",
+    "pt-BR": "",
+    "es": "Lumi",
+    "fr": "",
+    "it": ""
+  },
+  "222": {
+    "en": "Maeluth",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "223": {
+    "en": "Maenad",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "224": {
+    "en": "Marrash",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "225": {
+    "en": "Maug",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "226": {
+    "en": "Mechanatrix",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "227": {
+    "en": "Mephling, Air",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "228": {
+    "en": "Mephling, Earth",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "229": {
+    "en": "Mephling, Fire",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "230": {
+    "en": "Mephling, Water",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "231": {
+    "en": "Merfolk",
+    "pt-BR": "",
+    "es": "Lummerfolk",
+    "fr": "",
+    "it": ""
+  },
+  "232": {
+    "en": "Merregon (Legion Devil)",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "233": {
+    "en": "Mind Flayer",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "234": {
+    "en": "Minotaur",
+    "pt-BR": "",
+    "es": "Minotauros",
+    "fr": "",
+    "it": ""
+  },
+  "235": {
+    "en": "Mongrelfolk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "236": {
+    "en": "Narzugon",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "237": {
+    "en": "Neanderthal",
+    "pt-BR": "",
+    "es": "Neandertales",
+    "fr": "",
+    "it": ""
+  },
+  "238": {
+    "en": "Neraph",
+    "pt-BR": "",
+    "es": "Neraphim",
+    "fr": "",
+    "it": ""
+  },
+  "239": {
+    "en": "Nerra, Kalareem",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "240": {
+    "en": "Nerra, Sillit",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "241": {
+    "en": "Nerra, Varoot",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "242": {
+    "en": "Nezumi",
+    "pt-BR": "",
+    "es": "Nezumi",
+    "fr": "",
+    "it": ""
+  },
+  "243": {
+    "en": "Nixie",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "244": {
+    "en": "Nycter",
+    "pt-BR": "",
+    "es": "Nycters",
+    "fr": "",
+    "it": ""
+  },
+  "245": {
+    "en": "Ogre",
+    "pt-BR": "Ogro",
+    "es": "Ogro",
+    "fr": "Ogre",
+    "it": "Orco"
+  },
+  "246": {
+    "en": "Ogre Mage",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "247": {
+    "en": "Ogre, Irda",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "248": {
+    "en": "Ogre, Skullcrusher",
+    "pt-BR": "",
+    "es": "Ogros Skullcrusher",
+    "fr": "",
+    "it": ""
+  },
+  "249": {
+    "en": "Orc",
+    "pt-BR": "Orc",
+    "es": "Orco",
+    "fr": "Orque",
+    "it": "Orco"
+  },
+  "250": {
+    "en": "Orc, Deep",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "251": {
+    "en": "Orc, Frostblood",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "252": {
+    "en": "Orc, Gray",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "253": {
+    "en": "Orc, Mountain",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "254": {
+    "en": "Pixie",
+    "pt-BR": "",
+    "es": "Pixies",
+    "fr": "",
+    "it": ""
+  },
+  "255": {
+    "en": "Quaraphon",
+    "pt-BR": "",
+    "es": "Quaraphons",
+    "fr": "",
+    "it": ""
+  },
+  "256": {
+    "en": "Rakshasa",
+    "pt-BR": "",
+    "es": "Rakshasas",
+    "fr": "",
+    "it": ""
+  },
+  "257": {
+    "en": "Rakshasa, Naztharune",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "258": {
+    "en": "Raptoran",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "259": {
+    "en": "Rilkan",
+    "pt-BR": "",
+    "es": "Rilkans",
+    "fr": "",
+    "it": ""
+  },
+  "260": {
+    "en": "Rilmani, Aurumach",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "261": {
+    "en": "Rilmani, Cuprilach",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "262": {
+    "en": "Rilmani, Ferrumach",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "263": {
+    "en": "Satyr",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "264": {
+    "en": "Scorpionfolk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "265": {
+    "en": "Sea Kin",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "266": {
+    "en": "Selkie",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "267": {
+    "en": "Shadar-Kai",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "268": {
+    "en": "Shadowswyft",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "269": {
+    "en": "Sharakim",
+    "pt-BR": "",
+    "es": "Sharakim",
+    "fr": "",
+    "it": ""
+  },
+  "270": {
+    "en": "Shifter",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "271": {
+    "en": "Shyft",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "272": {
+    "en": "Sirine",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "273": {
+    "en": "Skarn",
+    "pt-BR": "",
+    "es": "Skarns",
+    "fr": "",
+    "it": ""
+  },
+  "274": {
+    "en": "Skulk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "275": {
+    "en": "Slig",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "276": {
+    "en": "Slig, Ghaggler",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "277": {
+    "en": "Slyth",
+    "pt-BR": "",
+    "es": "Slyths",
+    "fr": "",
+    "it": ""
+  },
+  "278": {
+    "en": "Spellscale",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "279": {
+    "en": "Spiker",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "280": {
+    "en": "Spirit Folk, Bamboo",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "281": {
+    "en": "Spirit Folk, River",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "282": {
+    "en": "Spirit Folk, Sea",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "283": {
+    "en": "Spriggan",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "284": {
+    "en": "Ss'ressen, Ashen Hide",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "285": {
+    "en": "Ss'ressen, Black Talon",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "286": {
+    "en": "Stonechild",
+    "pt-BR": "Cria de Pedra",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "287": {
+    "en": "Synad",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "288": {
+    "en": "Tanarukk",
+    "pt-BR": "",
+    "es": "Tanarukks",
+    "fr": "",
+    "it": ""
+  },
+  "289": {
+    "en": "Tarmak",
+    "pt-BR": "",
+    "es": "Tarmak",
+    "fr": "",
+    "it": ""
+  },
+  "290": {
+    "en": "Tayfolk, Taylang",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "291": {
+    "en": "Tayfolk, Tayling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "292": {
+    "en": "Thri-Kreen",
+    "pt-BR": "",
+    "es": "Thri-Kreen",
+    "fr": "",
+    "it": ""
+  },
+  "293": {
+    "en": "Thri-Kreen, Psionic",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "294": {
+    "en": "Tiefling",
+    "pt-BR": "Tiefling",
+    "es": "Tiflin",
+    "fr": "Tieffelin",
+    "it": "Tiefling"
+  },
+  "295": {
+    "en": "Troglodyte",
+    "pt-BR": "",
+    "es": "Troglodytes",
+    "fr": "",
+    "it": ""
+  },
+  "296": {
+    "en": "Troll",
+    "pt-BR": "",
+    "es": "Trolls",
+    "fr": "",
+    "it": ""
+  },
+  "297": {
+    "en": "Troll, Crystalline",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "298": {
+    "en": "Uldra",
+    "pt-BR": "",
+    "es": "Uldras",
+    "fr": "",
+    "it": ""
+  },
+  "299": {
+    "en": "Unbodied",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "300": {
+    "en": "Underfolk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "301": {
+    "en": "Ursoi",
+    "pt-BR": "",
+    "es": "Ursoi",
+    "fr": "",
+    "it": ""
+  },
+  "302": {
+    "en": "Vanara",
+    "pt-BR": "",
+    "es": "Vanaras",
+    "fr": "",
+    "it": ""
+  },
+  "303": {
+    "en": "Varag",
+    "pt-BR": "",
+    "es": "Varags",
+    "fr": "",
+    "it": ""
+  },
+  "304": {
+    "en": "Warforged",
+    "pt-BR": "Forjado Bélico",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "305": {
+    "en": "Warforged, Charger",
+    "pt-BR": "Forjado Bélico de Investida",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "306": {
+    "en": "Warforged, Scout",
+    "pt-BR": "Forjado Bélico Batedor",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "307": {
+    "en": "Wemic",
+    "pt-BR": "Wemic",
+    "es": "Wemics",
+    "fr": "",
+    "it": ""
+  },
+  "308": {
+    "en": "Wildren",
+    "pt-BR": "",
+    "es": "Wildren",
+    "fr": "",
+    "it": ""
+  },
+  "309": {
+    "en": "Windblade, Windrazor",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "310": {
+    "en": "Windblade, Windscythe",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "311": {
+    "en": "Wingwyrd",
+    "pt-BR": "",
+    "es": "Wingwyrds",
+    "fr": "",
+    "it": ""
+  },
+  "312": {
+    "en": "Wispling",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "313": {
+    "en": "Witchknife",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "314": {
+    "en": "Xeph",
+    "pt-BR": "",
+    "es": "Xephs",
+    "fr": "",
+    "it": ""
+  },
+  "315": {
+    "en": "Yak Folk",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "316": {
+    "en": "Yuan-ti, Anathema",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "317": {
+    "en": "Yuan-Ti, Abomination",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "318": {
+    "en": "Yuan-Ti, Halfblood",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "319": {
+    "en": "Yuan-Ti, Pureblood",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "320": {
+    "en": "Yurian",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  },
+  "321": {
+    "en": "Zenythri",
+    "pt-BR": "",
+    "es": "",
+    "fr": "",
+    "it": ""
+  }
+}

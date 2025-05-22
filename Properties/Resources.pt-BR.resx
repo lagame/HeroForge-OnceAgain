@@ -166,4 +166,7 @@
   <data name="UnableOpenLink" xml:space="preserve">
     <value>Não é possível abrir o link que foi clicado</value>
   </data>
+  <data name="loading" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
 </root>
