@@ -190,11 +190,12 @@ namespace HeroForge_OnceAgain.Utils
         public static void PopulateRaceComboBox(ComboBox comboBox, int languageIndex)
         {
             string languageCode = GetLanguageCode(languageIndex); // exemplo: "pt-BR"
+            LocalizationHelper.LoadMessages(languageCode);
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Translations", "races", "Races.json");
 
             if (!File.Exists(path))
             {
-                MessageBox.Show("Arquivo de raças não encontrado.");
+                MessageBox.Show(LocalizationHelper.T("Error.RaceFileNotFound"));
                 return;
             }
 

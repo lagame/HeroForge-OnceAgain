@@ -20,7 +20,7 @@ namespace HeroForge_OnceAgain
             log4net.Config.XmlConfigurator.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            HttpListenerService.Instance.StartListener();
+            //HttpListenerService.Instance.StartListener();
 
             using (var context = new ApplicationDbContext())
             {

@@ -1,0 +1,17 @@
+{
+  "en": {
+    "Error.FileNotFound": "File not found.",
+    "Error.RaceFileNotFound": "Race file not found.",
+    "Info.Loading": "Loading data..."
+  },
+  "es": {
+    "Error.FileNotFound": "Archivo no encontrado.",
+    "Error.RaceFileNotFound": "Archivo de razas no encontrado.",
+    "Info.Loading": "Cargando datos..."
+  },
+  "pt-BR": {
+    "Error.FileNotFound": "Arquivo não encontrado.",
+    "Error.RaceFileNotFound": "Arquivo de raças não encontrado.",
+    "Info.Loading": "Carregando dados..."
+  }
+}

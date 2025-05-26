@@ -295,6 +295,7 @@
     </Compile>
     <Compile Include="HttpListenerService.cs" />
     <Compile Include="Infrastructure\Database\ApplicationDbContext.cs" />
+    <Compile Include="LocalizationHelper.cs" />
     <Compile Include="Migrations\202505201832173_SeedAdminUser.cs" />
     <Compile Include="Migrations\202505201832173_SeedAdminUser.Designer.cs">
       <DependentUpon>202505201832173_SeedAdminUser.cs</DependentUpon>
@@ -395,7 +396,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Translations\menu\Menu.json" />
-    <None Include="Resources\Translations\races\Races.json" />
+    <Content Include="Resources\Translations\races\Races.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Translations\messages.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

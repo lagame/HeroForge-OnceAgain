@@ -72,7 +72,8 @@ namespace HeroForge_OnceAgain
         }
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+
+            this.FormClosed += Form1_FormClosed;
 
             if (workSheet == null)                
                 workSheet = LoadFileFromResource();
@@ -953,41 +954,52 @@ namespace HeroForge_OnceAgain
             CloseProgram();
         }
 
+        //private void CloseProgram()
+        //{
+        //    //HttpListenerService.Instance.StopListener();
+        //    //this.Hide();
+        //    string path = System.IO.Path.GetTempFileName();
+        //    //File.Delete(path);
+
+        //    var dir = System.IO.Path.GetDirectoryName(path);
+        //    var d = new DirectoryInfo(dir);
+        //    foreach (var file in Directory.GetFiles(d.ToString()))
+        //    {
+        //        //File.Delete(file);
+        //        FileInfo archive = new FileInfo(file);
+        //        //for (int tries = 0; IsFileLocked(archive) && tries < 5; tries++)
+        //        //    Thread.Sleep(100);
+
+        //        try
+        //        {
+        //            if (path.Equals(archive.FullName))
+        //                archive.Delete();
+
+        //            var fileName = Path.ChangeExtension(path, "xlsm");
+        //            if (fileName.Equals(archive.FullName))
+        //                archive.Delete();
+
+        //            if (tmpfile.Equals(archive.FullName) || pathfile.Equals(archive.FullName))
+        //                archive.Delete();
+
+        //        }
+        //        catch (IOException)
+        //        {
+
+        //        }
+        //    }
+        //    workSheet.Dispose();
+        //    System.Windows.Forms.Application.Exit();
+        //}
         private void CloseProgram()
         {
-            HttpListenerService.Instance.StopListener();
-            //this.Hide();
-            string path = System.IO.Path.GetTempFileName();
-            //File.Delete(path);
+            // Finaliza planilha em uso, se necessário
+            workSheet?.Dispose();
 
-            var dir = System.IO.Path.GetDirectoryName(path);
-            var d = new DirectoryInfo(dir);
-            foreach (var file in Directory.GetFiles(d.ToString()))
-            {
-                //File.Delete(file);
-                FileInfo archive = new FileInfo(file);
-                //for (int tries = 0; IsFileLocked(archive) && tries < 5; tries++)
-                //    Thread.Sleep(100);
+            // Sai da aplicação
+            System.Windows.Forms.Application.Exit();
+            Environment.Exit(0);
 
-                try
-                {
-                    if (path.Equals(archive.FullName))
-                        archive.Delete();
-
-                    var fileName = Path.ChangeExtension(path, "xlsm");
-                    if (fileName.Equals(archive.FullName))
-                        archive.Delete();
-
-                    if (tmpfile.Equals(archive.FullName) || pathfile.Equals(archive.FullName))
-                        archive.Delete();
-
-                }
-                catch (IOException)
-                {
-
-                }
-            }
-            workSheet.Dispose();
         }
 
         private void btRandomHeight_Click(object sender, EventArgs e)
