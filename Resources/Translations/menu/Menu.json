@@ -1,0 +1,30 @@
+{
+  "Menu.Edit": {
+    "en": "Edit",
+    "pt-BR": "Editar"
+  },
+  "Menu.Edit.Preferences": {
+    "en": "Preferences...",
+    "pt-BR": "Preferências..."
+  },
+  "Menu.File": {
+    "en": "File",
+    "pt-BR": "Arquivo"
+  },
+  "Menu.File.Exit": {
+    "en": "Exit",
+    "pt-BR": "Sair"
+  },
+  "Menu.File.Open": {
+    "en": "Open...",
+    "pt-BR": "Abrir..."
+  },
+  "Menu.Help": {
+    "en": "Help",
+    "pt-BR": "Ajuda"
+  },
+  "Menu.Help.About": {
+    "en": "About",
+    "pt-BR": "Sobre"
+  }
+}

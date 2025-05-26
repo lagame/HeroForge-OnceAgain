@@ -2357,7 +2357,7 @@ namespace HeroForge_OnceAgain
         private void LoadMenuTranslations()
         {
             string langCode = Properties.Settings.Default.LanguageCode ?? "en";
-            string translationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Translations", "menu", langCode + ".json");
+            string translationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Translations", "menu", "Menu.json");
 
             if (!File.Exists(translationPath))
             {
@@ -2366,7 +2366,15 @@ namespace HeroForge_OnceAgain
             }
 
             var json = File.ReadAllText(translationPath);
-            var translations = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+
+            // Dicionário com estrutura: chave -> { "en": "File", "pt-BR": "Arquivo", ... }
+            var fullTranslations = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(json);
+
+            // Extrai apenas as traduções do idioma atual para um dicionário plano
+            var translations = fullTranslations.ToDictionary(
+                kvp => kvp.Key,
+                kvp => kvp.Value.ContainsKey(langCode) ? kvp.Value[langCode] : kvp.Value["en"] // fallback para inglês
+            );
 
             // Aplicação nos menus
             if (menuStrip1.Items[0] is ToolStripMenuItem fileMenu)
@@ -2380,10 +2388,8 @@ namespace HeroForge_OnceAgain
             {
                 editMenu.Text = translations["Menu.Edit"];
 
-                // Limpa itens anteriores (se houver)
                 editMenu.DropDownItems.Clear();
 
-                // Cria novo item de menu "Preferences"
                 var preferencesItem = new ToolStripMenuItem(translations["Menu.Edit.Preferences"]);
                 preferencesItem.Click += (s, e) =>
                 {
@@ -2391,10 +2397,8 @@ namespace HeroForge_OnceAgain
                     preferencesForm.ShowDialog();
                 };
 
-                // Adiciona ao menu "Edit"
                 editMenu.DropDownItems.Add(preferencesItem);
             }
-
 
             if (menuStrip1.Items[2] is ToolStripMenuItem helpMenu)
             {
@@ -2403,6 +2407,5 @@ namespace HeroForge_OnceAgain
             }
         }
 
-        
     }
 }

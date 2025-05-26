@@ -394,6 +394,7 @@
     <Content Include="Resources\Translations\menu\pt-BR.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Translations\menu\Menu.json" />
     <None Include="Resources\Translations\races\Races.json" />
   </ItemGroup>
   <ItemGroup>
