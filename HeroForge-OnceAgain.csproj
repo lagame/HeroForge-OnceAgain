@@ -370,6 +370,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CHANGELOG.md" />
     <None Include="CONTRIBUTING.md" />
     <None Include="LICENSE" />
     <None Include="Properties\app.manifest" />
