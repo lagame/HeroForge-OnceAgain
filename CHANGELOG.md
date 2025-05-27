@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Bumped `BouncyCastle.Cryptography` from `2.2.1` to `2.3.1` to resolve a moderate security alert ([#1](https://github.com/lagame/HeroForge-OnceAgain/pull/1))
+
+
 ### Added
 - Placeholder for upcoming features
 
