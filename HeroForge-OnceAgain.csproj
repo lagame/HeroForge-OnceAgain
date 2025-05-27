@@ -370,7 +370,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CONTRIBUTING.md" />
+    <None Include="LICENSE" />
     <None Include="Properties\app.manifest" />
+    <None Include="README.md" />
     <None Include="Resources\baseInfo.xlsm" />
     <None Include="HeroForge-OnceAgain_TemporaryKey.pfx" />
     <None Include="packages.config" />

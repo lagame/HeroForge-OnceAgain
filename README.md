@@ -100,6 +100,12 @@ There are several areas where you can help:
 Right now, the list of creatures available for transformation is pretty limited, and there's almost nothing beyond animals — which makes **Masters of Many Forms** quite sad.  
 If you’re willing to help, send me a message and I’ll guide you through the process.
 
-🔗 Based on HeroForge-Anew 7.4.0.0 (
+🔗 Based on HeroForge-Anew 7.4.0.0  
 Thanks to Heliomance for the original spreadsheet that inspired this project.  
 https://github.com/Heliomance/HeroForge-Anew
+
+---
+
+## 📌 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
