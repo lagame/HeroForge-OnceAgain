@@ -1,17 +1,62 @@
 {
   "en": {
     "Error.FileNotFound": "File not found.",
+    "Error.GenderNotDefined": "You must select a gender before continuing.",
+    "Error.HeightDataUnavailable": "This race has no height data available.",
+    "Error.InvalidGender": "Invalid gender selected.",
     "Error.RaceFileNotFound": "Race file not found.",
-    "Info.Loading": "Loading data..."
+    "Info.Loading": "Loading data...",
+
+    "Form.Register.Title": "Register",
+    "Form.Register.Email": "Email",
+    "Form.Register.Password": "Password",
+    "Form.Register.ConfirmPassword": "Confirm Password",
+    "Form.Register.Submit": "Register",
+    "Form.Register.BackToLogin": "Back to Login",
+
+    "Error.FillAllFields": "Please fill in all fields.",
+    "Error.PasswordMismatch": "Passwords do not match.",
+    "Error.EmailExists": "A user with this email already exists.",
+    "Success.Registration": "Registration completed successfully."
   },
   "es": {
     "Error.FileNotFound": "Archivo no encontrado.",
     "Error.RaceFileNotFound": "Archivo de razas no encontrado.",
-    "Info.Loading": "Cargando datos..."
+    "Error.GenderNotDefined": "Debes seleccionar un género antes de continuar.",
+    "Error.HeightDataUnavailable": "Esta raza no tiene datos de altura disponibles.",
+    "Error.InvalidGender": "Género seleccionado no válido.",
+    "Info.Loading": "Cargando datos...",
+
+    "Form.Register.Title": "Registrarse",
+    "Form.Register.Email": "Correo",
+    "Form.Register.Password": "Contraseña",
+    "Form.Register.ConfirmPassword": "Confirmar Contraseña",
+    "Form.Register.Submit": "Registrarse",
+    "Form.Register.BackToLogin": "Volver al inicio de sesión",
+
+    "Error.FillAllFields": "Por favor, complete todos los campos.",
+    "Error.PasswordMismatch": "Las contraseñas no coinciden.",
+    "Error.EmailExists": "Ya existe un usuario con este correo.",
+    "Success.Registration": "Registro completado con éxito."
   },
   "pt-BR": {
     "Error.FileNotFound": "Arquivo não encontrado.",
     "Error.RaceFileNotFound": "Arquivo de raças não encontrado.",
-    "Info.Loading": "Carregando dados..."
+    "Error.GenderNotDefined": "Você deve selecionar um gênero antes de continuar.",
+    "Error.HeightDataUnavailable": "Esta raça não possui dados de altura disponíveis.",
+    "Error.InvalidGender": "Gênero selecionado inválido.",
+    "Info.Loading": "Carregando dados...",
+
+    "Form.Register.Title": "Cadastro",
+    "Form.Register.Email": "Email",
+    "Form.Register.Password": "Senha",
+    "Form.Register.ConfirmPassword": "Confirmar Senha",
+    "Form.Register.Submit": "Cadastrar",
+    "Form.Register.BackToLogin": "Voltar para o Login",
+
+    "Error.FillAllFields": "Por favor, preencha todos os campos.",
+    "Error.PasswordMismatch": "As senhas não coincidem.",
+    "Error.EmailExists": "Já existe um usuário com este email.",
+    "Success.Registration": "Cadastro realizado com sucesso."
   }
 }

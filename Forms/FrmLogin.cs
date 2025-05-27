@@ -210,6 +210,13 @@ namespace HeroForge_OnceAgain
             };
             //            lblRegister.Click += (sender, e) => MessageBox.Show("Redirecting to registration page...");
 
+            lblRegister.Click += (s, e) =>
+            {
+                var registerForm = new FrmRegister();
+                registerForm.ShowDialog();
+            };
+
+
             // Link "Esqueci minha senha"
 
 

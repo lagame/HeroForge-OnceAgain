@@ -543,7 +543,7 @@ namespace HeroForge_OnceAgain
 
         private void RandomAge()
         {
-            if (!(cbRaces.SelectedItem is Race selectedRace)) return;
+            if (!(cbRaces.SelectedItem is RaceUtils.RaceDisplayItem selectedRace)) return;
 
             Race raceInfo = GetRaceInfoById(selectedRace.Id);
             if (raceInfo == null || string.IsNullOrWhiteSpace(raceInfo.BaseAge))
@@ -1005,29 +1005,50 @@ namespace HeroForge_OnceAgain
         private void btRandomHeight_Click(object sender, EventArgs e)
         {
             int height = RandomHeight();
-            RandomWeight(height);
+            //RandomWeight(height);
         }
 
         private int RandomHeight()
         {
-            if (!(cbRaces.SelectedItem is Race selectedRace)) return 0;
+            if (!(cbRaces.SelectedItem is RaceUtils.RaceDisplayItem selectedRace))
+                return 0;
 
             Race raceInfo = GetRaceInfoById(selectedRace.Id);
             if (raceInfo == null || string.IsNullOrWhiteSpace(raceInfo.Height))
             {
+                MessageBox.Show(LocalizationHelper.T("Error.HeightDataUnavailable"), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 lblRandomHeight.Text = "0";
                 return 0;
             }
 
             var heightParts = raceInfo.Height.Split('/');
-            var gender = lblGender.Text;
+            //var gender = lblGender.Text?.Trim();
+            var gender = cBGender.SelectedItem?.ToString().Trim();
 
-            string baseHeight = gender.Equals("Male", StringComparison.OrdinalIgnoreCase) ? heightParts[0] : heightParts[1].Split('+')[0];
+
+            if (string.IsNullOrWhiteSpace(gender))
+            {
+                MessageBox.Show(LocalizationHelper.T("Error.GenderNotDefined"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+
+            if (!gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
+                !gender.Equals("Female", StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show(LocalizationHelper.T("Error.InvalidGender"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+
+            string baseHeight = gender.Equals("Male", StringComparison.OrdinalIgnoreCase)
+                ? heightParts[0]
+                : heightParts[1].Split('+')[0];
+
             string dice = heightParts[1].Split('+')[1];
 
             int hgtMod = CalcHeight(dice, baseHeight);
             return hgtMod;
         }
+
 
 
         //private int RandomHeight()
@@ -1192,13 +1213,63 @@ namespace HeroForge_OnceAgain
 
 
         }
+        private bool TryParseHeight(string input, out int heightCm)
+        {
+            heightCm = 0;
+            if (string.IsNullOrWhiteSpace(input))
+                return false;
+
+            input = input.Trim();
+
+            // Caso 1: formato métrico (ex: "1,87m" ou "1.87m")
+            if (input.EndsWith("m"))
+            {
+                string valor = input.Replace("m", "").Trim().Replace(',', '.');
+                if (double.TryParse(valor, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out double metros))
+                {
+                    heightCm = (int)Math.Round(metros * 100);
+                    return true;
+                }
+            }
+
+            // Caso 2: formato imperial (ex: 5'6" ou 6'2)
+            if (input.Contains("'"))
+            {
+                string[] partes = input.Split('\'');
+                if (partes.Length == 2 &&
+                    int.TryParse(partes[0].Trim(), out int feet) &&
+                    int.TryParse(partes[1].Replace("\"", "").Trim(), out int inches))
+                {
+                    heightCm = (int)Math.Round((feet * 12 + inches) * 2.54);
+                    return true;
+                }
+            }
+
+            // Último caso: só números (assume cm)
+            if (int.TryParse(input, out int cm))
+            {
+                heightCm = cm;
+                return true;
+            }
+
+            return false;
+        }
 
         private void btRandomWeight_Click(object sender, EventArgs e)
         {
-            int height = RandomHeight();
-            RandomWeight(height);
-
+            if (TryParseHeight(lblRandomHeight.Text, out int height) && height > 0)
+            {
+                RandomWeight(height);
+            }
+            else
+            {
+                height = RandomHeight();
+                if (height > 0)
+                    RandomWeight(height);
+            }
         }
+
+
 
         public Race GetRaceInfoById(int id)
         {
@@ -1218,17 +1289,32 @@ namespace HeroForge_OnceAgain
 
         private void RandomWeight(int hgtBase)
         {
-            if (!(cbRaces.SelectedItem is Race selectedRace)) return;
+            if (!(cbRaces.SelectedItem is RaceUtils.RaceDisplayItem selectedRace))
+                return;
 
             Race raceInfo = GetRaceInfoById(selectedRace.Id);
             if (raceInfo == null || string.IsNullOrWhiteSpace(raceInfo.Weight))
             {
-                lblRandomAge.Text = "0";
+                lblRandomAge.Text = "0"; // (confirme se esse label está correto, talvez seja lblRandomWeight)
                 return;
             }
 
             var weightParts = raceInfo.Weight.Split('/');
-            var gender = lblGender.Text;
+            //var gender = lblGender.Text?.Trim();
+            var gender = cBGender.SelectedItem?.ToString().Trim();
+
+            if (string.IsNullOrWhiteSpace(gender))
+            {
+                MessageBox.Show(LocalizationHelper.T("Error.GenderNotDefined"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
+                !gender.Equals("Female", StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show(LocalizationHelper.T("Error.InvalidGender"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             string baseWeight = gender.Equals("Male", StringComparison.OrdinalIgnoreCase)
                 ? weightParts[0]
@@ -1238,6 +1324,7 @@ namespace HeroForge_OnceAgain
 
             CalcWeight(dice, baseWeight, hgtBase);
         }
+
 
 
         //private void RandomWeight(int hgtBase)
@@ -1390,8 +1477,15 @@ namespace HeroForge_OnceAgain
 
             character.Gender = cBGender.SelectedItem != null ? Convert.ToInt32(cBGender.SelectedIndex) : 0;
 
-            var selectedRace = (Race)cbRaces.SelectedItem;
-            character.Race = selectedRace.DisplayName;
+            //var selectedRace = (Race)cbRaces.SelectedItem;
+            //character.Race = selectedRace.DisplayName;
+            
+            RaceDisplayItem raceDisplay = new RaceDisplayItem();
+            raceDisplay.Id = ((RaceUtils.RaceDisplayItem)cbRaces.SelectedItem).Id;
+            raceDisplay.DisplayName = ((RaceUtils.RaceDisplayItem)cbRaces.SelectedItem).DisplayName;
+
+            character.Race = raceDisplay.DisplayName;
+
 
             character.Alignment = cbAlignment.SelectedIndex;
             character.Deity = cbDeity.SelectedIndex;
@@ -1473,7 +1567,8 @@ namespace HeroForge_OnceAgain
         {
             Localization();
 
-            if (cbRaces.SelectedItem is Race selectedRace)
+            if (cbRaces.SelectedItem is RaceUtils.RaceDisplayItem selectedRace)
+
             {
                 lblRace.Text = selectedRace.DisplayName;
 

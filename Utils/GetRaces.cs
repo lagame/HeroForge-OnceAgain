@@ -91,6 +91,12 @@ namespace HeroForge_OnceAgain.Utils
         public string Lang { get; set; }
     }
 
+    public class RaceDisplayItem
+    {
+        public string DisplayName { get; set; }
+        public int Id { get; set; }
+        public Race RaceObject { get; set; } // adicione isso!
+    }
 
     public static class RaceUtils
     {

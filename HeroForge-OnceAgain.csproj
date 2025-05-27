@@ -293,6 +293,9 @@
     <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HttpListenerService.cs" />
     <Compile Include="Infrastructure\Database\ApplicationDbContext.cs" />
     <Compile Include="LocalizationHelper.cs" />
@@ -399,7 +402,9 @@
     <Content Include="Resources\Translations\races\Races.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\Translations\messages.json" />
+    <Content Include="Resources\Translations\messages.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

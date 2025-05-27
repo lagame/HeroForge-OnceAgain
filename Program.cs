@@ -21,12 +21,17 @@ namespace HeroForge_OnceAgain
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //HttpListenerService.Instance.StartListener();
+            
+            var langCode = Properties.Settings.Default.LanguageCode ?? "en";
+            LocalizationHelper.LoadMessages(langCode);
 
             using (var context = new ApplicationDbContext())
             {
                 SeedHelper.SeedData(context); // Agora é acessível
                 context.SaveChanges();
             }
+
+            
 
             Application.Run(new FrmLogin());
         }
